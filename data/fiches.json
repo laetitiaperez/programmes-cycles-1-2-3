@@ -92,5 +92,17 @@
   ],
   "resume": "Niveaux du CECRL par classe, cinq activités langagières, horaires, thématiques culturelles et axes de 6e, pièges.",
   "html": "fiches/lv-c2-c3.html"
+ },
+ {
+  "id": "evar-c1-c3",
+  "titre": "Fiche CRPE — Éducation à la vie affective et relationnelle (EVAR)",
+  "matiere": "evar",
+  "cycles": [
+   1,
+   2,
+   3
+  ],
+  "resume": "Programme de février 2025 : trois axes, objectifs par niveau de la PS à la 6e, cadre légal, pièges.",
+  "html": "fiches/evar-c1-c3.html"
  }
 ]

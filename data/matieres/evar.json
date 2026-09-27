@@ -1,0 +1,452 @@
+{
+ "id": "evar",
+ "nom": "Éducation à la vie affective et relationnelle",
+ "intentions": "Programme national de février 2025, obligatoire de la maternelle au lycée. Trois axes suivis tout au long de la scolarité : [[se connaître, vivre et grandir avec son corps]] ; [[rencontrer les autres et construire avec eux des relations, s’y épanouir]] ; [[trouver sa place dans la société, y être libre et responsable]]. EVAR à l'école primaire, EVARS (… et à la sexualité) à partir du collège.",
+ "domaines": [
+  {
+   "id": "cadre",
+   "nom": "Cadre, principes, mise en œuvre",
+   "fils": [
+    {
+     "id": "principes",
+     "nom": "Principes et organisation",
+     "etapes": [
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS",
+        "CP",
+        "CE1",
+        "CE2",
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "repere",
+       "texte": "Code de l'éducation (article L. 312-16) : « [[au moins trois séances annuelles]] et par groupes d’âge homogène » ; enseignement obligatoire, public et privé sous contrat ; les parents sont informés des objectifs annuels.",
+       "sources": [
+        "evar-mat-2025",
+        "evar-elem-2025",
+        "evars-college-2025"
+       ],
+       "page": 2
+      },
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS",
+        "CP",
+        "CE1",
+        "CE2",
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "notion",
+       "texte": "Trois champs : le [[champ biologique]], le [[champ psycho-émotionnel]] et le [[champ juridique et social]] ; construction spiralaire ; lien avec le [[parcours éducatif de santé]] et les [[compétences psychosociales]] (CPS).",
+       "sources": [
+        "evar-mat-2025",
+        "evar-elem-2025",
+        "evars-college-2025"
+       ],
+       "page": 2
+      },
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS",
+        "CP",
+        "CE1",
+        "CE2",
+        "CM1",
+        "CM2"
+       ],
+       "type": "notion",
+       "texte": "À l'école primaire : [[éducation à la vie affective et relationnelle]] ; au collège et au lycée : éducation à la vie affective et relationnelle, et à la sexualité (EVARS).",
+       "sources": [
+        "evar-mat-2025",
+        "evar-elem-2025"
+       ],
+       "page": 2
+      },
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "notion",
+       "texte": "Maternelle : partir du corps, des sentiments et des émotions, du respect de l'intimité et de l'égalité filles-garçons ; s'appuyer sur le quotidien de la classe ; attention soutenue au [[repérage d’enfants en danger]].",
+       "sources": [
+        "evar-mat-2025"
+       ],
+       "page": 6
+      },
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2",
+        "CM1",
+        "CM2"
+       ],
+       "type": "notion",
+       "texte": "Élémentaire : connaissances scientifiques plus précises ; veiller à « l’utilisation d’un vocabulaire précis, scientifique » ; au cycle 3, puberté et prévention des [[violences sexistes et sexuelles]].",
+       "sources": [
+        "evar-elem-2025"
+       ],
+       "page": 7
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "repere",
+       "texte": "Au collège : séances d'environ deux heures ; modalités participatives ; coanimation avec les personnels de santé et sociaux à privilégier.",
+       "sources": [
+        "evars-college-2025"
+       ],
+       "page": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "corps",
+   "nom": "Se connaître, vivre et grandir avec son corps",
+   "fils": [
+    {
+     "id": "corps",
+     "nom": "Corps, intimité, santé",
+     "etapes": [
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Connaître son corps. Comprendre ce qu'est l'intimité.",
+       "sources": [
+        "evar-mat-2025"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "Connaître son corps et identifier des émotions.",
+       "sources": [
+        "evar-mat-2025"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "Connaître son corps, ses sensations et ses émotions.",
+       "sources": [
+        "evar-mat-2025"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Connaître son corps ; comprendre ce qu'est l'intimité : nommer les parties du corps, dont les [[parties intimes]], avec un vocabulaire scientifique précis ; toute personne a droit au respect de son intimité.",
+       "sources": [
+        "evar-elem-2025"
+       ],
+       "page": 10
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "Grandir, avoir une bonne connaissance et [[estime de soi]], protéger son intimité.",
+       "sources": [
+        "evar-elem-2025"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "Se sentir bien dans son corps et en prendre soin ; santé physique, mentale et sociale ; savoir demander de l'aide ; numéros d'urgence : [[le 15 et le 119]].",
+       "sources": [
+        "evar-elem-2025"
+       ],
+       "page": 13
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Connaître les changements de son corps ([[puberté]]).",
+       "sources": [
+        "evar-elem-2025"
+       ],
+       "page": 15
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "Connaître et comprendre les changements de son corps et celui des autres.",
+       "sources": [
+        "evar-elem-2025"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Comprendre et apprendre à vivre les changements de son corps.",
+       "sources": [
+        "evars-college-2025"
+       ],
+       "page": 9
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "relations",
+   "nom": "Rencontrer les autres et construire des relations",
+   "fils": [
+    {
+     "id": "relations",
+     "nom": "Émotions, consentement, protection",
+     "etapes": [
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Apprendre à exprimer son accord ou son refus, à envisager et à respecter un refus.",
+       "sources": [
+        "evar-mat-2025"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "Identifier une personne de confiance (adulte, enfant), apprendre à faire appel à elle.",
+       "sources": [
+        "evar-mat-2025"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "Identifier différents types de sentiments dans sa relation à l'autre.",
+       "sources": [
+        "evar-mat-2025"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Comprendre la diversité des émotions et des sentiments : les siens et ceux des autres ; résoudre des conflits de façon constructive.",
+       "sources": [
+        "evar-elem-2025"
+       ],
+       "page": 10
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "Comprendre les différentes dimensions (affectives, éthiques, sociales et légales) d'une relation humaine.",
+       "sources": [
+        "evar-elem-2025"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "Comprendre ce qu'est le [[consentement]], les différentes manières de le solliciter et de l'exprimer ou d'accepter et de respecter un refus.",
+       "sources": [
+        "evar-elem-2025"
+       ],
+       "page": 14
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Développer des relations constructives et repérer les situations de [[harcèlement]].",
+       "sources": [
+        "evar-elem-2025"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "Promouvoir des relations positives, apprendre à repérer et se protéger des violences sexistes et sexuelles.",
+       "sources": [
+        "evar-elem-2025"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Entrer en relation avec les autres et comprendre que les relations peuvent changer.",
+       "sources": [
+        "evars-college-2025"
+       ],
+       "page": 9
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "societe",
+   "nom": "Trouver sa place dans la société",
+   "fils": [
+    {
+     "id": "societe",
+     "nom": "Égalité, familles, droits, numérique",
+     "etapes": [
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Appréhender et comprendre l'égalité entre les filles et les garçons et la liberté d'être soi-même.",
+       "sources": [
+        "evar-mat-2025"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "Vivre l'égalité entre les filles et les garçons ; découvrir les différentes [[structures familiales]] et les respecter.",
+       "sources": [
+        "evar-mat-2025"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "Découvrir les ressemblances et les différences entre les autres et soi ; respecter les autres dans leur différence.",
+       "sources": [
+        "evar-mat-2025"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Appartenir à une famille, comprendre la nature, la fonction et le sens des liens familiaux.",
+       "sources": [
+        "evar-elem-2025"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "Promouvoir des relations égalitaires, repérer des discriminations issues de [[stéréotypes]], notamment de genre.",
+       "sources": [
+        "evar-elem-2025"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "Connaître ses droits.",
+       "sources": [
+        "evar-elem-2025"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Promouvoir des relations égalitaires et positives ; comprendre les stéréotypes pour lutter contre les discriminations.",
+       "sources": [
+        "evar-elem-2025"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "[[Prévenir les risques liés à l’usage du numérique et d’Internet]].",
+       "sources": [
+        "evar-elem-2025"
+       ],
+       "page": 17
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Trouver sa place au sein d'un groupe sans renier ses propres sentiments, respecter les autres et en être respecté.",
+       "sources": [
+        "evars-college-2025"
+       ],
+       "page": 9
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
