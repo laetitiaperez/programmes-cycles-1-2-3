@@ -68,5 +68,17 @@
   ],
   "resume": "Quatre domaines de motricité (2026) et quatre champs d'apprentissage (2020), savoir nager, repères chiffrés, pièges.",
   "html": "fiches/eps-c2-c3.html"
+ },
+ {
+  "id": "arts-c2-c3",
+  "titre": "Fiche CRPE — Enseignements artistiques, cycles 1 à 3",
+  "matiere": "arts",
+  "cycles": [
+   1,
+   2,
+   3
+  ],
+  "resume": "Arts plastiques, éducation musicale, histoire des arts : les trois questions par cycle, les répertoires chiffrés, le PEAC, les pièges.",
+  "html": "fiches/arts-c2-c3.html"
  }
 ]

@@ -1,0 +1,609 @@
+{
+ "id": "arts",
+ "nom": "Enseignements artistiques",
+ "nomMaternelle": "Agir, s’exprimer, comprendre à travers les activités artistiques",
+ "intentions": "Maternelle : arts visuels, univers sonores, spectacle vivant ; première étape du PEAC. Cycles 2 et 3 (programmes 2020, en vigueur dans toutes les classes en 2026-27) : arts plastiques et éducation musicale, auxquels s'ajoute l'[[histoire des arts]] au cycle 3 ; deux grands champs en musique : la [[perception]] et la [[production]] ; en arts plastiques, développer le [[potentiel d’invention]].",
+ "domaines": [
+  {
+   "id": "peac",
+   "nom": "Parcours d'éducation artistique et culturelle",
+   "fils": [
+    {
+     "id": "peac",
+     "nom": "PEAC et démarche",
+     "etapes": [
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "notion",
+       "texte": "L'école maternelle est la [[première étape du parcours d’éducation artistique et culturelle]] ; « éduquer à l'art et par l'art » ; quatre axes : s'engager dans des pratiques, découvrir des formes d'expression artistique, éprouver et exprimer des émotions, entrer dans une [[démarche de création]].",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 26
+      },
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2"
+       ],
+       "type": "notion",
+       "texte": "La sensibilité et l'expression artistiques sont « les moyens et les finalités » ; fondement du [[parcours d’éducation artistique et culturelle]] : trois champs d'action, [[rencontres, pratiques et connaissances]] ; démarche de projet.",
+       "sources": [
+        "arts-c2-2020"
+       ],
+       "page": 29
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "notion",
+       "texte": "Pratique plus autonome, analysée ; élaborer des intentions artistiques ; rencontre régulière d'œuvres contemporaines et passées, occidentales et extra-occidentales.",
+       "sources": [
+        "arts-c3-2020"
+       ],
+       "page": 43
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "plastiques",
+   "nom": "Arts visuels / arts plastiques",
+   "fils": [
+    {
+     "id": "dessin-graphisme",
+     "nom": "Dessiner, graphisme",
+     "etapes": [
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "S'exercer au [[dessin]] pour développer son habileté motrice (gestes amples, grand format vertical) ; commencer à représenter.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 27
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Expérimenter outils, supports, matériaux ; dessiner avec une intention de représentation ; [[répertoire graphique]] de la classe.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 27
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Dessiner d'après un modèle ; œuvre collective ; transformer ou détourner des motifs ; composition sous contraintes.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 28
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "exemple",
+       "texte": "Représentations du visage d'après Klee, Modigliani, Schjerfbeck, Vigée-Lebrun ; lignes de Sol LeWitt, Mondrian, cercles de Sonia Delaunay.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 27
+      },
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "La représentation du monde : utiliser le dessin dans toute sa diversité ; carnet de croquis ; points de vue et cadrages.",
+       "sources": [
+        "arts-c2-2020"
+       ],
+       "page": 30
+      }
+     ]
+    },
+    {
+     "id": "compositions",
+     "nom": "Compositions planes ou en volume, matérialité",
+     "etapes": [
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Explorer outils, médiums, matériaux ; production plastique en volume.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 29
+      },
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "notion",
+       "texte": "Variables plastiques : amorce du « [[SMOG]] » : Support, Médium, Outil, Geste.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 29
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Constituants plastiques (couleurs, formes, matières, rythmes) ; composition en deux ou trois dimensions.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 29
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Combiner matériaux, techniques et procédés ; détournement d'objets (ready-made).",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 29
+      },
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "L'[[expression des émotions]] : expérimenter les effets des couleurs, des matériaux, des supports ; principes d'organisation (répétition, alternance, superposition, dispersion, équilibre).",
+       "sources": [
+        "arts-c2-2020"
+       ],
+       "page": 30
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Trois questions : [[La représentation plastique et les dispositifs de présentation]] ; [[Les fabrications et la relation entre l’objet et l’espace]] ; [[La matérialité de la production plastique et la sensibilité aux constituants de l’œuvre]].",
+       "sources": [
+        "arts-c3-2020"
+       ],
+       "page": 44
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "notion",
+       "texte": "Relation de l'œuvre à un dispositif de présentation (cadre, socle, cimaise), au lieu ([[in situ]]) et au spectateur.",
+       "sources": [
+        "arts-c3-2020"
+       ],
+       "page": 43
+      }
+     ]
+    },
+    {
+     "id": "images",
+     "nom": "Images : regarder, raconter, transformer",
+     "etapes": [
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Regarder avec attention ; décrire les illustrations d'un album.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 30
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ [[Image fixe]] / [[image animée]] ([[stop-motion]]) ; fabriquer des images à partir d'images existantes.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 30
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Types d'images (portrait, paysage, [[nature morte]]) ; comparer les illustrations d'un même conte.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 30
+      },
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "[[La narration et le témoignage par les images]] : raconter, témoigner ; transformer une image ; articuler texte et image.",
+       "sources": [
+        "arts-c2-2020"
+       ],
+       "page": 31
+      }
+     ]
+    },
+    {
+     "id": "attendus-plastiques",
+     "nom": "Attendus, s'exprimer sur l'art",
+     "etapes": [
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2"
+       ],
+       "type": "attendu",
+       "texte": "[[Réaliser et donner à voir]] des productions plastiques ; proposer des réponses inventives ; coopérer ; s'exprimer sur sa production, celle de ses pairs, sur l'art ; comparer quelques œuvres d'art.",
+       "sources": [
+        "arts-c2-2020"
+       ],
+       "page": 30
+      },
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2"
+       ],
+       "type": "crpe",
+       "texte": "« Il ne s’agit pas de reproduire mais d’observer » : les œuvres nourrissent l'exploration ; en arts, on cherche plusieurs solutions, pas une seule.",
+       "sources": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "musique",
+   "nom": "Univers sonores / éducation musicale",
+   "fils": [
+    {
+     "id": "chanter",
+     "nom": "Voix et chant",
+     "etapes": [
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "attendu",
+       "texte": "Dépasser les usages courants de la voix ; dire ou chanter [[au moins cinq comptines]].",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 31
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "attendu",
+       "texte": "+ Explorer la richesse de sa voix ; chanter une émotion ; au moins huit comptines ou chants.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 31
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "attendu",
+       "texte": "+ Trouver sa place dans un collectif chantant ; au moins dix comptines ou chants.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 31
+      },
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "Chanter une mélodie simple avec une [[intonation juste]] ; interpréter avec expressivité ; registres vocaux (aigu, grave).",
+       "sources": [
+        "arts-c2-2020"
+       ],
+       "page": 33
+      },
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2"
+       ],
+       "type": "repere",
+       "texte": "[[six à huit chants]] et six à huit œuvres forment le répertoire de la classe.",
+       "sources": [
+        "arts-c2-2020"
+       ],
+       "page": 34
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Chanter et interpréter ; techniques vocales et corporelles au service du sens ; [[projet choral]] ambitieux.",
+       "sources": [
+        "arts-c3-2020"
+       ],
+       "page": 48
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "repere",
+       "texte": "Chaque année : un répertoire d'[[au moins quatre chants]] et au moins six œuvres écoutées.",
+       "sources": [
+        "arts-c3-2020"
+       ],
+       "page": 51
+      }
+     ]
+    },
+    {
+     "id": "ecouter",
+     "nom": "Écouter, comparer",
+     "etapes": [
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Traduire la musique en mouvements ; posture d'écoute.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 33
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Traduire en mots ; au moins deux œuvres patrimoniales.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 33
+      },
+      {
+       "classes": [
+        "MS",
+        "GS"
+       ],
+       "type": "exemple",
+       "texte": "Le Carnaval des animaux (Saint-Saëns), Pierre et le loup (Prokofiev), La Flûte enchantée (Mozart), Lili Boulanger.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 33
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Traduire en dessin ; au moins trois œuvres musicales patrimoniales.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 33
+      },
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "Décrire et comparer des éléments sonores ; lexique : [[timbre]], [[hauteur]], formes simples, [[intensité]], [[tempo]].",
+       "sources": [
+        "arts-c2-2020"
+       ],
+       "page": 33
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Écouter, comparer et commenter ; situer une œuvre dans une aire culturelle et une époque ; argumenter un jugement.",
+       "sources": [
+        "arts-c3-2020"
+       ],
+       "page": 48
+      }
+     ]
+    },
+    {
+     "id": "creer",
+     "nom": "Explorer, créer des sons",
+     "etapes": [
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "Explorer les sonorités du corps, d'objets, d'instruments ; reproduire un rythme ; en GS, créer un [[paysage sonore]].",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 32
+      },
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "Paramètres du son : intensité, hauteur, timbre, durée ; représentations graphiques ou corporelles ; inventer une organisation simple.",
+       "sources": [
+        "arts-c2-2020"
+       ],
+       "page": 33
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Explorer, imaginer et créer : organiser des sons dans le temps ; propositions personnelles.",
+       "sources": [
+        "arts-c3-2020"
+       ],
+       "page": 48
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "spectacle",
+   "nom": "Spectacle vivant et histoire des arts",
+   "fils": [
+    {
+     "id": "spectacle-vivant",
+     "nom": "Spectacle vivant (maternelle)",
+     "etapes": [
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Exprimer ses émotions par le corps ; rôles simples ; découvrir des œuvres adaptées et l'espace scénique.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 34
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Émotions par le corps et la voix ; rencontrer des artistes.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 34
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Enchaînements d'émotions ; [[marionnettes]] ; personnages archétypaux ; différents genres (mime, théâtre d'ombres, théâtre d'objets).",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 34
+      }
+     ]
+    },
+    {
+     "id": "hda",
+     "nom": "Histoire des arts (cycle 3)",
+     "etapes": [
+      {
+       "classes": [
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "notion",
+       "texte": "Enseignement [[pluridisciplinaire et transversal]] ; trois champs d'objectifs : esthétique, méthodologique, de connaissance ; en CM, le professeur des écoles « exerce sa polyvalence ».",
+       "sources": [
+        "arts-c3-2020"
+       ],
+       "page": 52
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "attendu",
+       "texte": "Décrire une œuvre (caractéristiques techniques et formelles) ; la situer dans une période et une aire géographique, « au risque de l’erreur » ; exprimer un ressenti ; [[se repérer dans un musée ou un centre d’art]].",
+       "sources": [
+        "arts-c3-2020"
+       ],
+       "page": 53
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Quatre compétences : [[identifier]], [[analyser]], [[situer]], se repérer.",
+       "sources": [
+        "arts-c3-2020"
+       ],
+       "page": 53
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
