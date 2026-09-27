@@ -11,10 +11,13 @@ const matieres = await Promise.all(ids.map(id => read(`data/matieres/${id}.json`
 const errors = validateData({ classes, textes, matieres });
 
 if (process.argv.includes('--links')) {
+  const headers = { 'User-Agent': 'Mozilla/5.0 (Macintosh) programmes-cycles-validate' };
   for (const url of new Set(textes.map(t => t.pdf))) {
     try {
-      const r = await fetch(url, { method: 'HEAD', redirect: 'follow' });
-      if (!r.ok) errors.push(`lien ${url} : HTTP ${r.status}`);
+      const r = await fetch(url, { method: 'HEAD', redirect: 'follow', headers });
+      // 403 = protection anti-robot d'Éduscol / du BO : le lien marche dans un navigateur.
+      if (r.status === 403) console.warn(`avertissement : ${url} refuse les robots (403), à vérifier dans un navigateur`);
+      else if (!r.ok) errors.push(`lien ${url} : HTTP ${r.status}`);
     } catch (e) {
       errors.push(`lien ${url} : ${e.message}`);
     }

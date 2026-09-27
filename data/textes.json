@@ -1,0 +1,382 @@
+[
+  {
+    "id": "c1-2026",
+    "titre": "Programme de l’école maternelle (consolidé)",
+    "matiere": "c1",
+    "bo": "BO n° 41 du 31 octobre 2024 et BO n° 19 du 7 mai 2026",
+    "classes2026": [
+      "PS",
+      "MS",
+      "GS"
+    ],
+    "nouveauEn": [
+      "PS",
+      "MS",
+      "GS"
+    ],
+    "pdf": "https://eduscol.education.gouv.fr/sites/default/files/document/programme-cycle-1-consolide-127565.pdf"
+  },
+  {
+    "id": "evar-mat-2025",
+    "titre": "Éducation à la vie affective et relationnelle — maternelle",
+    "matiere": "evar",
+    "bo": "BO n° 6 du 6 février 2025",
+    "classes2026": [
+      "PS",
+      "MS",
+      "GS"
+    ],
+    "nouveauEn": [],
+    "pdf": "https://www.education.gouv.fr/sites/default/files/document/Programme%20d%E2%80%99%C3%A9ducation%20%C3%A0%20la%20vie%20affective%20et%20relationnelle%20%C3%A0%20l%E2%80%99%C3%A9cole%20maternelle-405258.pdf"
+  },
+  {
+    "id": "evar-elem-2025",
+    "titre": "Éducation à la vie affective et relationnelle — élémentaire",
+    "matiere": "evar",
+    "bo": "BO n° 6 du 6 février 2025",
+    "classes2026": [
+      "CP",
+      "CE1",
+      "CE2",
+      "CM1",
+      "CM2"
+    ],
+    "nouveauEn": [],
+    "pdf": "https://www.education.gouv.fr/sites/default/files/document/Programme%20d%E2%80%99%C3%A9ducation%20%C3%A0%20la%20vie%20affective%20et%20relationnelle%20%C3%A0%20l%E2%80%99%C3%A9cole%20%C3%A9l%C3%A9mentaire-405261.pdf"
+  },
+  {
+    "id": "evars-college-2025",
+    "titre": "Éducation à la vie affective et relationnelle, et à la sexualité — collège",
+    "matiere": "evar",
+    "bo": "BO n° 6 du 6 février 2025",
+    "classes2026": [
+      "6e"
+    ],
+    "nouveauEn": [],
+    "pdf": "https://www.education.gouv.fr/sites/default/files/document/Programme%20d%E2%80%99%C3%A9ducation%20%C3%A0%20la%20vie%20affective%20et%20relationnelle%2C%20et%20%C3%A0%20la%20sexualit%C3%A9%20au%20coll%C3%A8ge-405264.pdf"
+  },
+  {
+    "id": "fr-c2-2024",
+    "titre": "Français cycle 2",
+    "matiere": "francais",
+    "bo": "BO n° 41 du 31 octobre 2024",
+    "classes2026": [
+      "CP",
+      "CE1",
+      "CE2"
+    ],
+    "nouveauEn": [],
+    "pdf": "https://www.education.gouv.fr/sites/default/files/document/Annexe%203%20%E2%80%93%20Programme%20de%20fran%C3%A7ais%20du%20cycle%202-403818.pdf"
+  },
+  {
+    "id": "maths-c2-2024",
+    "titre": "Mathématiques cycle 2",
+    "matiere": "maths",
+    "bo": "BO n° 41 du 31 octobre 2024",
+    "classes2026": [
+      "CP",
+      "CE1",
+      "CE2"
+    ],
+    "nouveauEn": [],
+    "pdf": "https://www.education.gouv.fr/sites/default/files/document/Annexe%204%20%E2%80%93%20Programme%20de%20math%C3%A9matiques%20du%20cycle%202-403821.pdf"
+  },
+  {
+    "id": "fr-c3-2025",
+    "titre": "Français cycle 3",
+    "matiere": "francais",
+    "bo": "BO n° 16 du 17 avril 2025",
+    "classes2026": [
+      "CM1",
+      "CM2",
+      "6e"
+    ],
+    "nouveauEn": [
+      "CM2"
+    ],
+    "pdf": "https://www.education.gouv.fr/sites/default/files/programme-de-fran-ais-pour-le-cycle-3-439824.pdf"
+  },
+  {
+    "id": "maths-c3-2025",
+    "titre": "Mathématiques cycle 3",
+    "matiere": "maths",
+    "bo": "BO n° 16 du 17 avril 2025",
+    "classes2026": [
+      "CM1",
+      "CM2",
+      "6e"
+    ],
+    "nouveauEn": [
+      "CM2"
+    ],
+    "pdf": "https://www.education.gouv.fr/sites/default/files/programme-de-math-matiques-pour-le-cycle-3-439827.pdf"
+  },
+  {
+    "id": "emc-2024",
+    "titre": "Enseignement moral et civique (CP → terminale)",
+    "matiere": "emc",
+    "bo": "BO n° 24 du 13 juin 2024",
+    "classes2026": [
+      "CP",
+      "CE1",
+      "CE2",
+      "CM1",
+      "CM2",
+      "6e"
+    ],
+    "nouveauEn": [
+      "CE2",
+      "6e"
+    ],
+    "pdf": "https://www.education.gouv.fr/sites/default/files/document/Annexe%20%E2%80%94%20Programme%20d%E2%80%99enseignement%20moral%20et%20civique%20du%20cours%20pr%C3%A9paratoire%20%C3%A0%20la%20classe%20terminale%20des%20voies%20g%C3%A9n%C3%A9rale%2C%20technologique%20et%20professionnelle%20et%20des%20classes%20pr%C3%A9parant%20au%20CAP-402159.pdf"
+  },
+  {
+    "id": "hg-c2-2026",
+    "titre": "Histoire-géographie cycle 2",
+    "matiere": "hg",
+    "bo": "BO n° 22 du 28 mai 2026",
+    "classes2026": [
+      "CP"
+    ],
+    "nouveauEn": [
+      "CP"
+    ],
+    "pdf": "https://www.education.gouv.fr/sites/default/files/document/annexe-3-programme-d-histoire-geographie-cycle-2-516776.pdf"
+  },
+  {
+    "id": "qlm-et-2020",
+    "titre": "Questionner l’espace et le temps (cycle 2, 2020)",
+    "matiere": "hg",
+    "bo": "BO n° 31 du 30 juillet 2020",
+    "classes2026": [
+      "CE1",
+      "CE2"
+    ],
+    "nouveauEn": [],
+    "pdf": "https://cache.media.education.gouv.fr/file/31/88/5/ensel714_annexe1_1312885.pdf"
+  },
+  {
+    "id": "hg-c3-2026",
+    "titre": "Histoire-géographie cycle 3",
+    "matiere": "hg",
+    "bo": "BO n° 22 du 28 mai 2026",
+    "classes2026": [
+      "CM1"
+    ],
+    "nouveauEn": [
+      "CM1"
+    ],
+    "pdf": "https://www.education.gouv.fr/sites/default/files/document/annexe-4-programme-d-histoire-geographie-cycle-3-516779.pdf"
+  },
+  {
+    "id": "hg-c3-2020",
+    "titre": "Histoire-géographie cycle 3 (2020)",
+    "matiere": "hg",
+    "bo": "BO n° 31 du 30 juillet 2020",
+    "classes2026": [
+      "CM2",
+      "6e"
+    ],
+    "nouveauEn": [],
+    "pdf": "https://eduscol.education.gouv.fr/media/100806/download?attachment"
+  },
+  {
+    "id": "sci-c2-2026",
+    "titre": "Sciences et technologie cycle 2",
+    "matiere": "sciences",
+    "bo": "BO n° 24 du 11 juin 2026",
+    "classes2026": [
+      "CP"
+    ],
+    "nouveauEn": [
+      "CP"
+    ],
+    "pdf": "https://www.education.gouv.fr/sites/default/files/document/annexe-1-programme-de-sciences-et-technologie-du-cycle-2-517289.pdf"
+  },
+  {
+    "id": "qlm-vmo-2020",
+    "titre": "Questionner le monde du vivant, de la matière et des objets (cycle 2, 2020)",
+    "matiere": "sciences",
+    "bo": "BO n° 31 du 30 juillet 2020",
+    "classes2026": [
+      "CE1",
+      "CE2"
+    ],
+    "nouveauEn": [],
+    "pdf": "https://cache.media.education.gouv.fr/file/31/88/5/ensel714_annexe1_1312885.pdf"
+  },
+  {
+    "id": "sci-c3-2026",
+    "titre": "Sciences et technologie cycle 3",
+    "matiere": "sciences",
+    "bo": "BO n° 24 du 11 juin 2026",
+    "classes2026": [
+      "CM1"
+    ],
+    "nouveauEn": [
+      "CM1"
+    ],
+    "pdf": "https://www.education.gouv.fr/sites/default/files/document/annexe-2-programme-de-sciences-et-technologie-du-cycle-3-517292.pdf"
+  },
+  {
+    "id": "sci-c3-2023",
+    "titre": "Sciences et technologie cycle 3 (2023)",
+    "matiere": "sciences",
+    "bo": "BO n° 25 du 22 juin 2023",
+    "classes2026": [
+      "CM2",
+      "6e"
+    ],
+    "nouveauEn": [],
+    "pdf": "https://eduscol.education.gouv.fr/media/100806/download?attachment"
+  },
+  {
+    "id": "eps-c2-2026",
+    "titre": "Éducation physique et sportive cycle 2",
+    "matiere": "eps",
+    "bo": "BO n° 22 du 28 mai 2026",
+    "classes2026": [
+      "CP"
+    ],
+    "nouveauEn": [
+      "CP"
+    ],
+    "pdf": "https://www.education.gouv.fr/sites/default/files/document/annexe-1-programme-d-education-physique-et-sportive-cycle-2-516770.pdf"
+  },
+  {
+    "id": "eps-c2-2020",
+    "titre": "Éducation physique et sportive cycle 2 (2020)",
+    "matiere": "eps",
+    "bo": "BO n° 31 du 30 juillet 2020",
+    "classes2026": [
+      "CE1",
+      "CE2"
+    ],
+    "nouveauEn": [],
+    "pdf": "https://cache.media.education.gouv.fr/file/31/88/5/ensel714_annexe1_1312885.pdf"
+  },
+  {
+    "id": "eps-c3-2026",
+    "titre": "Éducation physique et sportive cycle 3",
+    "matiere": "eps",
+    "bo": "BO n° 22 du 28 mai 2026",
+    "classes2026": [
+      "CM1"
+    ],
+    "nouveauEn": [
+      "CM1"
+    ],
+    "pdf": "https://www.education.gouv.fr/sites/default/files/document/annexe-2-programme-d-education-physique-et-sportive-cycle-3-516773.pdf"
+  },
+  {
+    "id": "eps-c3-2020",
+    "titre": "Éducation physique et sportive cycle 3 (2020)",
+    "matiere": "eps",
+    "bo": "BO n° 31 du 30 juillet 2020",
+    "classes2026": [
+      "CM2",
+      "6e"
+    ],
+    "nouveauEn": [],
+    "pdf": "https://eduscol.education.gouv.fr/media/100806/download?attachment"
+  },
+  {
+    "id": "arts-c2-2020",
+    "titre": "Enseignements artistiques cycle 2 (2020)",
+    "matiere": "arts",
+    "bo": "BO n° 31 du 30 juillet 2020",
+    "classes2026": [
+      "CP",
+      "CE1",
+      "CE2"
+    ],
+    "nouveauEn": [],
+    "pdf": "https://cache.media.education.gouv.fr/file/31/88/5/ensel714_annexe1_1312885.pdf"
+  },
+  {
+    "id": "arts-c3-2020",
+    "titre": "Enseignements artistiques cycle 3 (2020)",
+    "matiere": "arts",
+    "bo": "BO n° 31 du 30 juillet 2020",
+    "classes2026": [
+      "CM1",
+      "CM2",
+      "6e"
+    ],
+    "nouveauEn": [],
+    "pdf": "https://eduscol.education.gouv.fr/media/100806/download?attachment"
+  },
+  {
+    "id": "lv-c2-2026",
+    "titre": "Langues vivantes étrangères et régionales cycle 2",
+    "matiere": "lv",
+    "bo": "BO n° 12 du 19 mars 2026",
+    "classes2026": [
+      "CP"
+    ],
+    "nouveauEn": [
+      "CP"
+    ],
+    "pdf": "https://www.education.gouv.fr/sites/default/files/document/Annexe%201%20%E2%80%93%20Programme%20de%20langues%20vivantes%20%C3%A9trang%C3%A8res%20et%20r%C3%A9gionales%20pour%20le%20cycle%202%20-481187.pdf"
+  },
+  {
+    "id": "lv-c2-2020",
+    "titre": "Langues vivantes étrangères ou régionales cycle 2 (2020)",
+    "matiere": "lv",
+    "bo": "BO n° 31 du 30 juillet 2020",
+    "classes2026": [
+      "CE1",
+      "CE2"
+    ],
+    "nouveauEn": [],
+    "pdf": "https://cache.media.education.gouv.fr/file/31/88/5/ensel714_annexe1_1312885.pdf"
+  },
+  {
+    "id": "lv-c3-2026",
+    "titre": "Langues vivantes étrangères et régionales — cours moyen",
+    "matiere": "lv",
+    "bo": "BO n° 12 du 19 mars 2026",
+    "classes2026": [
+      "CM1"
+    ],
+    "nouveauEn": [
+      "CM1"
+    ],
+    "pdf": "https://www.education.gouv.fr/sites/default/files/document/Annexe%202%20%E2%80%93%20Programme%20de%20langues%20vivantes%20%C3%A9trang%C3%A8res%20et%20r%C3%A9gionales%20pour%20les%20classes%20de%20cours%20moyen%20(cycle%203)-481190.pdf"
+  },
+  {
+    "id": "lv-c3-2020",
+    "titre": "Langues vivantes étrangères ou régionales cycle 3 (2020)",
+    "matiere": "lv",
+    "bo": "BO n° 31 du 30 juillet 2020",
+    "classes2026": [
+      "CM2"
+    ],
+    "nouveauEn": [],
+    "pdf": "https://eduscol.education.gouv.fr/media/100806/download?attachment"
+  },
+  {
+    "id": "lve-6e-2025",
+    "titre": "Langues vivantes étrangères — collège",
+    "matiere": "lv",
+    "bo": "BO n° 22 du 29 mai 2025",
+    "classes2026": [
+      "6e"
+    ],
+    "nouveauEn": [],
+    "pdf": "https://www.education.gouv.fr/bo/2025/Hebdo22/MENE2504621A"
+  },
+  {
+    "id": "lvr-6e-2026",
+    "titre": "Langues vivantes régionales — collège",
+    "matiere": "lv",
+    "bo": "BO n° 21 du 21 mai 2026",
+    "classes2026": [
+      "6e"
+    ],
+    "nouveauEn": [
+      "6e"
+    ],
+    "pdf": "https://www.education.gouv.fr/bo/2026/Hebdo21/MENE2602909A"
+  }
+]

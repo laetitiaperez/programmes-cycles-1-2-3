@@ -1,0 +1,11 @@
+[
+  {"id": "PS", "cycle": 1},
+  {"id": "MS", "cycle": 1},
+  {"id": "GS", "cycle": 1},
+  {"id": "CP", "cycle": 2},
+  {"id": "CE1", "cycle": 2},
+  {"id": "CE2", "cycle": 2},
+  {"id": "CM1", "cycle": 3},
+  {"id": "CM2", "cycle": 3},
+  {"id": "6e", "cycle": 3}
+]
