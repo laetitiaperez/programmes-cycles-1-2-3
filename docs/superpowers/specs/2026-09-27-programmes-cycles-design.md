@@ -50,9 +50,10 @@ Au lieu de suivre la structure des textes (cycle → matière → contenus), le 
 1. **Condenser les phrases, garder les termes officiels mot pour mot.** Aucun synonyme pour un terme du programme.
 2. Balisage des mots-clés dans le texte : `[[terme officiel]]` → affiché surligné, indexé dans le Lexique et la recherche.
 3. **Ne jamais répéter** ce qu'une étape antérieure ou le socle a déjà dit.
-4. Supprimer la paraphrase, les formules introductives, les exemples non essentiels.
-5. Chaque étape cite sa source (id du texte ; page du PDF si possible).
-6. En cas de doute sur une interprétation : noter dans `NOTES.md` (section « À vérifier ») plutôt que trancher silencieusement.
+4. Supprimer la paraphrase et les formules introductives.
+5. **Conserver les exemples des programmes** quand ils illustrent une notion, une démarche ou une situation d'apprentissage (utiles pour les épreuves du CRPE) : ils sont saisis comme étapes de type `exemple`, formulés au plus près du texte officiel. Seuls les exemples qui répètent strictement un exemple déjà cité sont omis.
+6. Chaque étape cite sa source (id du texte ; page du PDF si possible).
+7. En cas de doute sur une interprétation : noter dans `NOTES.md` (section « À vérifier ») plutôt que trancher silencieusement.
 
 ## 4. Modèle de données
 
@@ -98,7 +99,7 @@ Fichiers JSON statiques dans `data/`.
   }]
 }
 ```
-- `type` ∈ `competence` | `attendu` | `notion` | `repere` | `crpe` (encadré « à retenir pour le CRPE », rédigé par nous et visuellement distinct du contenu officiel).
+- `type` ∈ `competence` | `attendu` | `notion` | `repere` | `exemple` | `crpe` (encadré « à retenir pour le CRPE », rédigé par nous et visuellement distinct du contenu officiel).
 - `socle` est optionnel. `etapes` est trié dans l'ordre des classes.
 - Les ids de `classes` doivent exister dans `classes.json` ; les `sources` doivent exister dans `textes.json`.
 
@@ -126,6 +127,7 @@ Page unique `index.html` + `app.js` + `style.css`, sans framework ni build.
 - Lien PDF officiel sur chaque texte cité.
 - Encadré « Ce qui change en 2026-27 » en tête de chaque cycle (généré depuis `textes.json`).
 - Encadrés `crpe` distincts du contenu officiel.
+- Exemples (`exemple`) affichés en retrait, repliables ; masquables via le filtre Type.
 - Mots-clés surlignés.
 - Mode clair/sombre (préférence système + bascule).
 
