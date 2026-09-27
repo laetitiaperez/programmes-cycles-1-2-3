@@ -1,0 +1,2139 @@
+{
+ "id": "francais",
+ "nom": "Français",
+ "nomMaternelle": "Le développement et la structuration du langage oral et écrit",
+ "intentions": "Maternelle : compréhension et usage du langage ; [[vocabulaire]] prioritaire ; passage progressif de l'oral à l'écrit. Cycle 2 : construire les fondements de la langue ; [[apprendre à lire]] est l'objectif central ; cinq [[activités langagières]] : comprendre un énoncé oral, parler en continu, parler en interaction, écrire, lire ; 10 h hebdomadaires. Cycle 3 : viser l'[[autonomie]] ; la [[compréhension]] est l'objectif central ; perspective « Découvrir – Jouer ».",
+ "domaines": [
+  {
+   "id": "lecture",
+   "nom": "Lecture",
+   "fils": [
+    {
+     "id": "phonologie",
+     "nom": "Conscience phonologique et principe alphabétique",
+     "etapes": [
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "notion",
+       "texte": "Deux grandes acquisitions pour lire et écrire : la [[conscience phonologique]] (manipuler et isoler les unités sonores : syllabe, attaque, rime, [[phonème]]) et le [[principe alphabétique]] (lien lettres/sons). Progression : du mot à la [[syllabe]] puis au phonème ; séances courtes, structurées, répétées dès la PS.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 13
+      },
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Identifier les sons de la langue ; identifier un mot dans une phrase ; [[scander les syllabes]] d'un mot ; dire des comptines courtes à phonèmes proches.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 13
+      },
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "exemple",
+       "texte": "Frapper les syllabes de son prénom dans ses mains ; localiser la source d'un son familier.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 13
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Manipuler les syllabes d'un mot (ajout, suppression, permutation, répétition, fusion, substitution) ; entendre, discriminer des phonèmes ; à l'oral et sans support écrit, dénombrer et classer les mots selon leur nombre de syllabes.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 14
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Repérer et produire des [[rimes]] et des [[assonances]] ; entendre, discriminer, manipuler des phonèmes ; localiser un phonème dans un mot ; différencier les sons proches (on/en/un).",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 14
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "exemple",
+       "texte": "Fusionner l'attaque de POISSON et la finale de SOURIS → pseudo-mot POIRIS ; trouver l'intrus à l'initiale : sac/Sacha/cartable.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 14
+      }
+     ]
+    },
+    {
+     "id": "lettres",
+     "nom": "Connaître les lettres (nom, forme, son)",
+     "etapes": [
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Reconnaître et nommer certaines lettres de son prénom écrit en [[capitales]].",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 13
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Nommer les lettres de son prénom et de mots connus ; correspondance entre lettres scriptes majuscules/minuscules et [[cursives]] minuscules ; donner la valeur sonore de quelques lettres (voyelles).",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 14
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "attendu",
+       "texte": "+ Connaître le [[nom des lettres]] de l'alphabet et leur [[valeur sonore]] (hormis les occlusives) ; connaître les trois graphies d'une lettre (capitale, script, cursive) ; distinguer les lettres visuellement proches (b/d, p/q) grâce à la cursive.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 14
+      }
+     ]
+    },
+    {
+     "id": "decodage",
+     "nom": "Identifier les mots : décodage",
+     "etapes": [
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2"
+       ],
+       "type": "notion",
+       "texte": "Trois entrées menées en parallèle : l'apprentissage puis l'automatisation du [[décodage]], la [[lecture à voix haute]], la [[compréhension]]. Enseigner les [[correspondances graphophonémiques (CGP)]] de façon systématique, intensive, structurée et quotidienne ; ne donner à lire que des textes [[déchiffrables]] (mots-outils réduits au minimum) ; faire écrire systématiquement les CGP étudiées.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 4
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "repere",
+       "texte": "Cadence soutenue : environ deux CGP par semaine. Manuel de lecture recommandé pour garantir la programmation des CGP.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 5
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "attendu",
+       "texte": "Fin période 1 : décoder et encoder 12 à 15 [[CGP]] régulières. Milieu d'année : 25 à 30 CGP ; prendre conscience des lettres finales muettes ; déchiffrer 15 à 30 mots/min. Fin d'année : [[30 mots par minute]] au minimum sans préparation, 50 après préparation.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 5
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "exemple",
+       "texte": "Automatiser la lecture de mots fréquents et transparents (le, la, ami, rire, lune) ; reconnaître des mots de même préfixe, radical ou suffixe.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 5
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "attendu",
+       "texte": "+ Automatiser le décodage des CGP du CP ; en fin d'année, décoder toutes les CGP, y compris les plus complexes ; identifier directement les mots courants.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 6
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "exemple",
+       "texte": "Lire des pseudo-mots (doir, stag, choust) ; lire « ils chantent » sans vocaliser les lettres muettes ; listes analogiques ça/glaçon/garçon (valeurs positionnelles de c, g, s).",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 6
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "attendu",
+       "texte": "+ Avoir automatisé toutes les CGP ; lire un texte nouveau par un décodage rapide ; utiliser la [[voie graphophonologique]] pour les mots inconnus sans perdre en fluidité.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 7
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "notion",
+       "texte": "La lecture vise toujours l'automatisation du déchiffrage ; mémoriser de plus en plus de mots fréquents et irréguliers (CM1).",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 4
+      }
+     ]
+    },
+    {
+     "id": "fluence",
+     "nom": "Lire à voix haute : fluence et expressivité",
+     "etapes": [
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "attendu",
+       "texte": "[[Fluence]] : 30 mots/min sans préparation, 50 après préparation. Identifier la ponctuation sur un texte préparé ; amorcer une lecture expressive.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 5
+      },
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2"
+       ],
+       "type": "repere",
+       "texte": "Chaque élève est évalué régulièrement en fluence (syllabes, mots, puis textes) ; le professeur mesure la vitesse de lecture pour constituer des groupes.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 3
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "attendu",
+       "texte": "[[70 mots par minute]] ; respecter la ponctuation et les [[groupes de souffle]] ; lire de manière expressive.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 6
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "attendu",
+       "texte": "[[90 mots par minute]] ; respecter ponctuation et [[liaisons]] ; lecture expressive manifestant la compréhension.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 7
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "exemple",
+       "texte": "Lire une scène de théâtre en incarnant un personnage.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "attendu",
+       "texte": "[[110 mots par minute]] ; lire sans effort un texte d'une page ; lire à voix haute, avec aisance et [[expressivité]], un texte court travaillé en amont ; gérer l'intensité de sa voix (volume, débit).",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 4
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "attendu",
+       "texte": "[[120 mots par minute]] ; texte long après préparation (ponctuation, liaisons, unités syntaxiques) ; travailler la [[mise en voix]] (intonation, effets).",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 4
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "attendu",
+       "texte": "[[130 mots par minute]] ; [[phrasé]] et [[prosodie]] adaptés ; lire un texte de 10 à 20 lignes en regardant l'auditoire ; rendre émotions, intentions de l'auteur, dialogues.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 5
+      }
+     ]
+    },
+    {
+     "id": "comprehension",
+     "nom": "Comprendre un texte",
+     "etapes": [
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "notion",
+       "texte": "Au moins une fois par jour, le professeur lit une histoire ou un texte documentaire et [[enseigne la compréhension]] : préparation en amont (contexte, lexique), questionnement ouvert puis précis (explicite et implicite), [[restitution]] variée (dessin, jeu théâtral, [[marottes]], reformulation), trace conservée.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 16
+      },
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Reconnaître et situer un personnage dans les illustrations ; comprendre des histoires liées à des expériences connues (le bain, le coucher).",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 17
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Identifier personnage principal et secondaires ; histoires à [[structure répétitive]] ; commencer à comprendre l'[[implicite]] (émotions, sentiments).",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 17
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "exemple",
+       "texte": "Raconter une histoire entendue plusieurs fois avec un support (marotte, boîte à histoires, tapis d'histoires).",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 17
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Construire les caractéristiques des [[personnages archétypaux]] (loup, ogre, sorcière, fée…) ; comprendre émotions, intentions, sentiments ; relier lecture et expérience.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 17
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "exemple",
+       "texte": "Raconter une histoire connue dans son intégralité et sans support.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 17
+      },
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2"
+       ],
+       "type": "notion",
+       "texte": "Séances quotidiennes de compréhension sur des textes plus longs et résistants que ce que l'élève lit seul (lecture du professeur), puis dès la 3e période de CP sur des textes qu'il a lui-même décodés. Leviers : lexique, [[chaîne anaphorique]], [[inférences]], références culturelles ; [[justifier ses réponses par un retour au texte]].",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 4
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "attendu",
+       "texte": "Dégager le sens global ; chaîne anaphorique ; [[inférences simples]] ; lire et comprendre seul un texte narratif, informatif ou prescriptif d'[[une dizaine de lignes]].",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 5
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "exemple",
+       "texte": "Relier le lion / il / le fauve / le roi de la savane ; « J'ai pris mon parapluie » → le temps est pluvieux.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 5
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "attendu",
+       "texte": "+ Stratégies pour élucider les mots inconnus ; résoudre des ambiguïtés ; texte d'[[une quinzaine de lignes]] ; donner un titre, résumer oralement.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 6
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "attendu",
+       "texte": "+ Types narratif, informatif, prescriptif ; implicite appuyé sur indices et connaissances ; texte d'[[une vingtaine de lignes]] ; stratégies en cas de non-compréhension (relecture, dictionnaire…).",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 7
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "[[Stratégies de compréhension]] ; repérer les informations [[explicites]] et pointer les informations implicites ; distinguer théâtre, poème, texte narratif.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 4
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "+ Textes plus longs et complexes ; restituer l'essentiel (explicite + implicite) ; reconnaître et nommer les principaux [[genres littéraires]].",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 4
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ Rattacher un texte à un genre ; inférences sur de larges extraits ; liens logiques, reprises nominales ; justifier ses interprétations.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 5
+      }
+     ]
+    },
+    {
+     "id": "documents",
+     "nom": "Lire pour apprendre : supports et documents",
+     "etapes": [
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Repérer les [[outils fonctionnels]] de la classe (étiquette du prénom, emploi du temps, affiches).",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 17
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Identifier la fonction des écrits de la vie courante ; notion de [[destinataire]].",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 17
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Différencier les [[types d'écrits]] ; repérer leur structure et leur mise en page (lettre, recette, conte, documentaire) ; vocabulaire : page, paragraphe, ligne, majuscule, ponctuation.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 17
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Donner la [[nature et la source d'un document]] ; trouver des réponses dans des documents simples ; découvrir des [[documents composites]].",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 4
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "+ Rapprocher deux documents convergents de genres différents ; prélever et combiner des informations (inférences).",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 4
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ Comparer des documents de genres différents ; interpréter une [[image fixe]].",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 5
+      }
+     ]
+    },
+    {
+     "id": "lecteur",
+     "nom": "Devenir lecteur : parcours et culture littéraire",
+     "etapes": [
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "notion",
+       "texte": "Initier un [[parcours de lecteur]] : chaque jour, un temps de lecture offerte sans questionnement pour le plaisir ; textes patrimoniaux (contes, légendes, fables, poèmes), littérature de jeunesse, recettes, documentaires.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 16
+      },
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2"
+       ],
+       "type": "repere",
+       "texte": "Lire [[5 à 10 œuvres]] complètes par an (patrimoine et littérature de jeunesse) ; mise en réseau ; carnet de lecture ; fréquenter les lieux de lecture (BCD, médiathèque).",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 4
+      },
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2"
+       ],
+       "type": "exemple",
+       "texte": "Lectures fondatrices : contes d'Andersen, d'Aulnoy, Grimm, Leprince de Beaumont, Perrault ; Dickens, Carroll ; fables de La Fontaine ; récits adaptés de la mythologie.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 4
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "repere",
+       "texte": "[[Au moins sept œuvres complètes]] par an au cours moyen : en CM1, 2 œuvres du patrimoine et 5 de littérature de jeunesse.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 3
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2"
+       ],
+       "type": "notion",
+       "texte": "Perspective « [[Découvrir – Jouer]] ». Six [[entrées littéraires]] (ordre libre) : découvrir des héroïnes, des héros ; se confronter au merveilleux, à l'étrange ; imaginer et vivre d'autres vies ; comprendre et interroger la morale ; savourer le goût des mots (poésie) ; se découvrir, s'affirmer dans le rapport aux autres.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 6
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "repere",
+       "texte": "3 œuvres du patrimoine et 4 de littérature de jeunesse.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 4
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "repere",
+       "texte": "Au moins 6 œuvres : 3 du patrimoine en [[lecture intégrale]] + 3 en [[lecture cursive]] ; groupements de textes.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 5
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "notion",
+       "texte": "Cinq entrées prescrites, traitées en [[projets d'apprentissage]] : récits des origines ; poésie (mots et merveilles) ; théâtre (ruses en action) ; partir à l'aventure ; rencontrer des monstres.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 7
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ecriture",
+   "nom": "Écriture",
+   "fils": [
+    {
+     "id": "geste",
+     "nom": "Geste d'écriture et écriture cursive",
+     "etapes": [
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "notion",
+       "texte": "Distinguer entraînement au geste moteur ([[graphisme]]), geste d'écriture et production d'écrit. Posture, coordination des quatre articulations (épaule, coude, poignet, doigts), coordination œil-main. Cursive introduite en MS ou quand l'enfant est prêt.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 18
+      },
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Motricité fine, graphismes ; guider son geste par le regard ; formes de base (traits, points, boucles, cercles).",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 18
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Posture et [[préhension]] correctes ; tracer les lettres capitales ; s'initier aux tracés de la cursive.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 19
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "attendu",
+       "texte": "+ Tenir son stylo par la [[pince des doigts]] ; travailler la [[ligature]] ; tracer et enchaîner les lettres cursives ; écrire son prénom sans modèle.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 19
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Écrire en cursive tous les graphèmes étudiés en décodage et les enchaîner (syllabes, mots, phrases).",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "+ Automatiser les minuscules cursives ; 2e partie d'année : tracé des [[majuscules cursives]] par familles de gestes.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 11
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "attendu",
+       "texte": "Automatiser minuscules et majuscules cursives.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 12
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "notion",
+       "texte": "Le geste n'est pas encore automatisé (il se conquiert au cycle 4) : entraînement régulier, copie ; écrire aussi sur supports numériques, mais la maîtrise du geste cursif reste importante.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 8
+      }
+     ]
+    },
+    {
+     "id": "copie",
+     "nom": "Copie",
+     "etapes": [
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "attendu",
+       "texte": "Dès la fin de la période 1 : copier une phrase ; verbaliser des [[stratégies de copie]] (prise d'indices, mémorisation) ; fin d'année : 3 ou 4 phrases sans erreur.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 10
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "attendu",
+       "texte": "+ 4 à 5 phrases (période 1), 5 ou 6 lignes (période 3), une dizaine de lignes en fin d'année ; comparer l'efficacité des stratégies.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 11
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "attendu",
+       "texte": "+ Dizaine de lignes sans erreur, vitesse et exactitude, mises en page complexes.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 12
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "Copier et produire des textes ; acquérir des stratégies de copie.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Copier de façon lisible, régulière, soignée, sans erreur d'orthographe ou de ponctuation.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 10
+      }
+     ]
+    },
+    {
+     "id": "encodage",
+     "nom": "Encoder, écrire sous dictée",
+     "etapes": [
+      {
+       "classes": [
+        "MS",
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "Essais d'écriture et [[encodage]] de mots [[transparents]] (sans double consonne ni lettre muette), quotidiens dès la MS ; en GS, encodage en lien avec les lettres et la conscience phonologique.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 19
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Encoder des syllabes puis des mots selon la progression des CGP ; dès la fin de la 2e période, mots avec lettres muettes apprises ; fin d'année : [[dictée]] de mots et de phrases.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2"
+       ],
+       "type": "notion",
+       "texte": "La dictée est d'abord une activité d'écriture (principe alphabétique, encodage), avant d'être un outil d'évaluation ; l'erreur est source de progrès.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "+ Mots fréquents réguliers puis irréguliers ; accords dans le GN et marque -nt.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 11
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "+ Phonèmes à plusieurs graphies (/o/, /é/, /an/, /s/…) ; chaînes d'accord dans la phrase.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 12
+      }
+     ]
+    },
+    {
+     "id": "production",
+     "nom": "Produire des écrits",
+     "etapes": [
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "notion",
+       "texte": "[[Dictée à l'adulte]] dès la PS (toutes les semaines, en petits groupes) : définir l'intention d'écriture, préparer, énoncer, dicter, réviser.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 19
+      },
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Percevoir que l'[[écrit encode l'oral]] ; tracer volontairement des signes abstraits qui ne sont pas des dessins.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 20
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Comprendre que l'écrit code des sons ; proposer le contenu d'un message en dictée à l'adulte ; sens de lecture gauche-droite, haut-bas ; écrire un mot transparent avec modèle.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 20
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Segmenter l'oral (mots, syllabes, phonèmes) ; réinvestir le principe alphabétique pour produire un écrit ; comprendre qu'il existe une [[norme]] (ponctuation, majuscules) ; persévérer : préparation, énonciation, révision.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 20
+      },
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2"
+       ],
+       "type": "notion",
+       "texte": "Méthodologie : [[planification]], mise en mots avec vigilance orthographique, [[révision]]. Écrits collaboratifs dès le CP ; écrits longs de plus en plus autonomes au fil du cycle.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 10
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "attendu",
+       "texte": "Écrits courts de [[une à cinq lignes]] ; majuscule et ponctuation finale forte.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 10
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "exemple",
+       "texte": "Écrire un nouvel épisode d'un récit à structure répétitive ; « J'ai un chat. / J'ai un… ».",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 10
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "attendu",
+       "texte": "+ Connecteurs ; brouillons ; fin d'année : texte de [[six ou sept phrases]] cohérent.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 11
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "attendu",
+       "texte": "+ Texte d'[[une dizaine de lignes]] de différents types ; connecteurs temporels et logiques ; relecture méthodique.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 12
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "notion",
+       "texte": "Écrits courts (une à cinq phrases) et longs ; [[brouillon]] systématique ; réécriture ; projets d'écriture créative ; normalisation centrée sur l'accord dans le GN, l'accord sujet-verbe et l'attribut du sujet.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Situations d'écriture : [[raconter, expliquer]] ; cohérence textuelle ; améliorer son texte avec l'enseignant et les pairs.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "+ [[Décrire, dialoguer]] ; appliquer la cohérence textuelle ; autoévaluation.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ [[Résumer, synthétiser]] ; argumenter et justifier ; hiérarchiser des idées.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 10
+      }
+     ]
+    },
+    {
+     "id": "ecrire-apprendre",
+     "nom": "Écrire pour réfléchir et apprendre",
+     "etapes": [
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Écrits de travail : repérer et trier l'information ; écrits réflexifs courts (point de vue) ; reformuler l'essentiel d'une leçon.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "+ Comparer deux documents ; reformuler une leçon de manière schématique.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ Résumer, synthétiser ; s'approprier seul l'essentiel d'une leçon.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 10
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "oral",
+   "nom": "Oral",
+   "fils": [
+    {
+     "id": "syntaxe-orale",
+     "nom": "Syntaxe orale (maternelle)",
+     "etapes": [
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Pronoms il/elle puis je ; présent puis système à trois temps (présent / passé composé / futur proche) ; premiers connecteurs et/et puis.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Pronoms tu, on ; imparfait, passé composé, [[conditionnel]] ; connecteurs temporels et spatiaux ; subordination (parce que, que, qui).",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Nous, vous ; imparfait / plus-que-parfait ; [[futur simple]], futur antérieur ; [[introducteurs de complexité]] (où, quand, pour que, si, comme).",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 10
+      }
+     ]
+    },
+    {
+     "id": "articuler",
+     "nom": "Articuler distinctement (maternelle)",
+     "etapes": [
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Articuler les couples de consonnes proches t/k, f/s, m/n.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 11
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Nasales é/in, a/an, o/on ; f/v, s/z, p/b, t/d, k/g.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 11
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "attendu",
+       "texte": "+ ch/s, ch/j, ch/z ; doubles consonnes br/cr/bl/pl. En fin de maternelle : prononcer les [[trente-six phonèmes]] du français.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 11
+      }
+     ]
+    },
+    {
+     "id": "ecouter",
+     "nom": "Écouter pour comprendre",
+     "etapes": [
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Comprendre un message de quelques minutes et mémoriser les informations importantes ; réaliser une consigne, une recette, une règle du jeu.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 13
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "+ [[Attention active]] pour repérer, classer, ordonner les informations.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 14
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "+ Relier plusieurs informations d'un message de plus en plus long (5 minutes maximum).",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 15
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Posture d'auditeur : [[écoute active]] orientée par un but ; comprendre un message d'un média (interview, reportage) ; identifier les genres de discours.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 11
+      }
+     ]
+    },
+    {
+     "id": "dire",
+     "nom": "Dire pour être compris : produire des discours",
+     "etapes": [
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Entrer en communication ; dire ce qu'on fait, ce qu'on a fait ; oraliser collectivement un texte mémorisé.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 12
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Dire ce qu'on va faire et comment ; oraliser un court texte mémorisé.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 12
+      },
+      {
+       "classes": [
+        "MS",
+        "GS"
+       ],
+       "type": "repere",
+       "texte": "Mémorisation d'un texte par semaine (chants, comptines, poésies).",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 12
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ [[Langage d'évocation]] : se faire comprendre d'un adulte qui ne connaît pas la situation ; émettre une hypothèse.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 12
+      },
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2"
+       ],
+       "type": "repere",
+       "texte": "Une dizaine de [[poèmes]] mémorisés par an ; séances quotidiennes d'oral ; trois activités : comprendre, parler en continu, parler en interaction.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 13
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Brève production orale pour rapporter, raconter, décrire, expliquer ; oraliser un texte mémorisé.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 14
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "+ Utiliser tous les temps verbaux ; évaluer sa prestation selon des critères.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 14
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "+ Argumenter, justifier ; exposé de quelques minutes ; expliquer un raisonnement en maths ou en sciences.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 15
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Production orale claire et organisée pour raconter, expliquer, [[argumenter]], justifier ; lecture expressive devant un public ; [[l'oral comme outil réflexif]].",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 11
+      }
+     ]
+    },
+    {
+     "id": "echanges",
+     "nom": "Participer à des échanges",
+     "etapes": [
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Respecter les règles d'échange ; prendre conscience des [[niveaux de langue]].",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 14
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "+ Adapter le [[registre de langue]] (familier, courant, soutenu).",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 14
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "+ Tenir compte de ce qui a été dit ; jeux de rôles.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 15
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Codes de la communication ; construire une analyse collective en interaction ; porter un [[regard critique sur l'oral produit]] ; débattre.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 11
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vocabulaire",
+   "nom": "Vocabulaire",
+   "fils": [
+    {
+     "id": "enrichir",
+     "nom": "Enrichir son vocabulaire",
+     "etapes": [
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "notion",
+       "texte": "[[L'enseignement du vocabulaire est prioritaire]] à l'école maternelle : explicite, progressif et structuré ; [[2 500 mots]] en fin de GS. Quatre étapes : apporter des mots nouveaux, structurer le lexique, faire mémoriser, réutiliser. [[Réseaux lexicaux]] (verbes, noms, adjectifs, mots grammaticaux, expressions).",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "PS",
+        "MS"
+       ],
+       "type": "repere",
+       "texte": "[[Deux corpus]] de mots par période.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "repere",
+       "texte": "Trois corpus par période.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "repere",
+       "texte": "[[Quatre corpus]] par période.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 16
+      },
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2"
+       ],
+       "type": "notion",
+       "texte": "Enseignement quotidien, en séances dédiées ; passer d'un [[savoir passif]] à un [[savoir actif]] ; privilégier mots fréquents et termes [[polysémiques]].",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 15
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "repere",
+       "texte": "Cinq corpus par période.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 16
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "repere",
+       "texte": "Six corpus par période.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 16
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "notion",
+       "texte": "Trois étapes : rencontre en contexte, étude systématique (structuration, catégorisation), réemploi surtout à l'écrit ; vocabulaire des disciplines ; outil personnel de collecte ; [[listes de fréquence]].",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 13
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Choisir seul la stratégie pour comprendre un mot inconnu (déduire, vérifier, rechercher) ; [[étymologie]].",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 15
+      }
+     ]
+    },
+    {
+     "id": "relations",
+     "nom": "Relations entre les mots",
+     "etapes": [
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Organiser les mots en [[catégories]] ; trouver un intrus.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Mots polysémiques ; synonymes ; comprendre un mot nouveau par un mot connu (animal/animalerie).",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Sens propre / [[sens figuré]] et [[dérivations]] (sans que ces notions soient enseignées) ; [[hyperonymes]] ; inférer le sens d'un mot.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "exemple",
+       "texte": "Dévorer un gâteau / dévorer un livre ; arroser → arrosage ; véhicule, hyperonyme de voiture, bus, vélo.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Répertoires par thème, classe, famille, analogie morphologique ; [[champ lexical]] ; [[synonymes]] et [[antonymes]] ; sens des principaux affixes (dé-, re-, in-, -eur…).",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 16
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "+ Hiérarchiser termes génériques et spécifiques ; niveaux de langue ; sens propre / figuré ; trier les dérivés selon [[préfixes]] et [[suffixes]].",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 17
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "exemple",
+       "texte": "Aliment > laitage > fromage > gruyère ; avoir une peur bleue, prendre ses jambes à son cou.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 17
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "+ Gradation (crainte > peur > épouvante) ; dérivations et classe grammaticale (observation, observer, observable).",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 18
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "Relations morphologiques et sémantiques ; synonymie, antonymie ; polysémie dans un contexte non référentiel (CM2).",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 14
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ Mots [[simples, dérivés et composés]] ; composer et décomposer des mots.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 15
+      }
+     ]
+    },
+    {
+     "id": "orthographe-lexicale",
+     "nom": "Orthographe lexicale",
+     "etapes": [
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Mots réguliers fréquents ; accents ; valeur de s, c, g ; m devant m, b, p ; lettre muette finale expliquée par un mot de la famille (chat/chaton).",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 17
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "+ Mots irréguliers fréquents ; mots invariables ; anticiper une lettre muette finale (blanc/blanche).",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 18
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "+ Raisonnement morphologique (radical, préfixe, suffixe) : beau → beauté.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 19
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Écrire correctement les mots fréquents en s'appuyant sur les régularités et la formation des mots ; en 6e, en situation autonome.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 14
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "grammaire",
+   "nom": "Grammaire et orthographe",
+   "fils": [
+    {
+     "id": "phrase",
+     "nom": "La phrase : types et formes",
+     "etapes": [
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Notion de [[phrase]] et ses trois marqueurs (majuscule, ponctuation forte, sens) ; trois [[types de phrases]] (déclarative, interrogative, impérative) ; formes [[négative]] et [[exclamative]].",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 20
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "+ Reconnaître et utiliser les types ; effectuer des transformations.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 21
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "+ Produire les types et formes ; [[discours rapporté]] (guillemets).",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 22
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "+ Comprendre leurs effets dans un texte ; réalisations du type interrogatif (inversion, est-ce que, intonation).",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 17
+      },
+      {
+       "classes": [
+        "CM2",
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Consolider sur des corpus plus complexes.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 18
+      }
+     ]
+    },
+    {
+     "id": "constituants",
+     "nom": "Constituants de la phrase simple",
+     "etapes": [
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2"
+       ],
+       "type": "notion",
+       "texte": "Deux constituants obligatoires : [[groupe sujet (GS)]] et [[groupe verbal]] (verbe + compléments du verbe : COD, COI, attribut), reconnus sans distinguer les compléments entre eux. Les compléments circonstanciels sont réservés au cycle 3.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 19
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "exemple",
+       "texte": "[[Manipulations]] : La maîtresse raconte une histoire aux enfants → Elle la raconte aux enfants (substitution) ; Tous les jours, elle mange à la cantine (déplacement).",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 21
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Types de sujets ; distinguer [[complément d'objet]] et [[complément circonstanciel]] (repéré, facultatif) ; COD / COI dans des phrases prototypiques ; manipulations : déplacement, suppression, substitution, addition, encadrement.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 17
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "+ [[Sujet inversé]] ; [[attribut du sujet]] ; CC de temps, de lieu, de cause.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 19
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ Tous les constituants ; opposer attribut du sujet et COD ; construction du verbe.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 20
+      }
+     ]
+    },
+    {
+     "id": "classes",
+     "nom": "Classes de mots (nature) et fonctions",
+     "etapes": [
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Constituer des corpus par classe : noms, verbes, déterminants, adjectifs, pronoms personnels.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 20
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "+ Nommer : déterminant, nom commun, [[nom propre]], adjectif, verbe, pronom personnel sujet.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 21
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "+ [[Adverbe]] ; mots variables / invariables.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 22
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "+ Notions de [[nature]] et [[fonction]] ; déterminants (articles définis, indéfinis, possessifs, démonstratifs) ; conjonctions de coordination ; pronoms personnels sujets / compléments.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 17
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "repere",
+       "texte": "Terminologie : nature/fonction ; sujet, COD, COI, attribut du sujet, complément circonstanciel, complément du nom, épithète ; proposition, juxtaposition, coordination, subordination.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 16
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "+ [[Prépositions]] ; [[conjonctions de subordination]].",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 19
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ Fonction des pronoms personnels ; lien pronom-[[antécédent]].",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 20
+      }
+     ]
+    },
+    {
+     "id": "groupe-nominal",
+     "nom": "Groupe nominal et chaîne d'accords",
+     "etapes": [
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Masculin/féminin, singulier/pluriel ; se familiariser avec la [[chaîne d'accords]] (déterminant/nom/adjectif).",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 20
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "exemple",
+       "texte": "un petit garçon → une petite fille ; une olive / des olives.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 20
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "+ Reconnaître le [[GN]] ; marques -s et -e.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 21
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "+ Pluriels irréguliers (-x, -al/-aux) ; féminins audibles (lecteur/lectrice).",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 22
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "+ [[Nom noyau]] (donneur d'accord) ; Dét. + Nom (+ Adj.) ; notion d'[[épithète]] ; systématiser la chaîne d'accords.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 18
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "+ Expansion du nom ; [[complément du nom]] ; épithète / attribut.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 19
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ Adjectif épithète vs GN prépositionnel complément du nom.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 20
+      }
+     ]
+    },
+    {
+     "id": "accord-sujet-verbe",
+     "nom": "Accord sujet-verbe",
+     "etapes": [
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "S'initier à la relation sujet-verbe par le sens et les transformations.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 20
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "exemple",
+       "texte": "La voiture roule → Les voitures roulent ; nous → -ons, vous → -ez, ils → -ent.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 20
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "Identifier la relation sujet-verbe par les transformations de temps et de personne.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 21
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "+ Nom noyau du sujet ; accord du [[participe passé]] avec [[être]] ; distinguer variations du verbe et du nom (il élève / une élève).",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 18
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "+ Sujets inversés ; chaîne sujet / attribut ; participe passé avec [[avoir]] : accord avec le [[COD]] (pronom personnel antéposé).",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 19
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Raisonner sur l'accord sujet/verbe ; maîtriser les accords du participe passé.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 20
+      }
+     ]
+    },
+    {
+     "id": "conjugaison",
+     "nom": "Conjugaison",
+     "etapes": [
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Être et avoir au [[présent]] ; observer les formes verbales fréquentes.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 20
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "Présent, [[imparfait]], [[futur]], [[passé composé]] : être, avoir, 1er groupe ; [[radical]] et [[terminaison]] ; trouver l'infinitif.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 21
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "+ Verbes irréguliers du 3e groupe : faire, aller, dire, venir, pouvoir, voir, vouloir, prendre.",
+       "sources": [
+        "fr-c2-2024"
+       ],
+       "page": 22
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "+ 2e groupe ; [[marque de temps]] et [[marque de personne]] (imparfait -ai-/-i-, futur -r-) ; passé composé = auxiliaire + participe passé ; radicaux variables du 1er groupe (-yer, -eler, -cer, -ger…).",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 18
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "+ [[Passé simple]] et [[plus-que-parfait]].",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 19
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ [[Impératif présent]] et [[conditionnel présent]] ; initiation aux [[valeurs des temps]] (temps chronologique vs temps verbal).",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 21
+      }
+     ]
+    },
+    {
+     "id": "phrase-complexe",
+     "nom": "Phrase complexe",
+     "etapes": [
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "Distinguer [[phrase simple]] et [[phrase complexe]] en repérant les verbes conjugués.",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 19
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ Notion de [[proposition]] ; [[juxtaposition]], [[coordination]], [[subordination]].",
+       "sources": [
+        "fr-c3-2025"
+       ],
+       "page": 20
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

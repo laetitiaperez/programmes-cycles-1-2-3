@@ -3,7 +3,7 @@
 # Usage : scripts/fetch-sources.sh
 set -eu
 cd "$(dirname "$0")/.."
-mkdir -p sources/pdf sources/txt
+mkdir -p sources/pdf sources/txt sources/raw
 while IFS="$(printf '\t')" read -r id url; do
   [ -z "$id" ] && continue
   pdf="sources/pdf/$id.pdf"
@@ -15,5 +15,6 @@ while IFS="$(printf '\t')" read -r id url; do
     continue
   fi
   pdftotext -layout "$pdf" "sources/txt/$id.txt"
+  pdftotext -raw "$pdf" "sources/raw/$id.txt"
   echo "OK $id ($(grep -c . "sources/txt/$id.txt") lignes)"
 done < sources/urls.tsv
