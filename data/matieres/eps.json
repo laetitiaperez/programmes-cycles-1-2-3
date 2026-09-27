@@ -1,0 +1,633 @@
+{
+ "id": "eps",
+ "nom": "Éducation physique et sportive",
+ "nomMaternelle": "Agir, s’exprimer, comprendre à travers les activités physiques",
+ "intentions": "Maternelle : développement moteur, sensoriel, affectif, cognitif et relationnel ; un [[répertoire moteur de base]] ; égalité filles-garçons. Élémentaire (programmes 2026) : discipline fondamentale ; quatre domaines complémentaires de la motricité : se déplacer pour agir dans l'espace et sur une durée ; construire des équilibres pour s'adapter à des environnements inhabituels ; s'exprimer avec son corps pour éprouver et partager des émotions ; coopérer et s'opposer pour apprendre à jouer en respectant les règles et les autres. Programme 2020 (CE1-CE2, CM2-6e) : former « un citoyen lucide, autonome, physiquement et socialement éduqué ».",
+ "domaines": [
+  {
+   "id": "cadre",
+   "nom": "Cadre et finalités",
+   "fils": [
+    {
+     "id": "organisation",
+     "nom": "Organisation, horaires, savoirs fondamentaux",
+     "etapes": [
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "repere",
+       "texte": "Éducation physique [[quotidienne]], d'une durée effective de [[trente à quarante-cinq minutes]] ; au minimum six à huit séances par activité ; quatre sous-domaines : se déplacer, construire des équilibres, s'exprimer avec son corps, s'opposer.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 21
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "repere",
+       "texte": "[[108 heures]] d'EPS annuelle ; [[savoirs sportifs fondamentaux]] : [[savoir nager]] et [[savoir rouler à vélo]] ; quatre domaines « passage obligé » ; deux degrés d'acquisition (CP, cours élémentaire) ; exemples de réussite indicatifs.",
+       "sources": [
+        "eps-c2-2026"
+       ],
+       "page": 2
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "notion",
+       "texte": "Objectifs de l'EPS : développer sa motricité ; renforcer son « [[capital santé]] » ; culture physique, sportive et artistique ; partager des règles et des rôles ; méthodes et outils de mesure ; école inclusive ; égalité filles-garçons.",
+       "sources": [
+        "eps-c2-2026"
+       ],
+       "page": 2
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "notion",
+       "texte": "Programme 2020 : cinq compétences générales et quatre [[champs d’apprentissage]] (performance, déplacements en environnements variés, prestation artistique et/ou acrobatique, affrontement) ; [[APSA]] ; « une attention particulière est portée au savoir nager ».",
+       "sources": [
+        "eps-c2-2020"
+       ],
+       "page": 35
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "repere",
+       "texte": "Mêmes quatre domaines que le cycle 2 (108 heures, savoir nager, savoir rouler à vélo) ; « consolidation des acquisitions » ; la 6e est traitée à part (préparation du cycle 4).",
+       "sources": [
+        "eps-c3-2026"
+       ],
+       "page": 2
+      },
+      {
+       "classes": [
+        "CM2",
+        "6e"
+       ],
+       "type": "attendu",
+       "texte": "Valider l'[[attestation scolaire du savoir nager]] (ASSN), conformément à l'arrêté du 9 juillet 2015.",
+       "sources": [
+        "eps-c3-2020"
+       ],
+       "page": 58
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "deplacer",
+   "nom": "Se déplacer : courir, sauter, lancer, s'orienter",
+   "fils": [
+    {
+     "id": "courir-sauter-lancer",
+     "nom": "Courir, sauter, lancer",
+     "etapes": [
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Manipuler et lancer des objets ; courir de manière variée ; sauter sans élan un obstacle.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 22
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Lancer loin ; courir vite en ligne droite ; sauter sans élan plusieurs obstacles.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 22
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Lancer loin et avec précision ; courir de plus en plus longtemps ; courir puis sauter haut ou loin après une impulsion sur un pied.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 22
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Courir vite de façon équilibrée (signaux de départ) ; courir et franchir des obstacles horizontaux ; courir longtemps (« [[contrats de course]] ») ; varier les impulsions ; lancer loin de manière variée.",
+       "sources": [
+        "eps-c2-2026"
+       ],
+       "page": 5
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "attendu",
+       "texte": "[[Courir, sauter, lancer à des intensités et des durées variables]] ; différencier courir vite / courir longtemps, lancer loin / lancer précis, sauter haut / sauter loin ; viser une performance mesurée ; activités athlétiques aménagées.",
+       "sources": [
+        "eps-c2-2020"
+       ],
+       "page": 36
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Courir vite du départ jusqu'à l'arrivée ; se relayer ; franchir obstacles horizontaux et verticaux ; [[course d’élan réduite]] et impulsion sur le [[pied d’appel]].",
+       "sources": [
+        "eps-c3-2026"
+       ],
+       "page": 3
+      },
+      {
+       "classes": [
+        "CM2",
+        "6e"
+       ],
+       "type": "attendu",
+       "texte": "Aller plus vite, plus longtemps, plus haut, plus loin ; combiner course, saut, lancer pour la meilleure [[performance cumulée]] ; mesurer, enregistrer, représenter les performances ; rôles de chronométreur et d'observateur.",
+       "sources": [
+        "eps-c3-2020"
+       ],
+       "page": 57
+      }
+     ]
+    },
+    {
+     "id": "orientation",
+     "nom": "S'orienter et mesurer ses résultats",
+     "etapes": [
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "Se situer dans un espace proche puis élargi grâce à des indices (éléments remarquables sur des photographies).",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 22
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Repérer des éléments visibles sur un plan ; trouver une balise ; explorer des outils de mesure concrets.",
+       "sources": [
+        "eps-c2-2026"
+       ],
+       "page": 6
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "Activités d'orientation dans des espaces de plus en plus vastes et de moins en moins connus, avec des codes de plus en plus symboliques.",
+       "sources": [
+        "eps-c2-2020"
+       ],
+       "page": 37
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "S'orienter dans un espace partiellement connu ; mesurer avec précision une action motrice sans porter de jugement de valeur.",
+       "sources": [
+        "eps-c3-2026"
+       ],
+       "page": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "equilibres",
+   "nom": "Construire des équilibres, environnements inhabituels",
+   "fils": [
+    {
+     "id": "equilibres",
+     "nom": "Équilibres terrestres et engins",
+     "etapes": [
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Nouveaux équilibres : tourner, grimper, se déplacer à quatre pattes ; tricycle, draisienne.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 23
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Marcher à reculons, se suspendre ; échasses, patins, vélo ; comprendre l'intérêt des règles de sécurité.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 23
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Combiner des actions (sauter puis quadrupédie, se suspendre, se lâcher) ; vélo à deux roues, skis ; parade.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 23
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Roulade avant ; saut corps droit ; renversement (quadrupédie) ; équilibre sur un banc ; grimper (moins de trois mètres) ; rouler et glisser en ligne droite (vélo, roller).",
+       "sources": [
+        "eps-c2-2026"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "attendu",
+       "texte": "[[Réaliser un parcours en adaptant ses déplacements à un environnement inhabituel]] ; roule et glisse, escalade, randonnée ; reconnaître une situation à risque.",
+       "sources": [
+        "eps-c2-2020"
+       ],
+       "page": 37
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Roulade arrière ; position renversée ; corps suspendu ; circuler, glisser seul et en groupe avec un moyen de locomotion.",
+       "sources": [
+        "eps-c3-2026"
+       ],
+       "page": 4
+      },
+      {
+       "classes": [
+        "CM2",
+        "6e"
+       ],
+       "type": "attendu",
+       "texte": "Parcours dans plusieurs environnements inhabituels ; règles de sécurité ; identifier la personne à alerter.",
+       "sources": [
+        "eps-c3-2020"
+       ],
+       "page": 58
+      }
+     ]
+    },
+    {
+     "id": "aquatique",
+     "nom": "Milieu aquatique : vers le savoir nager",
+     "etapes": [
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "notion",
+       "texte": "Découverte du milieu aquatique et [[aisance aquatique]] visées avant l'âge de 7 ans (note de service du 28-2-2022).",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 23
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "Entrer et sortir seul de l'eau, se déplacer les épaules immergées, immerger la tête plusieurs secondes.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 23
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Explorer le milieu aquatique : entrer et sortir seul, s'éloigner du bord, mettre la tête sous l'eau en bloquant sa respiration.",
+       "sources": [
+        "eps-c2-2026"
+       ],
+       "page": 10
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "attendu",
+       "texte": "[[Se déplacer dans l’eau sur une quinzaine de mètres sans appui et après un temps d’immersion]].",
+       "sources": [
+        "eps-c2-2020"
+       ],
+       "page": 37
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "repere",
+       "texte": "Passer d'un [[équilibre vertical]] à un [[équilibre horizontal]] de nageur, d'une respiration réflexe à une respiration adaptée, d'une propulsion par les jambes à une propulsion par les bras.",
+       "sources": [
+        "eps-c2-2020"
+       ],
+       "page": 37
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Accepter le déséquilibre et se déplacer grâce à un nouvel équilibre horizontal.",
+       "sources": [
+        "eps-c3-2026"
+       ],
+       "page": 4
+      },
+      {
+       "classes": [
+        "CM2",
+        "6e"
+       ],
+       "type": "attendu",
+       "texte": "Valider l'attestation scolaire du savoir nager ; la natation, dans la mesure du possible, chaque année du cycle.",
+       "sources": [
+        "eps-c3-2020"
+       ],
+       "page": 58
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "exprimer",
+   "nom": "S'exprimer avec son corps",
+   "fils": [
+    {
+     "id": "danse-cirque",
+     "nom": "Danse, gymnastique, arts du cirque",
+     "etapes": [
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Explorer le mouvement comme vecteur d'expression ; rondes et jeux chantés ; mimer.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 24
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Geste dansé ; [[espace scénique]] ; posture de spectateur actif.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 24
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Arts du cirque ; danser seul ou à plusieurs, en miroir, en contact ; chorégraphie simple (entrée, développement, fin) ; conseiller un camarade.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 24
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Explorer des actions à visée artistique et l'espace scénique ; reproduire un enchaînement ; explorer la [[posture d’artiste]] ; apprécier une prestation avec un vocabulaire approprié.",
+       "sources": [
+        "eps-c2-2026"
+       ],
+       "page": 13
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "attendu",
+       "texte": "[[Mobiliser le pouvoir expressif du corps]] ; mémoriser des pas, figures, enchaînements ; danses collectives, danse de création, activités gymniques, arts du cirque.",
+       "sources": [
+        "eps-c2-2020"
+       ],
+       "page": 37
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "repere",
+       "texte": "Passer progressivement de l'exécutant à la composition et à la chorégraphie simple.",
+       "sources": [
+        "eps-c2-2020"
+       ],
+       "page": 38
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Enrichir ses actions à visée artistique ; enchaînement fluide et mémorisé ; se présenter en tant qu'artiste ; apprécier une prestation et donner des conseils.",
+       "sources": [
+        "eps-c3-2026"
+       ],
+       "page": 5
+      },
+      {
+       "classes": [
+        "CM2",
+        "6e"
+       ],
+       "type": "attendu",
+       "texte": "Deux séquences en petits groupes : une [[à visée acrobatique destinée à être jugée]], une à visée artistique destinée à être appréciée ; filmer pour faire évoluer.",
+       "sources": [
+        "eps-c3-2020"
+       ],
+       "page": 59
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "opposer",
+   "nom": "Coopérer et s'opposer",
+   "fils": [
+    {
+     "id": "jeux",
+     "nom": "Jeux collectifs, jeux de combat et de raquette",
+     "etapes": [
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Comprendre un rôle dans les jeux les plus simples ; poursuivre, esquiver.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 25
+      },
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "exemple",
+       "texte": "Les déménageurs ; Minuit dans la bergerie ; Le chat et la souris.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 25
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Jouer en coopérant ; rôles d'[[attaquant]] et de [[défenseur]] ; accepter la défaite.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 25
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Élaborer des stratégies ; rôle d'[[arbitre]] ; jeux d'opposition avec contacts (sortir son adversaire d'une zone).",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 25
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Actions d'opposition simples (courir, s'arrêter, lancer, attraper ; pousser, tirer) ; différencier « jouer avec » et « jouer contre » ; explorer les règles ; maîtriser ses émotions.",
+       "sources": [
+        "eps-c2-2026"
+       ],
+       "page": 16
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "attendu",
+       "texte": "[[S’engager dans un affrontement individuel ou collectif en respectant les règles du jeu]] ; connaître le but du jeu ; reconnaître partenaires et adversaires ; jeux traditionnels, jeux pré-sportifs, jeux de lutte, jeux de raquettes.",
+       "sources": [
+        "eps-c2-2020"
+       ],
+       "page": 38
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2",
+        "CM2",
+        "6e"
+       ],
+       "type": "repere",
+       "texte": "[[Réversibilité]] des situations : comprendre qu'il faut attaquer tout en se défendant.",
+       "sources": [
+        "eps-c2-2020",
+        "eps-c3-2020"
+       ],
+       "page": 38
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Coordonner plusieurs actions d'opposition ; orienter ses déplacements vers la cible ; mener un projet d'action ; faire respecter les règles.",
+       "sources": [
+        "eps-c3-2026"
+       ],
+       "page": 6
+      },
+      {
+       "classes": [
+        "CM2",
+        "6e"
+       ],
+       "type": "attendu",
+       "texte": "S'organiser tactiquement pour gagner ; identifier les situations favorables de marque ; rôles sociaux (joueur, arbitre, observateur) ; accepter le résultat.",
+       "sources": [
+        "eps-c3-2020"
+       ],
+       "page": 59
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

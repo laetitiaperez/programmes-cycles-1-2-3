@@ -56,5 +56,17 @@
   ],
   "resume": "Programme 2024 du CP à la 6e : valeurs, quatre dimensions, titres annuels, notions par classe, EMI-EDD, pièges.",
   "html": "fiches/emc-c2-c3.html"
+ },
+ {
+  "id": "eps-c2-c3",
+  "titre": "Fiche CRPE — Éducation physique et sportive, cycles 2 et 3",
+  "matiere": "eps",
+  "cycles": [
+   1,
+   2,
+   3
+  ],
+  "resume": "Quatre domaines de motricité (2026) et quatre champs d'apprentissage (2020), savoir nager, repères chiffrés, pièges.",
+  "html": "fiches/eps-c2-c3.html"
  }
 ]
