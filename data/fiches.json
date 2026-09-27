@@ -1,5 +1,15 @@
 [
  {
+  "id": "maternelle-c1",
+  "titre": "Fiche CRPE — École maternelle (cycle 1) : principes et domaines",
+  "matiere": "maternelle",
+  "cycles": [
+   1
+  ],
+  "resume": "Principes du préambule, quatre modalités d'apprentissage, évaluation positive, six domaines et repères chiffrés de la PS à la GS.",
+  "html": "fiches/maternelle-c1.html"
+ },
+ {
   "id": "francais-c2-c3",
   "titre": "Fiche CRPE — Français, cycles 2 et 3",
   "matiere": "francais",
