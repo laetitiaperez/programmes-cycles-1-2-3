@@ -7,7 +7,7 @@ import { normalize } from '../lib/normalize.js';
 
 // Texte officiel → fichier extrait dans sources/txt/ (cf. Task 3).
 const FICHIER = {
-  'c1-2026': 'c1-2026', 'evar-mat-2025': 'evar-mat', 'evar-elem-2025': 'evar-elem',
+  'c1-2024': 'c1-2026', 'c1-2026': 'c1-2026', 'evar-mat-2025': 'evar-mat', 'evar-elem-2025': 'evar-elem',
   'evars-college-2025': 'evars-college', 'fr-c2-2024': 'fr-c2-2024', 'maths-c2-2024': 'maths-c2-2024',
   'fr-c3-2025': 'fr-c3-2025', 'maths-c3-2025': 'maths-c3-2025', 'emc-2024': 'emc-2024',
   'hg-c2-2026': 'hg-c2-2026', 'qlm-et-2020': 'c2-2020', 'hg-c3-2026': 'hg-c3-2026', 'hg-c3-2020': 'c3-2023',

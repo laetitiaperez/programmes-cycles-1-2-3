@@ -1,9 +1,22 @@
 [
   {
-    "id": "c1-2026",
-    "titre": "Programme de l’école maternelle (consolidé)",
+    "id": "c1-2024",
+    "titre": "Programme de l’école maternelle — langage et premiers outils mathématiques",
     "matiere": "c1",
-    "bo": "BO n° 41 du 31 octobre 2024 et BO n° 19 du 7 mai 2026",
+    "bo": "BO n° 41 du 31 octobre 2024",
+    "classes2026": [
+      "PS",
+      "MS",
+      "GS"
+    ],
+    "nouveauEn": [],
+    "pdf": "https://eduscol.education.gouv.fr/sites/default/files/document/programme-cycle-1-consolide-127565.pdf"
+  },
+  {
+    "id": "c1-2026",
+    "titre": "Programme de l’école maternelle — nouveaux domaines (activités physiques, artistiques, temps et espace, monde du vivant)",
+    "matiere": "c1",
+    "bo": "BO n° 19 du 7 mai 2026",
     "classes2026": [
       "PS",
       "MS",

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Programmes C1‑C3</title>
+<meta name="description" content="Programmes de l'école (cycles 1, 2, 3) en vigueur en 2026-2027, condensés pour réviser le CRPE.">
+<link rel="stylesheet" href="style.css">
+<script>try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<header class="barre">
+  <div class="ligne">
+    <h1><a href="./">Programmes C1‑C3 <small>2026‑27</small></a></h1>
+    <button id="theme" type="button" aria-label="Changer de thème">◐</button>
+  </div>
+  <nav id="vues" aria-label="Vues">
+    <button type="button" data-vue="matiere">Par matière</button>
+    <button type="button" data-vue="classe">Par classe</button>
+    <button type="button" data-vue="lexique">Lexique</button>
+  </nav>
+  <nav id="cycles" class="segments" aria-label="Cycle">
+    <button type="button" data-cy="">Tous</button>
+    <button type="button" data-cy="1">Cycle 1</button>
+    <button type="button" data-cy="2">Cycle 2</button>
+    <button type="button" data-cy="3">Cycle 3</button>
+  </nav>
+  <input id="f-q" type="search" placeholder="Rechercher un mot-clé, une notion…" aria-label="Rechercher">
+  <details id="panneau" class="panneau">
+    <summary>Filtres <span id="resume"></span></summary>
+    <form id="filtres" autocomplete="off">
+      <label>Classe <select id="f-c"><option value="">Toutes</option></select></label>
+      <label>Matière <select id="f-m"><option value="">Toutes</option></select></label>
+      <fieldset id="f-t"><legend>Types</legend></fieldset>
+      <button type="button" id="raz">Réinitialiser</button>
+    </form>
+  </details>
+</header>
+<main id="contenu"><p class="vide">Chargement…</p></main>
+<footer>
+  Programmes en vigueur à la rentrée 2026-2027, condensés pour réviser le CRPE — les textes officiels font foi.
+  Sources : Éduscol, <a href="https://eduscol.education.gouv.fr/4341/enseigner-au-cycle-1">cycle 1</a>,
+  <a href="https://eduscol.education.gouv.fr/4347/enseigner-au-cycle-2">cycle 2</a>,
+  <a href="https://eduscol.education.gouv.fr/4356/enseigner-au-cycle-3">cycle 3</a>.
+</footer>
+</body>
+</html>

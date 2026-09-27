@@ -1,8 +1,8 @@
-"""Français PS→6e. Sources : c1-2026 (domaine langage), fr-c2-2024, fr-c3-2025.
+"""Français PS→6e. Sources : c1-2024 (domaine langage), fr-c2-2024, fr-c3-2025.
 Repères d'âge du C1 : « avant 4 ans » → PS, « à partir de 4 ans » → MS, « à partir de 5 ans » → GS."""
 from commun import E, S, F, D, ecrire
 
-c1, c2, c3 = "c1-2026", "fr-c2-2024", "fr-c3-2025"
+c1, c2, c3 = "c1-2024", "fr-c2-2024", "fr-c3-2025"
 
 lecture = D("lecture", "Lecture",
     F("phonologie", "Conscience phonologique et principe alphabétique",
