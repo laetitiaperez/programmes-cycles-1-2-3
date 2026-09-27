@@ -12,37 +12,57 @@
 <body>
 <header class="barre">
   <div class="ligne">
-    <h1><a href="./">Programmes C1‑C3 <small>2026‑27</small></a></h1>
-    <button id="theme" type="button" aria-label="Changer de thème">◐</button>
+    <button id="ouvrir-menu" class="icone" type="button" aria-label="Ouvrir le menu" aria-controls="menu">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span id="badge-filtres" class="pastille" hidden></span>
+    </button>
+    <input id="f-q" type="search" placeholder="Rechercher un mot-clé, une notion…" aria-label="Rechercher">
   </div>
-  <nav id="vues" aria-label="Vues">
+  <p id="contexte" class="contexte" hidden></p>
+</header>
+
+<dialog id="menu" class="menu" aria-label="Menu">
+  <div class="menu-tete">
+    <h1>Programmes C1‑C3 <small>2026‑27</small></h1>
+    <button id="fermer-menu" class="icone" type="button" aria-label="Fermer le menu">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+
+  <nav id="vues" class="menu-vues" aria-label="Vues">
     <button type="button" data-vue="matiere">Par matière</button>
     <button type="button" data-vue="classe">Par classe</button>
-    <button type="button" data-vue="lexique">Lexique</button>
+    <button type="button" data-vue="lexique">Lexique des mots-clés</button>
+    <button type="button" data-vue="biblio">Bibliothèque</button>
   </nav>
+
+  <h2>Cycle</h2>
   <nav id="cycles" class="segments" aria-label="Cycle">
     <button type="button" data-cy="">Tous</button>
-    <button type="button" data-cy="1">Cycle 1</button>
-    <button type="button" data-cy="2">Cycle 2</button>
-    <button type="button" data-cy="3">Cycle 3</button>
+    <button type="button" data-cy="1">C1</button>
+    <button type="button" data-cy="2">C2</button>
+    <button type="button" data-cy="3">C3</button>
   </nav>
-  <input id="f-q" type="search" placeholder="Rechercher un mot-clé, une notion…" aria-label="Rechercher">
-  <details id="panneau" class="panneau">
-    <summary>Filtres <span id="resume"></span></summary>
-    <form id="filtres" autocomplete="off">
-      <label>Classe <select id="f-c"><option value="">Toutes</option></select></label>
-      <label>Matière <select id="f-m"><option value="">Toutes</option></select></label>
-      <fieldset id="f-t"><legend>Types</legend></fieldset>
-      <button type="button" id="raz">Réinitialiser</button>
-    </form>
-  </details>
-</header>
+
+  <h2>Filtres</h2>
+  <form id="filtres" autocomplete="off">
+    <label>Classe <select id="f-c"><option value="">Toutes</option></select></label>
+    <label>Matière <select id="f-m"><option value="">Toutes</option></select></label>
+    <fieldset id="f-t"><legend>Types d'éléments</legend></fieldset>
+    <button type="button" id="raz">Réinitialiser les filtres</button>
+  </form>
+
+  <h2>Affichage</h2>
+  <button id="theme" type="button" class="bouton-ligne">Thème clair / sombre</button>
+
+  <p class="menu-pied">
+    Programmes en vigueur à la rentrée 2026-2027, condensés pour réviser le CRPE — les textes officiels font foi.
+    Sources : Éduscol, <a href="https://eduscol.education.gouv.fr/4341/enseigner-au-cycle-1">cycle 1</a>,
+    <a href="https://eduscol.education.gouv.fr/4347/enseigner-au-cycle-2">cycle 2</a>,
+    <a href="https://eduscol.education.gouv.fr/4356/enseigner-au-cycle-3">cycle 3</a>.
+  </p>
+</dialog>
+
 <main id="contenu"><p class="vide">Chargement…</p></main>
-<footer>
-  Programmes en vigueur à la rentrée 2026-2027, condensés pour réviser le CRPE — les textes officiels font foi.
-  Sources : Éduscol, <a href="https://eduscol.education.gouv.fr/4341/enseigner-au-cycle-1">cycle 1</a>,
-  <a href="https://eduscol.education.gouv.fr/4347/enseigner-au-cycle-2">cycle 2</a>,
-  <a href="https://eduscol.education.gouv.fr/4356/enseigner-au-cycle-3">cycle 3</a>.
-</footer>
 </body>
 </html>

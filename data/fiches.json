@@ -1,0 +1,38 @@
+[
+ {
+  "id": "francais-c2-c3",
+  "titre": "Fiche CRPE — Français, cycles 2 et 3",
+  "matiere": "francais",
+  "cycles": [
+   2,
+   3
+  ],
+  "resume": "Composantes, chiffres clés du CP à la 6e, progressions, mots-clés et pièges classiques.",
+  "html": "fiches/francais-c2-c3.html",
+  "pdf": "fiches/pdf/francais-c2-c3.pdf"
+ },
+ {
+  "id": "maths-c2-c3",
+  "titre": "Fiche CRPE — Mathématiques, cycles 2 et 3",
+  "matiere": "maths",
+  "cycles": [
+   2,
+   3
+  ],
+  "resume": "Domaines, chiffres clés, résolution de problèmes en quatre phases, progressions et pièges.",
+  "html": "fiches/maths-c2-c3.html",
+  "pdf": "fiches/pdf/maths-c2-c3.pdf"
+ },
+ {
+  "id": "hg-c2-c3",
+  "titre": "Fiche CRPE — Histoire-géographie, cycles 2 et 3",
+  "matiere": "hg",
+  "cycles": [
+   2,
+   3
+  ],
+  "resume": "Nouveaux programmes 2026 : compétences, thèmes par classe, repères, spirale d'un cycle à l'autre.",
+  "html": "fiches/hg-c2-c3.html",
+  "pdf": "fiches/pdf/hg-c2-c3.pdf"
+ }
+]

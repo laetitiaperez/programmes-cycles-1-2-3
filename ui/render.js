@@ -127,3 +127,40 @@ export function renderLexique(lex, ctx) {
       ])),
     ]))));
 }
+
+// Noms et ordre d'affichage des matières dans la Bibliothèque (y compris celles pas encore saisies).
+const MATIERES_BIBLIO = {
+  c1: 'École maternelle', francais: 'Français', maths: 'Mathématiques', hg: 'Histoire-géographie',
+  sciences: 'Sciences et technologie', emc: 'Enseignement moral et civique', eps: 'Éducation physique et sportive',
+  arts: 'Enseignements artistiques', lv: 'Langues vivantes', evar: 'Vie affective et relationnelle (EVAR)',
+};
+
+// Bibliothèque : fiches de révision (HTML + PDF éventuel) puis textes officiels par matière.
+export function renderBibliotheque(fiches, textes, matieres, ctx) {
+  const nomMatiere = (id) => MATIERES_BIBLIO[id] ?? matieres.find(m => m.id === id)?.nom ?? id;
+  const ordre = Object.keys(MATIERES_BIBLIO);
+  const parMatiere = new Map();
+  for (const t of [...textes].sort((a, b) => ordre.indexOf(a.matiere) - ordre.indexOf(b.matiere))) {
+    if (!parMatiere.has(t.matiere)) parMatiere.set(t.matiere, []);
+    parMatiere.get(t.matiere).push(t);
+  }
+  return el('section', { class: 'bibliotheque' },
+    el('h2', {}, 'Fiches de révision'),
+    fiches.length
+      ? el('ul', { class: 'cartes' }, fiches.map(f => el('li', { class: 'carte' },
+          el('a', { class: 'carte-titre', href: f.html }, f.titre),
+          el('p', {}, f.resume),
+          el('p', { class: 'carte-actions' },
+            el('a', { href: f.html }, 'Lire la fiche'),
+            f.pdf ? [' · ', el('a', { href: f.pdf, download: '' }, 'PDF')] : null))))
+      : el('p', { class: 'vide' }, 'Aucune fiche pour ces filtres.'),
+    el('h2', {}, 'Textes officiels'),
+    parMatiere.size
+      ? [...parMatiere].map(([id, list]) => el('section', { class: 'biblio-matiere' },
+          el('h3', {}, nomMatiere(id)),
+          el('ul', {}, list.map(t => el('li', {},
+            (t.nouveauEn ?? []).length ? el('span', { class: 'badge-new' }, 'NOUVEAU') : null, ' ',
+            el('a', { href: t.pdf, target: '_blank', rel: 'noopener' }, t.titre), ' ',
+            el('small', {}, `${classesLabel(t.classes2026, ctx.order)} · ${t.bo}`))))))
+      : el('p', { class: 'vide' }, 'Aucun texte pour ces filtres.'));
+}

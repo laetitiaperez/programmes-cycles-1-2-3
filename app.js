@@ -1,10 +1,11 @@
 import { parseHash, toHash, sanitizeState, DEFAULT_STATE } from './lib/url.js';
 import { filterMatiere } from './lib/filters.js';
-import { indexTextes, nouveautesCycle, textesPourClasse } from './lib/textes.js';
+import { indexTextes, nouveautesCycle, textesPourClasse, filtrerTextes } from './lib/textes.js';
 import { buildLexique, filterLexique } from './lib/lexique.js';
 import { TYPES } from './lib/validate.js';
 import {
   el, TYPE_LABELS, renderMatiere, renderNouveautes, renderTextesClasse, renderLexique, renderChoixClasse,
+  renderBibliotheque,
 } from './ui/render.js';
 
 const $ = (id) => document.getElementById(id);
@@ -19,11 +20,12 @@ async function getJSON(path) {
 }
 
 async function load() {
-  const [classes, textes, ids] = await Promise.all([
+  const [classes, textes, ids, fiches] = await Promise.all([
     getJSON('data/classes.json'), getJSON('data/textes.json'), getJSON('data/matieres/index.json'),
+    getJSON('data/fiches.json'),
   ]);
   const matieres = await Promise.all(ids.map(id => getJSON(`data/matieres/${id}.json`)));
-  return { classes, textes, matieres };
+  return { classes, textes, matieres, fiches };
 }
 
 function go(patch, replace = false) {
@@ -54,9 +56,36 @@ function setupForm() {
     timer = setTimeout(() => go({ q: e.target.value.trim(), f: '' }, true), 200);
   };
   $('raz').onclick = () => go({ ...DEFAULT_STATE, vue: state.vue });
-  for (const b of $('vues').querySelectorAll('button')) b.onclick = () => go({ vue: b.dataset.vue, f: '' });
+  for (const b of $('vues').querySelectorAll('button')) {
+    b.onclick = () => { go({ vue: b.dataset.vue, f: '' }); $('menu').close(); scrollTo(0, 0); };
+  }
   $('theme').onclick = toggleTheme;
-  $('panneau').open = matchMedia('(min-width: 800px)').matches;
+  $('ouvrir-menu').onclick = () => $('menu').showModal();
+  $('fermer-menu').onclick = () => $('menu').close();
+  // Un clic sur le fond (hors du panneau) ferme le menu.
+  $('menu').addEventListener('click', (e) => { if (e.target === $('menu')) $('menu').close(); });
+}
+
+const NOMS_VUES = { matiere: 'Par matière', classe: 'Par classe', lexique: 'Lexique', biblio: 'Bibliothèque' };
+
+// Ligne de contexte sous la recherche : vue courante + filtres actifs, chacun supprimable.
+function renderContexte() {
+  const nomMatiere = data.matieres.find(m => m.id === state.m)?.nom;
+  const actifs = [
+    state.c ? [state.c, { c: '' }] : state.cy ? [`Cycle ${state.cy}`, { cy: '' }] : null,
+    nomMatiere ? [nomMatiere, { m: '' }] : null,
+    state.t.length ? [state.t.map(t => TYPE_LABELS[t]).join(', '), { t: [] }] : null,
+  ].filter(Boolean);
+  $('badge-filtres').hidden = !actifs.length;
+  $('badge-filtres').textContent = actifs.length;
+  $('contexte').hidden = false;
+  $('contexte').replaceChildren(
+    el('strong', {}, NOMS_VUES[state.vue]),
+    ...actifs.flatMap(([label]) => [' · ', el('button', {
+      type: 'button', class: 'filtre-actif', 'aria-label': `Retirer le filtre ${label}`,
+    }, `${label} ✕`)]),
+  );
+  $('contexte').querySelectorAll('.filtre-actif').forEach((b, i) => { b.onclick = () => go({ ...actifs[i][1], f: '' }); });
 }
 
 function syncForm() {
@@ -75,9 +104,7 @@ function syncForm() {
   for (const b of $('vues').querySelectorAll('button')) {
     b.setAttribute('aria-current', b.dataset.vue === state.vue ? 'page' : 'false');
   }
-  const nomMatiere = data.matieres.find(m => m.id === state.m)?.nom;
-  const bits = [state.c, nomMatiere, state.t.length && `${state.t.length} type(s)`].filter(Boolean);
-  $('resume').textContent = bits.length ? `· ${bits.join(' · ')}` : '';
+  renderContexte();
 }
 
 function toggleTheme() {
@@ -103,6 +130,12 @@ function render() {
     main.append(...[renderLexique(filterLexique(buildLexique(visibles, data.classes), state.q), ctx)].flat());
     return;
   }
+  if (state.vue === 'biblio') {
+    const fiches = data.fiches.filter(f => (!state.m || f.matiere === state.m) && (!state.cy || f.cycles.includes(Number(state.cy))));
+    const textes = filtrerTextes(data.textes, data.classes, { cycle: state.cy, classe: state.c, matiere: state.m, q: state.q });
+    main.append(renderBibliotheque(fiches, textes, data.matieres, ctx));
+    return;
+  }
   if (state.vue === 'classe' && !state.c) {
     main.append(renderChoixClasse(data.classes));
     return;
@@ -112,7 +145,7 @@ function render() {
   } else {
     const cycles = state.cy ? [Number(state.cy)] : [1, 2, 3];
     const groupes = cycles.map(cycle => ({ cycle, list: nouveautesCycle(data.textes, data.classes, cycle) }));
-    main.append(renderNouveautes(groupes, Boolean(state.cy)));
+    main.append(renderNouveautes(groupes, Boolean(state.cy) && !state.c));
   }
   const resultats = matieres.map(m => filterMatiere(m, data.classes, crit)).filter(Boolean);
   if (!resultats.length) main.append(el('p', { class: 'vide' }, 'Aucun résultat pour ces filtres.'));

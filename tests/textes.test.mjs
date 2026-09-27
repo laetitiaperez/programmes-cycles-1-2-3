@@ -21,3 +21,12 @@ test('sourcesDivergentes', () => {
   assert.equal(sourcesDivergentes(hg.domaines[0].fils[0]), true);
   assert.equal(sourcesDivergentes(francais.domaines[0].fils[0]), false);
 });
+import { filtrerTextes } from '../lib/textes.js';
+
+test('filtrerTextes : par classe, cycle, matière et recherche sans accents', () => {
+  assert.deepEqual(filtrerTextes(textes, classes, { classe: 'CE1' }).map(t => t.id), ['fr-c2-2024', 'qlm-et-2020']);
+  assert.deepEqual(filtrerTextes(textes, classes, { cycle: '3' }), []);
+  assert.deepEqual(filtrerTextes(textes, classes, { matiere: 'hg' }).map(t => t.id), ['hg-c2-2026', 'qlm-et-2020']);
+  assert.deepEqual(filtrerTextes(textes, classes, { q: 'ESPACE' }).map(t => t.id), ['qlm-et-2020']);
+  assert.equal(filtrerTextes(textes, classes, {}).length, 3);
+});

@@ -24,3 +24,4 @@ test('sanitizeState ignore les valeurs inconnues', () => {
 test('sanitizeState : la classe fixe le cycle', () => {
   assert.equal(sanitizeState(parseHash('#c=CE1&cy=3'), ctx).cy, '2');
 });
+test('vue bibliothèque reconnue', () => assert.equal(parseHash('#vue=biblio').vue, 'biblio'));

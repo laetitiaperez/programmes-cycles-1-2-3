@@ -1,0 +1,40 @@
+/* Mise en page des fiches de révision (s'appuie sur les couleurs de ../style.css). */
+.fiche-barre {
+  position: sticky; top: 0; z-index: 5; display: flex; justify-content: space-between; align-items: center;
+  gap: 8px; padding: 8px 16px; background: var(--bg); border-bottom: 1px solid var(--line);
+}
+.fiche-barre a {
+  min-height: 44px; display: inline-flex; align-items: center; padding: 0 12px; border-radius: var(--radius);
+  border: 1px solid var(--line); background: var(--surface); color: var(--text); text-decoration: none; font-weight: 600;
+}
+.fiche-contenu { max-width: 820px; margin: 0 auto; padding: 16px 16px 48px; line-height: 1.6; }
+.fiche-contenu h1 { font-size: 1.5rem; line-height: 1.25; margin: 8px 0 12px; }
+.fiche-contenu h2 {
+  font-size: 1.2rem; margin: 32px 0 10px; padding-bottom: 4px; border-bottom: 2px solid var(--line);
+  scroll-margin-top: 72px;
+}
+.fiche-contenu h3 { font-size: 1rem; margin: 20px 0 6px; }
+.fiche-contenu ul, .fiche-contenu ol { padding-left: 22px; }
+.fiche-contenu li { margin-bottom: 4px; }
+.sommaire details { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 8px 14px; }
+.sommaire summary { cursor: pointer; font-weight: 600; min-height: 32px; display: flex; align-items: center; }
+.sommaire ol { margin: 8px 0 4px; }
+
+/* Les tableaux défilent horizontalement sur petit écran, sans élargir la page. */
+.tableau { overflow-x: auto; margin: 12px 0; border: 1px solid var(--line); border-radius: var(--radius); }
+.tableau table { border-collapse: separate; border-spacing: 0; width: max-content; min-width: 100%; font-size: .9rem; }
+.tableau th, .tableau td {
+  padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; text-align: left;
+  max-width: 15em; min-width: 7em; overflow-wrap: normal; word-break: normal; hyphens: auto;
+}
+/* La première colonne reste visible pendant le défilement horizontal. */
+.tableau tr > :first-child { position: sticky; left: 0; z-index: 1; box-shadow: 1px 0 0 var(--line); min-width: 6em; max-width: 9em; }
+.tableau tbody tr > :first-child { background: var(--surface); }
+.tableau thead th { background: color-mix(in srgb, var(--accent-soft) 100%, var(--bg)); font-weight: 700; }
+.tableau tbody th { font-weight: 600; background: var(--surface); }
+.tableau tr:last-child > * { border-bottom: 0; }
+
+.retenir, .piege { display: block; border-radius: var(--radius); padding: 10px 14px; margin: 12px 0; }
+.retenir { background: var(--crpe-soft); border-left: 4px solid var(--crpe); }
+.piege { background: color-mix(in srgb, var(--new) 12%, var(--bg)); border-left: 4px solid var(--new); }
+.retenir strong:first-child, .piege strong:first-child { display: block; margin-bottom: 2px; }
