@@ -7,7 +7,7 @@
 | maths | fait (22 fils) | Task 6 |
 | hg (QLM espace-temps) | fait (14 fils) | Task 7 |
 | sciences (QLM vivant-matière-objets) | fait (12 fils) + fiche | Task 8 |
-| emc | à faire | |
+| emc | fait (12 fils) + fiche | Task 9 |
 | eps | à faire | |
 | arts | à faire | |
 | lv | à faire | |
@@ -27,6 +27,7 @@ Programme C1 consolidé (BO 41/2024 + BO 19/2026), 6 domaines + préambule :
 | Préambule (principes, modalités, évaluation) | maternelle |
 
 ## Découpage en fils (par matière)
+- **EMC** — Cadre (quatre dimensions) · Soi et les autres (émotions-empathie ; intimité) · Règles (règles collectives ; droits ; discriminations) · République (symboles ; laïcité ; démocratie ; bien commun) · Numérique (EMI). Pas de maternelle.
 - **Sciences** — Démarches · Matière (états et mélanges ; mouvements, énergie, signaux) · Vivant (diversité ; cycle de vie ; écosystèmes ; Terre) · Corps (corps et mouvement ; hygiène ; puberté) · Objets techniques.
 - **HG** — Compétences et démarches · Temps (repères, chronologie) · Histoire (temps long C2, CM1 2026, CM2-6e 2020) · Espace (espace proche, représentations du monde) · Géographie (organisations C2, CM1 2026, CM2-6e 2020). Encadrés CRPE : programmes 2026 non encore applicables en CE1-CE2 / CM2-6e.
 - **Maths** — Nombres : quantités (mat.) · rang · entiers · fractions · décimaux. Calcul : calcul mental · opérations. Problèmes et algèbre : résolution · algèbre · motifs (mat.). Grandeurs : longueurs · masses-contenances · aires-angles-volumes · durées-monnaie. Géométrie : solides · figures · repérage. Données : données · probabilités · proportionnalité · pensée informatique.

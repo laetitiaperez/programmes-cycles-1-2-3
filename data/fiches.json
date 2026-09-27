@@ -45,5 +45,16 @@
   ],
   "resume": "Nouveaux programmes 2026 (CP, CM1) et anciens en vigueur (CE1-CE2, CM2-6e) : domaines, démarches, progressions, pièges.",
   "html": "fiches/sciences-c2-c3.html"
+ },
+ {
+  "id": "emc-c2-c3",
+  "titre": "Fiche CRPE — Enseignement moral et civique, cycles 2 et 3",
+  "matiere": "emc",
+  "cycles": [
+   2,
+   3
+  ],
+  "resume": "Programme 2024 du CP à la 6e : valeurs, quatre dimensions, titres annuels, notions par classe, EMI-EDD, pièges.",
+  "html": "fiches/emc-c2-c3.html"
  }
 ]

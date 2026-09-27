@@ -1,0 +1,573 @@
+{
+ "id": "emc",
+ "nom": "Enseignement moral et civique",
+ "intentions": "Former les élèves « à l’exercice et à une conscience claire de leur citoyenneté » ; faire partager les valeurs de la République (Code de l'éducation, art. L 111-1). Titres annuels : CP « Se reconnaitre comme individu et élève » ; CE1 « Respecter les autres » ; CE2 « Apprendre ensemble et vivre ensemble » ; CM1 « Faire société » ; CM2 « Vivre en République » ; 6e « Apprendre à vivre dans une société démocratique ».",
+ "domaines": [
+  {
+   "id": "cadre",
+   "nom": "Cadre et méthodes",
+   "fils": [
+    {
+     "id": "dimensions",
+     "nom": "Culture de la démocratie : quatre dimensions",
+     "etapes": [
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2",
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "notion",
+       "texte": "Valeurs et principes : [[liberté, l’égalité, la fraternité et la laïcité]] ; s'en déduisent l'égalité entre les femmes et les hommes, le refus de toutes les discriminations, la solidarité. Quatre dimensions (cadre du Conseil de l'Europe) : [[valeurs]], [[domaines de connaissances]], [[attitudes]], [[aptitudes]]. L'EMC structure le [[parcours citoyen]].",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 2
+      },
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2",
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "notion",
+       "texte": "Programme [[annualisé]] ; [[logique spiralaire]] ; méthodes : situations réelles, analyses savantes, descriptions imaginaires (littérature, arts) ; [[débat réglé]], discussion argumentée (le [[dilemme moral]] à partir du cycle 4) ; liens avec l'[[EMI]], l'[[EDD]], les [[compétences psychosociales]] et l'EVAR.",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 4
+      },
+      {
+       "classes": [
+        "CE2",
+        "6e"
+       ],
+       "type": "crpe",
+       "texte": "Le programme d'EMC de 2024 entre en vigueur en CE2 et en 6e à la rentrée 2026 (il s'applique déjà du CP au CE1 et en CM1-CM2).",
+       "sources": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soi",
+   "nom": "Soi et les autres",
+   "fils": [
+    {
+     "id": "emotions-empathie",
+     "nom": "Émotions, empathie, fraternité",
+     "etapes": [
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "[[Connaissance et maîtrise de soi]] : comprendre ses émotions et ses sentiments ; confiance et [[estime de soi]].",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 7
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "exemple",
+       "texte": "À partir d'albums, identifier les émotions de base (joie, tristesse, peur, colère, dégoût, surprise) ; décoder les signaux non verbaux par des saynètes.",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 7
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "[[Altérité et sociabilité]] : reconnaître les émotions d'autrui ; développer sa capacité d'[[empathie]] ; s'entraider ; la diversité comme richesse ; reconnaître les situations de violence et de [[harcèlement]] (auteur, cible, témoin ; programme [[Phare]]).",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Comment faire société : comprendre la notion de [[fraternité]] ; ce qu'implique et permet l'empathie ; égoïsme et altruisme (débat réglé).",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 12
+      }
+     ]
+    },
+    {
+     "id": "intimite",
+     "nom": "Hygiène, intimité, vie privée",
+     "etapes": [
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "[[Règles d’hygiène et exigence d’intimité]] : avoir conscience de son intégrité ; règles élémentaires d'hygiène et d'intimité ; égalité filles-garçons (lien avec l'EVAR).",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "+ Intimité et respect de la vie privée (sanitaires, vestiaires, ENT) ; violences sexistes.",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Le [[droit à la vie privée]] (CIDE art. 16) : intimité, droit à l'image ; [[majorité numérique]] à quinze ans (loi du 7 juillet 2023) ; traces numériques.",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 16
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "regles",
+   "nom": "Règles, droits et devoirs",
+   "fils": [
+    {
+     "id": "regles-collectives",
+     "nom": "Règles collectives et responsabilité",
+     "etapes": [
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "[[Les règles collectives et l’autonomie]] : s'approprier les règles de l'école ([[droits et devoirs]]) ; respecter les adultes ; identifier les risques ; respecter les biens communs ; la règle comme protection.",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 7
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "repere",
+       "texte": "[[Attestation de première éducation à la route]] (APER).",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "+ Règles de vie et de [[civilité]] ; identifier les dangers ; donner l'alerte (APS).",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "Participer à l'élaboration collective des règles de vie ; conseils d'élèves, décision à la majorité.",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 10
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "[[Civisme]] : action d'un individu en fonction du bien public ; [[incivilités]] ; politesse.",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 11
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "Devoirs du citoyen : respecter les lois, contribuer aux dépenses publiques (DDHC art. 13) ; « Voter est un droit, c'est aussi un devoir civique ».",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 12
+      }
+     ]
+    },
+    {
+     "id": "droits",
+     "nom": "Droits de l'enfant et libertés fondamentales",
+     "etapes": [
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Savoir que les enfants ont des droits : [[Convention internationale des droits de l’enfant]] (1989).",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "[[L’égalité dans la dignité]] : égalité en droit ; [[dignité de la personne humaine]] ; cyberviolences.",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 11
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "Libertés et droits fondamentaux : DDHC (1789), Déclaration universelle (1948), Charte des droits fondamentaux de l'UE (2000) ; liberté d'expression (art. 11) et ses limites ; droits de « troisième génération » (Charte de l'environnement).",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 13
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Avoir des droits en tant que personne et respecter ceux des autres (5 à 6 heures).",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 16
+      }
+     ]
+    },
+    {
+     "id": "discriminations",
+     "nom": "Préjugés et discriminations",
+     "etapes": [
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "Première approche des [[stéréotypes]] (publicité, dessin animé) ; les préjugés ont une incidence sur le rapport à l'autre.",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Identifier des situations de [[discrimination]] ou d'atteinte à la personne.",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 11
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "[[Respecter les droits de tous]] : déconstruction des [[préjugés]] et des stéréotypes ; racisme, antisémitisme, sexisme, xénophobie, homophobie, harcèlement : l'expression des discriminations est sanctionnée par la loi ; rôle du témoin.",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 14
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "republique",
+   "nom": "La République",
+   "fils": [
+    {
+     "id": "symboles",
+     "nom": "Symboles et valeurs de la République",
+     "etapes": [
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "[[Être élève à l’école de la République]] : identifier le drapeau français ; reconnaître [[La Marseillaise]].",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "+ Symboles républicains ; chanter le 1er couplet et le refrain de La Marseillaise ; comprendre la devise « [[Liberté, Égalité, Fraternité]] » ; lieux de mémoire, cérémonies ; le français est la langue de la République.",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "+ Approfondir la devise : la liberté sans l'égalité fait régner la loi du plus fort…",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 10
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "+ Symboles mentionnés par la Constitution (drapeau, hymne, devise) et [[Marianne]] ; fête nationale du [[14 juillet]] (héritière de la Fête de la Fédération de 1790) ; commémoration du 11 novembre ; drapeau et hymne européens ; la France membre de l'[[Union européenne]].",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 13
+      }
+     ]
+    },
+    {
+     "id": "laicite",
+     "nom": "Laïcité",
+     "etapes": [
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "Aborder le principe de la [[liberté de conscience]] : liberté de croire, de ne pas croire ou de changer de croyance ; [[Charte de la laïcité]].",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "[[À l’école laïque]] : respect des croyances, dont l'expression est limitée par la loi ; nul ne peut imposer ses croyances ; lois scolaires de 1881-1882, loi de 1905, loi du 15 mars 2004.",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 14
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "repere",
+       "texte": "Journée de la laïcité : 9 décembre.",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 14
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ La laïcité garantit la liberté de conscience et l'égalité ; [[neutralité de l’État]] ; « un principe juridique et non une opinion » (différent de l'athéisme) ; l'école, espace à l'abri des [[prosélytismes]].",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 15
+      }
+     ]
+    },
+    {
+     "id": "democratie",
+     "nom": "Démocratie, institutions, citoyenneté",
+     "etapes": [
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "[[La République et son fonctionnement]] : le chef de l'État est le [[président de la République]], élu ; le [[maire]] est un élu local et le représentant de l'État dans la commune (état civil, école, environnement).",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 10
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Signification de « [[démocratie]] » et [[suffrage direct]] ; DDHC art. 3, 6 et 16 : souveraineté, volonté générale, égalité devant la loi, séparation des pouvoirs ; démocratie scolaire.",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 11
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "Citoyenneté et [[nationalité]] ; [[droits civils]] et [[droits politiques]] (vote, éligibilité) ; conseillers municipaux juniors ; Parlement des enfants.",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 12
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Représenter les autres et servir l'intérêt général : [[représentation]], vote, délégués, écodélégués, échelles jusqu'au Parlement européen.",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 14
+      }
+     ]
+    },
+    {
+     "id": "bien-commun",
+     "nom": "Bien commun et intérêt général",
+     "etapes": [
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "[[L’engagement pour le bien commun]] : différencier [[intérêt particulier]] et [[intérêt général]] ; [[éco-gestes]] ; institutions et associations au service du bien commun (pompiers, santé…).",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 10
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ L'intérêt général prend en compte les générations futures ([[ODD]]).",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 15
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "numerique",
+   "nom": "Numérique, médias, environnement",
+   "fils": [
+    {
+     "id": "emi",
+     "nom": "EMI et civisme numérique",
+     "etapes": [
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "Première approche des stéréotypes dans la production visuelle et audiovisuelle.",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 5
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "L'information relève de l'intérêt général ; photo-langage.",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 5
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "[[Civisme numérique]] : recherches en ligne, notion de « source » ; [[sobriété numérique]] ; droit à la déconnexion ; cyberviolences.",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 11
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "Liberté d'expression en ligne ; réseaux sociaux (« pas un espace de non-droit ») ; [[désinformation]].",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 14
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Données personnelles, traces numériques, réputation numérique ; PIX.",
+       "sources": [
+        "emc-2024"
+       ],
+       "page": 16
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
