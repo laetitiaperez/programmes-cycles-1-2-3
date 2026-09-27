@@ -53,3 +53,12 @@ Programme C1 consolidé (BO 41/2024 + BO 19/2026), 6 domaines + préambule :
 - Les nouveaux programmes 2026 (HG, sciences, EPS, LV) couvrent tout le cycle, mais en 2026-27 seule la 1re classe (CP / CM1) les applique : on ne saisit que cette classe depuis ces textes.
 
 ## À vérifier
+- Trois liens refusent les robots (403) : C3 2023 (Éduscol media 100806), BO anglais 2025, BO LVR 2026 — à ouvrir une fois dans un navigateur.
+- Numéros de page : page PDF de la section, pas de l'étape exacte (±1 page) ; tableaux EVAR (p. 8-9) cités pour toutes les classes.
+- Sciences C2/C3 2026 : texte obtenu par OCR (pas de couche texte dans le PDF) ; mots-clés vérifiés, mais relire les citations longues.
+- LV 6e : seuls l'anglais (programme collège 2025) et le cadre commun des langues régionales sont saisis ; les autres langues ont des programmes à part.
+- Matière « École maternelle — principes » : vide (« Aucun résultat ») si le filtre cycle 2 ou 3 est actif, c'est voulu.
+
+## Bilan (27/09/2026)
+- 10 matières, 666 mots-clés vérifiés mot pour mot dans leur source, 0 doublon de texte entre étapes, 54 tests verts.
+- 10 fiches HTML dans la Bibliothèque (dont 3 converties des PDF d'origine, téléchargeables).
