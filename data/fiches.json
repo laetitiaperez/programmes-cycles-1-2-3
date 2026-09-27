@@ -7,7 +7,8 @@
    1
   ],
   "resume": "Principes du préambule, quatre modalités d'apprentissage, évaluation positive, six domaines et repères chiffrés de la PS à la GS.",
-  "html": "fiches/maternelle-c1.html"
+  "html": "fiches/maternelle-c1.html",
+  "pdf": "fiches/pdf/maternelle-c1.pdf"
  },
  {
   "id": "francais-c2-c3",
@@ -54,7 +55,8 @@
    3
   ],
   "resume": "Nouveaux programmes 2026 (CP, CM1) et anciens en vigueur (CE1-CE2, CM2-6e) : domaines, démarches, progressions, pièges.",
-  "html": "fiches/sciences-c2-c3.html"
+  "html": "fiches/sciences-c2-c3.html",
+  "pdf": "fiches/pdf/sciences-c2-c3.pdf"
  },
  {
   "id": "emc-c2-c3",
@@ -65,7 +67,8 @@
    3
   ],
   "resume": "Programme 2024 du CP à la 6e : valeurs, quatre dimensions, titres annuels, notions par classe, EMI-EDD, pièges.",
-  "html": "fiches/emc-c2-c3.html"
+  "html": "fiches/emc-c2-c3.html",
+  "pdf": "fiches/pdf/emc-c2-c3.pdf"
  },
  {
   "id": "eps-c2-c3",
@@ -77,7 +80,8 @@
    3
   ],
   "resume": "Quatre domaines de motricité (2026) et quatre champs d'apprentissage (2020), savoir nager, repères chiffrés, pièges.",
-  "html": "fiches/eps-c2-c3.html"
+  "html": "fiches/eps-c2-c3.html",
+  "pdf": "fiches/pdf/eps-c2-c3.pdf"
  },
  {
   "id": "arts-c2-c3",
@@ -89,7 +93,8 @@
    3
   ],
   "resume": "Arts plastiques, éducation musicale, histoire des arts : les trois questions par cycle, les répertoires chiffrés, le PEAC, les pièges.",
-  "html": "fiches/arts-c2-c3.html"
+  "html": "fiches/arts-c2-c3.html",
+  "pdf": "fiches/pdf/arts-c2-c3.pdf"
  },
  {
   "id": "lv-c2-c3",
@@ -101,7 +106,8 @@
    3
   ],
   "resume": "Niveaux du CECRL par classe, cinq activités langagières, horaires, thématiques culturelles et axes de 6e, pièges.",
-  "html": "fiches/lv-c2-c3.html"
+  "html": "fiches/lv-c2-c3.html",
+  "pdf": "fiches/pdf/lv-c2-c3.pdf"
  },
  {
   "id": "evar-c1-c3",
@@ -113,6 +119,7 @@
    3
   ],
   "resume": "Programme de février 2025 : trois axes, objectifs par niveau de la PS à la 6e, cadre légal, pièges.",
-  "html": "fiches/evar-c1-c3.html"
+  "html": "fiches/evar-c1-c3.html",
+  "pdf": "fiches/pdf/evar-c1-c3.pdf"
  }
 ]

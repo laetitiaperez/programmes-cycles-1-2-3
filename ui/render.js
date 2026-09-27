@@ -136,6 +136,9 @@ const MATIERES_BIBLIO = {
 };
 
 // Bibliothèque : fiches de révision (HTML + PDF éventuel) puis textes officiels par matière.
+// Repliés par défaut ; l'état ouvert/fermé est gardé pendant la session (changements de filtres).
+let textesOuverts = false;
+
 export function renderBibliotheque(fiches, textes, matieres, ctx) {
   const nomMatiere = (id) => MATIERES_BIBLIO[id] ?? matieres.find(m => m.id === id)?.nom ?? id;
   const ordre = Object.keys(MATIERES_BIBLIO);
@@ -154,7 +157,7 @@ export function renderBibliotheque(fiches, textes, matieres, ctx) {
             el('a', { href: f.html }, 'Lire la fiche'),
             f.pdf ? [' · ', el('a', { href: f.pdf, download: '' }, 'PDF')] : null))))
       : el('p', { class: 'vide' }, 'Aucune fiche pour ces filtres.'),
-    el('h2', {}, 'Textes officiels'),
+    textesOfficiels(textes.length, ctx.q,
     parMatiere.size
       ? [...parMatiere].map(([id, list]) => el('section', { class: 'biblio-matiere' },
           el('h3', {}, nomMatiere(id)),
@@ -162,5 +165,13 @@ export function renderBibliotheque(fiches, textes, matieres, ctx) {
             (t.nouveauEn ?? []).length ? el('span', { class: 'badge-new' }, 'NOUVEAU') : null, ' ',
             el('a', { href: t.pdf, target: '_blank', rel: 'noopener' }, t.titre), ' ',
             el('small', {}, `${classesLabel(t.classes2026, ctx.order)} · ${t.bo}`))))))
-      : el('p', { class: 'vide' }, 'Aucun texte pour ces filtres.'));
+      : el('p', { class: 'vide' }, 'Aucun texte pour ces filtres.')));
+}
+
+// Une recherche en cours ouvre la section pour que les résultats restent visibles.
+function textesOfficiels(n, q, contenu) {
+  const d = el('details', { class: 'biblio-textes', open: textesOuverts || Boolean(q) },
+    el('summary', {}, el('h2', {}, `Textes officiels (${n})`)), contenu);
+  d.addEventListener('toggle', () => { if (!q) textesOuverts = d.open; });
+  return d;
 }

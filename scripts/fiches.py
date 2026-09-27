@@ -129,6 +129,9 @@ def construire():
         sommaire = ('<nav class="sommaire" aria-label="Sommaire"><details><summary>Sommaire</summary><ol>'
                     + "".join(f'<li><a href="#{i}">{t}</a></li>' for i, t in titres) + "</ol></details></nav>") if titres else ""
         pdf = meta.get("pdf")
+        # Sans PDF d'origine, on propose le PDF généré par scripts/fiches-pdf.sh s'il existe.
+        if not pdf and os.path.exists(os.path.join(RACINE, "fiches", "pdf", ident + ".pdf")):
+            pdf = f"fiches/pdf/{ident}.pdf"
         lien_pdf = f'<a class="pdf" href="../{pdf}" download>PDF</a>' if pdf else ""
         titre_court = meta["titre"].replace("Fiche CRPE — ", "Fiche ")
         page = PAGE.format(titre_court=html.escape(titre_court), resume=html.escape(meta["resume"]),

@@ -38,3 +38,18 @@
 .retenir { background: var(--crpe-soft); border-left: 4px solid var(--crpe); }
 .piege { background: color-mix(in srgb, var(--new) 12%, var(--bg)); border-left: 4px solid var(--new); }
 .retenir strong:first-child, .piege strong:first-child { display: block; margin-bottom: 2px; }
+
+/* Impression / PDF (A4) : sans barre ni sommaire, tableaux à la largeur de la page. */
+@media print {
+  @page { size: A4; margin: 14mm 12mm; }
+  html, body { background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .fiche-barre, .sommaire { display: none; }
+  .fiche-contenu { max-width: none; padding: 0; font-size: 10.5pt; line-height: 1.45; }
+  .fiche-contenu h2 { margin-top: 18px; }
+  h1, h2, h3 { break-after: avoid; }
+  .tableau { overflow: visible; }
+  .tableau table { width: 100%; min-width: 0; table-layout: fixed; font-size: 9pt; }
+  .tableau th, .tableau td { min-width: 0; max-width: none; overflow-wrap: break-word; }
+  .tableau tr > :first-child { position: static; box-shadow: none; border-right: 1px solid var(--line); min-width: 0; max-width: none; }
+  tr, .retenir, .piege, li { break-inside: avoid; }
+}

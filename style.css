@@ -162,6 +162,13 @@ mark.kw { background: var(--kw); color: var(--kw-text); border-radius: 3px; padd
 .carte-titre { font-weight: 700; color: var(--text); text-decoration: none; }
 .carte p { margin: 6px 0 0; font-size: .9rem; color: var(--muted); }
 .carte-actions a { font-weight: 600; }
+.biblio-textes { margin-top: 20px; border-top: 1px solid var(--line); }
+.biblio-textes > summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; gap: 8px; }
+.biblio-textes > summary h2 { font-size: 1.3rem; margin: 10px 0; }
+.biblio-textes > summary { list-style: none; }
+.biblio-textes > summary::-webkit-details-marker { display: none; }
+.biblio-textes > summary::before { content: "▸"; font-size: 1.3rem; color: var(--muted); transition: transform .15s; }
+.biblio-textes[open] > summary::before { transform: rotate(90deg); }
 .biblio-matiere h3 { font-size: 1rem; margin: 16px 0 6px; }
 .biblio-matiere ul { padding-left: 18px; margin: 0; }
 .biblio-matiere li { margin-bottom: 6px; }

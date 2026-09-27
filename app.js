@@ -133,7 +133,7 @@ function render() {
   if (state.vue === 'biblio') {
     const fiches = data.fiches.filter(f => (!state.m || f.matiere === state.m) && (!state.cy || f.cycles.includes(Number(state.cy))));
     const textes = filtrerTextes(data.textes, data.classes, { cycle: state.cy, classe: state.c, matiere: state.m, q: state.q });
-    main.append(renderBibliotheque(fiches, textes, data.matieres, ctx));
+    main.append(renderBibliotheque(fiches, textes, data.matieres, { ...ctx, q: state.q }));
     return;
   }
   if (state.vue === 'classe' && !state.c) {
