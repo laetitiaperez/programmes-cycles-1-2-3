@@ -1,0 +1,9 @@
+{
+  "name": "programmes-cycles-1-2-3",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "validate": "node scripts/validate.mjs"
+  }
+}
