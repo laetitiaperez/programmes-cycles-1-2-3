@@ -43,7 +43,7 @@ Au lieu de suivre la structure des textes (cycle → matière → contenus), le 
 - Les **intentions générales** d'une matière sont énoncées une fois en tête de matière.
 - Les textes transversaux (EMC CP→Terminale, EVAR, arts 2020 C2-C3) ne sont saisis qu'une fois.
 - Quand deux classes relèvent de textes différents en 2026-27 (ex. CP nouveau / CE1 ancien), l'étape porte une **étiquette de source** ; les écarts ne sont signalés que là où ils existent.
-- En maternelle, la « classe » est PS / MS / GS ; les domaines de maternelle sont reliés aux matières de l'élémentaire (ex. « Acquérir les premiers outils mathématiques » → Mathématiques) pour que les fils démarrent en PS quand c'est pertinent.
+- En maternelle, la « classe » est PS / MS / GS ; les domaines de maternelle sont reliés aux matières de l'élémentaire (ex. « Acquérir les premiers outils mathématiques » → Mathématiques, champ `nomMaternelle`) pour que les fils démarrent en PS quand c'est pertinent. Les principes transversaux du cycle 1 (apprendre en jouant, évaluation positive…) forment une matière à part `maternelle`.
 
 ### Règles de condensation (à appliquer à toute saisie)
 
@@ -59,7 +59,7 @@ Au lieu de suivre la structure des textes (cycle → matière → contenus), le 
 
 Fichiers JSON statiques dans `data/`.
 
-`data/classes.json` — les 10 classes et leur cycle :
+`data/classes.json` — les 9 classes (PS→6e) et leur cycle :
 ```json
 [{ "id": "PS", "cycle": 1 }, … { "id": "CP", "cycle": 2 }, … { "id": "6e", "cycle": 3 }]
 ```
@@ -72,17 +72,18 @@ Fichiers JSON statiques dans `data/`.
   "matiere": "hg",
   "bo": "BO n° 22 du 28 mai 2026",
   "classes2026": ["CP"],
-  "statut": "nouveau",          // "nouveau" | "en-vigueur"
+  "nouveauEn": ["CP"],
   "pdf": "https://www.education.gouv.fr/…/annexe-3-…-516776.pdf"
 }
 ```
-`classes2026` = classes auxquelles le texte s'applique à la rentrée 2026-27. Cela suffit à résoudre « quel texte pour quelle classe ».
+`classes2026` = classes auxquelles le texte s'applique à la rentrée 2026-27 (résout « quel texte pour quelle classe »). `nouveauEn` ⊆ `classes2026` = classes pour lesquelles ce texte entre en vigueur en 2026-27 (ex. EMC 2024 : `["CE2", "6e"]`) ; peut être vide. Un même PDF peut donner plusieurs entrées (une par matière, ex. programme consolidé 2020 du cycle 2).
 
 `data/matieres/<matiere>.json` — une matière :
 ```json
 {
   "id": "maths",
   "nom": "Mathématiques",
+  "nomMaternelle": "Acquérir les premiers outils mathématiques",
   "intentions": "Texte court avec [[mots-clés]]…",
   "domaines": [{
     "id": "nombres",
@@ -122,7 +123,7 @@ Page unique `index.html` + `app.js` + `style.css`, sans framework ni build.
 3. **Lexique** — mots-clés par matière, chacun avec les fils et classes où il apparaît (lien vers le fil).
 
 **Éléments visuels** :
-- Badge **NOUVEAU 2026** / référence BO sur les étapes issues de textes `nouveau`.
+- Badge **NOUVEAU 2026** sur les étapes dont une classe figure dans le `nouveauEn` d'une de leurs sources.
 - Étiquette de source quand des classes voisines relèvent de textes différents.
 - Lien PDF officiel sur chaque texte cité.
 - Encadré « Ce qui change en 2026-27 » en tête de chaque cycle (généré depuis `textes.json`).
@@ -151,7 +152,7 @@ docs/superpowers/specs/     # cette spec
 1. Télécharger tous les PDF listés sur les 3 pages Éduscol dans `sources/`, extraire le texte (`pdftotext -layout`).
 2. Remplir `textes.json` (tous les textes, BO, classes 2026-27, liens).
 3. Saisir matière par matière en appliquant les règles de condensation §3, **un commit par matière** :
-   maternelle (domaines spécifiques) → français → maths → HG / QLM espace-temps → sciences / QLM vivant-matière-objets → EMC → EPS → arts → LVER → EVAR.
+   français (pilote, puis point d'étape avec Laetitia) → maths → HG / QLM espace-temps → sciences / QLM vivant-matière-objets → EMC → EPS → arts → LVER → EVAR → principes de maternelle. Chaque matière inclut ses étapes PS-MS-GS issues du domaine de maternelle correspondant.
 4. `NOTES.md` suit l'avancement, les choix de découpage en fils et les points à vérifier.
 
 ## 8. Vérification
