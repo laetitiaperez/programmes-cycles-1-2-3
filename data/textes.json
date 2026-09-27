@@ -110,6 +110,39 @@
     "pdf": "https://www.education.gouv.fr/sites/default/files/programme-de-fran-ais-pour-le-cycle-3-439824.pdf"
   },
   {
+    "id": "fr-ex-cm1",
+    "titre": "Français — exemples pour la mise en œuvre en CM1",
+    "matiere": "francais",
+    "bo": "Éduscol, exemples de réussite (2025), à titre indicatif",
+    "classes2026": [
+      "CM1"
+    ],
+    "nouveauEn": [],
+    "pdf": "https://eduscol.education.gouv.fr/sites/default/files/document/exemplesmiseenoeuvrecm1-francaispdf-111546.pdf"
+  },
+  {
+    "id": "fr-ex-cm2",
+    "titre": "Français — exemples pour la mise en œuvre en CM2",
+    "matiere": "francais",
+    "bo": "Éduscol, exemples de réussite (2025), à titre indicatif",
+    "classes2026": [
+      "CM2"
+    ],
+    "nouveauEn": [],
+    "pdf": "https://eduscol.education.gouv.fr/sites/default/files/document/exemplesmiseenoeuvrecm2francaispdf-111540.pdf"
+  },
+  {
+    "id": "fr-ex-6e",
+    "titre": "Français — exemples pour la mise en œuvre en 6e",
+    "matiere": "francais",
+    "bo": "Éduscol, exemples de réussite (2025), à titre indicatif",
+    "classes2026": [
+      "6e"
+    ],
+    "nouveauEn": [],
+    "pdf": "https://eduscol.education.gouv.fr/sites/default/files/document/exemplesmiseenoeuvre6e-francaispdf-111534.pdf"
+  },
+  {
     "id": "maths-c3-2025",
     "titre": "Mathématiques cycle 3",
     "matiere": "maths",

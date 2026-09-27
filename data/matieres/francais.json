@@ -293,6 +293,17 @@
       },
       {
        "classes": [
+        "CM1"
+       ],
+       "type": "exemple",
+       "texte": "Lire sans hésitation des mots irréguliers : second, monsieur, oignon, œufs, femme, chœur ; marquer par l'intonation points d'exclamation, d'interrogation, pauses et liaisons.",
+       "sources": [
+        "fr-ex-cm1"
+       ],
+       "page": 3
+      },
+      {
+       "classes": [
         "CM2"
        ],
        "type": "attendu",
@@ -304,6 +315,17 @@
       },
       {
        "classes": [
+        "CM2"
+       ],
+       "type": "exemple",
+       "texte": "Lire un texte long à un rythme régulier, « celui de la parole » ; améliorer sa lecture expressive en s'enregistrant et en s'écoutant.",
+       "sources": [
+        "fr-ex-cm2"
+       ],
+       "page": 3
+      },
+      {
+       "classes": [
         "6e"
        ],
        "type": "attendu",
@@ -312,6 +334,17 @@
         "fr-c3-2025"
        ],
        "page": 5
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "exemple",
+       "texte": "Lire un poème, une fable en adaptant débit et intonations au récit et aux prises de parole ; lecture chorale d'un dialogue.",
+       "sources": [
+        "fr-ex-6e"
+       ],
+       "page": 3
       }
      ]
     },
@@ -457,6 +490,17 @@
       },
       {
        "classes": [
+        "CM1"
+       ],
+       "type": "exemple",
+       "texte": "Justifier une réponse par une phrase du texte ; identifier narrateur, personnages, thème ; reconnaître un genre à des marques (« Il était une fois », vers et rimes, mise en page du dialogue).",
+       "sources": [
+        "fr-ex-cm1"
+       ],
+       "page": 3
+      },
+      {
+       "classes": [
         "CM2"
        ],
        "type": "competence",
@@ -465,6 +509,17 @@
         "fr-c3-2025"
        ],
        "page": 4
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "exemple",
+       "texte": "S'appuyer sur les connecteurs, les reprises pronominales ; repérer les sauts dans le temps ; proposer des titres de paragraphes.",
+       "sources": [
+        "fr-ex-cm2"
+       ],
+       "page": 3
       },
       {
        "classes": [
@@ -529,12 +584,34 @@
       },
       {
        "classes": [
+        "CM1"
+       ],
+       "type": "exemple",
+       "texte": "Identifier nature et source d'un document en géographie ; utiliser le sommaire d'un ouvrage.",
+       "sources": [
+        "fr-ex-cm1"
+       ],
+       "page": 3
+      },
+      {
+       "classes": [
         "CM2"
        ],
        "type": "competence",
        "texte": "+ Rapprocher deux documents convergents de genres différents ; prélever et combiner des informations (inférences).",
        "sources": [
         "fr-c3-2025"
+       ],
+       "page": 4
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "exemple",
+       "texte": "Distinguer, dans une page de manuel, le schéma de données et son texte ; lire un tableau à double entrée.",
+       "sources": [
+        "fr-ex-cm2"
        ],
        "page": 4
       },
@@ -548,6 +625,17 @@
         "fr-c3-2025"
        ],
        "page": 5
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "exemple",
+       "texte": "Présenter et commenter une photographie en allant de ce qui est vu à ce qui est dit par l'image.",
+       "sources": [
+        "fr-ex-6e"
+       ],
+       "page": 3
       }
      ]
     },
@@ -619,6 +707,21 @@
       },
       {
        "classes": [
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "repere",
+       "texte": "Éduscol propose, pour chaque entrée, des listes indicatives d'œuvres intégrales, de lectures cursives et de prolongements artistiques (ex. CM1 : Fifi Brindacier, Matilda, L'homme qui plantait des arbres, Fables de La Fontaine).",
+       "sources": [
+        "fr-ex-cm1",
+        "fr-ex-cm2",
+        "fr-ex-6e"
+       ],
+       "page": 3
+      },
+      {
+       "classes": [
         "CM2"
        ],
        "type": "repere",
@@ -649,6 +752,17 @@
         "fr-c3-2025"
        ],
        "page": 7
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "exemple",
+       "texte": "Rendre compte de ses lectures par des productions variées (boîte de lecture, lettre à l'auteur) ; débat interprétatif, cercle de lecture.",
+       "sources": [
+        "fr-ex-6e"
+       ],
+       "page": 4
       }
      ]
     }
@@ -1015,6 +1129,17 @@
       },
       {
        "classes": [
+        "CM1"
+       ],
+       "type": "exemple",
+       "texte": "Raconter une sortie, élaborer une notice en respectant la chronologie ; écrits courts « Je pense que… », « Je suppose que… » (hypothèse en sciences).",
+       "sources": [
+        "fr-ex-cm1"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
         "CM2"
        ],
        "type": "competence",
@@ -1026,6 +1151,17 @@
       },
       {
        "classes": [
+        "CM2"
+       ],
+       "type": "exemple",
+       "texte": "Nuancer : « Je pense que… pourtant… » ; formuler le protocole d'une expérience ; éliminer les répétitions par des pronoms démonstratifs (celui-ci, celle-là).",
+       "sources": [
+        "fr-ex-cm2"
+       ],
+       "page": 10
+      },
+      {
+       "classes": [
         "6e"
        ],
        "type": "competence",
@@ -1034,6 +1170,17 @@
         "fr-c3-2025"
        ],
        "page": 10
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "exemple",
+       "texte": "Récit complet avec ouverture et clôture, structuré en paragraphes ; périphrases respectant la chaîne anaphorique (le lion = le roi des animaux).",
+       "sources": [
+        "fr-ex-6e"
+       ],
+       "page": 8
       }
      ]
     },
@@ -1209,6 +1356,28 @@
         "fr-c3-2025"
        ],
        "page": 11
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "exemple",
+       "texte": "Reformuler : « La personne dit / explique / demande que… » ; relier une reprise pronominale au GN auquel elle se rapporte.",
+       "sources": [
+        "fr-ex-cm1"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "exemple",
+       "texte": "Distinguer les propos de deux locuteurs : « La personne A dit cela, la personne B n'est pas d'accord parce que… ».",
+       "sources": [
+        "fr-ex-cm2"
+       ],
+       "page": 11
       }
      ]
     },
@@ -1319,6 +1488,28 @@
         "fr-c3-2025"
        ],
        "page": 11
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "exemple",
+       "texte": "Expliciter un schéma, un tableau, une infographie avec le lexique appris (« Ce tableau montre que… ») ; expliciter ses procédures et ses erreurs.",
+       "sources": [
+        "fr-ex-cm1"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "exemple",
+       "texte": "Faire le lien entre deux documents et en faire une synthèse ; s'enregistrer et comparer à des critères de réussite.",
+       "sources": [
+        "fr-ex-6e"
+       ],
+       "page": 9
       }
      ]
     },
@@ -1371,6 +1562,28 @@
         "fr-c3-2025"
        ],
        "page": 11
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "exemple",
+       "texte": "« Je (ne) suis (pas) d'accord, car… mais… » ; préparer des notes (phrases clés, connecteurs).",
+       "sources": [
+        "fr-ex-cm2"
+       ],
+       "page": 11
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "exemple",
+       "texte": "S'appuyer sur les propos d'autrui : « Comme l'a dit… ; contrairement à… » ; s'initier au registre soutenu.",
+       "sources": [
+        "fr-ex-6e"
+       ],
+       "page": 10
       }
      ]
     }
@@ -1478,6 +1691,28 @@
         "fr-c3-2025"
        ],
        "page": 13
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "exemple",
+       "texte": "Multiples usages d'un mot connu : une belle vue, un point de vue, à perte de vue ; jeux de mémorisation (mots croisés, domino des synonymes).",
+       "sources": [
+        "fr-ex-cm1"
+       ],
+       "page": 10
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "exemple",
+       "texte": "Paraphraser un mot nouveau : « Une révolution, c'est le moment où le peuple renverse par la force un gouvernement. »",
+       "sources": [
+        "fr-ex-cm2"
+       ],
+       "page": 12
       },
       {
        "classes": [
@@ -1598,6 +1833,28 @@
       },
       {
        "classes": [
+        "CM1"
+       ],
+       "type": "exemple",
+       "texte": "lait, laiteux, allaiter ; maisonnette, fillette ; homonymes comte / conte.",
+       "sources": [
+        "fr-ex-cm1"
+       ],
+       "page": 10
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "exemple",
+       "texte": "insecticide / régicide → -cide « tuer » ; insectivore / carnivore → -vore ; polysémie de milieu, point.",
+       "sources": [
+        "fr-ex-cm2"
+       ],
+       "page": 12
+      },
+      {
+       "classes": [
         "6e"
        ],
        "type": "competence",
@@ -1606,6 +1863,17 @@
         "fr-c3-2025"
        ],
        "page": 15
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "exemple",
+       "texte": "décamètre, décathlon → déca- ; créer des mots (le lundoir, le mardoir, d'après Perec).",
+       "sources": [
+        "fr-ex-6e"
+       ],
+       "page": 11
       }
      ]
     },
@@ -1770,6 +2038,17 @@
       },
       {
        "classes": [
+        "CM1"
+       ],
+       "type": "exemple",
+       "texte": "Repérer le groupe sujet par remplacement par un pronom ou encadrement « c'est… qui » ; repérer les groupes circonstanciels par déplacement ou suppression.",
+       "sources": [
+        "fr-ex-cm1"
+       ],
+       "page": 11
+      },
+      {
+       "classes": [
         "CM2"
        ],
        "type": "competence",
@@ -1781,6 +2060,17 @@
       },
       {
        "classes": [
+        "CM2"
+       ],
+       "type": "exemple",
+       "texte": "Sujet inversé : « Où est passé le chat ? », « Au loin brille la lumière d'un phare » ; COD construit directement / COI à l'aide d'une préposition.",
+       "sources": [
+        "fr-ex-cm2"
+       ],
+       "page": 14
+      },
+      {
+       "classes": [
         "6e"
        ],
        "type": "competence",
@@ -1789,6 +2079,17 @@
         "fr-c3-2025"
        ],
        "page": 20
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "exemple",
+       "texte": "Même verbe, fonctions différentes : il téléphone à sa sœur (COI) / il téléphone à 8 heures précises (CC).",
+       "sources": [
+        "fr-ex-6e"
+       ],
+       "page": 12
       }
      ]
     },
@@ -1938,6 +2239,17 @@
       },
       {
        "classes": [
+        "CM1"
+       ],
+       "type": "exemple",
+       "texte": "Justifier les variations : un petit ours / une petite ourse ; mon amie et non *ma amie.",
+       "sources": [
+        "fr-ex-cm1"
+       ],
+       "page": 13
+      },
+      {
+       "classes": [
         "CM2"
        ],
        "type": "competence",
@@ -2011,6 +2323,17 @@
       },
       {
        "classes": [
+        "CM1"
+       ],
+       "type": "exemple",
+       "texte": "Justifier : une élève / des élèves ; il élève / tu élèves / elles élèvent.",
+       "sources": [
+        "fr-ex-cm1"
+       ],
+       "page": 13
+      },
+      {
+       "classes": [
         "CM2"
        ],
        "type": "competence",
@@ -2030,6 +2353,17 @@
         "fr-c3-2025"
        ],
        "page": 20
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "exemple",
+       "texte": "Dans une phrase complexe, identifier les propositions pour accorder chaque verbe avec son sujet.",
+       "sources": [
+        "fr-ex-6e"
+       ],
+       "page": 8
       }
      ]
     },
@@ -2094,6 +2428,17 @@
       },
       {
        "classes": [
+        "CM2"
+       ],
+       "type": "exemple",
+       "texte": "Marques du passé simple (-a-, -i-, -u-, -in-) ; distinguer passé composé et plus-que-parfait par l'auxiliaire.",
+       "sources": [
+        "fr-ex-cm2"
+       ],
+       "page": 16
+      },
+      {
+       "classes": [
         "6e"
        ],
        "type": "competence",
@@ -2130,6 +2475,17 @@
         "fr-c3-2025"
        ],
        "page": 20
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "exemple",
+       "texte": "Juxtaposition repérée par la ponctuation, coordination par la conjonction ; rôle syntaxique de la virgule.",
+       "sources": [
+        "fr-ex-6e"
+       ],
+       "page": 13
       }
      ]
     }
