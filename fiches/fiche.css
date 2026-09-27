@@ -21,7 +21,7 @@
 .sommaire ol { margin: 8px 0 4px; }
 
 /* Les tableaux défilent horizontalement sur petit écran, sans élargir la page. */
-.tableau { overflow-x: auto; margin: 12px 0; border: 1px solid var(--line); border-radius: var(--radius); }
+.tableau { overflow-x: auto; margin: 12px 0; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
 .tableau table { border-collapse: separate; border-spacing: 0; width: max-content; min-width: 100%; font-size: .9rem; }
 .tableau th, .tableau td {
   padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; text-align: left;
