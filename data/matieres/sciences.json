@@ -1,0 +1,797 @@
+{
+ "id": "sciences",
+ "nom": "Sciences et technologie",
+ "nomMaternelle": "Découvrir le monde du vivant, de la matière et des objets",
+ "intentions": "Maternelle : dépasser les représentations spontanées par l'observation, la manipulation, l'expérimentation et le langage. Cycle 2 : premières démarches scientifique et technologique, dans quatre domaines : la matière, les mesures, l'électricité ; le corps humain et la santé ; les êtres vivants dans leur environnement ; les objets techniques au cœur de la société (CP 2026 ; CE1-CE2 : « Questionner le monde du vivant, de la matière et des objets » 2020). Cycle 3 : conceptualisation, [[modélisation]], culture scientifique et technologique ; éducations transversales (santé, EVAR, [[développement durable]]).",
+ "domaines": [
+  {
+   "id": "demarches",
+   "nom": "Démarches scientifiques et technologiques",
+   "fils": [
+    {
+     "id": "demarche",
+     "nom": "Démarche scientifique",
+     "etapes": [
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "notion",
+       "texte": "Dépasser les représentations spontanées par l'[[observation]], la [[manipulation]], l'[[expérimentation]] et les activités langagières ; décrire ce que je fais et ce qui se passe ; alterner exploration libre et temps dirigés ; ouvrages documentaires.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 59
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "notion",
+       "texte": "Première approche des démarches scientifique et technologique ; « les démarches scientifiques donnent la primauté aux faits » ; notions de [[reproductibilité]] et de [[robustesse]] d'une expérience ; [[variabilité des mesures]] ; programmes structurés en quatre domaines ; démarches et activités « ouvertes et non prescriptives ».",
+       "sources": [
+        "sci-c2-2026"
+       ],
+       "page": 1
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "crpe",
+       "texte": "Égalité filles-garçons : la répartition des tâches dans le groupe « ne soit pas fixe », pour que chaque élève puisse manipuler et rédiger.",
+       "sources": []
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "Pratiquer, avec l'aide des professeurs, quelques moments d'une [[démarche d'investigation]] : questionnement, observation, expérience, description, raisonnement, conclusion.",
+       "sources": [
+        "qlm-vmo-2020"
+       ],
+       "page": 49
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "notion",
+       "texte": "+ Identifier un problème scientifique, formuler des hypothèses mises à l'épreuve du réel ; prendre en compte les [[conceptions initiales]] ; modélisation ; démarche technologique en projet.",
+       "sources": [
+        "sci-c3-2026"
+       ],
+       "page": 1
+      },
+      {
+       "classes": [
+        "CM2",
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Pratiquer des démarches scientifiques et technologiques ; concevoir, créer, réaliser ; faire preuve d'[[esprit critique]] : distinguer ce qui relève d'une croyance de ce qui constitue un savoir scientifique.",
+       "sources": [
+        "sci-c3-2023"
+       ],
+       "page": 80
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "matiere",
+   "nom": "La matière",
+   "fils": [
+    {
+     "id": "etats",
+     "nom": "États de la matière et mélanges",
+     "etapes": [
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Explorer solides et liquides (transvasements) ; effets d'un déplacement d'air ; réaliser des mélanges ; observer la fusion et la solidification de l'eau.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 63
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Condition favorable à la fusion de la glace ; mettre en évidence la présence d'[[air]] ; solides qui se dissolvent ou non dans l'eau.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 63
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Nommer l'état de l'eau (pluie, neige, givre…) ; récupérer à l'aide d'un filtre les solides non dissous.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 63
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Reconnaître et identifier les états solides et liquides de l'eau dans les phénomènes naturels ; comparer des masses (balance de Roberval) ; lire la température (thermomètre, [[degré Celsius]]).",
+       "sources": [
+        "sci-c2-2026"
+       ],
+       "page": 3
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "attendu",
+       "texte": "[[Identifier les trois états de la matière et observer des changements d’états]] (solidification, condensation, fusion) ; états de l'eau ; matérialité et compressibilité de l'air.",
+       "sources": [
+        "qlm-vmo-2020"
+       ],
+       "page": 49
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "repere",
+       "texte": "« Tout ce qui est lié à l’état gazeux est abordé en CE2. »",
+       "sources": [
+        "qlm-vmo-2020"
+       ],
+       "page": 49
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Masse et volume : mesurer avec une balance, [[tare]] ; [[mélanges homogènes]] et mélanges [[hétérogènes]] ; séparer par [[tamisage]], [[décantation]], [[filtration]] ; [[saturation]].",
+       "sources": [
+        "sci-c3-2026"
+       ],
+       "page": 3
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "exemple",
+       "texte": "Trouver la quantité maximale de sel dissoute dans un volume d'eau, et comparer aux autres groupes pour tester la reproductibilité.",
+       "sources": [
+        "sci-c3-2026"
+       ],
+       "page": 4
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "Décrire un échantillon de matière (masse, volume) ; diversité de la matière et de ses transformations à l'échelle macroscopique ; classer les matériaux selon leurs propriétés.",
+       "sources": [
+        "sci-c3-2023"
+       ],
+       "page": 81
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ Relation de proportionnalité entre masse et volume (prépare la [[masse volumique]] au cycle 4) ; séparation par évaporation.",
+       "sources": [
+        "sci-c3-2023"
+       ],
+       "page": 81
+      }
+     ]
+    },
+    {
+     "id": "mouvement-energie",
+     "nom": "Mouvements, énergie, signaux",
+     "etapes": [
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Mesurer une distance et une durée lors d'un déplacement ; lumière : matériaux [[transparents]], [[opaques]], [[translucides]] ; [[ombre propre]] et [[ombre portée]] ; phases de la Lune.",
+       "sources": [
+        "sci-c3-2026"
+       ],
+       "page": 5
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "Décrire un mouvement en précisant le point de vue ; mouvement rectiligne ou circulaire ; conversions d'énergie ; circuits électriques à une boucle ; signaux et information.",
+       "sources": [
+        "sci-c3-2023"
+       ],
+       "page": 84
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ Calculer la vitesse (mouvement uniforme) ; formes d'énergie ; ombres dans le système Soleil-Terre-Lune.",
+       "sources": [
+        "sci-c3-2023"
+       ],
+       "page": 84
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vivant",
+   "nom": "Le vivant et son environnement",
+   "fils": [
+    {
+     "id": "diversite",
+     "nom": "Diversité du vivant et classification",
+     "etapes": [
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Nommer les caractéristiques morphologiques des animaux et des plantes ; mâle, femelle, jeune, adulte ; soins aux élevages et cultures.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 60
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Modes de déplacement en relation avec le milieu de vie ; respecter la vie sous toutes ses formes.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 60
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Classer des animaux selon leurs caractéristiques (poils, plumes, écailles).",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 60
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Caractériser ce qui est [[vivant, non vivant ou élaboré par des êtres vivants]] (critères : mobilité, croissance, reproduction, alimentation, perception).",
+       "sources": [
+        "sci-c2-2026"
+       ],
+       "page": 5
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "Identifier ce qui est animal, végétal, minéral ou élaboré par des êtres vivants ; régimes alimentaires ; besoins vitaux des végétaux.",
+       "sources": [
+        "qlm-vmo-2020"
+       ],
+       "page": 50
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Définir une [[espèce]] comme un ensemble d'individus [[interféconds]] ; [[classification en groupes emboîtés]] et liens de parenté ; [[clé de détermination]].",
+       "sources": [
+        "sci-c3-2026"
+       ],
+       "page": 10
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "crpe",
+       "texte": "La classification (liens de parenté, groupes emboîtés) est distincte de l'identification à l'aide de [[clés de détermination]].",
+       "sources": []
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "Caractériser l'unité et la diversité du vivant ; classer les organismes ; niveaux d'organisation (organisme, appareil, organe).",
+       "sources": [
+        "sci-c3-2023"
+       ],
+       "page": 87
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ La [[cellule]] (observations microscopiques) ; lire des arbres de parenté.",
+       "sources": [
+        "sci-c3-2023"
+       ],
+       "page": 87
+      }
+     ]
+    },
+    {
+     "id": "cycle-de-vie",
+     "nom": "Cycle de vie, reproduction, développement",
+     "etapes": [
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "Reconnaître des étapes d'un cycle de vie ; besoins essentiels des animaux et végétaux ; animaux qui pondent des œufs, qui portent leur petit.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 60
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Nommer et ordonner les étapes du cycle de vie (germination, larve, nymphe, [[métamorphose]]) ; potager.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 60
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "Développement d'animaux et de végétaux ; [[le cycle de vie des êtres vivants]].",
+       "sources": [
+        "qlm-vmo-2020"
+       ],
+       "page": 50
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Étapes du développement des animaux de la [[fécondation]] à la naissance ; fécondation interne ou externe, [[ovipare]] et [[vivipare]].",
+       "sources": [
+        "sci-c3-2026"
+       ],
+       "page": 11
+      },
+      {
+       "classes": [
+        "CM2",
+        "6e"
+       ],
+       "type": "attendu",
+       "texte": "[[Décrire le cycle de vie d’une plante à fleurs et celui d’un animal]].",
+       "sources": [
+        "sci-c3-2023"
+       ],
+       "page": 90
+      }
+     ]
+    },
+    {
+     "id": "ecosystemes",
+     "nom": "Environnement et écosystèmes",
+     "etapes": [
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "Découvrir le vivant dans un milieu proche ; contribuer à une action collective favorable à la [[biodiversité]] (GS).",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 60
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Observer et décrire son environnement proche (êtres vivants, milieu de vie) ; agir pour protéger l'environnement ; développer un [[rapport sensible à la nature]].",
+       "sources": [
+        "sci-c2-2026"
+       ],
+       "page": 5
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "Interactions des êtres vivants entre eux et avec leur milieu ; relations alimentaires ; [[chaînes de prédation]].",
+       "sources": [
+        "qlm-vmo-2020"
+       ],
+       "page": 50
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "[[Écosystème]] : ensemble d'êtres vivants, leur milieu de vie et leurs relations ; [[réseaux alimentaires]] ; besoins des végétaux et production de matière organique ; conséquences d'une action humaine (espèces invasives).",
+       "sources": [
+        "sci-c3-2026"
+       ],
+       "page": 11
+      },
+      {
+       "classes": [
+        "CM2",
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Décrire un écosystème ; interdépendance dans un réseau trophique ; conséquences d'une action humaine.",
+       "sources": [
+        "sci-c3-2023"
+       ],
+       "page": 97
+      }
+     ]
+    },
+    {
+     "id": "terre",
+     "nom": "La Terre, planète active",
+     "etapes": [
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "[[Météorologie]] : mesures (thermomètre, pluviomètre, anémomètre) ; distinguer météorologie et [[climat]] (première approche via un climat local) ; un exemple de [[risque naturel]].",
+       "sources": [
+        "sci-c3-2026"
+       ],
+       "page": 12
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "Situer la Terre dans le système solaire ; activité de la planète Terre et ses conséquences.",
+       "sources": [
+        "sci-c3-2023"
+       ],
+       "page": 96
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ Conditions de la vie terrestre ; argumentation scientifique sur le réchauffement climatique actuel.",
+       "sources": [
+        "sci-c3-2023"
+       ],
+       "page": 96
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "corps",
+   "nom": "Le corps humain et la santé",
+   "fils": [
+    {
+     "id": "corps-mouvement",
+     "nom": "Corps, sens et mouvement",
+     "etapes": [
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Nommer quelques parties du corps ; découvrir les sens par des expériences sensorielles.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 60
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Organes sensoriels et modalités de perception ; changements liés à sa croissance.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 61
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Articulations et segmentation des membres ; se représenter avec un corps articulé.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 61
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Schéma corporel ; principales [[articulations]] et quelques os ; mouvements de rotation et de flexion/extension.",
+       "sources": [
+        "sci-c2-2026"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "Éléments permettant un mouvement corporel ; mesurer la croissance (taille, masse, pointure) ; dentition.",
+       "sources": [
+        "qlm-vmo-2020"
+       ],
+       "page": 50
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Le [[cerveau]] : perception, commande motrice, langage, mémorisation, émotions ; illusions sensorielles ; stratégies d'attention (mémoire à court et long terme).",
+       "sources": [
+        "sci-c3-2026"
+       ],
+       "page": 14
+      }
+     ]
+    },
+    {
+     "id": "hygiene",
+     "nom": "Alimentation et hygiène de vie",
+     "etapes": [
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "Règles d'[[hygiène]] (se laver les mains, se moucher) ; première approche nutritionnelle et éducation au goût ; lien avec l'EVAR.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 61
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Catégories d'aliments et leur origine ; rythme d'activité quotidien ; règles d'hygiène de vie (sommeil, variété alimentaire, activité physique, [[temps d'écran]]).",
+       "sources": [
+        "sci-c2-2026"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "crpe",
+       "texte": "Aborder l'éducation à la santé avec une approche positive et bienveillante, sans stigmatiser ni culpabiliser.",
+       "sources": []
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "Catégories d'aliments ; [[équilibre alimentaire]] (repas, journée, semaine) ; effets de l'activité physique ; besoins en sommeil.",
+       "sources": [
+        "qlm-vmo-2020"
+       ],
+       "page": 50
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "Rôle des aliments pour le fonctionnement de l'organisme ; besoin de matière pour la croissance.",
+       "sources": [
+        "sci-c3-2023"
+       ],
+       "page": 89
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ Transformer et conserver les aliments ; [[microorganismes]].",
+       "sources": [
+        "sci-c3-2023"
+       ],
+       "page": 89
+      }
+     ]
+    },
+    {
+     "id": "puberte",
+     "nom": "Puberté et reproduction humaine",
+     "etapes": [
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Changements morphologiques à la [[puberté]] (courbes de croissance) ; âges différents selon les individus ; caractères sexuels primaires et secondaires ; en complément des séances d'EVAR, sans s'y substituer.",
+       "sources": [
+        "sci-c3-2026"
+       ],
+       "page": 15
+      },
+      {
+       "classes": [
+        "CM2",
+        "6e"
+       ],
+       "type": "attendu",
+       "texte": "[[Décrire les changements pubertaires]] associés à la capacité de se reproduire ; distinguer la dimension biologique de la sexualité de ses autres dimensions.",
+       "sources": [
+        "sci-c3-2023"
+       ],
+       "page": 90
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "objets",
+   "nom": "Les objets techniques",
+   "fils": [
+    {
+     "id": "objets",
+     "nom": "Objets, matériaux et besoins",
+     "etapes": [
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Reconnaître et comparer des matériaux usuels ; utiliser des objets, connaître leur fonction ; fabriquer librement ou pas à pas.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 62
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Propriétés des matériaux ([[magnétisme]], transparence) ; différencier un objet du matériau qui le constitue ; trier les déchets.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 62
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Associer une solution technique à une fonction ; [[flottabilité]] (objets pleins d'une même matière) ; suivre une fiche technique ; 3 à 5 instructions pour conduire un robot.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 62
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Un [[objet technique]] est obtenu par intervention des êtres humains ; il répond à un besoin.",
+       "sources": [
+        "sci-c2-2026"
+       ],
+       "page": 10
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "[[Comprendre la fonction et le fonctionnement d’objets fabriqués]] ; circuits électriques simples ; bons conducteurs et isolants ; interrupteur ; règles de sécurité ; traitement de texte.",
+       "sources": [
+        "qlm-vmo-2020"
+       ],
+       "page": 51
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Évolution d'un objet selon les contextes ; fonctions des composants ; associer [[solutions technologiques]] et [[fonctions techniques]] ; croquis ; programmation d'objets techniques.",
+       "sources": [
+        "sci-c3-2026"
+       ],
+       "page": 16
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "Distinguer besoins, fonctions techniques et solutions technologiques ; [[démarche technologique]] en projet ; [[cycle de vie]] d'un objet ; chaîne d'information et chaîne d'action d'un objet programmable.",
+       "sources": [
+        "sci-c3-2023"
+       ],
+       "page": 91
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

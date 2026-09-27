@@ -34,5 +34,16 @@
   "resume": "Nouveaux programmes 2026 : compétences, thèmes par classe, repères, spirale d'un cycle à l'autre.",
   "html": "fiches/hg-c2-c3.html",
   "pdf": "fiches/pdf/hg-c2-c3.pdf"
+ },
+ {
+  "id": "sciences-c2-c3",
+  "titre": "Fiche CRPE — Sciences et technologie, cycles 2 et 3",
+  "matiere": "sciences",
+  "cycles": [
+   2,
+   3
+  ],
+  "resume": "Nouveaux programmes 2026 (CP, CM1) et anciens en vigueur (CE1-CE2, CM2-6e) : domaines, démarches, progressions, pièges.",
+  "html": "fiches/sciences-c2-c3.html"
  }
 ]

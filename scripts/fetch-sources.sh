@@ -16,5 +16,14 @@ while IFS="$(printf '\t')" read -r id url; do
   fi
   pdftotext -layout "$pdf" "sources/txt/$id.txt"
   pdftotext -raw "$pdf" "sources/raw/$id.txt"
+  # PDF « imprimé » sans couche texte : OCR avec macOS Vision (scripts/ocr.swift).
+  if [ "$(tr -d '[:space:]' < "sources/txt/$id.txt" | wc -c)" -lt 100 ]; then
+    mkdir -p sources/png
+    rm -f "sources/png/$id"-*.png
+    pdftoppm -r 200 -png "$pdf" "sources/png/$id"
+    swift scripts/ocr.swift $(ls "sources/png/$id"-*.png | sort -V) > "sources/txt/$id.txt" 2>/dev/null
+    cp "sources/txt/$id.txt" "sources/raw/$id.txt"
+    echo "   (OCR)"
+  fi
   echo "OK $id ($(grep -c . "sources/txt/$id.txt") lignes)"
 done < sources/urls.tsv
