@@ -1,0 +1,105 @@
+"""Histoire-géographie / Questionner l'espace et le temps, PS→6e, programmes applicables en 2026-27 :
+PS-GS : c1-2026 (« Se repérer dans le temps et l'espace ») ; CP : hg-c2-2026 ; CE1-CE2 : qlm-et-2020 ;
+CM1 : hg-c3-2026 ; CM2-6e : hg-c3-2020 (programme consolidé C3).
+Repères d'âge du C1 : « avant 4 ans » → PS, « à partir de 4 ans » → MS, « à partir de 5 ans » → GS."""
+from commun import E, S, F, D, ecrire
+
+c1, cp, qlm, cm1, old = "c1-2026", "hg-c2-2026", "qlm-et-2020", "hg-c3-2026", "hg-c3-2020"
+
+demarches = D("demarches", "Compétences et démarches",
+    F("competences", "Les trois compétences et les outils",
+        E("CP", "notion", "Trois compétences principales : [[se repérer dans le temps et l’espace]] ; [[s’initier à la démarche historique et géographique]] ; [[maitriser différentes manières de décrire et d’expliquer la réalité du passé et du présent]]. Outils qui suivent la classe : [[frise chronologique]], [[planisphère]] (France hexagonale et ultramarine), [[globe terrestre]]. [[Parité horaire]] histoire / géographie. Chaque thème : intitulé, durée, question ; tableau objectifs d'apprentissage / attendus / [[repères]] (à mémoriser sur le long terme) ; [[mots-clés]].", cp, 1),
+        E("CE1 CE2", "notion", "« Questionner le monde » (2020) : passer d'un temps et d'un espace autocentrés à un temps et un espace décentrés ; observations sur le terrain, récits, témoignages, études de documents ; [[rituels]] et séquences structurées.", qlm, 50),
+        E("CM1", "notion", "Mêmes trois compétences ; trois modalités : [[étude de documents]], étude d'un sujet conduite par le professeur, [[temps de récit]] ; écrire chaque jour (écrits de travail / écrits validés) ; interroger la [[fiabilité des sources]] ; verbes de spatialisation (« [[localiser et nommer]] » ≠ « [[situer et nommer]] »), d'énonciation, de combinaison.", cm1, 1),
+        E("CM2 6e", "notion", "Programme de 2020 : repères annuels de programmation par thèmes ; démarches et contenus d'enseignement ; notion d'[[habiter]] centrale en géographie.", old, 68),
+        E("CM1", "crpe", "Place des femmes : il faut « [[visibiliser leur place et leur rôle dans l’histoire]] ».", "", None),
+    ),
+)
+
+temps = D("temps", "Se repérer dans le temps",
+    F("reperes-temporels", "Repères temporels : journée, semaine, année",
+        E("PS MS GS", "notion", "Passer du temps vécu au temps représenté ; activités ritualisées : organisation de la journée avant quatre ans, de la semaine à partir de quatre ans, de l'année à partir de cinq ans.", c1, 53),
+        E("PS", "competence", "Principaux moments de la journée ; quelques marqueurs temporels (avant, après, maintenant) ; première approche des saisons.", c1, 53),
+        E("MS", "competence", "+ La semaine est une suite de sept jours ; jours repères ; aujourd'hui, demain, hier ; nommer l'hiver, l'été.", c1, 53),
+        E("GS", "competence", "+ Énoncer la [[date]] ; mois repères ; nommer la plupart des mois ; connaître les [[saisons]].", c1, 54),
+        E("CP", "competence", "Thème 1 : manifestations naturelles du temps (alternance jour/nuit avec un globe, saisons). Thème 2 : structure du [[calendrier grégorien]] ; représentations linéaire et cyclique ; outils (sablier, pendule, montre).", cp, 3),
+        E("CP", "repere", "L'année (12 mois) ; la semaine (7 jours) ; la journée (24 heures).", cp, 3),
+        E("CE1 CE2", "competence", "[[Identifier les rythmes cycliques du temps]] ; lire l'heure et les dates ; unités de durée jusqu'au siècle et au millénaire.", qlm, 51),
+        E("CE1 CE2", "exemple", "« Roue des jours », éphéméride, cadran solaire.", qlm, 51),
+    ),
+    F("chronologie", "Chronologie et durée",
+        E("PS", "competence", "Ordonner des moments rituels ; restituer le déroulement d'une histoire simple ; attendre, repérer le début et la fin d'une activité.", c1, 54),
+        E("MS", "competence", "+ Restituer la chronologie d'une histoire ; connecteurs (au début, ensuite, pour finir) ; [[sablier]], minuteur.", c1, 54),
+        E("GS", "competence", "+ [[Antériorité]], [[postériorité]], [[simultanéité]] ; comparer des durées ; comprendre qu'il existe un temps long, antérieur à notre vie.", c1, 55),
+        E("GS", "exemple", "« Le Petit Poucet marchait derrière ses parents… il avait pris des petits cailloux… »", c1, 55),
+        E("CP", "competence", "Thème 3 : antériorité, simultanéité, postériorité ; [[irréversibilité]] du temps ; [[arbre généalogique]] ; frise de la journée, de la vie, générationnelle.", cp, 3),
+        E("CE1 CE2", "competence", "Situer des événements les uns par rapport aux autres ; prendre conscience que le temps qui passe est irréversible ; générations et mémoire familiale ; évolution des modes de vie.", qlm, 51),
+    ),
+)
+
+histoire = D("histoire", "Histoire",
+    F("temps-long", "Entrer dans le temps long",
+        E("CE1 CE2", "competence", "[[Repérer des périodes de l'histoire du monde occidental et de la France]] ; quelques personnages et dates.", qlm, 52),
+        E("CE2", "repere", "« Le repérage des grandes périodes historiques se travaille au CE2 » : événements, personnages et modes de vie caractéristiques des principales périodes.", qlm, 52),
+        E("CE2", "exemple", "Comparer les modes de vie de personnages : une paysanne, un artisan, une ouvrière, un soldat, une savante…", qlm, 53),
+        E("CE1 CE2", "crpe", "Le nouveau programme d'histoire-géographie (BO 2026 : 5 grandes périodes au CE1, Préhistoire, Rome, royaume de France au CE2) ne s'applique au CE1 et au CE2 qu'à la rentrée 2027 : en 2026-27, ce sont les attendus de « Questionner le monde ».", "", None),
+    ),
+    F("cm1-histoire", "CM1 : du Moyen Âge à 1789",
+        E("CM1", "notion", "Du Moyen Âge au XXe siècle au cours moyen : régimes politiques, organisations sociales, figures historiques ; le [[respect de la chronologie]] conduit à préconiser l'ordre et la durée des thèmes.", cm1, 4),
+        E("CM1", "competence", "Thème 1 : [[la vie quotidienne au Moyen Âge]] (XIe-XIIIe) : [[seigneurie]], [[paroisse]], rôle de l'Église ; [[art roman]] / [[art gothique]].", cm1, 4),
+        E("CM1", "repere", "Moyen Âge (476-1492) ; une abbaye (Cluny) ; une cathédrale (Notre-Dame de Paris).", cm1, 4),
+        E("CM1", "competence", "Thème 2 : la monarchie en France (XVIe-XVIIe) : François Ier roi [[mécène]], Henri IV roi pacificateur, Louis XIV et la [[monarchie absolue]] ; [[société d’ordres]].", cm1, 5),
+        E("CM1", "repere", "1515 : Léonard de Vinci en France ; 1598 : [[édit de Nantes]] ; 1643-1715 : règne de Louis XIV.", cm1, 5),
+        E("CM1", "competence", "Thème 3 : explorations et conquêtes (XVe-XVIIe) : [[caravelle]], [[boussole]] ; premiers empires coloniaux ; [[traite]] ; [[commerce triangulaire]].", cm1, 5),
+        E("CM1", "repere", "1492 : Christophe Colomb ; 1519-1522 : expédition de Magellan ; 1685 : « Code noir ».", cm1, 5),
+        E("CM1", "competence", "Thème 4 : 1789, une année révolutionnaire : [[les Lumières]], [[cahiers de doléances]], fin de l'[[Ancien Régime]].", cm1, 6),
+        E("CM1", "repere", "14 juillet : prise de la Bastille ; nuit du 4 août : abolition des privilèges ; 26 août : Déclaration des Droits de l'Homme et du Citoyen ; 5-6 octobre 1789 : marche des femmes à Versailles.", cm1, 6),
+    ),
+    F("cm2-6e-histoire", "CM2 et 6e (programme 2020)",
+        E("CM2", "competence", "Thème 1 : [[Le temps de la République]] (1892, la République fête ses cent ans ; l'école de Jules Ferry ; libertés, droits, devoirs). Thème 2 : [[L’âge industriel en France]] (charbon, pétrole, mine, usine). Thème 3 : [[La France, des guerres mondiales à l’Union européenne]].", old, 71),
+        E("6e", "competence", "Thème 1 : [[La longue histoire de l’humanité et des migrations]] (révolution néolithique, premiers États, premières écritures). Thème 2 : [[Récits fondateurs, croyances et citoyenneté dans la Méditerranée antique]] (cités grecques, Rome, naissance du monothéisme juif). Thème 3 : [[L’empire romain dans le monde antique]] (romanisation, chrétiens, route de la soie).", old, 72),
+        E("CM2 6e", "crpe", "En 2026-27, le CM2 et la 6e restent sur le programme de 2020 ; le nouveau programme (République et Empire, IIIe République, guerres mondiales… en CM2 ; « premiers humains, premières sociétés et premiers États » en 6e) s'applique à la rentrée 2027.", "", None),
+    ),
+)
+
+espace = D("espace", "Se repérer dans l'espace",
+    F("espace-proche", "Espace vécu, plans et déplacements",
+        E("PS", "competence", "Faire l'expérience de l'espace : constructions simples, parcours dans l'école ; premiers marqueurs spatiaux (ici, là-bas, dedans, dehors, devant, derrière) ; reproduire un parcours.", c1, 56),
+        E("MS", "competence", "+ Situer des objets entre eux et par rapport à soi ; représenter un espace connu par une [[maquette]] ; représenter un déplacement.", c1, 56),
+        E("GS", "competence", "+ Distinguer la gauche de la droite ; réaliser un trajet à partir de sa représentation ; dessiner le [[plan]] de la classe ou de la cour ; coder un déplacement avec des flèches.", c1, 57),
+        E("PS MS GS", "competence", "Découvrir l'environnement proche : lieux de l'école, abords, puis espaces moins familiers (ville, campagne, mer, montagne).", c1, 58),
+        E("CP", "competence", "Géographie formelle dès la 4e période du CP. Thème 1 : [[autour de l’école]] : organisation de la classe et de l'école ; l'espace se représente ; faire le plan de la classe ; décrire un trajet.", cp, 6),
+        E("CE1 CE2", "competence", "[[Se repérer dans l'espace et le représenter]] ; vocabulaire des positions (premier plan, nord, sud…) ; lire des plans ; éléments d'une carte : [[titre, échelle, orientation, légende]].", qlm, 50),
+    ),
+    F("monde", "Représentations du monde",
+        E("GS", "competence", "Reconnaître quelques espaces sur un planisphère ; nommer un ou deux continents et quelques pays ; distinguer la mer et la terre.", c1, 56),
+        E("CP", "competence", "Thème 2 : des représentations du monde : passer du globe au planisphère ; [[continents]] et [[océans]] ; situer la France ; grands [[foyers de peuplement]].", cp, 6),
+        E("CP", "repere", "Nord/Sud/Est/Ouest ; océans Atlantique, Pacifique, Indien ; la France.", cp, 6),
+        E("CE1 CE2", "competence", "[[Situer un lieu sur une carte, sur un globe ou sur un écran informatique]] ; sa région, la France, l'Europe, les continents ; la Terre dans l'univers (Lune, Soleil).", qlm, 51),
+    ),
+)
+
+geographie = D("geographie", "Géographie",
+    F("organisations", "Organisations du monde et paysages (cycle 2)",
+        E("CE1 CE2", "competence", "[[Explorer les organisations du monde]] : comparer des [[modes de vie]] (alimentation, habitat, vêtements, déplacements) à différentes époques ou dans différentes cultures ; comprendre qu'un espace est organisé (quartier, village, ville) ; [[identifier des paysages]] (littoraux, montagnes, campagnes, villes, déserts).", qlm, 52),
+        E("CE1", "repere", "Évolution des modes de vie à l'échelle de trois à quatre générations ; comparer milieux proches et lointains.", qlm, 53),
+        E("CE2", "repere", "Organisation d'un milieu urbain proche : activités résidentielles, commerciales, industrielles, administratives.", qlm, 53),
+    ),
+    F("cm1-geographie", "CM1 : la diversité des modes de vie dans le monde",
+        E("CM1", "competence", "Thème 1 : [[se nourrir]] (pratiques alimentaires, produit agricole / produit transformé, [[malnutrition]]). Thème 2 : les [[inégalités]] dans le monde (accès à l'eau, à la santé ou à l'éducation). Thème 3 : se déplacer ([[distance kilométrique]], [[distance en temps]]). Thème 4 : communiquer avec Internet (câbles sous-marins, [[satellites]], inégalités d'accès, 5G).", cm1, 11),
+        E("CM1", "repere", "Aires régionales : Afrique subsaharienne, Maghreb, Amérique du Nord, Amérique du Sud, Asie du Sud-Est, Asie de l'Est, Europe, Océanie.", cm1, 11),
+        E("CM1", "notion", "En géographie, l'ordre des thèmes est libre mais la durée de chacun doit être respectée.", cm1, 3),
+    ),
+    F("cm2-6e-geographie", "CM2 et 6e (programme 2020) : habiter",
+        E("CM2", "competence", "Thème 1 : [[Se déplacer]] (au quotidien, de ville en ville, développement durable). Thème 2 : [[Communiquer d’un bout à l’autre du monde grâce à l’Internet]]. Thème 3 : [[Mieux habiter]] (nature en ville, recycler, écoquartier).", old, 75),
+        E("6e", "competence", "Thème 1 : [[Habiter une métropole]]. Thème 2 : [[Habiter un espace de faible densité]]. Thème 3 : [[Habiter les littoraux]]. Thème 4 : [[Le monde habité]].", old, 76),
+    ),
+)
+
+ecrire({
+    "id": "hg",
+    "nom": "Histoire-géographie",
+    "nomMaternelle": "Se repérer dans le temps et l’espace",
+    "intentions": "Maternelle : passer du temps et de l'espace vécus au temps et à l'espace représentés. Cycle 2 : passer « d’une perception immédiate et personnelle à une compréhension plus étendue du temps historique et de l’espace géographique » (CP 2026 ; CE1-CE2 : « Questionner l'espace et le temps » 2020). Cycle 3 : inscrire l'élève dans « une trame historique et géographique partagée, fondement d’une culture commune » ; confronter à l'[[altérité]] ; [[questionner les évidences]] ; différencier [[récits fictionnels]] et récits historiques.",
+    "domaines": [demarches, temps, histoire, espace, geographie],
+})

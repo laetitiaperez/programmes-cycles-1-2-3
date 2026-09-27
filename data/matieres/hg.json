@@ -1,0 +1,693 @@
+{
+ "id": "hg",
+ "nom": "Histoire-géographie",
+ "nomMaternelle": "Se repérer dans le temps et l’espace",
+ "intentions": "Maternelle : passer du temps et de l'espace vécus au temps et à l'espace représentés. Cycle 2 : passer « d’une perception immédiate et personnelle à une compréhension plus étendue du temps historique et de l’espace géographique » (CP 2026 ; CE1-CE2 : « Questionner l'espace et le temps » 2020). Cycle 3 : inscrire l'élève dans « une trame historique et géographique partagée, fondement d’une culture commune » ; confronter à l'[[altérité]] ; [[questionner les évidences]] ; différencier [[récits fictionnels]] et récits historiques.",
+ "domaines": [
+  {
+   "id": "demarches",
+   "nom": "Compétences et démarches",
+   "fils": [
+    {
+     "id": "competences",
+     "nom": "Les trois compétences et les outils",
+     "etapes": [
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "notion",
+       "texte": "Trois compétences principales : [[se repérer dans le temps et l’espace]] ; [[s’initier à la démarche historique et géographique]] ; [[maitriser différentes manières de décrire et d’expliquer la réalité du passé et du présent]]. Outils qui suivent la classe : [[frise chronologique]], [[planisphère]] (France hexagonale et ultramarine), [[globe terrestre]]. [[Parité horaire]] histoire / géographie. Chaque thème : intitulé, durée, question ; tableau objectifs d'apprentissage / attendus / [[repères]] (à mémoriser sur le long terme) ; [[mots-clés]].",
+       "sources": [
+        "hg-c2-2026"
+       ],
+       "page": 1
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "notion",
+       "texte": "« Questionner le monde » (2020) : passer d'un temps et d'un espace autocentrés à un temps et un espace décentrés ; observations sur le terrain, récits, témoignages, études de documents ; [[rituels]] et séquences structurées.",
+       "sources": [
+        "qlm-et-2020"
+       ],
+       "page": 50
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "notion",
+       "texte": "Mêmes trois compétences ; trois modalités : [[étude de documents]], étude d'un sujet conduite par le professeur, [[temps de récit]] ; écrire chaque jour (écrits de travail / écrits validés) ; interroger la [[fiabilité des sources]] ; verbes de spatialisation (« [[localiser et nommer]] » ≠ « [[situer et nommer]] »), d'énonciation, de combinaison.",
+       "sources": [
+        "hg-c3-2026"
+       ],
+       "page": 1
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "crpe",
+       "texte": "Place des femmes : il faut « [[visibiliser leur place et leur rôle dans l’histoire]] ».",
+       "sources": []
+      },
+      {
+       "classes": [
+        "CM2",
+        "6e"
+       ],
+       "type": "notion",
+       "texte": "Programme de 2020 : repères annuels de programmation par thèmes ; démarches et contenus d'enseignement ; notion d'[[habiter]] centrale en géographie.",
+       "sources": [
+        "hg-c3-2020"
+       ],
+       "page": 68
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "temps",
+   "nom": "Se repérer dans le temps",
+   "fils": [
+    {
+     "id": "reperes-temporels",
+     "nom": "Repères temporels : journée, semaine, année",
+     "etapes": [
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "notion",
+       "texte": "Passer du temps vécu au temps représenté ; activités ritualisées : organisation de la journée avant quatre ans, de la semaine à partir de quatre ans, de l'année à partir de cinq ans.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 53
+      },
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Principaux moments de la journée ; quelques marqueurs temporels (avant, après, maintenant) ; première approche des saisons.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 53
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ La semaine est une suite de sept jours ; jours repères ; aujourd'hui, demain, hier ; nommer l'hiver, l'été.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 53
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Énoncer la [[date]] ; mois repères ; nommer la plupart des mois ; connaître les [[saisons]].",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 54
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Thème 1 : manifestations naturelles du temps (alternance jour/nuit avec un globe, saisons). Thème 2 : structure du [[calendrier grégorien]] ; représentations linéaire et cyclique ; outils (sablier, pendule, montre).",
+       "sources": [
+        "hg-c2-2026"
+       ],
+       "page": 3
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "repere",
+       "texte": "L'année (12 mois) ; la semaine (7 jours) ; la journée (24 heures).",
+       "sources": [
+        "hg-c2-2026"
+       ],
+       "page": 3
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "[[Identifier les rythmes cycliques du temps]] ; lire l'heure et les dates ; unités de durée jusqu'au siècle et au millénaire.",
+       "sources": [
+        "qlm-et-2020"
+       ],
+       "page": 51
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "exemple",
+       "texte": "« Roue des jours », éphéméride, cadran solaire.",
+       "sources": [
+        "qlm-et-2020"
+       ],
+       "page": 51
+      }
+     ]
+    },
+    {
+     "id": "chronologie",
+     "nom": "Chronologie et durée",
+     "etapes": [
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Ordonner des moments rituels ; restituer le déroulement d'une histoire simple ; attendre, repérer le début et la fin d'une activité.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 54
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Restituer la chronologie d'une histoire ; connecteurs (au début, ensuite, pour finir) ; [[sablier]], minuteur.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 54
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ [[Antériorité]], [[postériorité]], [[simultanéité]] ; comparer des durées ; comprendre qu'il existe un temps long, antérieur à notre vie.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 55
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "exemple",
+       "texte": "« Le Petit Poucet marchait derrière ses parents… il avait pris des petits cailloux… »",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 55
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Thème 3 : antériorité, simultanéité, postériorité ; [[irréversibilité]] du temps ; [[arbre généalogique]] ; frise de la journée, de la vie, générationnelle.",
+       "sources": [
+        "hg-c2-2026"
+       ],
+       "page": 3
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "Situer des événements les uns par rapport aux autres ; prendre conscience que le temps qui passe est irréversible ; générations et mémoire familiale ; évolution des modes de vie.",
+       "sources": [
+        "qlm-et-2020"
+       ],
+       "page": 51
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "histoire",
+   "nom": "Histoire",
+   "fils": [
+    {
+     "id": "temps-long",
+     "nom": "Entrer dans le temps long",
+     "etapes": [
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "[[Repérer des périodes de l'histoire du monde occidental et de la France]] ; quelques personnages et dates.",
+       "sources": [
+        "qlm-et-2020"
+       ],
+       "page": 52
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "crpe",
+       "texte": "Le nouveau programme d'histoire-géographie (BO 2026 : 5 grandes périodes au CE1, Préhistoire, Rome, royaume de France au CE2) ne s'applique au CE1 et au CE2 qu'à la rentrée 2027 : en 2026-27, ce sont les attendus de « Questionner le monde ».",
+       "sources": []
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "repere",
+       "texte": "« Le repérage des grandes périodes historiques se travaille au CE2 » : événements, personnages et modes de vie caractéristiques des principales périodes.",
+       "sources": [
+        "qlm-et-2020"
+       ],
+       "page": 52
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "exemple",
+       "texte": "Comparer les modes de vie de personnages : une paysanne, un artisan, une ouvrière, un soldat, une savante…",
+       "sources": [
+        "qlm-et-2020"
+       ],
+       "page": 53
+      }
+     ]
+    },
+    {
+     "id": "cm1-histoire",
+     "nom": "CM1 : du Moyen Âge à 1789",
+     "etapes": [
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "notion",
+       "texte": "Du Moyen Âge au XXe siècle au cours moyen : régimes politiques, organisations sociales, figures historiques ; le [[respect de la chronologie]] conduit à préconiser l'ordre et la durée des thèmes.",
+       "sources": [
+        "hg-c3-2026"
+       ],
+       "page": 4
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Thème 1 : [[la vie quotidienne au Moyen Âge]] (XIe-XIIIe) : [[seigneurie]], [[paroisse]], rôle de l'Église ; [[art roman]] / [[art gothique]].",
+       "sources": [
+        "hg-c3-2026"
+       ],
+       "page": 4
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "repere",
+       "texte": "Moyen Âge (476-1492) ; une abbaye (Cluny) ; une cathédrale (Notre-Dame de Paris).",
+       "sources": [
+        "hg-c3-2026"
+       ],
+       "page": 4
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Thème 2 : la monarchie en France (XVIe-XVIIe) : François Ier roi [[mécène]], Henri IV roi pacificateur, Louis XIV et la [[monarchie absolue]] ; [[société d’ordres]].",
+       "sources": [
+        "hg-c3-2026"
+       ],
+       "page": 5
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "repere",
+       "texte": "1515 : Léonard de Vinci en France ; 1598 : [[édit de Nantes]] ; 1643-1715 : règne de Louis XIV.",
+       "sources": [
+        "hg-c3-2026"
+       ],
+       "page": 5
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Thème 3 : explorations et conquêtes (XVe-XVIIe) : [[caravelle]], [[boussole]] ; premiers empires coloniaux ; [[traite]] ; [[commerce triangulaire]].",
+       "sources": [
+        "hg-c3-2026"
+       ],
+       "page": 5
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "repere",
+       "texte": "1492 : Christophe Colomb ; 1519-1522 : expédition de Magellan ; 1685 : « Code noir ».",
+       "sources": [
+        "hg-c3-2026"
+       ],
+       "page": 5
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Thème 4 : 1789, une année révolutionnaire : [[les Lumières]], [[cahiers de doléances]], fin de l'[[Ancien Régime]].",
+       "sources": [
+        "hg-c3-2026"
+       ],
+       "page": 6
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "repere",
+       "texte": "14 juillet : prise de la Bastille ; nuit du 4 août : abolition des privilèges ; 26 août : Déclaration des Droits de l'Homme et du Citoyen ; 5-6 octobre 1789 : marche des femmes à Versailles.",
+       "sources": [
+        "hg-c3-2026"
+       ],
+       "page": 6
+      }
+     ]
+    },
+    {
+     "id": "cm2-6e-histoire",
+     "nom": "CM2 et 6e (programme 2020)",
+     "etapes": [
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "Thème 1 : [[Le temps de la République]] (1892, la République fête ses cent ans ; l'école de Jules Ferry ; libertés, droits, devoirs). Thème 2 : [[L’âge industriel en France]] (charbon, pétrole, mine, usine). Thème 3 : [[La France, des guerres mondiales à l’Union européenne]].",
+       "sources": [
+        "hg-c3-2020"
+       ],
+       "page": 71
+      },
+      {
+       "classes": [
+        "CM2",
+        "6e"
+       ],
+       "type": "crpe",
+       "texte": "En 2026-27, le CM2 et la 6e restent sur le programme de 2020 ; le nouveau programme (République et Empire, IIIe République, guerres mondiales… en CM2 ; « premiers humains, premières sociétés et premiers États » en 6e) s'applique à la rentrée 2027.",
+       "sources": []
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Thème 1 : [[La longue histoire de l’humanité et des migrations]] (révolution néolithique, premiers États, premières écritures). Thème 2 : [[Récits fondateurs, croyances et citoyenneté dans la Méditerranée antique]] (cités grecques, Rome, naissance du monothéisme juif). Thème 3 : [[L’empire romain dans le monde antique]] (romanisation, chrétiens, route de la soie).",
+       "sources": [
+        "hg-c3-2020"
+       ],
+       "page": 72
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "espace",
+   "nom": "Se repérer dans l'espace",
+   "fils": [
+    {
+     "id": "espace-proche",
+     "nom": "Espace vécu, plans et déplacements",
+     "etapes": [
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Faire l'expérience de l'espace : constructions simples, parcours dans l'école ; premiers marqueurs spatiaux (ici, là-bas, dedans, dehors, devant, derrière) ; reproduire un parcours.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 56
+      },
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "Découvrir l'environnement proche : lieux de l'école, abords, puis espaces moins familiers (ville, campagne, mer, montagne).",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 58
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Situer des objets entre eux et par rapport à soi ; représenter un espace connu par une [[maquette]] ; représenter un déplacement.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 56
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Distinguer la gauche de la droite ; réaliser un trajet à partir de sa représentation ; dessiner le [[plan]] de la classe ou de la cour ; coder un déplacement avec des flèches.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 57
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Géographie formelle dès la 4e période du CP. Thème 1 : [[autour de l’école]] : organisation de la classe et de l'école ; l'espace se représente ; faire le plan de la classe ; décrire un trajet.",
+       "sources": [
+        "hg-c2-2026"
+       ],
+       "page": 6
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "[[Se repérer dans l'espace et le représenter]] ; vocabulaire des positions (premier plan, nord, sud…) ; lire des plans ; éléments d'une carte : [[titre, échelle, orientation, légende]].",
+       "sources": [
+        "qlm-et-2020"
+       ],
+       "page": 50
+      }
+     ]
+    },
+    {
+     "id": "monde",
+     "nom": "Représentations du monde",
+     "etapes": [
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "Reconnaître quelques espaces sur un planisphère ; nommer un ou deux continents et quelques pays ; distinguer la mer et la terre.",
+       "sources": [
+        "c1-2026"
+       ],
+       "page": 56
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Thème 2 : des représentations du monde : passer du globe au planisphère ; [[continents]] et [[océans]] ; situer la France ; grands [[foyers de peuplement]].",
+       "sources": [
+        "hg-c2-2026"
+       ],
+       "page": 6
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "repere",
+       "texte": "Nord/Sud/Est/Ouest ; océans Atlantique, Pacifique, Indien ; la France.",
+       "sources": [
+        "hg-c2-2026"
+       ],
+       "page": 6
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "[[Situer un lieu sur une carte, sur un globe ou sur un écran informatique]] ; sa région, la France, l'Europe, les continents ; la Terre dans l'univers (Lune, Soleil).",
+       "sources": [
+        "qlm-et-2020"
+       ],
+       "page": 51
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geographie",
+   "nom": "Géographie",
+   "fils": [
+    {
+     "id": "organisations",
+     "nom": "Organisations du monde et paysages (cycle 2)",
+     "etapes": [
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "[[Explorer les organisations du monde]] : comparer des [[modes de vie]] (alimentation, habitat, vêtements, déplacements) à différentes époques ou dans différentes cultures ; comprendre qu'un espace est organisé (quartier, village, ville) ; [[identifier des paysages]] (littoraux, montagnes, campagnes, villes, déserts).",
+       "sources": [
+        "qlm-et-2020"
+       ],
+       "page": 52
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "repere",
+       "texte": "Évolution des modes de vie à l'échelle de trois à quatre générations ; comparer milieux proches et lointains.",
+       "sources": [
+        "qlm-et-2020"
+       ],
+       "page": 53
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "repere",
+       "texte": "Organisation d'un milieu urbain proche : activités résidentielles, commerciales, industrielles, administratives.",
+       "sources": [
+        "qlm-et-2020"
+       ],
+       "page": 53
+      }
+     ]
+    },
+    {
+     "id": "cm1-geographie",
+     "nom": "CM1 : la diversité des modes de vie dans le monde",
+     "etapes": [
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Thème 1 : [[se nourrir]] (pratiques alimentaires, produit agricole / produit transformé, [[malnutrition]]). Thème 2 : les [[inégalités]] dans le monde (accès à l'eau, à la santé ou à l'éducation). Thème 3 : se déplacer ([[distance kilométrique]], [[distance en temps]]). Thème 4 : communiquer avec Internet (câbles sous-marins, [[satellites]], inégalités d'accès, 5G).",
+       "sources": [
+        "hg-c3-2026"
+       ],
+       "page": 11
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "repere",
+       "texte": "Aires régionales : Afrique subsaharienne, Maghreb, Amérique du Nord, Amérique du Sud, Asie du Sud-Est, Asie de l'Est, Europe, Océanie.",
+       "sources": [
+        "hg-c3-2026"
+       ],
+       "page": 11
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "notion",
+       "texte": "En géographie, l'ordre des thèmes est libre mais la durée de chacun doit être respectée.",
+       "sources": [
+        "hg-c3-2026"
+       ],
+       "page": 3
+      }
+     ]
+    },
+    {
+     "id": "cm2-6e-geographie",
+     "nom": "CM2 et 6e (programme 2020) : habiter",
+     "etapes": [
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "Thème 1 : [[Se déplacer]] (au quotidien, de ville en ville, développement durable). Thème 2 : [[Communiquer d’un bout à l’autre du monde grâce à l’Internet]]. Thème 3 : [[Mieux habiter]] (nature en ville, recycler, écoquartier).",
+       "sources": [
+        "hg-c3-2020"
+       ],
+       "page": 75
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Thème 1 : [[Habiter une métropole]]. Thème 2 : [[Habiter un espace de faible densité]]. Thème 3 : [[Habiter les littoraux]]. Thème 4 : [[Le monde habité]].",
+       "sources": [
+        "hg-c3-2020"
+       ],
+       "page": 76
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
