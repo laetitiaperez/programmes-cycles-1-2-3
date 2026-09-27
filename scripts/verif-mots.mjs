@@ -9,7 +9,7 @@ import { normalize } from '../lib/normalize.js';
 const FICHIER = {
   'c1-2024': 'c1-2026', 'c1-2026': 'c1-2026', 'evar-mat-2025': 'evar-mat', 'evar-elem-2025': 'evar-elem',
   'evars-college-2025': 'evars-college', 'fr-c2-2024': 'fr-c2-2024', 'maths-c2-2024': 'maths-c2-2024',
-  'fr-c3-2025': 'fr-c3-2025', 'fr-ex-cm1': 'fr-ex-cm1', 'fr-ex-cm2': 'fr-ex-cm2', 'fr-ex-6e': 'fr-ex-6e', 'maths-c3-2025': 'maths-c3-2025', 'emc-2024': 'emc-2024',
+  'fr-c3-2025': 'fr-c3-2025', 'fr-ex-cm1': 'fr-ex-cm1', 'fr-ex-cm2': 'fr-ex-cm2', 'fr-ex-6e': 'fr-ex-6e', 'maths-c3-2025': 'maths-c3-2025', 'maths-ex-cm1': 'maths-ex-cm1', 'maths-ex-cm2': 'maths-ex-cm2', 'maths-ex-6e': 'maths-ex-6e', 'emc-2024': 'emc-2024',
   'hg-c2-2026': 'hg-c2-2026', 'qlm-et-2020': 'c2-2020', 'hg-c3-2026': 'hg-c3-2026', 'hg-c3-2020': 'c3-2023',
   'sci-c2-2026': 'sci-c2-2026', 'qlm-vmo-2020': 'c2-2020', 'sci-c3-2026': 'sci-c3-2026', 'sci-c3-2023': 'c3-2023',
   'eps-c2-2026': 'eps-c2-2026', 'eps-c2-2020': 'c2-2020', 'eps-c3-2026': 'eps-c3-2026', 'eps-c3-2020': 'c3-2023',
@@ -46,7 +46,9 @@ for (const id of ids) {
     for (const kw of extractKeywords(b.texte)) {
       total++;
       const k = plat(kw);
-      const trouve = (await Promise.all(b.sources.map(texte))).some(t => t.includes(k));
+      // Encadrés CRPE sans source : on cherche dans tous les textes de la matière.
+      const sources = b.sources.length ? b.sources : tousLesTextes;
+      const trouve = (await Promise.all(sources.map(texte))).some(t => t.includes(k));
       if (!trouve) { absents++; console.log(`${id}/${ou} : « ${kw} » absent de ${b.sources.join(', ')}`); }
     }
   }

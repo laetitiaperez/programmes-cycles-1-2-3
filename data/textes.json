@@ -158,6 +158,39 @@
     "pdf": "https://www.education.gouv.fr/sites/default/files/programme-de-math-matiques-pour-le-cycle-3-439827.pdf"
   },
   {
+    "id": "maths-ex-cm1",
+    "titre": "Mathématiques — exemples pour la mise en œuvre en CM1",
+    "matiere": "maths",
+    "bo": "Éduscol, exemples de réussite (2025), à titre indicatif",
+    "classes2026": [
+      "CM1"
+    ],
+    "nouveauEn": [],
+    "pdf": "https://eduscol.education.gouv.fr/sites/default/files/document/exemplesmiseenoeuvrecm1mathspdf-111543.pdf"
+  },
+  {
+    "id": "maths-ex-cm2",
+    "titre": "Mathématiques — exemples pour la mise en œuvre en CM2",
+    "matiere": "maths",
+    "bo": "Éduscol, exemples de réussite (2025), à titre indicatif",
+    "classes2026": [
+      "CM2"
+    ],
+    "nouveauEn": [],
+    "pdf": "https://eduscol.education.gouv.fr/sites/default/files/document/exemplesmiseenoeuvrecm2-mathpdf-111537.pdf"
+  },
+  {
+    "id": "maths-ex-6e",
+    "titre": "Mathématiques — exemples pour la mise en œuvre en 6e",
+    "matiere": "maths",
+    "bo": "Éduscol, exemples de réussite (2025), à titre indicatif",
+    "classes2026": [
+      "6e"
+    ],
+    "nouveauEn": [],
+    "pdf": "https://eduscol.education.gouv.fr/sites/default/files/document/exemplesmiseenoeuvre6e-mathpdf-111549.pdf"
+  },
+  {
     "id": "emc-2024",
     "titre": "Enseignement moral et civique (CP → terminale)",
     "matiere": "emc",

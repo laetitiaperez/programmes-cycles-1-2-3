@@ -4,7 +4,7 @@
 | Matière | Statut | Commit |
 |---|---|---|
 | français | fait (27 fils, 171 étapes) | Task 4 |
-| maths | à faire | |
+| maths | fait (22 fils) | Task 6 |
 | hg (QLM espace-temps) | à faire | |
 | sciences (QLM vivant-matière-objets) | à faire | |
 | emc | à faire | |
@@ -27,6 +27,7 @@ Programme C1 consolidé (BO 41/2024 + BO 19/2026), 6 domaines + préambule :
 | Préambule (principes, modalités, évaluation) | maternelle |
 
 ## Découpage en fils (par matière)
+- **Maths** — Nombres : quantités (mat.) · rang · entiers · fractions · décimaux. Calcul : calcul mental · opérations. Problèmes et algèbre : résolution · algèbre · motifs (mat.). Grandeurs : longueurs · masses-contenances · aires-angles-volumes · durées-monnaie. Géométrie : solides · figures · repérage. Données : données · probabilités · proportionnalité · pensée informatique.
 - **Français** — Lecture : phonologie, lettres (maternelle) · décodage · fluence · compréhension · documents · devenir lecteur. Écriture : geste · copie · encodage · production · écrire pour apprendre (C3). Oral : syntaxe orale, articuler (maternelle) · écouter · dire · échanges. Vocabulaire : enrichir · relations · orthographe lexicale. Grammaire : phrase · constituants · classes · GN · accord S-V · conjugaison · phrase complexe.
 
 ## Choix faits

@@ -1,0 +1,1764 @@
+{
+ "id": "maths",
+ "nom": "Mathématiques",
+ "nomMaternelle": "L'acquisition des premiers outils mathématiques",
+ "intentions": "Maternelle : fréquentation quotidienne des mathématiques ; quatre modalités (jeu, résolution de problèmes concrets, entraînement, mémorisation) auxquelles s'intègre la [[manipulation]], toujours [[verbalisée]]. Cycle 2 : du [[concret à l'abstrait]], en passant par la [[représentation imagée]] ; priorité à la numération, au calcul et à la résolution de problèmes arithmétiques ([[les deux tiers]] du temps au minimum) ; aborder d'emblée le programme de la classe, sans séquence de révision pour tous. Cycle 3 : la résolution de problèmes au centre ; [[automatismes]] ; initiation à la [[pensée algébrique]] et à la [[pensée informatique]] ; égalité filles-garçons (valoriser des mathématiciennes).",
+ "domaines": [
+  {
+   "id": "nombres",
+   "nom": "Nombres",
+   "fils": [
+    {
+     "id": "quantites",
+     "nom": "Construire le nombre : quantités (maternelle)",
+     "etapes": [
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "notion",
+       "texte": "Objectifs de [[cardinalité]] : comprendre que tout nombre s'obtient en ajoutant un au précédent ; qu'une quantité ne dépend ni de la nature ni de la position des objets ; associer quantité, nom et écriture chiffrée ; dénombrer, comparer, [[composer et décomposer]] ; installer le [[principe de cardinalité]] (éviter le numérotage). Écriture chiffrée seulement après le sens en termes de quantité. Ne pas introduire prématurément le zéro.",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 37
+      },
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "attendu",
+       "texte": "Dénombrer jusqu'à trois, voire quatre ; [[comparer par correspondance terme à terme]] ; compositions « un et un font deux » ; [[comptine numérique]] de un à six.",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 38
+      },
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "exemple",
+       "texte": "Situation du voyageur : aller chercher juste ce qu'il faut de voyageurs pour occuper chaque siège (d'abord sans limiter les trajets, puis en un seul trajet).",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 38
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "attendu",
+       "texte": "+ Jusqu'à six ; parcourir une collection en passant une et une seule fois par chaque élément ([[énumération]]) ; écrire les nombres de un à six ; comptine jusqu'à douze.",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 39
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "exemple",
+       "texte": "Boîte de douze œufs percée de fentes : mettre un jeton et un seul dans chaque alvéole ; aller chercher en un seul trajet autant de verres que d'assiettes.",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 39
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "attendu",
+       "texte": "+ Jusqu'à dix, voire au-delà ; un de plus / un de moins ; [[surcompter]] ; compositions et décompositions jusqu'à dix, dont les [[doubles]] ; écrire en chiffres de un à dix ; comptine jusqu'à trente, à rebours de dix à un, de deux en deux.",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 41
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "exemple",
+       "texte": "Huit objets en deux constellations de quatre : compter un à un, « mettre quatre dans sa tête » et surcompter, ou dire « quatre et quatre font huit ».",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 41
+      }
+     ]
+    },
+    {
+     "id": "rang",
+     "nom": "Rang et position : nombre ordinal",
+     "etapes": [
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "Comprendre la notion de [[rang]] (jusqu'à six) ; déterminer l'effet d'un déplacement sur une position ; se familiariser avec la [[bande numérique]].",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 43
+      },
+      {
+       "classes": [
+        "MS",
+        "GS"
+       ],
+       "type": "notion",
+       "texte": "La conception spatiale du nombre (jeu de l'oie, bande numérique) préfigure la ligne numérique ; l'enseignant emploie les ordinaux, l'élève peut dire « si je suis sur le quatre et que j'avance de deux, je me retrouve sur le six ».",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 42
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Rang jusqu'à dix, en changeant le point de départ ou le sens de parcours ; lien entre un ajout et un avancement ; construire la bande numérique jusqu'à dix.",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 43
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Nombres [[ordinaux]] jusqu'à « vingtième » ; lien entre le rang et le nombre d'éléments qui précèdent ; suites de symboles.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 4
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "+ Ordinaux jusqu'à cent ; [[suite évolutive]] (1, 2, 4, 7, 11, 16…).",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 11
+      }
+     ]
+    },
+    {
+     "id": "entiers",
+     "nom": "Nombres entiers : numération",
+     "etapes": [
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2"
+       ],
+       "type": "notion",
+       "texte": "[[Aspect décimal]] (base dix) et [[aspect positionnel]] dès la période 1 du CP ; collections organisées en groupes de dix ; matériel : cubes emboîtables, bûchettes, [[matériel multibase]], monnaie fictive ; diverses représentations d'un nombre (matériel, chiffres, oral, [[unités de numération]], décomposition, lettres) ; placer des nombres sur une [[demi-droite graduée]].",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 3
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "attendu",
+       "texte": "Nombres jusqu'à [[cent]] (59 au plus tard en période 2, 100 en période 3) ; écriture en lettres jusqu'à cinquante.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 3
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "exemple",
+       "texte": "Expliquer pourquoi 23 n'est pas le même nombre que 32.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 4
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "attendu",
+       "texte": "Nombres jusqu'à [[mille]] ; la centaine dès la période 1 ; relations unités / dizaines / centaines.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 10
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "exemple",
+       "texte": "235 timbres vendus par plaques de cent, carnets de dix ou à l'unité : proposer quatre commandes.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 11
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "attendu",
+       "texte": "Nombres jusqu'à 10 000 ; décomposition (4 × 1 000) + (6 × 100) + (3 × 10) + (5 × 1).",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 19
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "attendu",
+       "texte": "Jusqu'à [[999 999]] (5-6 chiffres à partir de la période 3 ou 4 seulement) ; multiples de 2, 5 et 10 ; seuls les [[critères de divisibilité]] par 2, 5 et 10 sont au programme.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 5
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "attendu",
+       "texte": "Jusqu'à 999 999 999 ; [[diviseurs]] et [[multiples]] communs (nombres ≤ 30, < 15).",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "attendu",
+       "texte": "Le [[milliard]] ; valeur des chiffres selon leur rang (jusqu'au millième).",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 13
+      }
+     ]
+    },
+    {
+     "id": "fractions",
+     "nom": "Fractions",
+     "etapes": [
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "[[Fractions d'un tout]] (≤ 1), dès la période 2 : [[fractions unitaires]] puis non unitaires ; « moitié », « demi », « quart » ; dénominateurs 2, 3, 4, 5, 6, 8, 10 ; [[numérateur]], [[dénominateur]] ; comparer (même dénominateur, numérateur 1) ; additionner et soustraire (même dénominateur).",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 12
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "exemple",
+       "texte": "Comprendre, par manipulation, que 1/3 est supérieur à 1/6, ce qui peut être contre-intuitif (3 < 6).",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 12
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "+ Égalités de fractions (5/10 = 1/2) ; dénominateur ≤ 12 ; à partir de la période 3, graduer une [[bande-unité]] en fractions d'unité : la fraction acquiert un statut de nombre ; mesurer des longueurs non entières.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 20
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "+ Fractions supérieures à 1 ; entier + fraction ; encadrer entre deux entiers ; placer sur une demi-droite graduée ; fraction [[opérateur]] (un tiers de 12 billes) ; dénominateur ≤ 20.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 5
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "+ Dénominateur ≤ 60 ; produit d'un entier et d'une fraction ; deux tiers de 12 €.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ Sens [[quotient]] : 3/4 est aussi le quart de 3 (« guide-âne ») ; fraction opérateur sur un nombre ; [[pourcentages]].",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 14
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "repere",
+       "texte": "Automatismes : 1/4 = 0,25 ; 1/2 = 0,5 ; 3/4 = 0,75 ; 3/2 = 1,5.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 15
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "exemple",
+       "texte": "Mise en perspective : pourquoi une fraction a été appelée [[nombre rompu]], nombre cassé ou nombre coupé.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 16
+      }
+     ]
+    },
+    {
+     "id": "decimaux",
+     "nom": "Nombres décimaux",
+     "etapes": [
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "notion",
+       "texte": "L'[[écriture à virgule]] est introduite par la [[monnaie]] (centimes au CE1), sans les mots dixième ou centième ; la virgule repère le chiffre des unités.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 27
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "exemple",
+       "texte": "2 € et 5 centimes s'écrit 2,05 € ; 12 € c'est plus que 60 centimes bien que 12 soit plus petit que 60.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 27
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "+ Additions (période 2) et soustractions (période 4) posées de montants en euro.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 30
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Réintroduction par les [[fractions décimales]] ; l'écriture à virgule est un [[codage conventionnel]] (35,78 = 35 + 7/10 + 8/100) ; jusqu'aux centièmes ; [[partie entière]] et [[arrondi]].",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 6
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "+ Jusqu'aux millièmes.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 10
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ Multiplier deux décimaux (appui sur l'aire du rectangle) ; arrondi au dixième, au centième ; contrôle par un [[ordre de grandeur]].",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 13
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "exemple",
+       "texte": "Mise en perspective : l'écriture des décimaux de Simon Stevin de Bruges.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 14
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "calcul",
+   "nom": "Calcul",
+   "fils": [
+    {
+     "id": "calcul-mental",
+     "nom": "Calcul mental",
+     "etapes": [
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2"
+       ],
+       "type": "notion",
+       "texte": "Trois types d'apprentissages : [[mémoriser des faits numériques]], utiliser la numération, maîtriser des [[procédures]] ; séances quotidiennes ; tests en temps limité mesurant la [[fluence]] (routines sans stress : écart filles-garçons relevé par Repères CM1 2023) ; écrits intermédiaires sur l'ardoise.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 5
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "attendu",
+       "texte": "Tables d'addition : 8 égalités à trou en une minute ; doubles et moitiés usuels ; procédures (ajouter 9, complément à la dizaine…) : 9 résultats en trois minutes.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 6
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "exemple",
+       "texte": "« 47 + 3 = 50 + 5 = 55 » est incorrect : le symbole « = » ne se place qu'entre deux termes égaux.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 5
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "attendu",
+       "texte": "+ Tables d'addition : 12 égalités en une minute ; [[tables de multiplication]] : 8 ; procédures : 12 résultats en trois minutes.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 14
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "exemple",
+       "texte": "Distributivité : « 13 fois 7, c'est 10 fois 7 plus 3 fois 7 » ; multiplier par 10 avec un [[glisse-nombres]].",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 16
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "attendu",
+       "texte": "+ Tables d'addition : 15 égalités en une minute ; multiplication : 12 ; procédures : 15 résultats en trois minutes ; multiplier par 4 ou 8 (doubles successifs).",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 22
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "Mêmes trois types d'apprentissages ; faits numériques sur fractions et décimaux (écriture décimale de fractions usuelles) ; multiplier et diviser un décimal par 10, 100, 1 000 ; multiplier par 5 ; [[distributivité]] dans des cas simples.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 7
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Automatismes : multiplier et diviser un décimal par 10, 100, 1 000 ; par 0,1, 0,01, 0,001.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 13
+      }
+     ]
+    },
+    {
+     "id": "operations",
+     "nom": "Les quatre opérations",
+     "etapes": [
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2"
+       ],
+       "type": "notion",
+       "texte": "Les opérations prennent leur sens dans la résolution de problèmes ; « [[La calculatrice n'est pas utilisée au cycle 2]] » (sauf besoins particuliers).",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 5
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Sens de l'addition et de la soustraction (opération inverse) ; addition posée seulement en période 4 ou 5 ; sens de la multiplication (« fois », additions itérées).",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 5
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "+ Soustraction posée au plus tard en période 3 : [[un unique et même algorithme]] privilégié dans l'école du CE1 au CM2 (« par cassage » ou « par compensation ») ; symbole « × » ; [[commutativité]] ; [[parité]].",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 13
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "exemple",
+       "texte": "Le potager de huit colonnes de quatre salades : 8 × 4 = 4 × 8.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 13
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "+ Multiplication posée au plus tard en période 4 ; sens de la division (symbole « ÷ ») ; « terme », « somme », « différence », « facteur », « produit », « multiple ».",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 21
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "+ Estimer un résultat ; parenthèses ; additionner et soustraire des décimaux ; [[division euclidienne]] avec un diviseur à un chiffre.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 7
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "notion",
+       "texte": "Au cycle 3, pas de calculatrice « au quotidien » ; au cours moyen, pas de calculatrice personnelle, mais l'enseignant peut en fournir.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 3
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "+ Multiplier un décimal par un entier ; [[divisions décimales]] (diviseur à un chiffre).",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 11
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ Produit de deux décimaux ; division euclidienne par un nombre < 100 ; sens [[partition]] et [[quotition]] de la division.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 13
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "exemple",
+       "texte": "Mises en perspective : multiplication par jalousies, bouliers, numération sexagésimale babylonienne.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 14
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "problemes",
+   "nom": "Résolution de problèmes et algèbre",
+   "fils": [
+    {
+     "id": "resolution",
+     "nom": "Résoudre des problèmes",
+     "etapes": [
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "notion",
+       "texte": "Problèmes arithmétiques en une seule étape : réunion, ajout et retrait ([[problèmes de parties-tout]]), comparaison, groupements ou partage, déplacement ; du matériel figuratif au matériel symbolique puis au calcul mental ; séances fréquentes à partir du milieu de la maternelle.",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 44
+      },
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Recherche du tout ou d'une partie en réalisant l'action avec du matériel figuratif.",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 45
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Position finale sur une piste ; problèmes de groupements ; valeur d'une part dans un [[partage équitable]].",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 45
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Quantité ajoutée ou retirée ; comparaison (écart) ; partage avec reste ; représentation sur papier.",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 46
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "crpe",
+       "texte": "Dès 5 ans, proposer des problèmes dont l'énoncé est en [[discordance]] avec l'opération : « Pierre a cinq billes. Il a trois billes de moins que Julie. Combien Julie a-t-elle de billes ? »",
+       "sources": []
+      },
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2"
+       ],
+       "type": "notion",
+       "texte": "Enseignement explicite fondé sur le [[modèle de résolution de problèmes en quatre phases]] : comprendre (reformuler « l'histoire »), [[modéliser]], [[calculer]], [[répondre]], avec [[régulation]] ; [[au moins dix problèmes par semaine]] ; proposer des énoncés dont les termes n'induisent pas l'opération (« plus » pour une soustraction) ; [[institutionnalisation]].",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Problèmes additifs en une étape de type [[parties-tout]] (la transformation est traitée comme un parties-tout) ; additifs en deux étapes et multiplicatifs (champ ≤ 30), dont le partage équitable.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "exemple",
+       "texte": "« Anna avait 43 cerises. Elle en a mangé 18 » : barres de dix cubes, on « casse » une dizaine.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "+ [[Comparaison]] additive ; [[schéma en barre]], schéma avec déplacement sur un axe ; problèmes mixtes en deux étapes.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 17
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "exemple",
+       "texte": "« Léo a 188 billes. Lucie en a 75 de plus que Léo » : schéma à deux barres.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 17
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "+ [[Comparaison multiplicative]] (« fois plus » ≠ « de plus ») ; [[produits cartésiens]] (tableau, arbre) ; mixtes en deux ou trois étapes ; [[problèmes atypiques]] sur un champ < 100.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 23
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "exemple",
+       "texte": "Poupée avec trois pantalons et sept teeshirts : 21 façons (tableau) ; clown : 12 costumes (arbre).",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 24
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "notion",
+       "texte": "La résolution de problèmes [[occupe une place centrale]] et constitue le critère principal pour évaluer ; six compétences : [[chercher, modéliser, représenter, calculer, raisonner, communiquer]] ; régulation par la vraisemblance.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 2
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "+ Additifs en deux ou trois étapes ; [[problèmes de dénombrement]] ; [[problèmes d'optimisation]].",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "exemple",
+       "texte": "« 4,5 m pour la longueur d'une voiture, est-ce que cela est plausible ? »",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "+ Problèmes [[préparant à l'utilisation d'algorithmes]].",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 11
+      }
+     ]
+    },
+    {
+     "id": "algebre",
+     "nom": "Algèbre : pensée algébrique",
+     "etapes": [
+      {
+       "classes": [
+        "CM1",
+        "CM2",
+        "6e"
+       ],
+       "type": "notion",
+       "texte": "À partir du cycle 3, [[changement de paradigme]] : raisonner sur des nombres inconnus (lettres formelles au cycle 4) ; [[modèles pré-algébriques]] : schémas en barre, balances, [[motifs évolutifs]] ; le signe « = » relie deux expressions égales (« 178 – … = 6 × 8 »).",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 3
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "Égalités à trous ; valeur d'un nombre inconnu représenté par un symbole ; [[programme de calcul]] ; suites de nombres et de motifs.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 8
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "exemple",
+       "texte": "Tee-shirts à 12 € avec 5 € de livraison : (N × 12) + 5.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 9
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "+ Produire un programme de calcul ; nombre d'éléments à une étape donnée d'une suite de motifs.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 12
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Utiliser des modèles pré-algébriques pour résoudre des problèmes algébriques ; identifier la structure d'un motif évolutif.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 16
+      }
+     ]
+    },
+    {
+     "id": "motifs",
+     "nom": "Motifs organisés (maternelle)",
+     "etapes": [
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "notion",
+       "texte": "Un [[motif]] = configuration d'éléments organisés selon des règles ; [[motifs répétitifs]] (AABBAABB) et motifs évolutifs (à partir de cinq ans seulement) ; varier la nature (gestuelle, visuelle, sonore) ; la traduction formelle n'est pas un attendu.",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 50
+      },
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Mémoriser et reproduire un motif répétitif très simple (alternance).",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 50
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Reconnaître un motif à ses régularités ; le décrire ; prolonger une amorce en verbalisant la règle.",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 51
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Structure d'un motif évolutif ; transcrire un motif avec d'autres symboles, du sonore au visuel ; créer des motifs.",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 51
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "grandeurs",
+   "nom": "Grandeurs et mesures",
+   "fils": [
+    {
+     "id": "longueurs",
+     "nom": "Longueurs et périmètre",
+     "etapes": [
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "notion",
+       "texte": "Comparaisons directes (perception, superposition, [[même origine]]) puis indirectes (bande témoin) ; attributs relatifs (long / court).",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 48
+      },
+      {
+       "classes": [
+        "PS"
+       ],
+       "type": "competence",
+       "texte": "Comparer des objets selon leur longueur (très différentes, puis en les mettant à la même origine).",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 49
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "+ Classer et ordonner des objets rectilignes ; « plus long que », « plus court que ».",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 49
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Comparer indirectement avec une [[bande témoin]] ; produire un objet de même longueur.",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 49
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "[[Report de longueur]] (ficelle, bandelette), étalon ; règle graduée ; m, cm ; 1 m = 100 cm ; longueurs de référence.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 25
+      },
+      {
+       "classes": [
+        "CP",
+        "CE1",
+        "CE2",
+        "CM1",
+        "CM2"
+       ],
+       "type": "crpe",
+       "texte": "Pas de [[tableaux de conversion]] au cycle 2 ni au cours moyen : « 3,5 mètres est égal à 350 centimètres car 1 mètre est égal à 100 centimètres ».",
+       "sources": []
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "+ km ; encadrer une longueur entre deux entiers de cm ; estimer.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 27
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "+ dm, mm ; conversions en s'appuyant sur les relations entre unités ; [[périmètre]] (report au compas, mesure) sans formule.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 29
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "+ Du millimètre au kilomètre ; périmètre d'un polygone ; pas de mémorisation de formules.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 16
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ Formules du périmètre du carré, du rectangle et du [[périmètre du disque]] (proportionnel au diamètre).",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 19
+      }
+     ]
+    },
+    {
+     "id": "masses-contenances",
+     "nom": "Masses et contenances",
+     "etapes": [
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS",
+        "CP",
+        "CE1",
+        "CE2"
+       ],
+       "type": "crpe",
+       "texte": "La masse est « [[confondue à tort avec le poids]] » dans le langage courant.",
+       "sources": []
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "Masse (introduite à partir de quatre ans) : soupeser, [[balance de type Roberval]] ; différencier masse et volume.",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 49
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Ordonner trois masses ; réaliser l'équilibre ; [[transitivité]].",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 49
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Comparer des masses en soupesant, balance Roberval (lourd, léger).",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 26
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "+ g, kg ; 1 kg = 1 000 g ; masses de référence.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 27
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "+ Tonne ; [[contenances]] : L, dL, cL (1 L = 10 dL = 100 cL).",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 30
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "+ Masses du milligramme à la tonne ; contenances du millilitre à l'hectolitre.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 16
+      }
+     ]
+    },
+    {
+     "id": "aires-volumes",
+     "nom": "Aires, angles et volumes",
+     "etapes": [
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "[[Aire]] introduite au CM1 : comparer sans mesurer, puis quadrillage, cm² ; angles : comparer, lexique et notations ; uniquement des [[angles saillants]] au cours moyen.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 17
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "+ cm², dm², m² et conversions ; aire du carré et du rectangle ; [[degré]] : l'angle droit mesure 90° ; construire la moitié d'un angle par pliage ; pas de [[rapporteur]] (introduit au collège).",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 18
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ Formules d'aire ; [[centimètre cube]] et volumes ; mesurer un angle.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 19
+      }
+     ]
+    },
+    {
+     "id": "temps-monnaie",
+     "nom": "Durées et monnaie",
+     "etapes": [
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Monnaie (période 2 ou 3) : euros entiers ≤ 100, rendre la monnaie ; lire les [[heures entières]].",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 26
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "+ Centimes (période 2) et écriture à virgule (période 3) ; demi-heure, quart d'heure ; h et min.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 28
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "+ Durées en heures et minutes sur un axe chronologique ; problèmes à une ou deux étapes.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 31
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "exemple",
+       "texte": "Rendre la monnaie sur 5 € pour 3,68 € par ajouts successifs.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 30
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "+ Secondes : [[système sexagésimal]].",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 18
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ Conversions de durées ; jours dans une année bissextile, siècle, millénaire.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 19
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "exemple",
+       "texte": "Mises en perspective : calendriers julien et grégorien ; [[clepsydres]].",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 20
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "geometrie",
+   "nom": "Espace et géométrie",
+   "fils": [
+    {
+     "id": "solides",
+     "nom": "Solides",
+     "etapes": [
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "notion",
+       "texte": "Reconnaître et décrire plutôt que nommer ; empreintes des faces planes ; pas de représentation en perspective en maternelle ; distinguer [[tri]] (un critère, deux groupes) et [[classement]].",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 47
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "Reconnaître et classer cube, boule, pyramide à base carrée, cylindre ; reproduire un assemblage de cinq solides.",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 48
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Décrire cube, pavé, boule, pyramides, cylindre, cône (nombre de faces).",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 48
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Cube, boule, cône, cylindre, [[pavé]] ; « face » ; au CP le cube « n'est pas considéré comme un pavé ».",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 31
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "+ Pyramide ; « face », « sommet » et « arête » ; dénombrer faces, arêtes, sommets d'un [[polyèdre]].",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 33
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "+ Représentations en perspective (lecture) ; [[patron]] d'un cube.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 35
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "+ [[Prisme droit]] ; construire un patron du cube.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 21
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "+ Reconnaître un patron du pavé.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 22
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Vision dans l'espace : [[assemblages de cubes]].",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 23
+      }
+     ]
+    },
+    {
+     "id": "figures",
+     "nom": "Figures planes et constructions",
+     "etapes": [
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "notion",
+       "texte": "L'enseignant emploie le lexique exact (« disque » et non « rond », « sommet » et non « pointe ») ; varier les orientations des figures.",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 36
+      },
+      {
+       "classes": [
+        "MS"
+       ],
+       "type": "competence",
+       "texte": "Reconnaître triangle, carré, disque ; reproduire un assemblage (puzzle, pavage).",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 48
+      },
+      {
+       "classes": [
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "+ Décrire et nommer carré, rectangle, triangle, disque dans toutes les orientations ; utiliser la [[règle]] pour tracer.",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 48
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Disque, carré, rectangle, triangle ; « sommet », « côté » ; [[alignements]] ; tracer à la règle.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 32
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "+ Cercle, triangle rectangle ; [[angle droit]], angle aigu, angle obtus ; [[équerre]] ; [[compas]] ; milieu (par pliage) ; code de l'angle droit.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 34
+      },
+      {
+       "classes": [
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "+ Losange, polygone, quadrilatère ; rayon, diamètre, diagonale ; [[axes de symétrie]] (pliage, calque) ; compléter une figure symétrique.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 36
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "+ [[Perpendicularité]], [[parallélisme]] ; triangles isocèle, équilatéral ; cercle comme ensemble de points ; symétrique sur quadrillage.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 20
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2"
+       ],
+       "type": "crpe",
+       "texte": "Notations [AB], (AB), [AB) utilisées par l'enseignant mais non exigibles : on écrit « tracer le segment [AB] ».",
+       "sources": []
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "+ Trapèze, pentagone, hexagone ; [[programme de construction]] ; symétrique par rapport à une diagonale du quadrillage.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 21
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ [[Médiatrice]], [[bissectrice]] ; somme des angles d'un triangle ; [[cercle circonscrit]] ; symétrique d'un point ; premières preuves, [[pensée déductive]].",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 22
+      }
+     ]
+    },
+    {
+     "id": "reperage",
+     "nom": "Repérage et déplacements",
+     "etapes": [
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Vocabulaire des positions relatives ; plan de la classe ; coder un déplacement ; robot : au maximum dix instructions, dont deux virages.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 32
+      },
+      {
+       "classes": [
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "+ Plan de l'école, photo aérienne ; robot : quinze instructions, dont quatre virages.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 34
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "Vocabulaire des déplacements ; suite d'instructions ; assemblages de cubes.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 21
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "donnees",
+   "nom": "Données, probabilités, proportionnalité",
+   "fils": [
+    {
+     "id": "donnees",
+     "nom": "Organisation et gestion de données",
+     "etapes": [
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "competence",
+       "texte": "Enquête : caractère qualitatif (deux à cinq valeurs) ; tableau ; [[diagramme en barres]].",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 37
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "Lire et interpréter tableaux et diagrammes ; au CE2, caractères quantitatifs discrets.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 38
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "+ Courbe, points dans un repère ; données réelles (changement climatique, biodiversité).",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 24
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "+ [[Diagramme circulaire]].",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 25
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ Mener une [[enquête statistique]] ; filtrer des données.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 25
+      }
+     ]
+    },
+    {
+     "id": "probabilites",
+     "nom": "Probabilités (cycle 3)",
+     "etapes": [
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "competence",
+       "texte": "[[Expériences aléatoires]] ; « impossible », « possible », « certain », « probable », « peu probable », « une chance sur deux » ; [[équiprobabilité]] ; deux issues ne signifient pas une chance sur deux.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 24
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "+ « [[a chances sur b]] » ; notion d'[[indépendance]] (le dé « ne se souvient pas ») ; tableau ou arbre.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 25
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ Probabilité = nombre entre 0 et 1 ; [[approche fréquentiste]].",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 26
+      }
+     ]
+    },
+    {
+     "id": "proportionnalite",
+     "nom": "Proportionnalité (cycle 3)",
+     "etapes": [
+      {
+       "classes": [
+        "CM1",
+        "CM2"
+       ],
+       "type": "notion",
+       "texte": "Raisonnements en langage naturel fondés sur la [[linéarité]] ; problèmes uniquement dans le cadre des grandeurs ; [[pas de tableaux de proportionnalité]] au cours moyen ; ni coefficient ni « [[produit en croix]] ».",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 26
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "exemple",
+       "texte": "« 4 pains aux raisins coûtent 7 €. Quel est le prix de 12 pains aux raisins ? » : inutile de calculer le prix unitaire.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 26
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "+ Définition ; [[retour à l'unité]] ; tableau autorisé ; échelles ; le produit en croix n'est pas enseigné.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 27
+      }
+     ]
+    },
+    {
+     "id": "informatique",
+     "nom": "Initiation à la pensée informatique",
+     "etapes": [
+      {
+       "classes": [
+        "CP",
+        "CE1"
+       ],
+       "type": "competence",
+       "texte": "Coder des déplacements (robot sur un tapis quadrillé) ; algorithmes des opérations posées ; poursuivre une [[suite évolutive]] dès le CE1.",
+       "sources": [
+        "maths-c2-2024"
+       ],
+       "page": 32
+      },
+      {
+       "classes": [
+        "CM1",
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "Codages de déplacements élargis ; programmes de calcul ; programmes de construction ; [[Scratch]], tableur.",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 28
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "competence",
+       "texte": "Instruction, séquence d'instructions, entrées, sorties, [[répétitions]].",
+       "sources": [
+        "maths-c3-2025"
+       ],
+       "page": 28
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
