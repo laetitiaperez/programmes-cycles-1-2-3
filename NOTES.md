@@ -10,7 +10,7 @@
 | emc | fait (12 fils) + fiche | Task 9 |
 | eps | fait (8 fils) + fiche | Task 10 |
 | arts | fait (11 fils) + fiche | Task 11 |
-| lv | à faire | |
+| lv | fait (9 fils) + fiche | Task 12 |
 | evar | à faire | |
 | maternelle (principes) | à faire | |
 
@@ -29,6 +29,7 @@ Programme C1 consolidé (BO 41/2024 + BO 19/2026), 6 domaines + préambule :
 ## Découpage en fils (par matière)
 - **EPS** — Cadre · Se déplacer (courir-sauter-lancer ; orientation) · Équilibres (terrestres et engins ; aquatique) · S'exprimer · Coopérer et s'opposer. Domaines 2026 ↔ champs d'apprentissage 2020.
 - **Arts** — PEAC · Arts visuels/plastiques (dessin ; compositions ; images ; attendus) · Musique (chant ; écoute ; création) · Spectacle vivant (maternelle) et histoire des arts (C3). Programmes 2020 en vigueur CP→6e.
+- **LV** — Cadre (niveaux CECRL ; horaires et démarche) · Éveil (maternelle, c1-2024) · Oral (CO ; EOC ; EOI) · Écrit (CE ; EE) · Culture (médiation ; thématiques et axes 6e). 6e = anglais 2025 + LVR 2026.
 - **EMC** — Cadre (quatre dimensions) · Soi et les autres (émotions-empathie ; intimité) · Règles (règles collectives ; droits ; discriminations) · République (symboles ; laïcité ; démocratie ; bien commun) · Numérique (EMI). Pas de maternelle.
 - **Sciences** — Démarches · Matière (états et mélanges ; mouvements, énergie, signaux) · Vivant (diversité ; cycle de vie ; écosystèmes ; Terre) · Corps (corps et mouvement ; hygiène ; puberté) · Objets techniques.
 - **HG** — Compétences et démarches · Temps (repères, chronologie) · Histoire (temps long C2, CM1 2026, CM2-6e 2020) · Espace (espace proche, représentations du monde) · Géographie (organisations C2, CM1 2026, CM2-6e 2020). Encadrés CRPE : programmes 2026 non encore applicables en CE1-CE2 / CM2-6e.

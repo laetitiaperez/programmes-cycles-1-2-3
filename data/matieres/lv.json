@@ -1,0 +1,622 @@
+{
+ "id": "lv",
+ "nom": "Langues vivantes",
+ "nomMaternelle": "S’éveiller à la diversité linguistique",
+ "intentions": "Une langue vivante obligatoire dès le CP, pour toutes les langues étrangères et régionales. Cinq activités langagières du [[Cadre européen commun de référence pour les langues]] : compréhension de l'oral, expression orale (en continu et en interaction), compréhension de l'écrit, expression écrite, médiation. L'oral prime au cycle 2 ; l'écrit s'installe à partir du CE2 et au cycle 3. Progression pré-A1 (CP) → A1 (fin de CM2) → A1+ (6e, LVA).",
+ "domaines": [
+  {
+   "id": "cadre",
+   "nom": "Cadre : niveaux, horaires, démarche",
+   "fils": [
+    {
+     "id": "niveaux",
+     "nom": "Niveaux du CECRL visés",
+     "etapes": [
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "notion",
+       "texte": "Pas d'apprentissage structuré : [[éveil à la diversité linguistique]] (langues régionales, étrangères, parlées dans les familles, [[langue des signes française]]) ; séances d'exposition « sur des temps courts et variés ».",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 15
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "repere",
+       "texte": "[[Pré-A1 pour les activités orales]] (parcours renforcés : pré-A1 pour les activités orales et la médiation) ; langue obligatoire commencée au CP.",
+       "sources": [
+        "lv-c2-2026"
+       ],
+       "page": 2
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "crpe",
+       "texte": "Échelle à retenir : pré-A1 (CP) → A1 visé en fin de CM2 → A1+ en 6e (LVA) → A2 fin de 5e → B1 fin de 3e (LVA).",
+       "sources": []
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "repere",
+       "texte": "Programme 2020 : enseignement correspondant au [[niveau A1]] à l'oral du [[CECRL]] ; « [[La langue orale est la priorité]] ».",
+       "sources": [
+        "lv-c2-2020"
+       ],
+       "page": 22
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "repere",
+       "texte": "[[A1 pour toutes les activités langagières]] ; A1+ possible (parcours renforcés, bilingues, [[EMILE]]).",
+       "sources": [
+        "lv-c3-2026"
+       ],
+       "page": 2
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "repere",
+       "texte": "Au moins le niveau A1 dans les [[cinq activités langagières]] ; A2 atteignable ; A1 et A2 : « [[niveau de l'utilisateur élémentaire]] ».",
+       "sources": [
+        "lv-c3-2020"
+       ],
+       "page": 33
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "repere",
+       "texte": "[[LVA]] (langue apprise dès le primaire) : [[A1+]] ; [[LVB]] (bilangue) : A1. Langues régionales : A1+ si déjà pratiquée dès le primaire, A1 en enseignement facultatif.",
+       "sources": [
+        "lve-6e-2025",
+        "lvr-6e-2026"
+       ],
+       "page": 6
+      }
+     ]
+    },
+    {
+     "id": "horaires-demarche",
+     "nom": "Horaires et démarche",
+     "etapes": [
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "repere",
+       "texte": "[[54 heures annuelles]], soit 90 minutes par semaine ; séances régulières de 20 à 30 minutes ; exemples surtout en anglais, transposables aux autres langues.",
+       "sources": [
+        "lv-c2-2026"
+       ],
+       "page": 3
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "notion",
+       "texte": "[[perspective actionnelle]] : projet pédagogique, lien « entre le dire et le faire » ; critères d'évaluation explicites, autoévaluation, évaluation entre pairs ; approches plurilingues et interculturelles.",
+       "sources": [
+        "lv-c2-2026"
+       ],
+       "page": 3
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "notion",
+       "texte": "Comportements à développer : [[curiosité, écoute, attention, mémorisation, confiance en soi]] ; répétition, régularité, [[ritualisation]] ; « Le travail sur la langue est indissociable de celui sur la culture ».",
+       "sources": [
+        "lv-c2-2020"
+       ],
+       "page": 22
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "repere",
+       "texte": "[[90 minutes hebdomadaires]] ; articulation des activités langagières, en réception et production, à l'oral et à l'écrit.",
+       "sources": [
+        "lv-c3-2026"
+       ],
+       "page": 3
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "notion",
+       "texte": "« C’est l’exposition régulière et quotidienne à la langue qui favorise les progrès des élèves » ; début de réflexion sur le fonctionnement de la langue.",
+       "sources": [
+        "lv-c3-2020"
+       ],
+       "page": 33
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "notion",
+       "texte": "Six activités langagières : compréhension de l'oral, de l'écrit, expression orale en continu, expression écrite, interaction, [[médiation]] ; place plus importante de l'écrit.",
+       "sources": [
+        "lve-6e-2025"
+       ],
+       "page": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eveil",
+   "nom": "Maternelle : éveil à la diversité linguistique",
+   "fils": [
+    {
+     "id": "eveil",
+     "nom": "S'éveiller à la diversité linguistique",
+     "etapes": [
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "competence",
+       "texte": "Découvrir que la communication peut passer par d'autres langues ; jouer avec le matériau sonore ; [[habiletés phonologiques]] (musicalité, intonation, accentuation, rythme, prononciation) ; mémoriser un lexique simple et usuel.",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 15
+      },
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "notion",
+       "texte": "Valoriser la langue d'origine des élèves ; « le multilinguisme est une richesse » ; démarche comparative.",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 15
+      },
+      {
+       "classes": [
+        "PS",
+        "MS",
+        "GS"
+       ],
+       "type": "exemple",
+       "texte": "Une même comptine en français et dans une autre langue ; un [[imagier bilingue]] ; cartes-images, jeux, albums, chants.",
+       "sources": [
+        "c1-2024"
+       ],
+       "page": 15
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "oral",
+   "nom": "Comprendre et parler",
+   "fils": [
+    {
+     "id": "comprendre-oral",
+     "nom": "Compréhension de l'oral (CO)",
+     "etapes": [
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "attendu",
+       "texte": "[[Comprendre quelques mots familiers et expressions très courantes]] : consignes, jours, dates, nombres, prix, prononcés clairement et lentement ; suivre le fil d'une histoire ; comprendre et agir.",
+       "sources": [
+        "lv-c2-2026"
+       ],
+       "page": 4
+      },
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "exemple",
+       "texte": "Formules d'accueil (Hello! Goodbye!) avec la mascotte ; comptine « 1, 2, buckle my shoe » : l'élève montre les nombres avec ses doigts ; jeu de la boite-déjeuner.",
+       "sources": [
+        "lv-c2-2026"
+       ],
+       "page": 5
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "attendu",
+       "texte": "Comprendre des mots familiers et des expressions très courantes au sujet de soi, de sa famille et de l'environnement concret et immédiat, si les gens parlent lentement et distinctement.",
+       "sources": [
+        "lv-c2-2020"
+       ],
+       "page": 23
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "repere",
+       "texte": "CE1 : une dizaine de consignes, 3 ou 4 instructions relatives aux gestes ; CE2 : suivre le fil d'une histoire simple (comptines, chansons, albums).",
+       "sources": [
+        "lv-c2-2020"
+       ],
+       "page": 24
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "attendu",
+       "texte": "[[Suivre le fil d’une histoire simple]] ; comprendre un message oral court sur un sujet familier ou d'actualité ; comprendre et agir ; associer un document oral à un visuel.",
+       "sources": [
+        "lv-c3-2026"
+       ],
+       "page": 4
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "attendu",
+       "texte": "A1 : comprendre des mots familiers et des expressions très courantes ; A2 : comprendre une intervention brève si elle est claire et simple ; utiliser les [[indices extralinguistiques]].",
+       "sources": [
+        "lv-c3-2020"
+       ],
+       "page": 34
+      }
+     ]
+    },
+    {
+     "id": "parler-continu",
+     "nom": "Expression orale en continu (EOC)",
+     "etapes": [
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "attendu",
+       "texte": "[[Repères phonologiques]] : prononcer un répertoire de quelques mots ; [[Reproduire un modèle oral]] court ; raconter une partie d'histoire avec des images et des expressions toutes faites ; se décrire.",
+       "sources": [
+        "lv-c2-2026"
+       ],
+       "page": 12
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "attendu",
+       "texte": "Utiliser des expressions et des phrases simples pour se décrire, décrire le lieu d'habitation et les gens de l'entourage ; « [[L’intelligibilité prend le pas sur la correction formelle]] ».",
+       "sources": [
+        "lv-c2-2020"
+       ],
+       "page": 24
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "repere",
+       "texte": "CE1 : se présenter (nom, prénom, âge, lieu d'habitation) ; CE2 : reproduire la date, lire à haute voix des textes brefs, raconter une histoire courte à partir d'images.",
+       "sources": [
+        "lv-c2-2020"
+       ],
+       "page": 25
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "attendu",
+       "texte": "Prononcer de manière compréhensible ; lire à haute voix un texte bref préparé ; [[Se présenter oralement et exprimer ses gouts, présenter les autres]] ; raconter ; décrire son environnement quotidien.",
+       "sources": [
+        "lv-c3-2026"
+       ],
+       "page": 7
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "Parler en continu : mémoriser et reproduire des énoncés ; s'exprimer de manière audible, en modulant débit et voix.",
+       "sources": [
+        "lv-c3-2020"
+       ],
+       "page": 33
+      }
+     ]
+    },
+    {
+     "id": "interaction",
+     "nom": "Expression orale en interaction (EOI)",
+     "etapes": [
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "attendu",
+       "texte": "Saluer et se présenter ; poser des questions très simples ; exprimer ses émotions (gestes, mimiques) et des souhaits élémentaires ; signifier son incompréhension.",
+       "sources": [
+        "lv-c2-2026"
+       ],
+       "page": 18
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "attendu",
+       "texte": "Poser des questions simples sur des sujets familiers ou sur ce dont on a immédiatement besoin, et y répondre ; saluer, se présenter, formules de politesse, épeler.",
+       "sources": [
+        "lv-c2-2020"
+       ],
+       "page": 25
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "notion",
+       "texte": "Le dialogue est plus difficile à mettre en œuvre que l'expression en continu ; il ne fait pas l'objet d'évaluations formelles.",
+       "sources": [
+        "lv-c2-2020"
+       ],
+       "page": 25
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "attendu",
+       "texte": "Échanger des informations (nouvelles, formules de politesse, questions ritualisées) ; exprimer ses émotions ou ses souhaits et réagir ; établir un contact.",
+       "sources": [
+        "lv-c3-2026"
+       ],
+       "page": 10
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "Réagir et dialoguer : poser des questions simples ; utiliser des procédés très simples pour commencer, poursuivre et terminer une conversation brève.",
+       "sources": [
+        "lv-c3-2020"
+       ],
+       "page": 34
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ecrit",
+   "nom": "Lire et écrire",
+   "fils": [
+    {
+     "id": "lire",
+     "nom": "Compréhension de l'écrit (CE)",
+     "etapes": [
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "notion",
+       "texte": "Un premier contact avec l'écrit peut s'envisager lorsque les situations langagières le justifient.",
+       "sources": [
+        "lv-c2-2020"
+       ],
+       "page": 22
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "attendu",
+       "texte": "[[Comprendre des textes courts et simples]] : repérer des mots isolés ; comprendre messages, courriels, annonces, courts récits illustrés ; identifier la trame narrative.",
+       "sources": [
+        "lv-c3-2026"
+       ],
+       "page": 13
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "Lire et comprendre : utiliser le contexte et les illustrations ; reconnaître des mots isolés ; percevoir la relation entre certains [[graphèmes et phonèmes]] spécifiques à la langue.",
+       "sources": [
+        "lv-c3-2020"
+       ],
+       "page": 33
+      }
+     ]
+    },
+    {
+     "id": "ecrire",
+     "nom": "Expression écrite (EE)",
+     "etapes": [
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "attendu",
+       "texte": "[[Épeler, copier ou écrire sous la dictée des éléments connus]] ; raconter ; écrire des phrases en s'appuyant sur une trame connue ; écrire pour décrire ou informer.",
+       "sources": [
+        "lv-c3-2026"
+       ],
+       "page": 16
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "Écrire des mots et des expressions dont l'orthographe et la syntaxe ont été mémorisées ; mobiliser des structures simples en s'appuyant sur une trame connue.",
+       "sources": [
+        "lv-c3-2020"
+       ],
+       "page": 34
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "culture",
+   "nom": "Culture et médiation",
+   "fils": [
+    {
+     "id": "mediation",
+     "nom": "Médiation (M) et repères culturels",
+     "etapes": [
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "attendu",
+       "texte": "[[Identifier les repères culturels]] : indiquer par des gestes simples des besoins élémentaires ; animer un travail collectif, coopérer et contribuer à des échanges interculturels.",
+       "sources": [
+        "lv-c2-2026"
+       ],
+       "page": 29
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "competence",
+       "texte": "Découvrir quelques aspects culturels : identifier quelques grands repères culturels de l'environnement quotidien des élèves du même âge dans les pays ou régions étudiés.",
+       "sources": [
+        "lv-c2-2020"
+       ],
+       "page": 22
+      },
+      {
+       "classes": [
+        "CM1"
+       ],
+       "type": "attendu",
+       "texte": "Identifier une similitude ou une différence culturelle ; expliciter un message pour autrui ; prendre des notes ; participer à un travail collectif.",
+       "sources": [
+        "lv-c3-2026"
+       ],
+       "page": 18
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "competence",
+       "texte": "Mobiliser ses connaissances culturelles pour décrire ou raconter des personnages réels ou imaginaires.",
+       "sources": [
+        "lv-c3-2020"
+       ],
+       "page": 34
+      }
+     ]
+    },
+    {
+     "id": "themes",
+     "nom": "Thématiques culturelles",
+     "etapes": [
+      {
+       "classes": [
+        "CP"
+       ],
+       "type": "notion",
+       "texte": "[[ancrage culturel]] intensifié chaque année : albums, comptines, fêtes, spécialités culinaires ; thématiques autour de l'enfant et de son univers quotidien.",
+       "sources": [
+        "lv-c2-2026"
+       ],
+       "page": 2
+      },
+      {
+       "classes": [
+        "CE1",
+        "CE2"
+       ],
+       "type": "notion",
+       "texte": "Trois thématiques : [[L’enfant]], [[La classe]], [[L’univers enfantin]].",
+       "sources": [
+        "lv-c2-2020"
+       ],
+       "page": 23
+      },
+      {
+       "classes": [
+        "CM2"
+       ],
+       "type": "notion",
+       "texte": "Trois thématiques : [[La personne et la vie quotidienne]] ; des repères géographiques, historiques et culturels des villes, pays et régions dont on étudie la langue ; [[L'imaginaire]].",
+       "sources": [
+        "lv-c3-2020"
+       ],
+       "page": 40
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "notion",
+       "texte": "Cinq axes, tous traités dans l'année : [[Personnes et personnages]] ; [[Le quotidien : vivre, jouer, apprendre]] ; [[Pays et paysages]] ; [[Imaginaire, contes et légendes]] ; [[Arts et expression des sentiments]].",
+       "sources": [
+        "lve-6e-2025",
+        "lvr-6e-2026"
+       ],
+       "page": 6
+      },
+      {
+       "classes": [
+        "6e"
+       ],
+       "type": "notion",
+       "texte": "Langues régionales : « langues de France » ; pas d'enseignement en LVA mais en LVB et LVC ; souvent bilingue dès le premier degré ; médiation particulièrement riche.",
+       "sources": [
+        "lvr-6e-2026"
+       ],
+       "page": 6
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

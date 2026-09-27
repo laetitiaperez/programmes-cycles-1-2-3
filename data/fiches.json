@@ -80,5 +80,17 @@
   ],
   "resume": "Arts plastiques, éducation musicale, histoire des arts : les trois questions par cycle, les répertoires chiffrés, le PEAC, les pièges.",
   "html": "fiches/arts-c2-c3.html"
+ },
+ {
+  "id": "lv-c2-c3",
+  "titre": "Fiche CRPE — Langues vivantes, cycles 1 à 3",
+  "matiere": "lv",
+  "cycles": [
+   1,
+   2,
+   3
+  ],
+  "resume": "Niveaux du CECRL par classe, cinq activités langagières, horaires, thématiques culturelles et axes de 6e, pièges.",
+  "html": "fiches/lv-c2-c3.html"
  }
 ]
