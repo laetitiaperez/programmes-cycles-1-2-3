@@ -4,7 +4,7 @@
 import { readFile } from 'node:fs/promises';
 import { extractKeywords } from '../lib/markup.js';
 import { normalize } from '../lib/normalize.js';
-import { FICHIER, blocsAVerifier } from '../lib/fichiers.js';
+import { FICHIER, blocsAVerifier, blocsCycles } from '../lib/fichiers.js';
 
 const plat = (s) => normalize(s).replace(/[’']/g, "'").replace(/-\s*\n\s*/g, '').replace(/[\s\f]+/g, ' ');
 // Deux extractions : « -layout » (colonnes préservées) et « -raw » (ordre de lecture),
@@ -19,12 +19,14 @@ async function texte(id) {
 }
 
 const ids = process.argv[2] ? [process.argv[2]]
-  : JSON.parse(await readFile(new URL('../data/matieres/index.json', import.meta.url), 'utf8'));
+  : [...JSON.parse(await readFile(new URL('../data/matieres/index.json', import.meta.url), 'utf8')), 'cycles'];
 let absents = 0;
 let total = 0;
 for (const id of ids) {
-  const m = JSON.parse(await readFile(new URL(`../data/matieres/${id}.json`, import.meta.url), 'utf8'));
-  const blocs = blocsAVerifier(m);
+  // « cycles » : principes des cycles (data/cycles.json), chaque idée vérifiée dans le texte de son cycle.
+  const blocs = id === 'cycles'
+    ? blocsCycles(JSON.parse(await readFile(new URL('../data/cycles.json', import.meta.url), 'utf8')))
+    : blocsAVerifier(JSON.parse(await readFile(new URL(`../data/matieres/${id}.json`, import.meta.url), 'utf8')));
   const tousLesTextes = blocs[0].sources;
   for (const b of blocs) {
     for (const kw of extractKeywords(b.texte)) {

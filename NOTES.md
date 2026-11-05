@@ -84,3 +84,10 @@ Chaque arrêté récent ne supprime que la partie de sa discipline dans les anne
 - arrêté du 22 avril 2026 (JORFTEXT000054048160, BO n° 22), art. 2 : EPS et « Questionner l'espace et le temps » (annexe 1), EPS et histoire-géographie (annexe 2) ;
 - arrêté du 5 juin 2026 (BO n° 24, MENE2611650A), art. 2 : « Questionner le monde » (annexe 1), sciences et technologie (annexe 2).
 Maternelle : l'arrêté du 16 avril 2026 abroge entièrement le texte de 2015 ; seul le préambule du programme consolidé fait foi.
+
+## Carte par cycle — contenu (2026-11-05)
+
+- Couche 2 générée par `scripts/gen_cycles.py` (ne pas éditer `scripts/saisie/cycles_complet.py`) : cycle 1, 14 blocs (préambule, ~2 600 mots) ; cycle 2, 9 blocs (volet 1, ~830 mots) ; cycle 3, 2 blocs (volet 1, ~1 450 mots ; le texte officiel n'a qu'un intertitre, « Objectifs d'apprentissage »).
+- Couche 1 (idées-forces) saisie dans `scripts/saisie/cycles.py` : 24 idées, 33 termes vérifiés mot pour mot.
+- Complétude : 0 segment non repris sur 91 ; exclusions = pieds de page des PDF seulement. Un bloc de principes compte pour sa page ± 2 (un même paragraphe court sur plusieurs pages).
+- À relire par Laetitia : la formulation des idées-forces (surtout cycle 3, rédigées à partir d'un texte sans intertitres) ; le bloc « Objectifs d'apprentissage » du cycle 3, long (11 paragraphes).

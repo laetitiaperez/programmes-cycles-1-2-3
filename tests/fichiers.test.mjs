@@ -21,3 +21,13 @@ test('blocsAVerifier inclut les intentions complètes', () => {
   const m = { ...francais, intentionsCompletes: [{ titre: 'Principes', source: 'fr-c2-2024', page: 3, items: ['La [[fluence]] chaque jour.'] }] };
   assert.ok(blocsAVerifier(m).some(b => b.ou === 'intentions complètes/bloc 1' && b.sources[0] === 'fr-c2-2024'));
 });
+
+test('blocsCycles : une entrée par idée et par item, avec la bonne source', async () => {
+  const { blocsCycles } = await import('../lib/fichiers.js');
+  const cycles = [{ id: 2, source: 'volet1-c2-2020', idees: [{ texte: 'Le [[concret]].', bloc: 0 }],
+    complet: { blocs: [{ titre: 'T', source: 'volet1-c2-2020', page: 2, items: ['a', 'b'] }] } }];
+  const r = blocsCycles(cycles);
+  assert.equal(r.length, 3);
+  assert.deepEqual(r[0], { ou: 'cycle 2/idée 1', texte: 'Le [[concret]].', sources: ['volet1-c2-2020'] });
+  assert.deepEqual(r.map(x => x.sources[0]), ['volet1-c2-2020', 'volet1-c2-2020', 'volet1-c2-2020']);
+});

@@ -67,3 +67,16 @@ test('segmenter : en-têtes et titres des listes d’œuvres écartés sur optio
   assert.deepEqual(segmenter(page, { listesOeuvres: true }), ['Il lit des poèmes de siècles différents à voix haute en classe.']);
   assert.equal(segmenter(page).length, 5);
 });
+
+test('borner : garde le texte entre debut et fin, conserve les sauts de page', async () => {
+  const { borner } = await import('../lib/completude.js');
+  const brut = 'avant\fTitre A\ncorps\fsuite\nFin B\napres';
+  const r = borner(brut, { debut: 'Titre A', fin: 'Fin B' });
+  assert.equal(r.split('\f').length, 3);
+  assert.ok(!r.includes('avant') && !r.includes('apres') && !r.includes('Fin B'));
+  assert.ok(r.includes('Titre A') && r.includes('corps') && r.includes('suite'));
+});
+test('borner : sans marqueurs, renvoie le texte inchangé', async () => {
+  const { borner } = await import('../lib/completude.js');
+  assert.equal(borner('a\fb', {}), 'a\fb');
+});

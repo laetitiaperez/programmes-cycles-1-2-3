@@ -3,7 +3,7 @@
 // Usage : node scripts/verif-completude.mjs <matiere> [--source <id>] [--pages a-b]
 import { readFile } from 'node:fs/promises';
 import { FICHIER } from '../lib/fichiers.js';
-import { rapport } from '../lib/completude.js';
+import { rapport, borner } from '../lib/completude.js';
 
 const read = async (p) => JSON.parse(await readFile(new URL(`../${p}`, import.meta.url), 'utf8'));
 const args = process.argv.slice(2);
@@ -14,14 +14,21 @@ if (!matiere || matiere.startsWith('--')) { console.error('Usage : verif-complet
 const portee = (await read('data/completude-portee.json'))[matiere];
 if (!portee) { console.error(`Aucune portée pour « ${matiere} » dans data/completude-portee.json`); process.exit(2); }
 const exclus = await read('data/completude-exclus.json');
-const m = await read(`data/matieres/${matiere}.json`);
+// « cycles » : principes des cycles ; la couche complète est celle de data/cycles.json.
+const m = matiere === 'cycles'
+  ? { domaines: [], intentionsCompletes: (await read('data/cycles.json')).flatMap(c => c.complet.blocs.flatMap(b =>
+      // Un bloc de principes peut courir sur plusieurs pages : il compte pour chacune (± 2 pages autour de la sienne).
+      [-2, -1, 0, 1, 2].map(k => ({ ...b, page: b.page + k, items: [b.titre, ...b.items] })))) }
+  : await read(`data/matieres/${matiere}.json`);
+// Bornes facultatives (marqueurs de début et de fin) quand la portée commence ou s'arrête en milieu de page.
+const bornes = await read('data/completude-bornes.json').catch(() => ({}));
 const [pa, pb] = (opt('--pages') ?? '').split('-').map(Number);
 
 let manquants = 0;
 let total = 0;
 for (const [id, plages] of Object.entries(portee)) {
   if (opt('--source') && opt('--source') !== id) continue;
-  const brut = await readFile(new URL(`../sources/raw/${FICHIER[id]}.txt`, import.meta.url), 'utf8');
+  const brut = borner(await readFile(new URL(`../sources/raw/${FICHIER[id]}.txt`, import.meta.url), 'utf8'), bornes[id]);
   const toutes = brut.split('\f');
   const garder = (p) => plages.some(([a, b]) => p >= a && p <= b) && (!pa || (p >= pa && p <= (pb || pa)));
   const pages = toutes.map((t, i) => (garder(i + 1) ? t : ''));
