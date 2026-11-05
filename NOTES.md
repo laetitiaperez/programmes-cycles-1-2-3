@@ -65,6 +65,12 @@ Programme C1 consolidé (BO 41/2024 + BO 19/2026), 6 domaines + préambule :
 - LV 6e : seuls l'anglais (programme collège 2025) et le cadre commun des langues régionales sont saisis ; les autres langues ont des programmes à part.
 - Matière « École maternelle — principes » : vide (« Aucun résultat ») si le filtre cycle 2 ou 3 est actif, c'est voulu.
 
+## Bilan du pilote français (05/11/2026)
+- Couche 2 du français PS → 6e : 1503 items, environ 36885 mots (couche 1 : environ 4 900 mots).
+- Complétude : 1 899 énoncés officiels repris sur 1 899 (C1 313, C2 554, C3 422, exemples Éduscol 610), 18 exclusions justifiées (diversité linguistique → LV, tableaux de fréquence répétés).
+- Fidélité : 997 mots-clés trouvés mot pour mot (toutes matières). 94 tests verts.
+- Cycle 3 : couche 2 générée par scripts/gen_fr_c3.py (objectifs et exemples repris mot pour mot) ; à relire par Laetitia pour la lisibilité.
+
 ## Bilan (27/09/2026)
 - 10 matières, 666 mots-clés vérifiés mot pour mot dans leur source, 0 doublon de texte entre étapes, 54 tests verts.
 - 10 fiches HTML dans la Bibliothèque (dont 3 converties des PDF d'origine, téléchargeables).
