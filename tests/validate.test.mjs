@@ -84,7 +84,11 @@ const cycleOk = () => ({
   idees: [{ texte: 'On articule le [[concret]] et l’abstrait.', bloc: 0 }],
   complet: { blocs: [{ titre: 'Au cycle 2, on articule le concret et l’abstrait', source: 'fr-c2-2024', page: 2, items: ['Texte.'] }] },
 });
-const avecCycle = (modif) => { const d = data(); const c = cycleOk(); modif?.(c); d.cycles = [c]; return d; };
+const autre = (id, classes) => ({ ...cycleOk(), id, classes });
+const avecCycle = (modif) => {
+  const d = data(); const c = cycleOk(); modif?.(c);
+  d.cycles = [autre(1, ['PS', 'MS', 'GS']), c, autre(3, ['CM1', 'CM2', '6e'])]; return d;
+};
 test('cycles valides → aucune erreur', () => assert.deepEqual(validateData(avecCycle()), []));
 test('cycle : id hors 1-3', () => expectError(avecCycle(c => { c.id = 4; }), /id de cycle invalide/));
 test('cycle : classe d’un autre cycle', () => expectError(avecCycle(c => { c.classes = ['CP', 'CM1']; }), /CM1 n’est pas du cycle 2/));
@@ -105,3 +109,13 @@ test('intentionsParCycle valide ou absent → aucune erreur', () => {
   const d = data(); d.matieres[0].intentionsParCycle = { 2: 'Priorité à la [[Lecture]].', tous: 'Texte.' };
   assert.deepEqual(validateData(d), []);
 });
+
+test('cycles : il en manque un', () => {
+  const d = avecCycle(); d.cycles = d.cycles.filter(c => c.id !== 3); expectError(d, /cycles manquants : 3/);
+});
+test('cycles : fichier absent (liste vide) → erreur', () => { const d = data(); d.cycles = []; expectError(d, /cycles manquants : 1, 2, 3/); });
+test('cycle : sans blocs ni idées', () => {
+  expectError(avecCycle(c => { delete c.complet; }), /cycles\/2.*aucun bloc/);
+  expectError(avecCycle(c => { c.idees = []; }), /cycles\/2.*aucune idée-force/);
+});
+test('sans clé cycles (jeux de test des matières) → pas de contrôle des cycles', () => assert.deepEqual(validateData(data()), []));

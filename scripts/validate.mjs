@@ -8,7 +8,7 @@ const textes = await read('data/textes.json');
 const ids = await read('data/matieres/index.json');
 const matieres = await Promise.all(ids.map(id => read(`data/matieres/${id}.json`)));
 
-const cycles = await read('data/cycles.json').catch(() => []);
+const cycles = await read('data/cycles.json');  // requis : le site ne se charge pas sans lui
 const errors = validateData({ classes, textes, matieres, cycles });
 
 if (process.argv.includes('--links')) {
