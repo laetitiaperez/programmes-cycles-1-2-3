@@ -35,8 +35,8 @@ Seul compte le texte applicable à chaque classe **en 2026-2027** (c'est lui qui
 
 Préalables (étape 0) :
 - revérifier sur les pages Éduscol des trois cycles qu'aucun texte en vigueur n'a changé depuis le 27/09/2026 ; consigner la date de consultation dans `NOTES.md` ;
-- corriger les rattachements erronés : en EVAR, chaque étape ne cite que le texte de sa classe (maternelle / élémentaire / collège) ; en EPS, les étapes CE1-CE2 ne citent que `eps-c2-2020`, les étapes CM2-6e que `eps-c3-2020` ;
-- ajouter au validateur la règle : une étape ne peut citer qu'un texte dont `classes2026` contient au moins une de ses classes (les exemples Éduscol `*-ex-*` suivent la même règle).
+- rattachements EVAR et EPS : vérifiés le 2026-11-05, ce ne sont pas des erreurs (étapes communes à plusieurs classes, qui citent chacune le texte de chacune de leurs classes) ; rien à corriger ;
+- ajouter au validateur la règle : chaque texte cité par une étape doit s'appliquer à au moins une de ses classes (aujourd'hui, il suffit qu'un des textes cités s'applique) (les exemples Éduscol `*-ex-*` suivent la même règle).
 
 ## 3. Contenu : deux couches
 
@@ -122,7 +122,7 @@ Page unique, sans framework ni build (comme aujourd'hui). Elle remplace les vues
 
 ## 6. Ordre de travail
 
-0. Préalables (§2).
+0. Préalables (§2) ; ajout de l'âge de chaque classe dans `data/classes.json`.
 1. **Pilote : français**. Couche 2 complète PS → 6e ; contrôles verts ; nouvelle interface avec le français seul. **Point d'étape : Laetitia teste et valide** format et interface avant la suite.
 2. Les autres matières, une par une, un commit par matière : maths → HG → sciences → EMC → EPS → arts → LV → EVAR → principes de maternelle.
 3. Bibliothèque et fiches mises à jour si besoin ; publication sur le dépôt `laetitiaperez/programmes-cycles-1-2-3` (GitHub Pages).
