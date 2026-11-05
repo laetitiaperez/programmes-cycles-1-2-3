@@ -74,3 +74,13 @@ Programme C1 consolidé (BO 41/2024 + BO 19/2026), 6 domaines + préambule :
 ## Bilan (27/09/2026)
 - 10 matières, 666 mots-clés vérifiés mot pour mot dans leur source, 0 doublon de texte entre étapes, 54 tests verts.
 - 10 fiches HTML dans la Bibliothèque (dont 3 converties des PDF d'origine, téléchargeables).
+
+## Carte par cycle — statut des volets 1 (vérifié le 2026-11-05 sur Légifrance / BO)
+
+Chaque arrêté récent ne supprime que la partie de sa discipline dans les annexes 1 (cycle 2) et 2 (cycle 3) de l'arrêté du 9 novembre 2015 ; les volets 1 « Spécificités du cycle » (et 2) restent donc en vigueur en 2026-2027 :
+- arrêté du 22 octobre 2024 (JORFTEXT000050395251), art. 2 : français et maths de l'annexe 2 [cycle 2 dans la numérotation de cet arrêté] ;
+- arrêté du 10 avril 2025 (JORFTEXT000051468918), art. 2 : français et maths du cycle de consolidation ;
+- arrêté du 26 février 2026 (BO n° 12, MENE2602911A), art. 2 : langues vivantes, annexes 1 et 2 ;
+- arrêté du 22 avril 2026 (JORFTEXT000054048160, BO n° 22), art. 2 : EPS et « Questionner l'espace et le temps » (annexe 1), EPS et histoire-géographie (annexe 2) ;
+- arrêté du 5 juin 2026 (BO n° 24, MENE2611650A), art. 2 : « Questionner le monde » (annexe 1), sciences et technologie (annexe 2).
+Maternelle : l'arrêté du 16 avril 2026 abroge entièrement le texte de 2015 ; seul le préambule du programme consolidé fait foi.
