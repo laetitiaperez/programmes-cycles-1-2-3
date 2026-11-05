@@ -54,6 +54,8 @@ Programme C1 consolidé (BO 41/2024 + BO 19/2026), 6 domaines + préambule :
 - Les nouveaux programmes 2026 (HG, sciences, EPS, LV) couvrent tout le cycle, mais en 2026-27 seule la 1re classe (CP / CM1) les applique : on ne saisit que cette classe depuis ces textes.
 
 ## À vérifier
+- Complétude (couche 2) : les listes d'œuvres proposées et les pistes de prolongement des exemples Éduscol C3 (lignes à puce «  ») ne sont pas contrôlées : ce sont des ressources, pas des énoncés du programme. À confirmer avec Laetitia.
+- Complétude du français au départ (05/11/2026) : 2 039 segments à reprendre (C1 319, C2 555, C3 418, exemples Éduscol CM1 252, CM2 249, 6e 246).
 - Textes en vigueur revérifiés le 05/11/2026 sur les pages Éduscol des cycles 1, 2 et 3 (mises à jour juin-juillet 2026) : identiques à `data/textes.json`. Les BO anglais 2025 et LVR 2026 s'ouvrent dans un navigateur ; le PDF C3 2023 (media 100806) est un téléchargement direct, copie locale déjà vérifiée.
 - Trois liens refusent les robots (403) : C3 2023 (Éduscol media 100806), BO anglais 2025, BO LVR 2026 — à ouvrir une fois dans un navigateur.
 - Numéros de page : page PDF de la section, pas de l'étape exacte (±1 page) ; tableaux EVAR (p. 8-9) cités pour toutes les classes.
