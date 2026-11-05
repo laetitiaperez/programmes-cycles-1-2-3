@@ -91,3 +91,4 @@ Maternelle : l'arrêté du 16 avril 2026 abroge entièrement le texte de 2015 ; 
 - Couche 1 (idées-forces) saisie dans `scripts/saisie/cycles.py` : 24 idées, 33 termes vérifiés mot pour mot.
 - Complétude : 0 segment non repris sur 91 ; exclusions = pieds de page des PDF seulement. Un bloc de principes compte pour sa page ± 2 (un même paragraphe court sur plusieurs pages).
 - À relire par Laetitia : la formulation des idées-forces (surtout cycle 3, rédigées à partir d'un texte sans intertitres) ; le bloc « Objectifs d'apprentissage » du cycle 3, long (11 paragraphes).
+- Interface : entrée « Par cycle » (menu et bandeau d'accueil), page `#vue=cycle&cy=N` (principes au centre, disciplines en couronne, panneau de la discipline), lien « ← Cycle N » dans la carte d'une matière ouverte depuis un cycle ; recherche et lexique couvrent les principes des cycles.
