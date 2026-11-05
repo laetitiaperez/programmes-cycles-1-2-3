@@ -25,7 +25,7 @@ export const francais = {
       ],
       complet: {
         CP: { blocs: [{ titre: 'Attendus de fin d’année', source: 'fr-c2-2024', page: 8, items: ['Lire [[50 mots par minute]] après préparation.'] }] },
-        CE1: { blocs: [{ titre: 'Attendus de fin d’année', source: 'fr-c2-2024', page: 9, items: ['Lire 70 mots par minute.'] }],
+        CE1: { blocs: [{ titre: 'Attendus de fin d’année', source: 'fr-c2-2024', page: 9, items: ['Lire 70 mots par minute.', 'Respecter les [[groupes de souffle]].'] }],
                reconduit: [{ de: 'CP', texte: 'Lire 50 mots par minute après préparation.' }] },
       } },
     { id: 'decodage', nom: 'Décodage', etapes: [
