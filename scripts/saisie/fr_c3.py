@@ -48,7 +48,7 @@ INTENTIONS = [{'titre': 'Programme de français du cycle 3 — principes',
             'artistiques et culturels sont mis à disposition des professeurs, à titre indicatif, sur le site pédagogique du ministère :',
             'classe de CM1 ;',
             'classe de CM2 ;',
-            'classe de 6e .']}]
+            'classe de 6e.']}]
 
 COMPLET = {'comprehension': {'CM1': {'blocs': [{'titre': 'Lecture — principes (CM1 → 6e)',
                                       'source': 'fr-c3-2025',
@@ -58,7 +58,7 @@ COMPLET = {'comprehension': {'CM1': {'blocs': [{'titre': 'Lecture — principes 
                                                 'lecture qui lui sont proposés.',
                                                 "À l'issue de ce cycle, chaque élève doit maîtriser une lecture orale et silencieuse, "
                                                 'fluide et suffisamment rapide, pour poursuivre et développer le travail de compréhension '
-                                                "et d'interprétation. En 6e , comme à l'école élémentaire, l'entraînement à la lecture à "
+                                                "et d'interprétation. En 6e, comme à l'école élémentaire, l'entraînement à la lecture à "
                                                 "voix haute et à la lecture silencieuse est quotidien et s'appuie sur les pratiques des "
                                                 'différentes disciplines.',
                                                 'Les situations de lecture sont nombreuses et régulières, les supports variés et riches. '
@@ -109,14 +109,12 @@ COMPLET = {'comprehension': {'CM1': {'blocs': [{'titre': 'Lecture — principes 
                                                 'silencieuse, lectures enregistrées, etc.).',
                                                 'Au cours moyen, ils font lire au moins sept œuvres complètes par an, issues du patrimoine '
                                                 'et de la littérature de jeunesse (contes, récits, fables, poèmes, pièces de théâtre, '
-                                                'albums et textes documentaires).']},
-                                     {'titre': 'Lecture — fréquence des apprentissages (CM1 → 6e)',
-                                      'source': 'fr-c3-2025',
-                                      'page': 3,
-                                      'items': [', ils font lire au moins six œuvres complètes, équilibrées entre le patrimoine mondial et '
-                                                'la littérature contemporaine et de jeunesse : trois œuvres sont étudiées en classe et au '
-                                                'moins trois œuvres relèvent de la lecture cursive. Des groupements de textes, étudiés en '
-                                                'classe ou lus de manière cursive à titre complémentaire, sont également proposés.',
+                                                'albums et textes documentaires).',
+                                                'En 6e, ils font lire au moins six œuvres complètes, équilibrées entre le patrimoine '
+                                                'mondial et la littérature contemporaine et de jeunesse : trois œuvres sont étudiées en '
+                                                'classe et au moins trois œuvres relèvent de la lecture cursive. Des groupements de '
+                                                'textes, étudiés en classe ou lus de manière cursive à titre complémentaire, sont '
+                                                'également proposés.',
                                                 'Les professeurs encouragent les lectures personnelles sur le temps scolaire ; ils '
                                                 'favorisent la fréquentation de lieux consacrés à la lecture (médiathèque, bibliothèque, '
                                                 'CDI, espace aménagé dans la classe) : les élèves empruntent régulièrement des livres '
@@ -133,22 +131,20 @@ COMPLET = {'comprehension': {'CM1': {'blocs': [{'titre': 'Lecture — principes 
                                                 'culturelle, ou linguistique) afin de favoriser une progression cohérente et adaptée.',
                                                 "Ils proposent en outre des rendez-vous de lecture réguliers soutenant l'engagement et la "
                                                 'persévérance des élèves (par exemple, lectures offertes, cercles de lecture et/ou brefs '
-                                                "écrits d'appropriation permettant des échanges entre pairs, etc.).",
-                                                'Tous les jours en CM/ À chaque séance en 6e',
-                                                "Toutes les semaines Dans l'année",
-                                                'Chaque élève lit des textes, documents, images.',
-                                                'Il pratique la lecture silencieuse.',
-                                                'Chaque élève lit des textes variés et de longueur suffisante (plusieurs pages).',
-                                                "Il s'entraîne à la lecture à voix haute.",
-                                                'Il exerce sa compréhension des textes.',
-                                                'Chaque élève lit :',
-                                                '\uf09f Au CM1 : au moins 2 œuvres issues du patrimoine et 5 ouvrages de littérature de '
-                                                'jeunesse.',
-                                                '\uf09f Au CM2 : au moins 3 œuvres issues du patrimoine et 4 ouvrages de littérature de '
-                                                'jeunesse.',
-                                                ': au moins 3 œuvres complètes issues du patrimoine en lecture intégrale et au moins 3 '
-                                                'œuvres complètes en lecture cursive.',
-                                                '\uf09f Il garde trace de ses lectures et les partage.']},
+                                                "écrits d'appropriation permettant des échanges entre pairs, etc.)."]},
+                                     {'titre': 'Lecture — fréquence des apprentissages (CM1 → 6e)',
+                                      'source': 'fr-c3-2025',
+                                      'page': 3,
+                                      'items': ['Tous les jours en CM / à chaque séance en 6e : chaque élève lit des textes, documents, '
+                                                'images ; il pratique la lecture silencieuse.',
+                                                'Toutes les semaines : chaque élève lit des textes variés et de longueur suffisante '
+                                                "(plusieurs pages) ; il s'entraîne à la lecture à voix haute ; il exerce sa compréhension "
+                                                'des textes.',
+                                                "Dans l'année, chaque élève lit : au CM1, au moins 2 œuvres issues du patrimoine et 5 "
+                                                'ouvrages de littérature de jeunesse ; au CM2, au moins 3 œuvres issues du patrimoine et 4 '
+                                                'ouvrages de littérature de jeunesse ; en 6e, au moins 3 œuvres complètes issues du '
+                                                'patrimoine en lecture intégrale et au moins 3 œuvres complètes en lecture cursive. Il '
+                                                'garde trace de ses lectures et les partage.']},
                                      {'titre': 'Lire et comprendre seul des textes, des documents et des images — objectifs '
                                                "d'apprentissage",
                                       'source': 'fr-c3-2025',
@@ -308,28 +304,21 @@ COMPLET = {'comprehension': {'CM1': {'blocs': [{'titre': 'Lecture — principes 
                                   {'titre': 'Écriture — fréquence des apprentissages (CM1 → 6e)',
                                    'source': 'fr-c3-2025',
                                    'page': 9,
-                                   'items': ["Tous les jours Toutes les semaines Dans l'année",
-                                             'Chaque élève écrit à plusieurs moments sous la forme de :',
-                                             '\uf09f copie de textes ;',
-                                             '\uf09f écrits courts ;',
-                                             '\uf09f dictées ;',
-                                             '\uf09f productions écrites personnelles.',
-                                             'Chaque élève exerce son geste graphique.',
-                                             "Il utilise l'écrit pour réfléchir.",
-                                             'Il développe des écrits personnels.',
-                                             "Il s'entraîne à améliorer ses textes en respectant les normes.",
-                                             "Chaque élève participe à des activités de production d'écrit collaboratif.",
-                                             'Il produit des écrits longs de manière de plus en plus autonome.',
-                                             "Il s'approprie différents usages du [[brouillon]].",
-                                             'Il élabore des stratégies pour réviser ses textes.',
-                                             'À chaque séance Toutes les semaines De manière régulière',
-                                             "Chaque élève produit un écrit quel qu'il soit.",
-                                             'Chaque élève produit des textes de travail.',
-                                             'Chaque élève produit des textes personnels.',
-                                             "Il s'entraîne à améliorer ses textes en respectant les normes.",
-                                             'Chaque élève produit fréquemment des textes personnels ou collaboratifs longs.',
-                                             'Il a recours au [[brouillon]] de façon autonome.',
-                                             'Il élabore des stratégies pour réviser ses textes.']},
+                                   'items': ['Cours moyen, tous les jours : chaque élève écrit à plusieurs moments sous la forme de copie '
+                                             'de textes, écrits courts, dictées, productions écrites personnelles.',
+                                             'Cours moyen, toutes les semaines : chaque élève exerce son geste graphique ; il utilise '
+                                             "l'écrit pour réfléchir ; il développe des écrits personnels ; il s'entraîne à améliorer ses "
+                                             'textes en respectant les normes.',
+                                             "Cours moyen, dans l'année : chaque élève participe à des activités de production d'écrit "
+                                             'collaboratif ; il produit des écrits longs de manière de plus en plus autonome ; il '
+                                             "s'approprie différents usages du [[brouillon]] ; il élabore des stratégies pour réviser ses "
+                                             'textes.',
+                                             "6e, à chaque séance : chaque élève produit un écrit quel qu'il soit.",
+                                             '6e, toutes les semaines : chaque élève produit des textes de travail ; chaque élève produit '
+                                             "des textes personnels ; il s'entraîne à améliorer ses textes en respectant les normes.",
+                                             '6e, de manière régulière : chaque élève produit fréquemment des textes personnels ou '
+                                             'collaboratifs longs ; il a recours au [[brouillon]] de façon autonome ; il élabore des '
+                                             'stratégies pour réviser ses textes.']},
                                   {'titre': "Produire des écrits variés — objectifs d'apprentissage",
                                    'source': 'fr-c3-2025',
                                    'page': 9,
@@ -532,27 +521,22 @@ COMPLET = {'comprehension': {'CM1': {'blocs': [{'titre': 'Lecture — principes 
                                {'titre': 'Oral — fréquence des apprentissages (CM1 → 6e)',
                                 'source': 'fr-c3-2025',
                                 'page': 11,
-                                'items': ["Tous les jours Toutes les semaines Dans l'année",
-                                          'Chaque élève bénéficie du modèle oral assuré par le professeur.',
-                                          'Il prend la parole (le professeur la reformule si nécessaire en insistant sur le vocabulaire, '
+                                'items': ['Cours moyen, tous les jours : chaque élève bénéficie du modèle oral assuré par le professeur ; '
+                                          'il prend la parole (le professeur la reformule si nécessaire en insistant sur le vocabulaire, '
                                           'la syntaxe et la prononciation).',
-                                          "Chaque élève a l'occasion d'échanger des propos avec ses camarades, d'exposer un point de vue.",
-                                          'Il manifeste sa compréhension de consignes orales.',
-                                          "Chaque élève s'exerce régulièrement à une présentation orale ou un exposé en petit ou grand "
-                                          'groupe.',
-                                          'Il participe à des débats.',
-                                          "Il manifeste sa compréhension d'un texte ou d'un document entendu.",
-                                          'En sixième',
-                                          'À chaque séance Toutes les semaines De manière régulière',
-                                          'Chaque élève bénéficie du modèle oral assuré par le professeur.',
-                                          'Il manifeste sa compréhension de consignes orales.',
-                                          "Il a l'occasion de prendre la parole.",
-                                          "Chaque élève manifeste sa compréhension globale d'un texte ou d'un document entendu.",
-                                          'Il prend la parole (le professeur la reformule si nécessaire en insistant sur le vocabulaire, '
-                                          'la syntaxe et la prononciation).',
-                                          'Il échange des propos avec ses camarades, expose un point de vue.',
-                                          'Chaque élève met en voix un texte.',
-                                          "Il s'exerce à une présentation orale ou un exposé en petit ou grand groupe."]},
+                                          "Cours moyen, toutes les semaines : chaque élève a l'occasion d'échanger des propos avec ses "
+                                          "camarades, d'exposer un point de vue ; il manifeste sa compréhension de consignes orales.",
+                                          "Cours moyen, dans l'année : chaque élève s'exerce régulièrement à une présentation orale ou un "
+                                          'exposé en petit ou grand groupe ; il participe à des débats ; il manifeste sa compréhension '
+                                          "d'un texte ou d'un document entendu.",
+                                          '6e, à chaque séance : chaque élève bénéficie du modèle oral assuré par le professeur ; il '
+                                          "manifeste sa compréhension de consignes orales ; il a l'occasion de prendre la parole.",
+                                          "6e, toutes les semaines : chaque élève manifeste sa compréhension globale d'un texte ou d'un "
+                                          'document entendu ; il prend la parole (le professeur la reformule si nécessaire en insistant '
+                                          'sur le vocabulaire, la syntaxe et la prononciation) ; il échange des propos avec ses camarades, '
+                                          'expose un point de vue.',
+                                          "6e, de manière régulière : chaque élève met en voix un texte ; il s'exerce à une présentation "
+                                          'orale ou un exposé en petit ou grand groupe.']},
                                {'titre': "Écouter pour comprendre — objectifs d'apprentissage",
                                 'source': 'fr-c3-2025',
                                 'page': 11,
@@ -693,22 +677,20 @@ COMPLET = {'comprehension': {'CM1': {'blocs': [{'titre': 'Lecture — principes 
                                 {'titre': 'Vocabulaire — fréquence des apprentissages (CM1 → 6e)',
                                  'source': 'fr-c3-2025',
                                  'page': 14,
-                                 'items': ["Tous les jours Toutes les semaines Dans l'année",
-                                           "Chaque élève bénéficie d'un temps d'enseignement dédié au vocabulaire en français ou dans les "
-                                           "autres disciplines d'enseignement, selon une progression cumulative visant à son "
-                                           'approfondissement en contexte.',
-                                           'Il lit pour accroître ses connaissances lexicales.',
-                                           "Chaque élève bénéficie d'une séance de remémoration des corpus étudiés.",
-                                           'Il construit un outil récapitulatif et évolutif qui accorde une place de plus en plus '
-                                           'importante au vocabulaire propre aux différents savoirs disciplinaires.',
-                                           'En sixième',
-                                           'Toutes les semaines De manière régulière',
-                                           "Chaque élève bénéficie de temps d'enseignement structuré et dédié du vocabulaire en français, "
-                                           'selon une progression cumulative.',
-                                           'Il lit pour accroître ses connaissances lexicales.',
-                                           "Chaque élève réemploie les corpus étudiés, notamment dans des activités d'écriture.",
-                                           'Il complète un outil récapitulatif qui accorde une place essentielle au vocabulaire propre aux '
-                                           'différents savoirs disciplinaires.']},
+                                 'items': ["Cours moyen, tous les jours : chaque élève bénéficie d'un temps d'enseignement dédié au "
+                                           "vocabulaire en français ou dans les autres disciplines d'enseignement, selon une progression "
+                                           'cumulative visant à son approfondissement en contexte ; il lit pour accroître ses '
+                                           'connaissances lexicales.',
+                                           "Cours moyen, toutes les semaines : chaque élève bénéficie d'une séance de remémoration des "
+                                           'corpus étudiés.',
+                                           "Cours moyen, dans l'année : il construit un outil récapitulatif et évolutif qui accorde une "
+                                           'place de plus en plus importante au vocabulaire propre aux différents savoirs disciplinaires.',
+                                           "6e, toutes les semaines : chaque élève bénéficie de temps d'enseignement structuré et dédié du "
+                                           'vocabulaire en français, selon une progression cumulative ; il lit pour accroître ses '
+                                           'connaissances lexicales.',
+                                           '6e, de manière régulière : chaque élève réemploie les corpus étudiés, notamment dans des '
+                                           "activités d'écriture ; il complète un outil récapitulatif qui accorde une place essentielle au "
+                                           'vocabulaire propre aux différents savoirs disciplinaires.']},
                                 {'titre': "Enrichir son vocabulaire dans toutes les disciplines — objectifs d'apprentissage",
                                  'source': 'fr-c3-2025',
                                  'page': 14,
@@ -834,7 +816,7 @@ COMPLET = {'comprehension': {'CM1': {'blocs': [{'titre': 'Lecture — principes 
                                          'critères de reconnaissance grâce à des manipulations syntaxiques, telles que le déplacement et '
                                          'la suppression. La distinction du complément circonstanciel (de lieu, de temps ou de cause) est '
                                          'étudiée à partir du CM2 pour aboutir à une maîtrise en fin de cycle 3.',
-                                         "À partir de la classe de 6e , le professeur pourra s'appuyer sur la définition de la phrase "
+                                         "À partir de la classe de 6e, le professeur pourra s'appuyer sur la définition de la phrase "
                                          "entendue comme « une construction grammaticale fondée sur les règles générales d'usage d'une "
                                          'langue, et reposant sur une unité typographique, sémantique et syntaxique ». Avec une '
                                          "progressivité réfléchie à partir d'un corpus de phrases judicieusement choisies, l'enseignement "
@@ -904,28 +886,23 @@ COMPLET = {'comprehension': {'CM1': {'blocs': [{'titre': 'Lecture — principes 
                               {'titre': 'Grammaire et orthographe — fréquence des apprentissages (CM1 → 6e)',
                                'source': 'fr-c3-2025',
                                'page': 16,
-                               'items': ["Tous les jours Toutes les semaines Dans l'année",
-                                         "L'élève bénéficie d'un temps d'enseignement dédié de la grammaire et de l'orthographe.",
-                                         "L'élève bénéficie à l'école élémentaire de plusieurs temps spécifiques d'enseignement de la",
-                                         "L'élève est encouragé à convoquer ses connaissances en grammaire lors des productions d'écrits – "
-                                         'quelles que soient',
-                                         "L'élève peut être confronté à des rituels relatifs à l'étude de la langue ou à de courtes "
-                                         'activités permettant une mobilisation et une évaluation continue. langue qui seront inscrits à '
-                                         "l'emploi du temps.",
-                                         'Il produit plusieurs écrits en lien avec les apprentissages en étude de la langue.',
-                                         'Il fait une ou plusieurs activités ou exercices, dont des dictées, en lien avec les '
-                                         "apprentissages conduits et/ou des apprentissages antérieurs à l'école élémentaire. les "
-                                         'disciplines – lors de leurs écritures et de leurs révisions.',
-                                         'Il identifie et apprend à utiliser les outils à sa disposition (cahier de référence, manuel, '
-                                         'affichages).',
-                                         'En sixième',
-                                         'Toutes les semaines De manière régulière',
-                                         "Chaque élève mobilise ses connaissances en étude de la langue lors des activités d'apprentissage "
-                                         'en français.',
-                                         "Il bénéficie de temps dédiés à l'enseignement de la langue, répartis sur l'ensemble de la "
-                                         "semaine, en lien avec d'autres apprentissages.",
-                                         "Chaque élève bénéficie de temps dédiés d'enseignement de la grammaire et de l'orthographe, "
-                                         'insérés ou détachés.']},
+                               'items': ["Cours moyen, tous les jours : l'élève bénéficie d'un temps d'enseignement dédié de la grammaire "
+                                         "et de l'orthographe ; il peut être confronté à des rituels relatifs à l'étude de la langue ou à "
+                                         'de courtes activités permettant une mobilisation et une évaluation continue.',
+                                         "Cours moyen, toutes les semaines : l'élève bénéficie à l'école élémentaire de plusieurs temps "
+                                         "spécifiques d'enseignement de la langue qui seront inscrits à l'emploi du temps ; il produit "
+                                         'plusieurs écrits en lien avec les apprentissages en étude de la langue ; il fait une ou '
+                                         'plusieurs activités ou exercices, dont des dictées, en lien avec les apprentissages conduits '
+                                         "et/ou des apprentissages antérieurs à l'école élémentaire.",
+                                         "Cours moyen, dans l'année : l'élève est encouragé à convoquer ses connaissances en grammaire "
+                                         "lors des productions d'écrits – quelles que soient les disciplines – lors de leurs écritures et "
+                                         'de leurs révisions ; il identifie et apprend à utiliser les outils à sa disposition (cahier de '
+                                         'référence, manuel, affichages).',
+                                         '6e, toutes les semaines : chaque élève mobilise ses connaissances en étude de la langue lors des '
+                                         "activités d'apprentissage en français ; il bénéficie de temps dédiés à l'enseignement de la "
+                                         "langue, répartis sur l'ensemble de la semaine, en lien avec d'autres apprentissages.",
+                                         "6e, de manière régulière : chaque élève bénéficie de temps dédiés d'enseignement de la grammaire "
+                                         "et de l'orthographe, insérés ou détachés."]},
                               {'titre': "Connaître les trois types de phrases et leurs formes — objectifs d'apprentissage",
                                'source': 'fr-c3-2025',
                                'page': 17,
@@ -971,7 +948,7 @@ COMPLET = {'comprehension': {'CM1': {'blocs': [{'titre': 'Lecture — principes 
                                           "Ces entrées ouvrent à des questions littéraires permettant de problématiser l'étude des textes "
                                           'et les approches qui les servent.',
                                           'Présentée dans une notice, chaque entrée littéraire est associée à un ou des genres '
-                                          'littéraires. Cette mise en correspondance est recommandée en CM et prescrite en 6e .',
+                                          'littéraires. Cette mise en correspondance est recommandée en CM et prescrite en 6e.',
                                           "En CM1 et CM2, on veille à varier les genres, les formes et les modes d'expression (texte seul, "
                                           'texte et image pour les albums et la bande dessinée, image animée pour les films) sur les deux '
                                           'années et à prévoir une progression dans la difficulté et la quantité des lectures. On veille à '
@@ -981,9 +958,9 @@ COMPLET = {'comprehension': {'CM1': {'blocs': [{'titre': 'Lecture — principes 
                                           "abordées dans l'ordre choisi par les professeurs. Une même œuvre peut constituer un pivot de "
                                           "progression d'un niveau à l'autre. Cette œuvre est travaillée de manière plus approfondie et "
                                           'détaillée dans la classe supérieure, en fonction des questionnements et problématiques propres '
-                                          "à l'entrée au sein de laquelle elle prend place. En 6e , le professeur tient compte des œuvres "
+                                          "à l'entrée au sein de laquelle elle prend place. En 6e, le professeur tient compte des œuvres "
                                           'déjà lues et étudiées par les élèves en CM1 et CM2.',
-                                          "En 6e , le traitement des [[entrées littéraires]] s'inscrit dans le cadre d'un projet "
+                                          "En 6e, le traitement des [[entrées littéraires]] s'inscrit dans le cadre d'un projet "
                                           "d'apprentissage précis, organisé autour d'une problématique propre à chaque entrée, et de "
                                           'textes littéraires (œuvres complètes, et/ou groupements de textes, lectures cursives). Le '
                                           "projet vise la construction de compétences de lecture, d'écriture, d'étude de la langue, de "

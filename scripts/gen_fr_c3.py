@@ -27,9 +27,41 @@ SOUS_PARTIES = [  # début de l'intitulé (normalisé) → fil
     ("realiser la chaine d'accords", "groupe-nominal"), ("accorder le sujet et le verbe", "accord-sujet-verbe"),
     ("approfondir sa maitrise de la conjugaison", "conjugaison"),
 ]
-PROSE_TITRES = {"principes": "principes", "reperes": "repères", "points de vigilance pour les professeurs": "points de vigilance",
-                "au cycle 3": "fréquence des apprentissages", "au cours moyen": "fréquence des apprentissages",
-                "en 6e": "fréquence des apprentissages"}
+PROSE_TITRES = {"principes": "principes", "reperes": "repères", "points de vigilance pour les professeurs": "points de vigilance"}
+# Tableaux de fréquence : colonnes aplaties par l'extraction, donc rédigés ici d'après la mise en page du PDF.
+DEBUT_TABLEAU = {"au cycle 3", "au cours moyen"}
+FREQUENCES = {
+    "Lecture": (3, [
+        "Tous les jours en CM / à chaque séance en 6e : chaque élève lit des textes, documents, images ; il pratique la lecture silencieuse.",
+        "Toutes les semaines : chaque élève lit des textes variés et de longueur suffisante (plusieurs pages) ; il s'entraîne à la lecture à voix haute ; il exerce sa compréhension des textes.",
+        "Dans l'année, chaque élève lit : au CM1, au moins 2 œuvres issues du patrimoine et 5 ouvrages de littérature de jeunesse ; au CM2, au moins 3 œuvres issues du patrimoine et 4 ouvrages de littérature de jeunesse ; en 6e, au moins 3 œuvres complètes issues du patrimoine en lecture intégrale et au moins 3 œuvres complètes en lecture cursive. Il garde trace de ses lectures et les partage."]),
+    "Écriture": (9, [
+        "Cours moyen, tous les jours : chaque élève écrit à plusieurs moments sous la forme de copie de textes, écrits courts, dictées, productions écrites personnelles.",
+        "Cours moyen, toutes les semaines : chaque élève exerce son geste graphique ; il utilise l'écrit pour réfléchir ; il développe des écrits personnels ; il s'entraîne à améliorer ses textes en respectant les normes.",
+        "Cours moyen, dans l'année : chaque élève participe à des activités de production d'écrit collaboratif ; il produit des écrits longs de manière de plus en plus autonome ; il s'approprie différents usages du brouillon ; il élabore des stratégies pour réviser ses textes.",
+        "6e, à chaque séance : chaque élève produit un écrit quel qu'il soit.",
+        "6e, toutes les semaines : chaque élève produit des textes de travail ; chaque élève produit des textes personnels ; il s'entraîne à améliorer ses textes en respectant les normes.",
+        "6e, de manière régulière : chaque élève produit fréquemment des textes personnels ou collaboratifs longs ; il a recours au brouillon de façon autonome ; il élabore des stratégies pour réviser ses textes."]),
+    "Oral": (11, [
+        "Cours moyen, tous les jours : chaque élève bénéficie du modèle oral assuré par le professeur ; il prend la parole (le professeur la reformule si nécessaire en insistant sur le vocabulaire, la syntaxe et la prononciation).",
+        "Cours moyen, toutes les semaines : chaque élève a l'occasion d'échanger des propos avec ses camarades, d'exposer un point de vue ; il manifeste sa compréhension de consignes orales.",
+        "Cours moyen, dans l'année : chaque élève s'exerce régulièrement à une présentation orale ou un exposé en petit ou grand groupe ; il participe à des débats ; il manifeste sa compréhension d'un texte ou d'un document entendu.",
+        "6e, à chaque séance : chaque élève bénéficie du modèle oral assuré par le professeur ; il manifeste sa compréhension de consignes orales ; il a l'occasion de prendre la parole.",
+        "6e, toutes les semaines : chaque élève manifeste sa compréhension globale d'un texte ou d'un document entendu ; il prend la parole (le professeur la reformule si nécessaire en insistant sur le vocabulaire, la syntaxe et la prononciation) ; il échange des propos avec ses camarades, expose un point de vue.",
+        "6e, de manière régulière : chaque élève met en voix un texte ; il s'exerce à une présentation orale ou un exposé en petit ou grand groupe."]),
+    "Vocabulaire": (14, [
+        "Cours moyen, tous les jours : chaque élève bénéficie d'un temps d'enseignement dédié au vocabulaire en français ou dans les autres disciplines d'enseignement, selon une progression cumulative visant à son approfondissement en contexte ; il lit pour accroître ses connaissances lexicales.",
+        "Cours moyen, toutes les semaines : chaque élève bénéficie d'une séance de remémoration des corpus étudiés.",
+        "Cours moyen, dans l'année : il construit un outil récapitulatif et évolutif qui accorde une place de plus en plus importante au vocabulaire propre aux différents savoirs disciplinaires.",
+        "6e, toutes les semaines : chaque élève bénéficie de temps d'enseignement structuré et dédié du vocabulaire en français, selon une progression cumulative ; il lit pour accroître ses connaissances lexicales.",
+        "6e, de manière régulière : chaque élève réemploie les corpus étudiés, notamment dans des activités d'écriture ; il complète un outil récapitulatif qui accorde une place essentielle au vocabulaire propre aux différents savoirs disciplinaires."]),
+    "Grammaire et orthographe grammaticale": (16, [
+        "Cours moyen, tous les jours : l'élève bénéficie d'un temps d'enseignement dédié de la grammaire et de l'orthographe ; il peut être confronté à des rituels relatifs à l'étude de la langue ou à de courtes activités permettant une mobilisation et une évaluation continue.",
+        "Cours moyen, toutes les semaines : l'élève bénéficie à l'école élémentaire de plusieurs temps spécifiques d'enseignement de la langue qui seront inscrits à l'emploi du temps ; il produit plusieurs écrits en lien avec les apprentissages en étude de la langue ; il fait une ou plusieurs activités ou exercices, dont des dictées, en lien avec les apprentissages conduits et/ou des apprentissages antérieurs à l'école élémentaire.",
+        "Cours moyen, dans l'année : l'élève est encouragé à convoquer ses connaissances en grammaire lors des productions d'écrits – quelles que soient les disciplines – lors de leurs écritures et de leurs révisions ; il identifie et apprend à utiliser les outils à sa disposition (cahier de référence, manuel, affichages).",
+        "6e, toutes les semaines : chaque élève mobilise ses connaissances en étude de la langue lors des activités d'apprentissage en français ; il bénéficie de temps dédiés à l'enseignement de la langue, répartis sur l'ensemble de la semaine, en lien avec d'autres apprentissages.",
+        "6e, de manière régulière : chaque élève bénéficie de temps dédiés d'enseignement de la grammaire et de l'orthographe, insérés ou détachés."]),
+}
 # Intertitres de regroupement de l'étude de la langue : ce ne sont ni des sous-parties ni des objectifs.
 INTERTITRES = {"identifier les constituants d'une phrase simple", "se reperer dans la phrase complexe",
                "acquerir l'orthographe grammaticale"}
@@ -96,8 +128,9 @@ def segments(lignes, puces=False):
         if not out or ouvre:
             out.append(l)
         else:
-            out[-1] = out[-1][:-1] + l if re.search(r"\w-$", out[-1]) else out[-1] + " " + l
-    return [re.sub(r"^[-—−•]\s*", "", s).replace("’", "'") for s in out]
+            sep = "" if l[0] in ",." else " "
+            out[-1] = out[-1][:-1] + l if re.search(r"\w-$", out[-1]) else out[-1] + sep + l
+    return [re.sub(r"^[-—−•\uf000-\uf8ff]\s*", "", s).replace("’", "'") for s in out]
 
 
 def parse_programme():
@@ -139,6 +172,10 @@ def parse_programme():
             if suivante.startswith("Objectifs d") and fil_de(l):
                 vider(); sous, titre_sous, mode = fil_de(l), l, "objectifs"; continue
             if l.startswith("Objectifs d"):
+                continue
+            if mode == "prose" and classe is None and norm(l) in DEBUT_TABLEAU:
+                vider(); mode = "tableau"; continue
+            if mode == "tableau":
                 continue
             if mode in ("prose", None) and norm(l) in PROSE_TITRES and classe is None:
                 vider(); mode, titre_prose = "prose", PROSE_TITRES[norm(l)]; continue
@@ -236,6 +273,8 @@ def main():
         if dom == "Lecture" and titre == "principes" and items and items[0][0] == 2 and False:
             pass
         bloc(DOMAINES[dom], "CM1", nom, "fr-c3-2025", items)
+    for dom, (page, items) in FREQUENCES.items():
+        bloc(DOMAINES[dom], "CM1", f"{NOMS[dom]} — fréquence des apprentissages (CM1 → 6e)", "fr-c3-2025", [(page, t) for t in items])
     # Principes généraux (avant « Lecture ») : rangés dans prose[("Lecture", "principes")] page 2 ; on les sépare.
     gen = complet["comprehension"]["CM1"]["blocs"][0]
     coupe = next((i for i, t in enumerate(gen["items"]) if t.startswith("L'enjeu du cycle 3 est de développer")), None)

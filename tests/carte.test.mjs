@@ -75,3 +75,15 @@ test('frise : renvoi vers la première classe d’une étape multi-classes', () 
   assert.equal(cases.find(c => c.classe === 'CE1').renvoi, null);
   assert.equal(cases.find(c => c.classe === 'CP').renvoi, null);
 });
+test('frise : partage vers le contenu commun d’une étape multi-classes même quand la classe a sa couche 2', () => {
+  const d = jeu();
+  const f = filDe(d.matieres[1], 'frise');
+  f.complet = {
+    CE1: { blocs: [{ titre: 'Principes (CE1 → CE2)', source: 'qlm-et-2020', page: 3, items: ['Commun.'] }] },
+    CE2: { blocs: [{ titre: 'Objectifs', source: 'qlm-et-2020', page: 4, items: ['Propre au CE2.'] }] },
+  };
+  const ce2 = friseDuFil(f, d.classes).find(c => c.classe === 'CE2');
+  assert.equal(ce2.renvoi, null);
+  assert.deepEqual(ce2.partage, ['CE1']);
+  assert.deepEqual(friseDuFil(f, d.classes).find(c => c.classe === 'CE1').partage, []);
+});

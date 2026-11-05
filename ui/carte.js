@@ -78,7 +78,7 @@ export function renderFrise(m, fil, frise, state, ctx) {
       },
         el('span', { class: 'case-tete' }, el('strong', {}, x.classe), ` C${x.cycle} · ${x.age} ans`, nouveau(x, ctx) ? [' ', badgeNouveau()] : null),
         el('span', { class: 'case-resume' }, resume(x)))))),
-    active ? renderComplet(active, ctx, (c) => el('a', { href: lien({ vue: 'carte', m: m.id, d: state.d, fil: fil.id, c }) }, `Voir le contenu complet en ${c}`))
+    active ? renderComplet(active, ctx, (c) => el('a', { href: lien({ vue: 'carte', m: m.id, d: state.d, fil: fil.id, c }) }, `voir en ${c}`))
       : el('p', { class: 'indice' }, 'Choisis une classe pour voir le contenu complet.'));
 }
 
@@ -96,7 +96,12 @@ export function renderComplet(entree, ctx, lienRenvoi = null) {
         renderMarkup(b.texte), ' ', (b.sources ?? []).map(id => lienPdf(ctx.textes.get(id), b.page))))),
       el('p', { class: 'a-venir' }, 'Contenu détaillé à venir pour cette matière.'));
   }
+  const communs = (entree.partage ?? []).filter(c => c !== entree.renvoi);
   return el('div', { class: 'complet' },
+    communs.length && lienRenvoi
+      ? el('p', { class: 'partage' }, 'Contenu commun à plusieurs classes (principes, points de vigilance) : ',
+          communs.map((c, i) => [i ? ', ' : null, lienRenvoi(c)]))
+      : null,
     k.blocs.map(b => el('section', { class: 'bloc' },
       el('h4', {}, b.titre, ' ', lienPdf(ctx.textes.get(b.source), b.page)),
       el('ul', {}, b.items.map(it => el('li', {}, renderMarkup(it, 'strong')))))),
@@ -133,7 +138,7 @@ export function renderVueClasse(classes, textes, classe, vue, ctx) {
         fils.map(x => el('details', { class: 'fil-classe' },
           el('summary', {}, el('strong', {}, x.fil.nom), nouveau(x, ctx) ? [' ', badgeNouveau()] : null,
             el('span', { class: 'case-resume' }, resume(x))),
-          renderComplet(x, ctx))))))));
+          renderComplet(x, ctx, (c) => el('a', { href: lien({ vue: 'carte', m: matiere.id, d: domaine.id, fil: x.fil.id, c }) }, `voir en ${c}`)))))))));
 }
 
 export function renderResultats(resultats, matieres, q) {

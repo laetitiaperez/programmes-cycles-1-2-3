@@ -170,6 +170,7 @@ strong.kw { font-weight: 700; }
 .reconduit { margin-top: 10px; color: var(--muted); }
 .reconduit summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; }
 .a-venir { color: var(--muted); font-style: italic; }
+.partage { margin: 10px 0 0; padding: 6px 10px; background: var(--accent-soft); border-radius: 8px; font-size: .9rem; }
 
 /* Vue par classe */
 .choix .groupe { margin-bottom: 12px; }
