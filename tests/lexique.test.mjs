@@ -32,3 +32,13 @@ test('lexique : termes de la couche complète', () => {
   const t50 = lex[0].termes.find(x => x.terme === '50 mots par minute');
   assert.deepEqual(t50.occurrences.map(o => o.classes), [['CP']]);
 });
+
+test('buildLexique : termes des idées-forces dans « Principes des cycles »', () => {
+  const cycles = [{ id: 2, classes: ['CP', 'CE1', 'CE2'], idees: [{ texte: 'Le [[concret et l’abstrait]].', bloc: 0 }], complet: { blocs: [] } }];
+  const lex = buildLexique([francais], classes, cycles);
+  const g = lex.at(-1);
+  assert.deepEqual(g.matiere, { id: 'cycles', nom: 'Principes des cycles' });
+  assert.deepEqual(g.termes.map(t => t.terme), ['concret et l’abstrait']);
+  assert.deepEqual(g.termes[0].occurrences, [{ cycle: 2, filNom: 'Cycle 2', classes: ['CP', 'CE1', 'CE2'] }]);
+  assert.equal(buildLexique([francais], classes).length, 1);
+});

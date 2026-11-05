@@ -41,7 +41,9 @@ export function renderLexique(lex, ctx) {
       el('dt', {}, el('mark', { class: 'kw' }, t.terme)),
       el('dd', {}, t.occurrences.map((o, i) => [
         i ? ' · ' : null,
-        o.filId
+        o.cycle
+          ? el('a', { href: `#vue=cycle&cy=${o.cycle}` }, o.filNom)
+          : o.filId
           ? el('a', { href: `#vue=carte&m=${encodeURIComponent(matiere.id)}&fil=${encodeURIComponent(o.filId)}` },
               o.filNom, o.classes.length ? ` (${classesLabel(o.classes, ctx.order)})` : '')
           : el('span', {}, o.filNom),

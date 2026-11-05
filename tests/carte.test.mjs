@@ -87,3 +87,21 @@ test('frise : partage vers le contenu commun d’une étape multi-classes même 
   assert.deepEqual(ce2.partage, ['CE1']);
   assert.deepEqual(friseDuFil(f, d.classes).find(c => c.classe === 'CE1').partage, []);
 });
+
+// Principes des cycles dans la recherche
+const cyclesJeu = [{ id: 2, nom: 'Cycle des apprentissages fondamentaux', classes: ['CP', 'CE1', 'CE2'], source: 'fr-c2-2024',
+  idees: [{ texte: 'On articule le [[concret et l’abstrait]].', bloc: 0 }],
+  complet: { blocs: [{ titre: 'Au cycle 2', source: 'fr-c2-2024', page: 2, items: ['Observer et agir, manipuler, expérimenter.'] }] } }];
+test('rechercher : trouve une idée-force de cycle', () => {
+  const r = rechercher(jeu().matieres, 'abstrait', cyclesJeu);
+  assert.equal(r.length, 1);
+  assert.equal(r[0].cycle, 2);
+  assert.equal(r[0].matiereId, null);
+});
+test('rechercher : trouve la couche 2 d’un cycle', () => {
+  const r = rechercher(jeu().matieres, 'manipuler', cyclesJeu);
+  assert.deepEqual(r.map(x => x.cycle), [2]);
+});
+test('rechercher : sans cycles, résultats inchangés', () => {
+  assert.deepEqual(rechercher(jeu().matieres, 'minute', []), rechercher(jeu().matieres, 'minute'));
+});

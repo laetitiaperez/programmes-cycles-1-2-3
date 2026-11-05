@@ -147,7 +147,9 @@ export function renderResultats(resultats, matieres, q) {
   return el('section', { class: 'resultats' },
     el('h2', {}, `${resultats.length} résultat${resultats.length > 1 ? 's' : ''} pour « ${q} »`),
     el('ul', {}, resultats.map(r => el('li', {},
-      el('a', { href: lien({ vue: 'carte', m: r.matiereId, d: r.domaineId, fil: r.filId, ...(r.classe ? { c: r.classe } : {}) }) },
-        `${nom.get(r.matiereId)} › ${r.filNom}`, r.classe ? ` · ${r.classe}` : ''),
+      r.cycle
+        ? el('a', { href: lien({ vue: 'cycle', cy: String(r.cycle) }) }, r.filNom)
+        : el('a', { href: lien({ vue: 'carte', m: r.matiereId, d: r.domaineId, fil: r.filId, ...(r.classe ? { c: r.classe } : {}) }) },
+          `${nom.get(r.matiereId)} › ${r.filNom}`, r.classe ? ` · ${r.classe}` : ''),
       el('p', {}, r.extrait)))));
 }
