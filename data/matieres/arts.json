@@ -3,6 +3,11 @@
  "nom": "Enseignements artistiques",
  "nomMaternelle": "Agir, s’exprimer, comprendre à travers les activités artistiques",
  "intentions": "Maternelle : arts visuels, univers sonores, spectacle vivant ; première étape du PEAC. Cycles 2 et 3 (programmes 2020, en vigueur dans toutes les classes en 2026-27) : arts plastiques et éducation musicale, auxquels s'ajoute l'[[histoire des arts]] au cycle 3 ; deux grands champs en musique : la [[perception]] et la [[production]] ; en arts plastiques, développer le [[potentiel d’invention]].",
+ "intentionsParCycle": {
+  "1": "arts visuels, univers sonores, spectacle vivant ; première étape du PEAC.",
+  "2": "Cycles 2 et 3 (programmes 2020, en vigueur dans toutes les classes en 2026-27) : arts plastiques et éducation musicale, auxquels s'ajoute l'[[histoire des arts]] au cycle 3 ; deux grands champs en musique : la [[perception]] et la [[production]] ; en arts plastiques, développer le [[potentiel d’invention]].",
+  "3": "Cycles 2 et 3 (programmes 2020, en vigueur dans toutes les classes en 2026-27) : arts plastiques et éducation musicale, auxquels s'ajoute l'[[histoire des arts]] au cycle 3 ; deux grands champs en musique : la [[perception]] et la [[production]] ; en arts plastiques, développer le [[potentiel d’invention]]."
+ },
  "domaines": [
   {
    "id": "peac",

@@ -3,6 +3,11 @@
  "nom": "Sciences et technologie",
  "nomMaternelle": "Découvrir le monde du vivant, de la matière et des objets",
  "intentions": "Maternelle : dépasser les représentations spontanées par l'observation, la manipulation, l'expérimentation et le langage. Cycle 2 : premières démarches scientifique et technologique, dans quatre domaines : la matière, les mesures, l'électricité ; le corps humain et la santé ; les êtres vivants dans leur environnement ; les objets techniques au cœur de la société (CP 2026 ; CE1-CE2 : « Questionner le monde du vivant, de la matière et des objets » 2020). Cycle 3 : conceptualisation, [[modélisation]], culture scientifique et technologique ; éducations transversales (santé, EVAR, [[développement durable]]).",
+ "intentionsParCycle": {
+  "1": "dépasser les représentations spontanées par l'observation, la manipulation, l'expérimentation et le langage.",
+  "2": "premières démarches scientifique et technologique, dans quatre domaines : la matière, les mesures, l'électricité ; le corps humain et la santé ; les êtres vivants dans leur environnement ; les objets techniques au cœur de la société (CP 2026 ; CE1-CE2 : « Questionner le monde du vivant, de la matière et des objets » 2020).",
+  "3": "conceptualisation, [[modélisation]], culture scientifique et technologique ; éducations transversales (santé, EVAR, [[développement durable]])."
+ },
  "domaines": [
   {
    "id": "demarches",

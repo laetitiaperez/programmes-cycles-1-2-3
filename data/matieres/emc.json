@@ -2,6 +2,11 @@
  "id": "emc",
  "nom": "Enseignement moral et civique",
  "intentions": "Former les élèves « à l’exercice et à une conscience claire de leur citoyenneté » ; faire partager les valeurs de la République (Code de l'éducation, art. L 111-1). Titres annuels : CP « Se reconnaitre comme individu et élève » ; CE1 « Respecter les autres » ; CE2 « Apprendre ensemble et vivre ensemble » ; CM1 « Faire société » ; CM2 « Vivre en République » ; 6e « Apprendre à vivre dans une société démocratique ».",
+ "intentionsParCycle": {
+  "tous": "Former les élèves « à l’exercice et à une conscience claire de leur citoyenneté » ; faire partager les valeurs de la République (Code de l'éducation, art. L 111-1).",
+  "2": "Titres annuels : CP « Se reconnaitre comme individu et élève » ; CE1 « Respecter les autres » ; CE2 « Apprendre ensemble et vivre ensemble ».",
+  "3": "Titres annuels : CM1 « Faire société » ; CM2 « Vivre en République » ; 6e « Apprendre à vivre dans une société démocratique »."
+ },
  "domaines": [
   {
    "id": "cadre",

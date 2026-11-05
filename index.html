@@ -15,9 +15,8 @@
   <div class="ligne">
     <button id="ouvrir-menu" class="icone" type="button" aria-label="Ouvrir le menu" aria-controls="menu">
       <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-      <span id="badge-filtres" class="pastille" hidden></span>
     </button>
-    <input id="f-q" type="search" placeholder="Rechercher un mot-clé, une notion…" aria-label="Rechercher">
+    <input id="f-q" type="search" placeholder="Rechercher une notion, un terme…" aria-label="Rechercher">
   </div>
   <p id="contexte" class="contexte" hidden></p>
 </header>
@@ -31,27 +30,12 @@
   </div>
 
   <nav id="vues" class="menu-vues" aria-label="Vues">
-    <button type="button" data-vue="matiere">Par matière</button>
+    <button type="button" data-vue="cycle">Par cycle</button>
+    <button type="button" data-vue="accueil">Accueil (cartes des matières)</button>
     <button type="button" data-vue="classe">Par classe</button>
     <button type="button" data-vue="lexique">Lexique des mots-clés</button>
     <button type="button" data-vue="biblio">Bibliothèque</button>
   </nav>
-
-  <h2>Cycle</h2>
-  <nav id="cycles" class="segments" aria-label="Cycle">
-    <button type="button" data-cy="">Tous</button>
-    <button type="button" data-cy="1">C1</button>
-    <button type="button" data-cy="2">C2</button>
-    <button type="button" data-cy="3">C3</button>
-  </nav>
-
-  <h2>Filtres</h2>
-  <form id="filtres" autocomplete="off">
-    <label>Classe <select id="f-c"><option value="">Toutes</option></select></label>
-    <label>Matière <select id="f-m"><option value="">Toutes</option></select></label>
-    <fieldset id="f-t"><legend>Types d'éléments</legend></fieldset>
-    <button type="button" id="raz">Réinitialiser les filtres</button>
-  </form>
 
   <h2>Affichage</h2>
   <button id="theme" type="button" class="bouton-ligne">Thème clair / sombre</button>

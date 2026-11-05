@@ -54,12 +54,41 @@ Programme C1 consolidé (BO 41/2024 + BO 19/2026), 6 domaines + préambule :
 - Les nouveaux programmes 2026 (HG, sciences, EPS, LV) couvrent tout le cycle, mais en 2026-27 seule la 1re classe (CP / CM1) les applique : on ne saisit que cette classe depuis ces textes.
 
 ## À vérifier
+- Couche 2 cycle 2 (français) relue contre le PDF : compréhension CE1 (p. 6-7), geste CE1 (p. 11). Tableaux de fréquence répétés dans chaque domaine (p. 4, 9, 13, 16, 20) : repris une fois dans les intentions (p. 3).
+- Couche 2 maternelle (français) relue contre le PDF : phonologie PS (p. 13), geste GS (p. 19), compréhension GS (p. 18). « S'éveiller à la diversité linguistique » (p. 15-16) exclu de la complétude du français : relève des langues vivantes.
+- Complétude (couche 2) : les listes d'œuvres proposées et les pistes de prolongement des exemples Éduscol C3 (lignes à puce «  ») ne sont pas contrôlées : ce sont des ressources, pas des énoncés du programme. À confirmer avec Laetitia.
+- Complétude du français au départ (05/11/2026) : 2 039 segments à reprendre (C1 319, C2 555, C3 418, exemples Éduscol CM1 252, CM2 249, 6e 246).
+- Textes en vigueur revérifiés le 05/11/2026 sur les pages Éduscol des cycles 1, 2 et 3 (mises à jour juin-juillet 2026) : identiques à `data/textes.json`. Les BO anglais 2025 et LVR 2026 s'ouvrent dans un navigateur ; le PDF C3 2023 (media 100806) est un téléchargement direct, copie locale déjà vérifiée.
 - Trois liens refusent les robots (403) : C3 2023 (Éduscol media 100806), BO anglais 2025, BO LVR 2026 — à ouvrir une fois dans un navigateur.
 - Numéros de page : page PDF de la section, pas de l'étape exacte (±1 page) ; tableaux EVAR (p. 8-9) cités pour toutes les classes.
 - Sciences C2/C3 2026 : texte obtenu par OCR (pas de couche texte dans le PDF) ; mots-clés vérifiés, mais relire les citations longues.
 - LV 6e : seuls l'anglais (programme collège 2025) et le cadre commun des langues régionales sont saisis ; les autres langues ont des programmes à part.
 - Matière « École maternelle — principes » : vide (« Aucun résultat ») si le filtre cycle 2 ou 3 est actif, c'est voulu.
 
+## Bilan du pilote français (05/11/2026)
+- Couche 2 du français PS → 6e : 1503 items, environ 36885 mots (couche 1 : environ 4 900 mots).
+- Complétude : 1 899 énoncés officiels repris sur 1 899 (C1 313, C2 554, C3 422, exemples Éduscol 610), 18 exclusions justifiées (diversité linguistique → LV, tableaux de fréquence répétés).
+- Fidélité : 997 mots-clés trouvés mot pour mot (toutes matières). 94 tests verts.
+- Cycle 3 : couche 2 générée par scripts/gen_fr_c3.py (objectifs et exemples repris mot pour mot) ; à relire par Laetitia pour la lisibilité.
+
 ## Bilan (27/09/2026)
 - 10 matières, 666 mots-clés vérifiés mot pour mot dans leur source, 0 doublon de texte entre étapes, 54 tests verts.
 - 10 fiches HTML dans la Bibliothèque (dont 3 converties des PDF d'origine, téléchargeables).
+
+## Carte par cycle — statut des volets 1 (vérifié le 2026-11-05 sur Légifrance / BO)
+
+Chaque arrêté récent ne supprime que la partie de sa discipline dans les annexes 1 (cycle 2) et 2 (cycle 3) de l'arrêté du 9 novembre 2015 ; les volets 1 « Spécificités du cycle » (et 2) restent donc en vigueur en 2026-2027 :
+- arrêté du 22 octobre 2024 (JORFTEXT000050395251), art. 2 : français et maths de l'annexe 2 [cycle 2 dans la numérotation de cet arrêté] ;
+- arrêté du 10 avril 2025 (JORFTEXT000051468918), art. 2 : français et maths du cycle de consolidation ;
+- arrêté du 26 février 2026 (BO n° 12, MENE2602911A), art. 2 : langues vivantes, annexes 1 et 2 ;
+- arrêté du 22 avril 2026 (JORFTEXT000054048160, BO n° 22), art. 2 : EPS et « Questionner l'espace et le temps » (annexe 1), EPS et histoire-géographie (annexe 2) ;
+- arrêté du 5 juin 2026 (BO n° 24, MENE2611650A), art. 2 : « Questionner le monde » (annexe 1), sciences et technologie (annexe 2).
+Maternelle : l'arrêté du 16 avril 2026 abroge entièrement le texte de 2015 ; seul le préambule du programme consolidé fait foi.
+
+## Carte par cycle — contenu (2026-11-05)
+
+- Couche 2 générée par `scripts/gen_cycles.py` (ne pas éditer `scripts/saisie/cycles_complet.py`) : cycle 1, 14 blocs (préambule, ~2 600 mots) ; cycle 2, 9 blocs (volet 1, ~830 mots) ; cycle 3, 2 blocs (volet 1, ~1 450 mots ; le texte officiel n'a qu'un intertitre, « Objectifs d'apprentissage »).
+- Couche 1 (idées-forces) saisie dans `scripts/saisie/cycles.py` : 24 idées, 33 termes vérifiés mot pour mot.
+- Complétude : 0 segment non repris sur 91 ; exclusions = pieds de page des PDF seulement. Un bloc de principes compte pour sa page ± 2 (un même paragraphe court sur plusieurs pages).
+- À relire par Laetitia : la formulation des idées-forces (surtout cycle 3, rédigées à partir d'un texte sans intertitres) ; le bloc « Objectifs d'apprentissage » du cycle 3, long (11 paragraphes).
+- Interface : entrée « Par cycle » (menu et bandeau d'accueil), page `#vue=cycle&cy=N` (principes au centre, disciplines en couronne, panneau de la discipline), lien « ← Cycle N » dans la carte d'une matière ouverte depuis un cycle ; recherche et lexique couvrent les principes des cycles.

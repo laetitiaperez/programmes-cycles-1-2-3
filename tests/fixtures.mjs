@@ -1,7 +1,7 @@
 export const classes = [
-  { id: 'PS', cycle: 1 }, { id: 'MS', cycle: 1 }, { id: 'GS', cycle: 1 },
-  { id: 'CP', cycle: 2 }, { id: 'CE1', cycle: 2 }, { id: 'CE2', cycle: 2 },
-  { id: 'CM1', cycle: 3 }, { id: 'CM2', cycle: 3 }, { id: '6e', cycle: 3 },
+  { id: 'PS', cycle: 1, age: 3 }, { id: 'MS', cycle: 1, age: 4 }, { id: 'GS', cycle: 1, age: 5 },
+  { id: 'CP', cycle: 2, age: 6 }, { id: 'CE1', cycle: 2, age: 7 }, { id: 'CE2', cycle: 2, age: 8 },
+  { id: 'CM1', cycle: 3, age: 9 }, { id: 'CM2', cycle: 3, age: 10 }, { id: '6e', cycle: 3, age: 11 },
 ];
 
 export const textes = [
@@ -22,7 +22,12 @@ export const francais = {
         { classes: ['CP'], type: 'attendu', texte: 'Lire [[50 mots par minute]].', sources: ['fr-c2-2024'], page: 8 },
         { classes: ['CE1'], type: 'attendu', texte: '+ 70 mots par minute, [[Fluence]] régulière.', sources: ['fr-c2-2024'] },
         { classes: ['CE1'], type: 'exemple', texte: 'Lecture théâtralisée.', sources: ['fr-c2-2024'] },
-      ] },
+      ],
+      complet: {
+        CP: { blocs: [{ titre: 'Attendus de fin d’année', source: 'fr-c2-2024', page: 8, items: ['Lire [[50 mots par minute]] après préparation.'] }] },
+        CE1: { blocs: [{ titre: 'Attendus de fin d’année', source: 'fr-c2-2024', page: 9, items: ['Lire 70 mots par minute.', 'Respecter les [[groupes de souffle]].'] }],
+               reconduit: [{ de: 'CP', texte: 'Lire 50 mots par minute après préparation.' }] },
+      } },
     { id: 'decodage', nom: 'Décodage', etapes: [
         { classes: ['CP'], type: 'competence', texte: 'Maîtriser les [[correspondances graphèmes-phonèmes]].', sources: ['fr-c2-2024'] },
       ] },

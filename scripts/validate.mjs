@@ -8,7 +8,8 @@ const textes = await read('data/textes.json');
 const ids = await read('data/matieres/index.json');
 const matieres = await Promise.all(ids.map(id => read(`data/matieres/${id}.json`)));
 
-const errors = validateData({ classes, textes, matieres });
+const cycles = await read('data/cycles.json');  // requis : le site ne se charge pas sans lui
+const errors = validateData({ classes, textes, matieres, cycles });
 
 if (process.argv.includes('--links')) {
   const headers = { 'User-Agent': 'Mozilla/5.0 (Macintosh) programmes-cycles-validate' };
@@ -28,4 +29,4 @@ if (errors.length) {
   console.error(`${errors.length} erreur(s) :\n- ${errors.join('\n- ')}`);
   process.exit(1);
 }
-console.log(`OK : ${textes.length} textes, ${matieres.length} matières.`);
+console.log(`OK : ${textes.length} textes, ${matieres.length} matières, ${cycles.length} cycles.`);
