@@ -22,7 +22,12 @@ export const francais = {
         { classes: ['CP'], type: 'attendu', texte: 'Lire [[50 mots par minute]].', sources: ['fr-c2-2024'], page: 8 },
         { classes: ['CE1'], type: 'attendu', texte: '+ 70 mots par minute, [[Fluence]] régulière.', sources: ['fr-c2-2024'] },
         { classes: ['CE1'], type: 'exemple', texte: 'Lecture théâtralisée.', sources: ['fr-c2-2024'] },
-      ] },
+      ],
+      complet: {
+        CP: { blocs: [{ titre: 'Attendus de fin d’année', source: 'fr-c2-2024', page: 8, items: ['Lire [[50 mots par minute]] après préparation.'] }] },
+        CE1: { blocs: [{ titre: 'Attendus de fin d’année', source: 'fr-c2-2024', page: 9, items: ['Lire 70 mots par minute.'] }],
+               reconduit: [{ de: 'CP', texte: 'Lire 50 mots par minute après préparation.' }] },
+      } },
     { id: 'decodage', nom: 'Décodage', etapes: [
         { classes: ['CP'], type: 'competence', texte: 'Maîtriser les [[correspondances graphèmes-phonèmes]].', sources: ['fr-c2-2024'] },
       ] },

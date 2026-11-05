@@ -37,3 +37,23 @@ test('chaque source doit couvrir une classe de l’étape', () => {
   expectError(d, /hg-c2-2026 ne s’applique à aucune des classes CE1, CE2/);
 });
 test('âge manquant', () => { const d = data(); delete d.classes[0].age; expectError(d, /classes\/PS : âge invalide/); });
+
+const cp = (d) => fil(d, 0, 0).complet;
+test('données valides avec complet → aucune erreur', () => { const d = data(); assert.ok(cp(d).CP); assert.deepEqual(validateData(d), []); });
+test('complet : classe inconnue', () => { const d = data(); cp(d).CE3 = cp(d).CP; expectError(d, /complet : classe inconnue « CE3 »/); });
+test('complet : classe absente du fil', () => { const d = data(); cp(d).CM1 = cp(d).CP; expectError(d, /complet CM1 : classe absente des étapes du fil/); });
+test('complet : aucun bloc', () => { const d = data(); cp(d).CP.blocs = []; expectError(d, /complet CP : aucun bloc/); });
+test('complet : page manquante', () => { const d = data(); delete cp(d).CP.blocs[0].page; expectError(d, /complet CP\/bloc 1 : page invalide/); });
+test('complet : source inconnue', () => { const d = data(); cp(d).CP.blocs[0].source = 'xx'; expectError(d, /complet CP\/bloc 1 : source inconnue « xx »/); });
+test('complet : source hors classe', () => { const d = data(); cp(d).CP.blocs[0].source = 'qlm-et-2020'; expectError(d, /complet CP\/bloc 1 : qlm-et-2020 ne s’applique pas à CP en 2026-27/); });
+test('complet : aucun item', () => { const d = data(); cp(d).CP.blocs[0].items = []; expectError(d, /complet CP\/bloc 1 : aucun item/); });
+test('complet : balise non fermée', () => { const d = data(); cp(d).CP.blocs[0].items = ['a [[b']; expectError(d, /complet CP\/bloc 1.*non fermée/); });
+test('complet : reconduit d’une classe non antérieure', () => {
+  const d = data(); cp(d).CP.reconduit = [{ de: 'CE1', texte: 'Lire 70 mots par minute.' }]; expectError(d, /reconduit de CE1 : classe non antérieure/);
+});
+test('complet : reconduit introuvable', () => { const d = data(); cp(d).CE1.reconduit[0].texte = 'Autre chose.'; expectError(d, /reconduit de CP introuvable/); });
+test('complet : reconduit avec apostrophe typographique', () => {
+  const d = data(); cp(d).CP.blocs[0].items.push('Lire l’album.'); cp(d).CE1.reconduit.push({ de: 'CP', texte: "Lire l'album." });
+  assert.deepEqual(validateData(d), []);
+});
+test('coucheComplete : complet manquant', () => { const d = data(); d.matieres[0].coucheComplete = true; expectError(d, /decodage : complet manquant pour CP/); });
