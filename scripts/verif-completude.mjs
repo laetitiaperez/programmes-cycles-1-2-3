@@ -27,7 +27,8 @@ for (const [id, plages] of Object.entries(portee)) {
   const pages = toutes.map((t, i) => (garder(i + 1) ? t : ''));
   const intentions = (m.intentionsCompletes ?? []).filter(b => b.source === id).flatMap(b => b.items.map(texte => ({ page: b.page, texte })));
   const items = intentions.concat(m.domaines.flatMap(d => d.fils.flatMap(f => Object.values(f.complet ?? {}).flatMap(k => [
-    ...(k.blocs ?? []).filter(b => b.source === id).flatMap(b => b.items.map(texte => ({ page: b.page, texte }))),
+    // Le titre d'un bloc reprend l'intitulé officiel qui le précède.
+    ...(k.blocs ?? []).filter(b => b.source === id).flatMap(b => [b.titre, ...b.items].map(texte => ({ page: b.page, texte }))),
     ...(k.reconduit ?? []).flatMap(r => (k.blocs ?? []).filter(b => b.source === id).slice(0, 1).map(b => ({ page: b.page, texte: r.texte }))),
   ]))));
   const r = rapport({ pages, items, exclus: exclus.filter(e => e.source === id).map(e => e.debut) });

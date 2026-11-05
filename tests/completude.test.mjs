@@ -45,3 +45,11 @@ test('segmenter : en-têtes de tableau et d’âge écartés', () => {
     '- Diversifier les pronoms employés dans les phrases.',
   ].join('\n')), ['- Diversifier les pronoms employés dans les phrases.']);
 });
+test('segmenter : puces « − » (U+2212)', () => {
+  assert.deepEqual(segmenter('Le professeur organise la classe :\n− aborde la diversité linguistique par l’écoute des sons ;\n− a recours à des cartes-images, des jeux, des albums.'),
+    ['Le professeur organise la classe :', '− aborde la diversité linguistique par l’écoute des sons ;', '− a recours à des cartes-images, des jeux, des albums.'].filter(s => s !== 'Le professeur organise la classe :'));
+});
+test('rapport : exclusion d’une puce « − »', () => {
+  const page = '− aborde la diversité linguistique par l’écoute des sons et de la langue choisie ;';
+  assert.deepEqual(rapport({ pages: [page], items: [], exclus: ['aborde la diversité linguistique'] }), []);
+});
