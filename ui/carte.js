@@ -3,9 +3,11 @@ import { estNouveau, textesPourClasse } from '../lib/textes.js';
 import { MATIERES_BIBLIO } from '../lib/carte.js';
 
 const lien = (params) => `#${new URLSearchParams(params).toString()}`;
+// Origine « cycle » conservée dans la carte d'une matière (lien de retour vers la carte du cycle).
+const origine = (state) => (state.cy ? { cy: state.cy } : {});
 const badgeNouveau = () => el('span', { class: 'badge-new' }, 'NOUVEAU 2026');
 
-function lienPdf(texte, page, avecTitre = false) {
+export function lienPdf(texte, page, avecTitre = false) {
   if (!texte) return null;
   const href = page ? `${texte.pdf}#page=${page}` : texte.pdf;
   return el('a', { class: 'src', href, target: '_blank', rel: 'noopener', title: `${texte.titre} — ${texte.bo}` },
@@ -49,12 +51,12 @@ export function renderCarte(m, state, frise, ctx) {
   const panneau = el('div', { class: 'carte-fils', style: `--n: ${m.domaines.length}` },
     domaine
       ? el('ul', {}, domaine.fils.map(f => el('li', {},
-          el('a', { href: lien({ vue: 'carte', m: m.id, d: domaine.id, fil: f.id }), 'aria-current': f.id === state.fil ? 'true' : null }, f.nom))))
+          el('a', { href: lien({ vue: 'carte', ...origine(state), m: m.id, d: domaine.id, fil: f.id }), 'aria-current': f.id === state.fil ? 'true' : null }, f.nom))))
       : el('p', { class: 'indice' }, 'Choisis un domaine pour voir ses fils de progression.'));
   const items = [];
   for (const d of m.domaines) {
     const actif = d.id === state.d;
-    items.push(el('a', { class: 'carte-domaine', href: lien({ vue: 'carte', m: m.id, d: d.id }), 'aria-current': actif ? 'true' : null }, d.nom));
+    items.push(el('a', { class: 'carte-domaine', href: lien({ vue: 'carte', ...origine(state), m: m.id, d: d.id }), 'aria-current': actif ? 'true' : null }, d.nom));
     if (actif) items.push(panneau);
   }
   if (!domaine) items.push(panneau);
@@ -73,12 +75,12 @@ export function renderFrise(m, fil, frise, state, ctx) {
     el('h3', {}, fil.nom),
     el('ol', { class: 'frise-cases' }, frise.map(x => el('li', {},
       el('a', {
-        class: 'case', href: lien({ vue: 'carte', m: m.id, d: state.d, fil: fil.id, c: x.classe }),
+        class: 'case', href: lien({ vue: 'carte', ...origine(state), m: m.id, d: state.d, fil: fil.id, c: x.classe }),
         'aria-current': x.classe === state.c ? 'true' : null,
       },
         el('span', { class: 'case-tete' }, el('strong', {}, x.classe), ` C${x.cycle} · ${x.age} ans`, nouveau(x, ctx) ? [' ', badgeNouveau()] : null),
         el('span', { class: 'case-resume' }, resume(x)))))),
-    active ? renderComplet(active, ctx, (c) => el('a', { href: lien({ vue: 'carte', m: m.id, d: state.d, fil: fil.id, c }) }, `voir en ${c}`))
+    active ? renderComplet(active, ctx, (c) => el('a', { href: lien({ vue: 'carte', ...origine(state), m: m.id, d: state.d, fil: fil.id, c }) }, `voir en ${c}`))
       : el('p', { class: 'indice' }, 'Choisis une classe pour voir le contenu complet.'));
 }
 

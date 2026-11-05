@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { classesDuCycle, disciplinesDuCycle, intentionsCompletesDuCycle } from '../lib/cycles.js';
+import { classesDuCycle, disciplinesDuCycle, intentionsCompletesDuCycle, sectionsDuCycle } from '../lib/cycles.js';
 import { classes, textes as textesBase, francais, hg } from './fixtures.mjs';
 
 const textes = [...textesBase,
@@ -60,4 +60,18 @@ test('intentionsCompletesDuCycle : garde les blocs dont la source vaut pour le c
   const idx = new Map(textes.map(t => [t.id, t]));
   assert.deepEqual(intentionsCompletesDuCycle(m, idx, classes, 2).map(b => b.titre), ['Cycle 2']);
   assert.deepEqual(intentionsCompletesDuCycle({}, idx, classes, 2), []);
+});
+
+test('sectionsDuCycle : chaque groupe d’idées emporte son bloc et les sous-parties qui suivent', () => {
+  const b = (t) => ({ titre: t, source: 's', page: 1, items: ['x'] });
+  const cycle = { idees: [{ texte: 'A', bloc: 1 }, { texte: 'B', bloc: 3 }, { texte: 'C', bloc: 3 }],
+    complet: { blocs: [b('0'), b('1'), b('2'), b('3'), b('4')] } };
+  const s = sectionsDuCycle(cycle);
+  assert.deepEqual(s.map(x => x.idees.map(i => i.texte)), [['A'], ['B', 'C']]);
+  // les blocs avant la première idée vont dans la première section ; aucun bloc perdu ni dupliqué
+  assert.deepEqual(s.map(x => x.blocs.map(bl => bl.titre)), [['0', '1', '2'], ['3', '4']]);
+});
+test('sectionsDuCycle : sans idées, une seule section avec tous les blocs', () => {
+  const cycle = { idees: [], complet: { blocs: [{ titre: 'T', items: ['x'] }] } };
+  assert.deepEqual(sectionsDuCycle(cycle), [{ idees: [], blocs: [{ titre: 'T', items: ['x'] }] }]);
 });

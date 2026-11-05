@@ -2,8 +2,10 @@ import { parseHash, toHash, sanitizeState, DEFAULT_STATE } from './lib/url.js';
 import { indexTextes, filtrerTextes } from './lib/textes.js';
 import { buildLexique, filterLexique } from './lib/lexique.js';
 import { friseDuFil, vueClasse, rechercher, grouperTextes } from './lib/carte.js';
+import { disciplinesDuCycle } from './lib/cycles.js';
 import { el, renderLexique, renderBibliotheque } from './ui/render.js';
 import { renderAccueil, renderCarte, renderVueClasse, renderResultats } from './ui/carte.js';
+import { renderBandeauCycles, renderCycle } from './ui/cycle.js';
 
 const $ = (id) => document.getElementById(id);
 let data;
@@ -17,12 +19,12 @@ async function getJSON(path) {
 }
 
 async function load() {
-  const [classes, textes, ids, fiches] = await Promise.all([
+  const [classes, textes, ids, fiches, cycles] = await Promise.all([
     getJSON('data/classes.json'), getJSON('data/textes.json'), getJSON('data/matieres/index.json'),
-    getJSON('data/fiches.json'),
+    getJSON('data/fiches.json'), getJSON('data/cycles.json'),
   ]);
   const matieres = await Promise.all(ids.map(id => getJSON(`data/matieres/${id}.json`)));
-  return { classes, textes, matieres, fiches };
+  return { classes, textes, matieres, fiches, cycles };
 }
 
 function go(patch, replace = false) {
@@ -54,17 +56,20 @@ function setup() {
   $('menu').addEventListener('click', (e) => { if (e.target === $('menu')) $('menu').close(); });
 }
 
-const NOMS_VUES = { classe: 'Par classe', lexique: 'Lexique', biblio: 'Bibliothèque', recherche: 'Recherche' };
+const NOMS_VUES = { cycle: 'Par cycle', classe: 'Par classe', lexique: 'Lexique', biblio: 'Bibliothèque', recherche: 'Recherche' };
 
 // Fil d'Ariane sous la recherche.
 function renderContexte(m, fil) {
   const parts = [el('a', { href: '#' }, 'Accueil')];
   if (state.vue === 'carte') {
+    // Arrivée depuis la carte d'un cycle : lien de retour vers ce cycle, discipline ouverte.
+    if (state.cy) parts.push(' › ', el('a', { href: `#vue=cycle&cy=${state.cy}&m=${encodeURIComponent(m.id)}` }, `← Cycle ${state.cy}`));
     parts.push(' › ', el('a', { href: `#vue=carte&m=${encodeURIComponent(m.id)}` }, m.nom));
     if (fil) parts.push(' › ', fil.nom);
     if (state.c) parts.push(' › ', el('strong', {}, state.c));
   } else if (NOMS_VUES[state.vue]) {
-    parts.push(' › ', el('strong', {}, NOMS_VUES[state.vue]), state.vue === 'classe' && state.c ? ` › ${state.c}` : '');
+    parts.push(' › ', el('strong', {}, NOMS_VUES[state.vue]), state.vue === 'classe' && state.c ? ` › ${state.c}` : '',
+      state.vue === 'cycle' ? ` › Cycle ${state.cy}` : '');
   }
   $('contexte').hidden = false;
   $('contexte').replaceChildren(...parts);
@@ -98,18 +103,26 @@ function render() {
     else if (avant.vue !== state.vue || avant.m !== state.m) scrollTo(0, 0);
     return;
   }
+  if (state.vue === 'cycle') {
+    const cycle = data.cycles.find(c => String(c.id) === state.cy);
+    main.append(renderCycle(cycle, data.cycles, disciplinesDuCycle(data.matieres, data.classes, cycle.id, data.textes), state, ctx, data.classes));
+    // Une discipline choisie : amener son panneau à l'écran (utile sur téléphone, où il est sous la carte).
+    if (state.m && (avant.m !== state.m || avant.vue !== 'cycle')) $('panneau-discipline')?.scrollIntoView({ block: 'nearest' });
+    else if (avant.vue !== state.vue || avant.cy !== state.cy) scrollTo(0, 0);
+    return;
+  }
   if (avant.vue !== state.vue || avant.c !== state.c) scrollTo(0, 0);
   if (state.vue === 'classe') {
     main.append(renderVueClasse(data.classes, data.textes, state.c, state.c ? vueClasse(data.matieres, state.c) : [], ctx));
   } else if (state.vue === 'lexique') {
-    main.append(...[renderLexique(filterLexique(buildLexique(data.matieres, data.classes), state.q), ctx)].flat());
+    main.append(...[renderLexique(filterLexique(buildLexique(data.matieres, data.classes, data.cycles), state.q), ctx)].flat());
   } else if (state.vue === 'biblio') {
     const textes = filtrerTextes(data.textes, data.classes, { q: state.q });
     main.append(renderBibliotheque(data.fiches, textes, data.matieres, { ...ctx, q: state.q }));
   } else if (state.vue === 'recherche') {
-    main.append(renderResultats(rechercher(data.matieres, state.q), data.matieres, state.q));
+    main.append(renderResultats(rechercher(data.matieres, state.q, data.cycles), data.matieres, state.q));
   } else {
-    main.append(renderAccueil(data.matieres, grouperTextes(data.textes), ctx));
+    main.append(renderBandeauCycles(data.cycles, data.classes), renderAccueil(data.matieres, grouperTextes(data.textes), ctx));
   }
 }
 
