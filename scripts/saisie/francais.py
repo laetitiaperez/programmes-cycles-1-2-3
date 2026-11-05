@@ -2,9 +2,10 @@
 Repères d'âge du C1 : « avant 4 ans » → PS, « à partir de 4 ans » → MS, « à partir de 5 ans » → GS."""
 from commun import E, S, F, D, ecrire, attacher
 import fr_c1
+import fr_c2
 
 # Couche complète, rédigée par classe dans des modules séparés (cf. spec carte à deux couches).
-COMPLETS = [fr_c1]
+COMPLETS = [fr_c1, fr_c2]
 
 c1, c2, c3 = "c1-2024", "fr-c2-2024", "fr-c3-2025"
 x4, x5, x6 = "fr-ex-cm1", "fr-ex-cm2", "fr-ex-6e"  # exemples Éduscol du cycle 3
