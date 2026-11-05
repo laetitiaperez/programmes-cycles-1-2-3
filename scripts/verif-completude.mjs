@@ -31,8 +31,10 @@ for (const [id, plages] of Object.entries(portee)) {
     ...(k.blocs ?? []).filter(b => b.source === id).flatMap(b => [b.titre, ...b.items].map(texte => ({ page: b.page, texte }))),
     ...(k.reconduit ?? []).flatMap(r => (k.blocs ?? []).filter(b => b.source === id).slice(0, 1).map(b => ({ page: b.page, texte: r.texte }))),
   ]))));
-  const r = rapport({ pages, items, exclus: exclus.filter(e => e.source === id).map(e => e.debut) });
-  total += rapport({ pages, items: [], exclus: [] }).length;
+  // Les exemples Éduscol (« -ex- ») listent des œuvres à puce privée : ressources, pas énoncés.
+  const listesOeuvres = id.includes('-ex-');
+  const r = rapport({ pages, items, exclus: exclus.filter(e => e.source === id).map(e => e.debut), listesOeuvres });
+  total += rapport({ pages, items: [], exclus: [], listesOeuvres }).length;
   for (const x of r) console.log(`${id} p.${x.page} (${Math.round(x.score * 100)} %) : ${x.segment}`);
   manquants += r.length;
 }

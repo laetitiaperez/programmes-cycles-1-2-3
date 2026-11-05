@@ -33,8 +33,8 @@ test('rapport : items de la page voisine comptent, pas ceux à deux pages', () =
   assert.deepEqual(rapport({ pages, items: [{ page: 3, texte }], exclus: [] }), []);
   assert.equal(rapport({ pages, items: [{ page: 4, texte }], exclus: [] }).length, 1);
 });
-test('segmenter : listes d’œuvres (puce privée) écartées', () => {
-  assert.deepEqual(segmenter('Lire une œuvre longue et se l’approprier pleinement\n Marcel Aymé, Les contes du chat perché\nGallimard jeunesse'),
+test('segmenter : listes d’œuvres (puce privée) écartées sur option', () => {
+  assert.deepEqual(segmenter('Lire une œuvre longue et se l’approprier pleinement\n\uF0B7 Marcel Aymé, Les contes du chat perché\nGallimard jeunesse', { listesOeuvres: true }),
     ['Lire une œuvre longue et se l’approprier pleinement']);
 });
 test('segmenter : en-têtes de tableau et d’âge écartés', () => {
@@ -52,4 +52,13 @@ test('segmenter : puces « − » (U+2212)', () => {
 test('rapport : exclusion d’une puce « − »', () => {
   const page = '− aborde la diversité linguistique par l’écoute des sons et de la langue choisie ;';
   assert.deepEqual(rapport({ pages: [page], items: [], exclus: ['aborde la diversité linguistique'] }), []);
+});
+test('segmenter : puce privée ordinaire gardée hors listes d’œuvres', () => {
+  assert.deepEqual(segmenter('Lire chaque jour des textes variés\n\uF02D l’apprentissage puis l’automatisation du décodage des mots ;'),
+    ['Lire chaque jour des textes variés', '\uF02D l’apprentissage puis l’automatisation du décodage des mots ;']);
+});
+test('rapport : option listesOeuvres transmise', () => {
+  const page = '\uF0B7 Marcel Aymé, Les contes bleus du chat perché, Gallimard';
+  assert.equal(rapport({ pages: [page], items: [], exclus: [] }).length, 1);
+  assert.equal(rapport({ pages: [page], items: [], exclus: [], listesOeuvres: true }).length, 0);
 });
