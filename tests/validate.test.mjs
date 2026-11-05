@@ -77,3 +77,19 @@ test('coucheComplete : une étape multi-classes demande la couche 2 à sa premi�
   };
   assert.deepEqual(validateData(d), []);
 });
+
+// Cycles (carte par cycle)
+const cycleOk = () => ({
+  id: 2, nom: 'Cycle des apprentissages fondamentaux', classes: ['CP', 'CE1', 'CE2'], source: 'fr-c2-2024',
+  idees: [{ texte: 'On articule le [[concret]] et l’abstrait.', bloc: 0 }],
+  complet: { blocs: [{ titre: 'Au cycle 2, on articule le concret et l’abstrait', source: 'fr-c2-2024', page: 2, items: ['Texte.'] }] },
+});
+const avecCycle = (modif) => { const d = data(); const c = cycleOk(); modif?.(c); d.cycles = [c]; return d; };
+test('cycles valides → aucune erreur', () => assert.deepEqual(validateData(avecCycle()), []));
+test('cycle : id hors 1-3', () => expectError(avecCycle(c => { c.id = 4; }), /id de cycle invalide/));
+test('cycle : classe d’un autre cycle', () => expectError(avecCycle(c => { c.classes = ['CP', 'CM1']; }), /CM1 n’est pas du cycle 2/));
+test('cycle : source inconnue', () => expectError(avecCycle(c => { c.source = 'xx'; }), /cycles\/2.*source inconnue « xx »/));
+test('cycle : idée vers un bloc inexistant', () => expectError(avecCycle(c => { c.idees[0].bloc = 5; }), /bloc 5 inexistant/));
+test('cycle : bloc sans items', () => expectError(avecCycle(c => { c.complet.blocs[0].items = []; }), /cycles\/2.*aucun item/));
+test('cycle : page non entière', () => expectError(avecCycle(c => { c.complet.blocs[0].page = 2.5; }), /cycles\/2.*page invalide/));
+test('cycle : balisage cassé dans une idée', () => expectError(avecCycle(c => { c.idees[0].texte = 'a [[b'; }), /cycles\/2.*non fermée/));
