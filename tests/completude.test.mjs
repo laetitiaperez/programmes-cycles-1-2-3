@@ -37,3 +37,11 @@ test('segmenter : listes d’œuvres (puce privée) écartées', () => {
   assert.deepEqual(segmenter('Lire une œuvre longue et se l’approprier pleinement\n Marcel Aymé, Les contes du chat perché\nGallimard jeunesse'),
     ['Lire une œuvre longue et se l’approprier pleinement']);
 });
+test('segmenter : en-têtes de tableau et d’âge écartés', () => {
+  assert.deepEqual(segmenter([
+    'Objectifs d’apprentissage Exemples de réussite',
+    '• À aborder avant 4 ans',
+    '• À partir de 4 ans ou dès que les apprentissages précédents ont pu être observés',
+    '- Diversifier les pronoms employés dans les phrases.',
+  ].join('\n')), ['- Diversifier les pronoms employés dans les phrases.']);
+});

@@ -1,6 +1,10 @@
 """Français PS→6e. Sources : c1-2024 (domaine langage), fr-c2-2024, fr-c3-2025.
 Repères d'âge du C1 : « avant 4 ans » → PS, « à partir de 4 ans » → MS, « à partir de 5 ans » → GS."""
-from commun import E, S, F, D, ecrire
+from commun import E, S, F, D, ecrire, attacher
+import fr_c1
+
+# Couche complète, rédigée par classe dans des modules séparés (cf. spec carte à deux couches).
+COMPLETS = [fr_c1]
 
 c1, c2, c3 = "c1-2024", "fr-c2-2024", "fr-c3-2025"
 x4, x5, x6 = "fr-ex-cm1", "fr-ex-cm2", "fr-ex-6e"  # exemples Éduscol du cycle 3
@@ -277,10 +281,14 @@ grammaire = D("grammaire", "Grammaire et orthographe",
     ),
 )
 
-ecrire({
+matiere = {
     "id": "francais",
     "nom": "Français",
     "nomMaternelle": "Le développement et la structuration du langage oral et écrit",
     "intentions": "Maternelle : compréhension et usage du langage ; [[vocabulaire]] prioritaire ; passage progressif de l'oral à l'écrit. Cycle 2 : construire les fondements de la langue ; [[apprendre à lire]] est l'objectif central ; cinq [[activités langagières]] : comprendre un énoncé oral, parler en continu, parler en interaction, écrire, lire ; 10 h hebdomadaires. Cycle 3 : viser l'[[autonomie]] ; la [[compréhension]] est l'objectif central ; perspective « Découvrir – Jouer ».",
     "domaines": [lecture, ecriture, oral, vocabulaire, grammaire],
-})
+}
+intentions = [b for mod in COMPLETS for b in getattr(mod, "INTENTIONS", [])]
+if intentions:
+    matiere["intentionsCompletes"] = intentions
+ecrire(attacher(matiere, *[mod.COMPLET for mod in COMPLETS]))

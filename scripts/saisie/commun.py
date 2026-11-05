@@ -50,6 +50,21 @@ def F(id_, nom, *etapes, socle=None, complet=None):
     return f
 
 
+def attacher(matiere, *completes):
+    """Ajoute aux fils la couche complète rédigée dans des modules séparés.
+    Chaque module fournit {id_fil: {classe: K(...)}} ; deux modules ne décrivent pas la même classe d'un fil."""
+    fils = {f["id"]: f for d in matiere["domaines"] for f in d["fils"]}
+    for complet in completes:
+        for id_fil, parClasse in complet.items():
+            f = fils[id_fil]
+            dejà = f.setdefault("complet", {})
+            for c, k in parClasse.items():
+                assert c not in dejà, f"{id_fil} {c} décrit deux fois"
+                dejà[c] = k
+            f["complet"] = {c: dejà[c] for c in sorted(dejà, key=ORDRE.index)}
+    return matiere
+
+
 def D(id_, nom, *fils):
     return {"id": id_, "nom": nom, "fils": list(fils)}
 

@@ -25,10 +25,11 @@ for (const [id, plages] of Object.entries(portee)) {
   const toutes = brut.split('\f');
   const garder = (p) => plages.some(([a, b]) => p >= a && p <= b) && (!pa || (p >= pa && p <= (pb || pa)));
   const pages = toutes.map((t, i) => (garder(i + 1) ? t : ''));
-  const items = m.domaines.flatMap(d => d.fils.flatMap(f => Object.values(f.complet ?? {}).flatMap(k => [
+  const intentions = (m.intentionsCompletes ?? []).filter(b => b.source === id).flatMap(b => b.items.map(texte => ({ page: b.page, texte })));
+  const items = intentions.concat(m.domaines.flatMap(d => d.fils.flatMap(f => Object.values(f.complet ?? {}).flatMap(k => [
     ...(k.blocs ?? []).filter(b => b.source === id).flatMap(b => b.items.map(texte => ({ page: b.page, texte }))),
     ...(k.reconduit ?? []).flatMap(r => (k.blocs ?? []).filter(b => b.source === id).slice(0, 1).map(b => ({ page: b.page, texte: r.texte }))),
-  ])));
+  ]))));
   const r = rapport({ pages, items, exclus: exclus.filter(e => e.source === id).map(e => e.debut) });
   total += rapport({ pages, items: [], exclus: [] }).length;
   for (const x of r) console.log(`${id} p.${x.page} (${Math.round(x.score * 100)} %) : ${x.segment}`);

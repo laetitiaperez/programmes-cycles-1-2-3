@@ -17,3 +17,7 @@ test('blocsAVerifier inclut les reconduits avec les sources de la classe d’ori
   const r = blocsAVerifier(francais).find(b => b.ou === 'lecture/fluence/complet CE1/reconduit de CP');
   assert.deepEqual(r.sources, ['fr-c2-2024']);
 });
+test('blocsAVerifier inclut les intentions complètes', () => {
+  const m = { ...francais, intentionsCompletes: [{ titre: 'Principes', source: 'fr-c2-2024', page: 3, items: ['La [[fluence]] chaque jour.'] }] };
+  assert.ok(blocsAVerifier(m).some(b => b.ou === 'intentions complètes/bloc 1' && b.sources[0] === 'fr-c2-2024'));
+});

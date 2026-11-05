@@ -57,3 +57,13 @@ test('complet : reconduit avec apostrophe typographique', () => {
   assert.deepEqual(validateData(d), []);
 });
 test('coucheComplete : complet manquant', () => { const d = data(); d.matieres[0].coucheComplete = true; expectError(d, /decodage : complet manquant pour CP/); });
+test('intentionsCompletes valides', () => {
+  const d = data(); d.matieres[0].intentionsCompletes = [{ titre: 'Principes', source: 'fr-c2-2024', page: 3, items: ['Lire chaque jour.'] }];
+  assert.deepEqual(validateData(d), []);
+});
+test('intentionsCompletes : bloc invalide', () => {
+  const d = data(); d.matieres[0].intentionsCompletes = [{ titre: 'Principes', source: 'xx', page: 0, items: [] }];
+  expectError(d, /intentions complètes\/bloc 1 : source inconnue « xx »/);
+  expectError(d, /intentions complètes\/bloc 1 : page invalide/);
+  expectError(d, /intentions complètes\/bloc 1 : aucun item/);
+});

@@ -61,7 +61,8 @@ export function renderCarte(m, state, frise, ctx) {
   const fil = domaine?.fils.find(f => f.id === state.fil);
   return el('section', { class: 'carte-matiere' },
     el('h2', {}, m.nom, m.nomMaternelle ? el('small', {}, `Maternelle : ${m.nomMaternelle}`) : null),
-    m.intentions ? el('details', { class: 'intentions' }, el('summary', {}, 'Intentions générales'), el('p', {}, renderMarkup(m.intentions))) : null,
+    m.intentions ? el('details', { class: 'intentions' }, el('summary', {}, 'Intentions générales'), el('p', {}, renderMarkup(m.intentions)),
+      (m.intentionsCompletes ?? []).length ? renderComplet({ complet: { blocs: m.intentionsCompletes } }, ctx) : null) : null,
     el('nav', { class: 'carte-grille', 'aria-label': `Domaines et fils — ${m.nom}` }, items),
     fil ? renderFrise(m, fil, frise, state, ctx) : null);
 }
