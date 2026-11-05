@@ -3,6 +3,11 @@
  "nom": "Mathématiques",
  "nomMaternelle": "L'acquisition des premiers outils mathématiques",
  "intentions": "Maternelle : fréquentation quotidienne des mathématiques ; quatre modalités (jeu, résolution de problèmes concrets, entraînement, mémorisation) auxquelles s'intègre la [[manipulation]], toujours [[verbalisée]]. Cycle 2 : du [[concret à l'abstrait]], en passant par la [[représentation imagée]] ; priorité à la numération, au calcul et à la résolution de problèmes arithmétiques ([[les deux tiers]] du temps au minimum) ; aborder d'emblée le programme de la classe, sans séquence de révision pour tous. Cycle 3 : la résolution de problèmes au centre ; [[automatismes]] ; initiation à la [[pensée algébrique]] et à la [[pensée informatique]] ; égalité filles-garçons (valoriser des mathématiciennes).",
+ "intentionsParCycle": {
+  "1": "fréquentation quotidienne des mathématiques ; quatre modalités (jeu, résolution de problèmes concrets, entraînement, mémorisation) auxquelles s'intègre la [[manipulation]], toujours [[verbalisée]].",
+  "2": "du [[concret à l'abstrait]], en passant par la [[représentation imagée]] ; priorité à la numération, au calcul et à la résolution de problèmes arithmétiques ([[les deux tiers]] du temps au minimum) ; aborder d'emblée le programme de la classe, sans séquence de révision pour tous.",
+  "3": "la résolution de problèmes au centre ; [[automatismes]] ; initiation à la [[pensée algébrique]] et à la [[pensée informatique]] ; égalité filles-garçons (valoriser des mathématiciennes)."
+ },
  "domaines": [
   {
    "id": "nombres",

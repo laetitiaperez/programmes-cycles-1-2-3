@@ -93,3 +93,15 @@ test('cycle : idée vers un bloc inexistant', () => expectError(avecCycle(c => {
 test('cycle : bloc sans items', () => expectError(avecCycle(c => { c.complet.blocs[0].items = []; }), /cycles\/2.*aucun item/));
 test('cycle : page non entière', () => expectError(avecCycle(c => { c.complet.blocs[0].page = 2.5; }), /cycles\/2.*page invalide/));
 test('cycle : balisage cassé dans une idée', () => expectError(avecCycle(c => { c.idees[0].texte = 'a [[b'; }), /cycles\/2.*non fermée/));
+
+// intentionsParCycle
+test('intentionsParCycle : clé inconnue', () => {
+  const d = data(); d.matieres[0].intentionsParCycle = { 4: 'x' }; expectError(d, /intentionsParCycle : clé inconnue « 4 »/);
+});
+test('intentionsParCycle : terme absent des intentions', () => {
+  const d = data(); d.matieres[0].intentionsParCycle = { 2: 'Priorité à la [[grammaire]].' }; expectError(d, /\[\[grammaire\]\] absent des intentions/);
+});
+test('intentionsParCycle valide ou absent → aucune erreur', () => {
+  const d = data(); d.matieres[0].intentionsParCycle = { 2: 'Priorité à la [[Lecture]].', tous: 'Texte.' };
+  assert.deepEqual(validateData(d), []);
+});

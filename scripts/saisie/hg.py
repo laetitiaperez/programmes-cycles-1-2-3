@@ -101,5 +101,6 @@ ecrire({
     "nom": "Histoire-géographie",
     "nomMaternelle": "Se repérer dans le temps et l’espace",
     "intentions": "Maternelle : passer du temps et de l'espace vécus au temps et à l'espace représentés. Cycle 2 : passer « d’une perception immédiate et personnelle à une compréhension plus étendue du temps historique et de l’espace géographique » (CP 2026 ; CE1-CE2 : « Questionner l'espace et le temps » 2020). Cycle 3 : inscrire l'élève dans « une trame historique et géographique partagée, fondement d’une culture commune » ; confronter à l'[[altérité]] ; [[questionner les évidences]] ; différencier [[récits fictionnels]] et récits historiques.",
+    "intentionsParCycle": {"1": "passer du temps et de l'espace vécus au temps et à l'espace représentés.", "2": "passer « d’une perception immédiate et personnelle à une compréhension plus étendue du temps historique et de l’espace géographique » (CP 2026 ; CE1-CE2 : « Questionner l'espace et le temps » 2020).", "3": "inscrire l'élève dans « une trame historique et géographique partagée, fondement d’une culture commune » ; confronter à l'[[altérité]] ; [[questionner les évidences]] ; différencier [[récits fictionnels]] et récits historiques."},
     "domaines": [demarches, temps, histoire, espace, geographie],
 })

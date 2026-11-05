@@ -289,6 +289,7 @@ matiere = {
     "coucheComplete": True,
     "nomMaternelle": "Le développement et la structuration du langage oral et écrit",
     "intentions": "Maternelle : compréhension et usage du langage ; [[vocabulaire]] prioritaire ; passage progressif de l'oral à l'écrit. Cycle 2 : construire les fondements de la langue ; [[apprendre à lire]] est l'objectif central ; cinq [[activités langagières]] : comprendre un énoncé oral, parler en continu, parler en interaction, écrire, lire ; 10 h hebdomadaires. Cycle 3 : viser l'[[autonomie]] ; la [[compréhension]] est l'objectif central ; perspective « Découvrir – Jouer ».",
+    "intentionsParCycle": {"1": "compréhension et usage du langage ; [[vocabulaire]] prioritaire ; passage progressif de l'oral à l'écrit.", "2": "construire les fondements de la langue ; [[apprendre à lire]] est l'objectif central ; cinq [[activités langagières]] : comprendre un énoncé oral, parler en continu, parler en interaction, écrire, lire ; 10 h hebdomadaires.", "3": "viser l'[[autonomie]] ; la [[compréhension]] est l'objectif central ; perspective « Découvrir – Jouer »."},
     "domaines": [lecture, ecriture, oral, vocabulaire, grammaire],
 }
 intentions = [b for mod in COMPLETS for b in getattr(mod, "INTENTIONS", [])]

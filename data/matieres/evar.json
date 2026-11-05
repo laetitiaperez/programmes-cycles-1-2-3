@@ -2,6 +2,9 @@
  "id": "evar",
  "nom": "Éducation à la vie affective et relationnelle",
  "intentions": "Programme national de février 2025, obligatoire de la maternelle au lycée. Trois axes suivis tout au long de la scolarité : [[se connaître, vivre et grandir avec son corps]] ; [[rencontrer les autres et construire avec eux des relations, s’y épanouir]] ; [[trouver sa place dans la société, y être libre et responsable]]. EVAR à l'école primaire, EVARS (… et à la sexualité) à partir du collège.",
+ "intentionsParCycle": {
+  "tous": "Programme national de février 2025, obligatoire de la maternelle au lycée. Trois axes suivis tout au long de la scolarité : [[se connaître, vivre et grandir avec son corps]] ; [[rencontrer les autres et construire avec eux des relations, s’y épanouir]] ; [[trouver sa place dans la société, y être libre et responsable]]. EVAR à l'école primaire, EVARS (… et à la sexualité) à partir du collège."
+ },
  "domaines": [
   {
    "id": "cadre",
