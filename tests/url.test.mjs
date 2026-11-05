@@ -7,7 +7,7 @@ const d = data();
 const ctx = { classes: d.classes, matieres: d.matieres };
 const san = (h) => sanitizeState(parseHash(h), ctx);
 
-test('vues', () => assert.deepEqual(VUES, ['accueil', 'carte', 'classe', 'lexique', 'biblio', 'recherche']));
+test('vues', () => assert.deepEqual(VUES, ['accueil', 'cycle', 'carte', 'classe', 'lexique', 'biblio', 'recherche']));
 test('hash vide → accueil', () => assert.deepEqual(parseHash(''), { ...DEFAULT_STATE }));
 test('toHash : défaut → chaîne vide', () => assert.equal(toHash(DEFAULT_STATE), ''));
 test('aller-retour', () => {
@@ -38,4 +38,30 @@ test('vue classe garde sa classe', () => assert.deepEqual(san('#vue=classe&c=CE1
 test('lexique et biblio reconnus', () => {
   assert.equal(san('#vue=lexique').vue, 'lexique');
   assert.equal(san('#vue=biblio&q=fluence').q, 'fluence');
+});
+
+// Vue par cycle
+test('#vue=cycle&cy=2&m=hg : aller-retour', () => {
+  const s = parseHash('#vue=cycle&cy=2&m=hg');
+  assert.equal(s.vue, 'cycle'); assert.equal(s.cy, '2'); assert.equal(s.m, 'hg');
+  assert.equal(toHash(s), '#vue=cycle&m=hg&cy=2');
+});
+test('vue cycle sans cy ou cy invalide → cy=1', () => {
+  assert.equal(san('#vue=cycle').cy, '1');
+  assert.equal(san('#vue=cycle&cy=7').cy, '1');
+});
+test('vue cycle : matière absente du cycle → m vidée', () => {
+  assert.equal(san('#vue=cycle&cy=1&m=hg').m, '');
+  assert.equal(san('#vue=cycle&cy=2&m=hg').m, 'hg');
+  assert.equal(san('#vue=cycle&cy=2&m=inconnue').m, '');
+});
+test('cy conservé en vue carte, vidé ailleurs', () => {
+  assert.equal(san('#vue=carte&m=hg&cy=2').cy, '2');
+  assert.equal(san('#vue=carte&m=hg&cy=9').cy, '');
+  assert.equal(san('#vue=classe&c=CP&cy=2').cy, '');
+  assert.equal(san('#vue=lexique&cy=2').cy, '');
+});
+test('ancien lien #m=francais&cy=2 → carte du français', () => {
+  const s = san('#m=francais&cy=2');
+  assert.equal(s.vue, 'carte'); assert.equal(s.m, 'francais');
 });
