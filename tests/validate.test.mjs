@@ -36,3 +36,4 @@ test('chaque source doit couvrir une classe de l’étape', () => {
   fil(d, 1, 0).etapes[1].sources = ['qlm-et-2020', 'hg-c2-2026']; // étape CE1-CE2, hg-c2-2026 = CP seulement
   expectError(d, /hg-c2-2026 ne s’applique à aucune des classes CE1, CE2/);
 });
+test('âge manquant', () => { const d = data(); delete d.classes[0].age; expectError(d, /classes\/PS : âge invalide/); });
