@@ -31,3 +31,8 @@ test('id de fil en double', () => { const d = data(); fil(d, 0, 1).id = 'fluence
 test('fil vide', () => { const d = data(); d.matieres[0].domaines[0].fils.push({ id: 'v', nom: 'V', etapes: [] }); expectError(d, /fil vide/); });
 test('nouveauEn hors classes2026', () => { const d = data(); d.textes[1].nouveauEn = ['CE1']; expectError(d, /nouveauEn.*CE1/); });
 test('pdf non https', () => { const d = data(); d.textes[0].pdf = 'http://x'; expectError(d, /pdf/); });
+test('chaque source doit couvrir une classe de l’étape', () => {
+  const d = data();
+  fil(d, 1, 0).etapes[1].sources = ['qlm-et-2020', 'hg-c2-2026']; // étape CE1-CE2, hg-c2-2026 = CP seulement
+  expectError(d, /hg-c2-2026 ne s’applique à aucune des classes CE1, CE2/);
+});
