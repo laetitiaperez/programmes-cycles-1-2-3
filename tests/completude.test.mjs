@@ -62,3 +62,8 @@ test('rapport : option listesOeuvres transmise', () => {
   assert.equal(rapport({ pages: [page], items: [], exclus: [] }).length, 1);
   assert.equal(rapport({ pages: [page], items: [], exclus: [], listesOeuvres: true }).length, 0);
 });
+test('segmenter : en-têtes et titres des listes d’œuvres écartés sur option', () => {
+  const page = 'Savourer le gout des mots, imaginer et créer en poésie\nLes élèves pourront lire notamment :\nŒuvres proposées en lecture cursive\nPistes de prolongements artistiques et culturels\nIl lit des poèmes de siècles différents à voix haute en classe.';
+  assert.deepEqual(segmenter(page, { listesOeuvres: true }), ['Il lit des poèmes de siècles différents à voix haute en classe.']);
+  assert.equal(segmenter(page).length, 5);
+});

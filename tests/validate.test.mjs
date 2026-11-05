@@ -67,3 +67,13 @@ test('intentionsCompletes : bloc invalide', () => {
   expectError(d, /intentions complètes\/bloc 1 : page invalide/);
   expectError(d, /intentions complètes\/bloc 1 : aucun item/);
 });
+test('coucheComplete : une étape multi-classes demande la couche 2 à sa première classe seulement', () => {
+  const d = data();
+  d.matieres[1].coucheComplete = true;
+  const frise = d.matieres[1].domaines[0].fils[0]; // étapes CP puis CE1-CE2
+  frise.complet = {
+    CP: { blocs: [{ titre: 'Objectifs', source: 'hg-c2-2026', page: 2, items: ['Frise de l’année.'] }] },
+    CE1: { blocs: [{ titre: 'Objectifs', source: 'qlm-et-2020', page: 3, items: ['Repères sur la frise.'] }] },
+  };
+  assert.deepEqual(validateData(d), []);
+});

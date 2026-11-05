@@ -25,14 +25,17 @@ for (const [id, plages] of Object.entries(portee)) {
   const toutes = brut.split('\f');
   const garder = (p) => plages.some(([a, b]) => p >= a && p <= b) && (!pa || (p >= pa && p <= (pb || pa)));
   const pages = toutes.map((t, i) => (garder(i + 1) ? t : ''));
-  const intentions = (m.intentionsCompletes ?? []).filter(b => b.source === id).flatMap(b => b.items.map(texte => ({ page: b.page, texte })));
-  const items = intentions.concat(m.domaines.flatMap(d => d.fils.flatMap(f => Object.values(f.complet ?? {}).flatMap(k => [
-    // Le titre d'un bloc reprend l'intitulé officiel qui le précède.
-    ...(k.blocs ?? []).filter(b => b.source === id).flatMap(b => [b.titre, ...b.items].map(texte => ({ page: b.page, texte }))),
-    ...(k.reconduit ?? []).flatMap(r => (k.blocs ?? []).filter(b => b.source === id).slice(0, 1).map(b => ({ page: b.page, texte: r.texte }))),
-  ]))));
   // Les exemples Éduscol (« -ex- ») listent des œuvres à puce privée : ressources, pas énoncés.
   const listesOeuvres = id.includes('-ex-');
+  const intentions = (m.intentionsCompletes ?? []).filter(b => b.source === id).flatMap(b => b.items.map(texte => ({ page: b.page, texte })));
+  // Le titre d'un bloc reprend l'intitulé officiel qui le précède. Les exemples Éduscol recopient les objectifs du
+  // programme : pour eux, tous les blocs de la même classe du même fil comptent, à la page du bloc d'exemples.
+  const items = intentions.concat(m.domaines.flatMap(d => d.fils.flatMap(f => Object.values(f.complet ?? {}).flatMap(k => {
+    const blocs = (k.blocs ?? []).filter(b => b.source === id);
+    const tous = (k.blocs ?? []).flatMap(b => [b.titre, ...b.items]).concat((k.reconduit ?? []).map(r => r.texte));
+    return blocs.flatMap(b => (listesOeuvres ? tous : [b.titre, ...b.items, ...(k.reconduit ?? []).map(r => r.texte)])
+      .map(texte => ({ page: b.page, texte })));
+  }))));
   const r = rapport({ pages, items, exclus: exclus.filter(e => e.source === id).map(e => e.debut), listesOeuvres });
   total += rapport({ pages, items: [], exclus: [], listesOeuvres }).length;
   for (const x of r) console.log(`${id} p.${x.page} (${Math.round(x.score * 100)} %) : ${x.segment}`);

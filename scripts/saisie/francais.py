@@ -3,9 +3,10 @@ Repères d'âge du C1 : « avant 4 ans » → PS, « à partir de 4 ans » → M
 from commun import E, S, F, D, ecrire, attacher
 import fr_c1
 import fr_c2
+import fr_c3
 
 # Couche complète, rédigée par classe dans des modules séparés (cf. spec carte à deux couches).
-COMPLETS = [fr_c1, fr_c2]
+COMPLETS = [fr_c1, fr_c2, fr_c3]
 
 c1, c2, c3 = "c1-2024", "fr-c2-2024", "fr-c3-2025"
 x4, x5, x6 = "fr-ex-cm1", "fr-ex-cm2", "fr-ex-6e"  # exemples Éduscol du cycle 3
@@ -32,9 +33,9 @@ lecture = D("lecture", "Lecture",
         E("CE1", "attendu", "+ Automatiser le décodage des CGP du CP ; en fin d'année, décoder toutes les CGP, y compris les plus complexes ; identifier directement les mots courants.", c2, 6),
         E("CE1", "exemple", "Lire des pseudo-mots (doir, stag, choust) ; lire « ils chantent » sans vocaliser les lettres muettes ; listes analogiques ça/glaçon/garçon (valeurs positionnelles de c, g, s).", c2, 6),
         E("CE2", "attendu", "+ Avoir automatisé toutes les CGP ; lire un texte nouveau par un décodage rapide ; utiliser la [[voie graphophonologique]] pour les mots inconnus sans perdre en fluidité.", c2, 7),
-        E("CM1 CM2 6e", "notion", "La lecture vise toujours l'automatisation du déchiffrage ; mémoriser de plus en plus de mots fréquents et irréguliers (CM1).", c3, 4),
     ),
     F("fluence", "Lire à voix haute : fluence et expressivité",
+        E("CM1 CM2 6e", "notion", "La lecture vise toujours l'automatisation du déchiffrage ; mémoriser de plus en plus de mots fréquents et irréguliers (CM1).", c3, 4),
         E("CP", "attendu", "[[Fluence]] : 30 mots/min sans préparation, 50 après préparation. Identifier la ponctuation sur un texte préparé ; amorcer une lecture expressive.", c2, 5),
         E("CE1", "attendu", "[[70 mots par minute]] ; respecter la ponctuation et les [[groupes de souffle]] ; lire de manière expressive.", c2, 6),
         E("CE2", "attendu", "[[90 mots par minute]] ; respecter ponctuation et [[liaisons]] ; lecture expressive manifestant la compréhension.", c2, 7),
@@ -92,6 +93,8 @@ lecture = D("lecture", "Lecture",
 
 ecriture = D("ecriture", "Écriture",
     F("geste", "Geste d'écriture et écriture cursive",
+        E("CM1 CM2", "competence", "Copier et produire des textes ; acquérir des stratégies de copie.", c3, 9),
+        E("6e", "competence", "Copier de façon lisible, régulière, soignée, sans erreur d'orthographe ou de ponctuation.", c3, 10),
         E("PS MS GS", "notion", "Distinguer entraînement au geste moteur ([[graphisme]]), geste d'écriture et production d'écrit. Posture, coordination des quatre articulations (épaule, coude, poignet, doigts), coordination œil-main. Cursive introduite en MS ou quand l'enfant est prêt.", c1, 18),
         E("PS", "competence", "Motricité fine, graphismes ; guider son geste par le regard ; formes de base (traits, points, boucles, cercles).", c1, 18),
         E("MS", "competence", "+ Posture et [[préhension]] correctes ; tracer les lettres capitales ; s'initier aux tracés de la cursive.", c1, 19),
@@ -105,17 +108,15 @@ ecriture = D("ecriture", "Écriture",
         E("CP", "attendu", "Dès la fin de la période 1 : copier une phrase ; verbaliser des [[stratégies de copie]] (prise d'indices, mémorisation) ; fin d'année : 3 ou 4 phrases sans erreur.", c2, 10),
         E("CE1", "attendu", "+ 4 à 5 phrases (période 1), 5 ou 6 lignes (période 3), une dizaine de lignes en fin d'année ; comparer l'efficacité des stratégies.", c2, 11),
         E("CE2", "attendu", "+ Dizaine de lignes sans erreur, vitesse et exactitude, mises en page complexes.", c2, 12),
-        E("CM1 CM2", "competence", "Copier et produire des textes ; acquérir des stratégies de copie.", c3, 9),
-        E("6e", "competence", "Copier de façon lisible, régulière, soignée, sans erreur d'orthographe ou de ponctuation.", c3, 10),
     ),
     F("encodage", "Encoder, écrire sous dictée",
-        E("MS GS", "competence", "Essais d'écriture et [[encodage]] de mots [[transparents]] (sans double consonne ni lettre muette), quotidiens dès la MS ; en GS, encodage en lien avec les lettres et la conscience phonologique.", c1, 19),
         E("CP", "competence", "Encoder des syllabes puis des mots selon la progression des CGP ; dès la fin de la 2e période, mots avec lettres muettes apprises ; fin d'année : [[dictée]] de mots et de phrases.", c2, 9),
         E("CE1", "competence", "+ Mots fréquents réguliers puis irréguliers ; accords dans le GN et marque -nt.", c2, 11),
         E("CE2", "competence", "+ Phonèmes à plusieurs graphies (/o/, /é/, /an/, /s/…) ; chaînes d'accord dans la phrase.", c2, 12),
         E("CP CE1 CE2", "notion", "La dictée est d'abord une activité d'écriture (principe alphabétique, encodage), avant d'être un outil d'évaluation ; l'erreur est source de progrès.", c2, 9),
     ),
     F("production", "Produire des écrits",
+        E("MS GS", "competence", "Essais d'écriture et [[encodage]] de mots [[transparents]] (sans double consonne ni lettre muette), quotidiens dès la MS ; en GS, encodage en lien avec les lettres et la conscience phonologique.", c1, 19),
         E("PS MS GS", "notion", "[[Dictée à l'adulte]] dès la PS (toutes les semaines, en petits groupes) : définir l'intention d'écriture, préparer, énoncer, dicter, réviser.", c1, 19),
         E("PS", "competence", "Percevoir que l'[[écrit encode l'oral]] ; tracer volontairement des signes abstraits qui ne sont pas des dessins.", c1, 20),
         E("MS", "competence", "+ Comprendre que l'écrit code des sons ; proposer le contenu d'un message en dictée à l'adulte ; sens de lecture gauche-droite, haut-bas ; écrire un mot transparent avec modèle.", c1, 20),
@@ -285,6 +286,7 @@ grammaire = D("grammaire", "Grammaire et orthographe",
 matiere = {
     "id": "francais",
     "nom": "Français",
+    "coucheComplete": True,
     "nomMaternelle": "Le développement et la structuration du langage oral et écrit",
     "intentions": "Maternelle : compréhension et usage du langage ; [[vocabulaire]] prioritaire ; passage progressif de l'oral à l'écrit. Cycle 2 : construire les fondements de la langue ; [[apprendre à lire]] est l'objectif central ; cinq [[activités langagières]] : comprendre un énoncé oral, parler en continu, parler en interaction, écrire, lire ; 10 h hebdomadaires. Cycle 3 : viser l'[[autonomie]] ; la [[compréhension]] est l'objectif central ; perspective « Découvrir – Jouer ».",
     "domaines": [lecture, ecriture, oral, vocabulaire, grammaire],

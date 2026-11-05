@@ -78,11 +78,17 @@ export function renderFrise(m, fil, frise, state, ctx) {
       },
         el('span', { class: 'case-tete' }, el('strong', {}, x.classe), ` C${x.cycle} · ${x.age} ans`, nouveau(x, ctx) ? [' ', badgeNouveau()] : null),
         el('span', { class: 'case-resume' }, resume(x)))))),
-    active ? renderComplet(active, ctx) : el('p', { class: 'indice' }, 'Choisis une classe pour voir le contenu complet.'));
+    active ? renderComplet(active, ctx, (c) => el('a', { href: lien({ vue: 'carte', m: m.id, d: state.d, fil: fil.id, c }) }, `Voir le contenu complet en ${c}`))
+      : el('p', { class: 'indice' }, 'Choisis une classe pour voir le contenu complet.'));
 }
 
-export function renderComplet(entree, ctx) {
+export function renderComplet(entree, ctx, lienRenvoi = null) {
   const k = entree.complet;
+  if (!k && entree.renvoi) {
+    return el('div', { class: 'complet' },
+      el('p', { class: 'a-venir' }, `Le contenu complet de cette étape, commune à plusieurs classes, est donné en ${entree.renvoi}.`),
+      lienRenvoi ? lienRenvoi(entree.renvoi) : null);
+  }
   if (!k) {
     return el('div', { class: 'complet' },
       el('ul', { class: 'etapes-simples' }, [entree.socle, ...entree.etapes].filter(Boolean).map(b => el('li', {},

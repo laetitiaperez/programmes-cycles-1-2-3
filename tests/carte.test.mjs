@@ -66,3 +66,12 @@ test('grouperTextes : ordre des matières', () => {
   const g = grouperTextes(jeu().textes);
   assert.deepEqual(g.map(x => x.matiere), ['francais', 'hg']);
 });
+test('frise : renvoi vers la première classe d’une étape multi-classes', () => {
+  const d = jeu();
+  const f = filDe(d.matieres[1], 'frise');
+  f.complet = { CE1: { blocs: [{ titre: 'Objectifs', source: 'qlm-et-2020', page: 3, items: ['Repères.'] }] } };
+  const cases = friseDuFil(f, d.classes);
+  assert.equal(cases.find(c => c.classe === 'CE2').renvoi, 'CE1');
+  assert.equal(cases.find(c => c.classe === 'CE1').renvoi, null);
+  assert.equal(cases.find(c => c.classe === 'CP').renvoi, null);
+});
