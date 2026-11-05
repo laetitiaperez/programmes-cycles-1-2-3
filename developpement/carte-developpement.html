@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Carte du développement de l'enfant</title>
+<meta name="description" content="Carte mentale interactive : le développement de l'enfant dans les textes officiels, les ressources Éduscol et les maquettes de formation, pour le CRPE.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Mise en page : barre d'outils collante, carte arborescente à gauche (défilable), fiche de lecture à droite ; une colonne sur téléphone, vue « Plan » par défaut. */
+:root {
+  --bg: #f3f5f8;
+  --surface: #ffffff;
+  --ink: #1b2433;
+  --muted: #5a6577;
+  --line: #d5dbe4;
+  --accent: #2b4c9b;
+  --t-off: #0f6b5f;      /* texte officiel réglementaire */
+  --t-off-bg: #e0f1ee;
+  --t-edu: #2b4c9b;      /* ressource institutionnelle Éduscol */
+  --t-edu-bg: #e3e9f8;
+  --t-form: #9a5b00;     /* formation : INSPÉ, université */
+  --t-form-bg: #f8ecd9;
+  --t-acad: #6b4a8c;     /* repère académique (manuels) */
+  --t-acad-bg: #eee6f5;
+  --t-abs: #8a3b3b;      /* non trouvé */
+  --t-abs-bg: #f6e4e4;
+  --echo-bg: #eef2f6;
+  --f-display: "Familjen Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --f-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #11161e; --surface: #19202b; --ink: #e6ebf2; --muted: #9aa6b8; --line: #2c3645; --accent: #8fb0ff;
+  --t-off: #5fd0bf; --t-off-bg: #12312d; --t-edu: #8fb0ff; --t-edu-bg: #1c2a48;
+  --t-form: #f0b45a; --t-form-bg: #3a2a12; --t-acad: #c7a6ea; --t-acad-bg: #2e2340;
+  --t-abs: #f09a9a; --t-abs-bg: #3d1f22; --echo-bg: #1f2733; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #11161e; --surface: #19202b; --ink: #e6ebf2; --muted: #9aa6b8; --line: #2c3645; --accent: #8fb0ff;
+  --t-off: #5fd0bf; --t-off-bg: #12312d; --t-edu: #8fb0ff; --t-edu-bg: #1c2a48;
+  --t-form: #f0b45a; --t-form-bg: #3a2a12; --t-acad: #c7a6ea; --t-acad-bg: #2e2340;
+  --t-abs: #f09a9a; --t-abs-bg: #3d1f22; --echo-bg: #1f2733; color-scheme: dark; }
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.5; }
+[hidden] { display: none !important; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+a { color: var(--accent); }
+button, input { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.wrap { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+header.tete { padding-block: 20px 12px; display: grid; gap: 6px; max-width: 1400px; margin: 0 auto; }
+header.tete h1 { font-family: var(--f-display); font-weight: 700; font-size: clamp(1.45rem, 3.2vw, 2rem); line-height: 1.15; margin: 0; text-wrap: balance; letter-spacing: -0.01em; }
+header.tete p { margin: 0; color: var(--muted); max-width: 70ch; }
+
+.outils { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--surface); border-block: 1px solid var(--line); }
+.outils .in { max-width: 1400px; margin: 0 auto; padding-block: 10px; display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.seg button { border: 0; background: transparent; padding: 6px 12px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--surface); }
+#q { flex: 1 1 200px; min-width: 0; max-width: 340px; padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); }
+.filtres { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--line); background: transparent; cursor: pointer; font-size: 13px; }
+.chip .pt { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+.chip[aria-pressed="false"] { opacity: .45; text-decoration: line-through; }
+.bt { border: 1px solid var(--line); background: transparent; border-radius: 8px; padding: 6px 10px; cursor: pointer; font-size: 13px; }
+
+main.grille { max-width: 1400px; margin: 0 auto; padding-block: 16px 40px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 420px); gap: 16px; align-items: start; }
+.zone { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; min-width: 0; }
+#carte { overflow: auto; max-height: calc(100vh - 150px); }
+#carte svg { display: block; }
+#plan { padding: 8px 4px; }
+.fiche { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 72px); max-height: calc(100vh - 100px); overflow: auto; padding: 18px 18px 22px; }
+
+/* Nœuds de la carte */
+.nd { cursor: pointer; }
+.nd rect { stroke-width: 1.5; }
+.nd text { font-family: var(--f-body); font-size: 13px; fill: var(--ink); }
+.nd.d0 text { font-family: var(--f-display); font-weight: 700; font-size: 15px; }
+.nd.d1 text { font-family: var(--f-display); font-weight: 600; font-size: 14px; }
+.nd .pm { font-family: var(--f-mono); font-size: 12px; fill: var(--muted); }
+.nd.sel rect { stroke: var(--ink); stroke-width: 2.5; }
+.nd.dim { opacity: .22; }
+.nd.hit rect { stroke: var(--accent); stroke-width: 3; }
+.lien { fill: none; stroke: var(--line); stroke-width: 1.6; }
+
+/* Plan (liste) */
+.pl { list-style: none; margin: 0; padding: 0; }
+.pl .pl { padding-left: 18px; border-left: 1px solid var(--line); margin-left: 12px; }
+.pl li > .ligne { display: flex; gap: 8px; align-items: baseline; width: 100%; text-align: left; border: 0; background: transparent; padding: 6px 8px; border-radius: 8px; cursor: pointer; }
+.pl li > .ligne:hover { background: var(--bg); }
+.pl li > .ligne.sel { background: var(--bg); outline: 1px solid var(--line); }
+.pl .tw { font-family: var(--f-mono); color: var(--muted); width: 1em; flex: none; }
+.pl .pt { width: 9px; height: 9px; border-radius: 50%; flex: none; transform: translateY(-1px); }
+.pl .lab { min-width: 0; }
+.pl .lvl0 { font-family: var(--f-display); font-weight: 700; font-size: 1.05rem; }
+.pl .lvl1 { font-family: var(--f-display); font-weight: 600; }
+.pl li.dim > .ligne { opacity: .3; }
+.pl li.hit > .ligne .lab { text-decoration: underline 2px var(--accent); text-underline-offset: 3px; }
+
+/* Fiche */
+.fiche .vide { color: var(--muted); }
+.badge { display: inline-block; font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .04em; text-transform: uppercase; padding: 3px 8px; border-radius: 6px; font-weight: 500; }
+.fiche h2 { font-family: var(--f-display); font-weight: 700; font-size: 1.35rem; line-height: 1.2; margin: 10px 0 4px; text-wrap: balance; }
+.fiche .dates { font-family: var(--f-mono); font-size: 12.5px; color: var(--muted); margin: 0 0 10px; }
+.fiche p { margin: 0 0 10px; }
+.fiche ul { margin: 0 0 10px; padding-left: 20px; }
+.fiche li { margin-bottom: 4px; }
+.fiche h3 { font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 16px 0 6px; font-weight: 500; }
+blockquote { margin: 0 0 10px; padding: 10px 12px; border-left: 3px solid var(--t-edu); background: var(--bg); border-radius: 0 8px 8px 0; }
+blockquote.off { border-left-color: var(--t-off); }
+blockquote.form { border-left-color: var(--t-form); }
+blockquote p { margin: 0 0 4px; }
+blockquote cite { display: block; font-style: normal; font-family: var(--f-mono); font-size: 12px; color: var(--muted); }
+.echo { background: var(--echo-bg); border-radius: 8px; padding: 10px 12px; margin-bottom: 10px; }
+.echo p { margin: 0 0 6px; }
+.echo .note { font-size: 13px; color: var(--muted); margin: 0; }
+.srcs { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+.srcs li { font-size: 13.5px; padding-left: 0; margin: 0; }
+.srcs .pg { font-family: var(--f-mono); font-size: 12px; color: var(--muted); }
+.enfants { display: flex; flex-wrap: wrap; gap: 6px; }
+.enfants button { border: 1px solid var(--line); background: transparent; border-radius: 999px; padding: 3px 10px; font-size: 13px; cursor: pointer; }
+
+.legende { max-width: 1400px; margin: 0 auto; padding-block: 0 32px; color: var(--muted); font-size: 13.5px; }
+.legende dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 12px; margin: 8px 0 0; }
+.legende dt { font-weight: 700; color: var(--ink); display: flex; gap: 6px; align-items: center; }
+.legende dd { margin: 0; min-width: 0; }
+@media (max-width: 560px) {
+  .legende dl { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  .legende dd { margin-bottom: 8px; }
+}
+
+@media (max-width: 880px) {
+  main.grille { grid-template-columns: minmax(0, 1fr); }
+  .fiche { position: static; max-height: none; }
+  #carte { max-height: 70vh; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .nd rect { transition: stroke .15s; }
+}
+</style>
+</head>
+<body>
+
+<header class="tete wrap">
+  <p style="margin:0"><a href="../">← Programmes C1‑C3</a></p>
+  <h1>Le développement de l'enfant, du texte officiel aux théories</h1>
+  <p>Pour le CRPE. Chaque nœud indique d'où vient l'information : texte réglementaire, ressource Éduscol, maquette de formation ou repère de manuel. Les citations sont recopiées des documents, avec la page du PDF.</p>
+</header>
+
+<div class="outils">
+  <div class="in wrap">
+    <div class="seg" role="group" aria-label="Affichage">
+      <button type="button" id="v-carte" aria-pressed="true">Carte</button>
+      <button type="button" id="v-plan" aria-pressed="false">Plan</button>
+    </div>
+    <input id="q" type="search" placeholder="Chercher : étayage, Bowlby, jeu…" aria-label="Chercher dans la carte">
+    <div class="filtres" id="filtres" role="group" aria-label="Niveaux de source"></div>
+    <button type="button" class="bt" id="tout">Tout déplier</button>
+    <button type="button" class="bt" id="rien">Replier</button>
+  </div>
+</div>
+
+<main class="grille wrap">
+  <section class="zone" aria-label="Carte mentale">
+    <div id="carte"></div>
+    <div id="plan" hidden></div>
+  </section>
+  <aside class="zone fiche" id="fiche" aria-live="polite"></aside>
+</main>
+
+<section class="legende wrap" aria-label="Niveaux de source">
+  <strong>Comment lire les niveaux de source</strong>
+  <dl id="leg"></dl>
+</section>
+
+<script>
+const NIVEAUX = {
+  off:  { nom: "Texte officiel", court: "Officiel", c: "--t-off", bg: "--t-off-bg", def: "Texte réglementaire ou page ministérielle : référentiel, arrêté de concours, programme. Il ne nomme aucun théoricien." },
+  edu:  { nom: "Ressource Éduscol", court: "Éduscol", c: "--t-edu", bg: "--t-edu-bg", def: "Ressource d'accompagnement publiée par le ministère. Elle n'est pas prescriptive, mais c'est là que l'institution cite les auteurs." },
+  form: { nom: "Formation (INSPÉ, université)", court: "Formation", c: "--t-form", bg: "--t-form-bg", def: "Maquette ou fiche de cours d'un INSPÉ ou d'une université. Elle montre ce qui est enseigné, varie d'un site à l'autre et n'a pas de valeur nationale." },
+  acad: { nom: "Repère académique", court: "Repère", c: "--t-acad", bg: "--t-acad-bg", def: "Contenu classique des manuels de psychologie du développement ou d'histoire de la pédagogie, absent des documents ci-dessus. À vérifier dans un manuel, par exemple Tourrette et Guidetti, cité par les INSPÉ." },
+  abs:  { nom: "Non trouvé", court: "Absent", c: "--t-abs", bg: "--t-abs-bg", def: "Cherché sans succès dans les documents consultés. À ne pas présenter au jury comme une référence institutionnelle." },
+  nav:  { nom: "Regroupement", court: "", c: "--muted", bg: "--bg", def: "" }
+};
+
+const S = {
+  ref2013: { l: "Référentiel des compétences professionnelles des métiers du professorat et de l'éducation, arrêté du 1er juillet 2013, BO n° 30 du 25 juillet 2013", u: "https://www.education.gouv.fr/bo/13/Hebdo30/MENE1315928A.htm" },
+  crpe5: { l: "devenirenseignant.gouv.fr : épreuves du concours externe bac + 5 (arrêté du 25 janvier 2021 modifié)", u: "https://www.devenirenseignant.gouv.fr/les-epreuves-du-concours-externe-bac-5-de-recrutement-de-professeurs-des-ecoles-1009" },
+  crpe3: { l: "devenirenseignant.gouv.fr : épreuves du concours externe bac + 3 (arrêté du 17 avril 2025)", u: "https://www.devenirenseignant.gouv.fr/les-epreuves-du-concours-externe-bac3-de-recrutement-de-professeurs-des-ecoles-1380" },
+  meef: { l: "Former aux métiers du professorat et de l'éducation au 21e siècle, référentiel de formation, juillet 2019", u: "https://devenirenseignant.gouv.fr/media/6995/download" },
+  c1: { l: "Programme du cycle 1, version consolidée (BO n° 41 du 31 octobre 2024 et BO n° 19 du 7 mai 2026), préambule", u: "https://eduscol.education.gouv.fr/sites/default/files/document/programme-cycle-1-consolide-127565.pdf" },
+  jeu: { l: "Éduscol, Ressources maternelle, Jouer et apprendre : cadrage général (2015)", u: "https://eduscol.education.fr/document/13528/download" },
+  jexplo: { l: "Éduscol, Jouer et apprendre : les jeux d'exploration (2015)", u: "https://eduscol.education.fr/document/13531/download" },
+  jconstr: { l: "Éduscol, Jouer et apprendre : les jeux de construction (2015)", u: "https://eduscol.education.fr/document/13537/download" },
+  jregles: { l: "Éduscol, Jouer et apprendre : les jeux à règles (2015)", u: "https://eduscol.education.fr/document/13540/download" },
+  jsymb: { l: "Éduscol, Jouer et apprendre : les jeux symboliques (2015)", u: "https://eduscol.education.gouv.fr/sites/default/files/document/ressc1jouersymbolique474560pdf-74226.pdf" },
+  lang: { l: "Éduscol, Mobiliser le langage dans toutes ses dimensions, partie I : l'oral, texte de cadrage (2015)", u: "https://eduscol.education.fr/document/13324/download" },
+  m3projet: { l: "Éduscol, La scolarisation des enfants de moins de 3 ans : un projet pédagogique et éducatif", u: "https://eduscol.education.fr/document/13429/download" },
+  m3rentree: { l: "Éduscol, La scolarisation des enfants de moins de 3 ans : une rentrée réussie", u: "https://cache.media.eduscol.education.fr/file/Moins_de_3_ans/46/5/Ress_c1_Moins3ans_Rentree_456465.pdf" },
+  vadeGS: { l: "Éduscol, Vademecum Enseigner en grande section dédoublée (août 2023)", u: "https://eduscol.education.gouv.fr/sites/default/files/document/vademecum-enseigner-en-grande-section-dedoublee-101601.pdf" },
+  projet: { l: "Éduscol, La démarche de projet (physique-chimie, septembre 2020)", u: "https://eduscol.education.fr/document/15940/download" },
+  lille: { l: "INSPÉ Lille Hauts-de-France, guide des enseignements, master MEEF 1er degré, M1 2024-2025", u: "https://www.inspe-lille-hdf.fr/fileinspe/user_upload/Documents/Ressources_formateurs_etudiants/M1_MEEF_1er_degre/GE_1D_M1_24-25.pdf" },
+  uparis: { l: "Université Paris Cité, licence (S6), cours « Psychologie de l'éducation et de la formation »", u: "https://odf.u-paris.fr/plugins/odf-web/uparis/_content/course-psychologie-de-l-education-et-de-la-formation/Psychologie%20de%20l'%C3%A9ducation%20et%20de%20la%20formation.pdf" },
+  cvl: { l: "INSPÉ Centre-Val de Loire, groupe disciplinaire de psychologie, « Pour préparer sa rentrée » (2025)", u: "https://www.univ-orleans.fr/upload/public/2025-05/Pour%20pr%C3%A9parer%20sa%20rentr%C3%A9e-Document%20ressources%20cr%C3%A9%C3%A9%20par%20le%20GD%20Psychologie%20INSPE%20CVL.pdf" }
+};
+
+// q : citations [texte, clé source, page, niveau de la bordure]
+// echo : [citation du programme 2026, page]
+const ARBRE = {
+  id: "racine", t: "Le développement de l'enfant", n: "nav",
+  corps: "<p>La carte part du cadre officiel, qui demande de connaître la psychologie de l'enfant sans nommer d'auteurs, puis passe aux théories que les ressources Éduscol et les formations citent explicitement.</p><p>Pour chaque théorie, l'encadré <strong>Écho dans le programme</strong> rapproche la théorie d'une phrase du programme de maternelle 2026. Ce rapprochement est proposé pour construire un argumentaire à l'oral. Le programme lui-même ne cite aucun auteur.</p>",
+  e: [
+  { id: "cadre", t: "Le cadre officiel", n: "nav",
+    corps: "<p>Ces textes expliquent pourquoi le développement de l'enfant est au concours. Aucun ne cite de théoricien : ils demandent des connaissances « fondamentales » et « scientifiques » sans choisir d'école.</p>",
+    e: [
+    { id: "ref2013", t: "Référentiel 2013 : compétence 3", n: "off", d: "Arrêté du 1er juillet 2013",
+      corps: "<p>Compétence commune à tous les professeurs et personnels d'éducation, dans la partie « pédagogues et éducateurs au service de la réussite de tous les élèves ».</p>",
+      q: [["3. Connaître les élèves et les processus d'apprentissage. Connaître les concepts fondamentaux de la psychologie de l'enfant, de l'adolescent et du jeune adulte. Connaître les processus et les mécanismes d'apprentissage, en prenant en compte les apports de la recherche. Tenir compte des dimensions cognitive, affective et relationnelle de l'enseignement et de l'action éducative.", "ref2013", null, "off"]],
+      s: ["ref2013"] },
+    { id: "crpe5", t: "CRPE bac + 5 : épreuve d'entretien", n: "off", d: "Arrêté du 25 janvier 2021 modifié",
+      corps: "<p>Première partie de l'épreuve d'entretien (30 minutes), consacrée à l'EPS.</p>",
+      q: [["La première partie (30 minutes) est consacrée à l'éducation physique et sportive, intégrant la connaissance scientifique du développement et la psychologie de l'enfant.", "crpe5", null, "off"],
+          ["Cet entretien permet d'apprécier d'une part les connaissances scientifiques du candidat en matière de développement et la psychologie de l'enfant […]", "crpe5", null, "off"]],
+      s: ["crpe5"] },
+    { id: "crpe3", t: "CRPE bac + 3 : épreuve orale", n: "off", d: "Arrêté du 17 avril 2025",
+      corps: "<p>Première partie de l'épreuve (20 minutes), consacrée à l'EPS. Le niveau exigible est celui des attendus d'EPS du cycle 4. La seconde partie (entretien) porte notamment sur l'aptitude à « appréhender l'épanouissement de l'élève dans toutes ses dimensions ».</p>",
+      q: [["Cette épreuve permet d'apprécier les connaissances du candidat dans le champ des activités physiques sportives et artistiques supports de l'enseignement de l'éducation physique et sportive à l'école et au collège et sur le développement moteur et psychologique de l'enfant.", "crpe3", null, "off"]],
+      s: ["crpe3"] },
+    { id: "meef2019", t: "Référentiel de formation MEEF", n: "off", d: "Juillet 2019",
+      corps: "<p>Ce texte décline le référentiel de 2013 pour la formation initiale.</p>",
+      q: [["[le cursus] encourage la réflexion sur les gestes professionnels au service du développement psychologique et cognitif de l'enfant ou de l'adolescent, de son épanouissement, de ses savoirs et de sa culture, et de la construction de sa citoyenneté et de son parcours.", "meef", 5, "off"]],
+      s: ["meef"] },
+    { id: "c1", t: "Programme du cycle 1 (2026)", n: "off", d: "Préambule",
+      corps: "<p>C'est le texte qui parle le plus du développement. Il en nomme les dimensions et les rythmes, sans référence théorique.</p>",
+      q: [["Tout au long du cycle, les progrès dans les domaines du langage et de la motricité, le développement des compétences cognitives, émotionnelles, affectives et de la socialisation se réalisent selon des rythmes très variables. Leur évolution est liée notamment à la maturité de l'enfant ainsi qu'aux stimulations proposées par les situations scolaires.", "c1", 3, "off"],
+          ["Les professeurs conçoivent des situations d'apprentissage en tenant compte du développement cognitif des enfants (attention, mémoire, fonctions exécutives, motivation etc.), afin de proposer des activités adaptées à leur âge […]", "c1", 4, "off"]],
+      s: ["c1"] },
+    { id: "inspe", t: "Dans les maquettes de formation", n: "form",
+      corps: "<p>Les maquettes montrent comment la compétence 3 est enseignée. À l'INSPÉ de Lille, l'UE A.5 reprend son intitulé, « Connaissance des élèves et des processus d'apprentissage », avec un élément « Développement de l'enfant et apprentissages » de 10 h.</p><p>À l'université Paris Cité, un cours de licence en psychologie de l'éducation annonce comme base théorique : Bruner, Piaget, Vygotski, Lautrey, Vergnaud et Wallon. Les INSPÉ de Lille et du Centre-Val de Loire recommandent tous deux le manuel de Tourrette et Guidetti, <em>Introduction à la psychologie du développement</em> (Dunod).</p>",
+      q: [["Disposer de repères développementaux pour comprendre le fonctionnement d'enfants de 2 à 12 ans typiques et atypiques et envisager des tâches scolaires adaptées […]", "lille", 29, "form"],
+          ["Plusieurs auteurs tels Bruner, Piaget, Vygotski, Lautrey, Vergnaud, Wallon (entre autres) formeront la base théorique du cours.", "uparis", 1, "form"]],
+      s: ["lille", "uparis", "cvl"] },
+    { id: "constat", t: "Ce que les textes officiels ne disent pas", n: "nav",
+      corps: "<p>Aucun texte réglementaire consulté (référentiel, arrêtés, programme) ne nomme un théoricien. Les noms apparaissent dans les ressources Éduscol et dans les maquettes de formation.</p><p>À l'oral, on peut donc dire : « le programme demande de tenir compte du développement de l'enfant ; les ressources d'accompagnement s'appuient sur Piaget, Vygotski, Bruner… ». En revanche, il ne faut pas dire « le programme cite Piaget ».</p>" }
+  ]},
+
+  { id: "piaget", t: "Piaget : le constructivisme", n: "nav", d: "Jean Piaget (1896-1980)",
+    corps: "<p>Dans les ressources Éduscol, Piaget est surtout cité pour sa classification des jeux et pour le jeu symbolique.</p>",
+    echo: ["Pour susciter la réflexion des élèves, les professeurs proposent des problèmes à leur portée. […] Les élèves sont accompagnés dans leurs tâtonnements et leurs essais de réponse.", 4],
+    e: [
+    { id: "pia-jeux", t: "Les quatre sortes de jeux", n: "edu",
+      q: [["Jean PIAGET distingue quatre sortes de jeux : les jeux d'exercices (au début du stade sensori-moteur entre 0 et 2 ans) ; les jeux symboliques (2 à 7 ans) ; les jeux à règles (à partir de 4 ans) ; les jeux de construction.", "jregles", 4],
+          ["Ces quatre formes de jeux cohabitent (à 6 ans, par exemple, un enfant peut jouer des quatre façons).", "jregles", 4]],
+      corps: "<p>La même ressource prévient que cette classification est « opératoire » mais que l'on trouve aussi des symboles dans les jeux à règles et des règles dans les jeux symboliques.</p>",
+      s: ["jregles"] },
+    { id: "pia-plaisir", t: "Le plaisir fonctionnel", n: "edu",
+      q: [["J. Piaget, évoque le concept de « plaisir fonctionnel », puisé dans le plaisir d'être la cause de quelque chose, d'affirmer un savoir, d'expérimenter son pouvoir sur son environnement matériel et humain […]", "jexplo", 4]],
+      s: ["jexplo"] },
+    { id: "pia-symb", t: "Jeu symbolique : assimiler le réel au moi", n: "edu",
+      corps: "<p>Éduscol cite <em>La psychologie de l'enfant</em> (Piaget, PUF, 1966).</p>",
+      q: [["[…] l'assimilation du réel au moi, sans contraintes ni sanctions : tel est le jeu, qui transforme le réel par assimilation plus ou moins pure aux besoin du moi […]", "jsymb", 7]],
+      s: ["jsymb"] },
+    { id: "pia-constr", t: "Les jeux de construction", n: "edu",
+      q: [["Jean Piaget a écrit « que les jeux de construction ne constituent pas une catégorie située sur le même plan que les jeux fonctionnels, symboliques et à règles ». Contrairement à ceux-ci, ils sont basés sur un critère d'ordre matériel.", "jconstr", 4]],
+      s: ["jconstr"] },
+    { id: "pia-stades", t: "Les stades du développement intellectuel", n: "acad",
+      corps: "<ul><li><strong>Sensori-moteur</strong> (0-2 ans) : l'intelligence passe par l'action et la perception, jusqu'à la permanence de l'objet.</li><li><strong>Préopératoire</strong> (2-7 ans) : apparition de la fonction symbolique (langage, jeu symbolique, imitation différée), pensée égocentrique, pas encore de conservation.</li><li><strong>Opérations concrètes</strong> (7-11/12 ans) : réversibilité, conservation, classification et sériation, sur du concret.</li><li><strong>Opérations formelles</strong> (à partir de 11/12 ans) : raisonnement hypothético-déductif.</li></ul><p>Les âges sont indicatifs. L'ordre des stades est invariant, mais l'âge auquel on les atteint varie.</p>" },
+    { id: "pia-meca", t: "Assimilation, accommodation, équilibration", n: "acad",
+      corps: "<p>L'enfant construit ses connaissances en agissant. Il <strong>assimile</strong> le nouveau à ses schèmes existants, <strong>accommode</strong> ses schèmes quand le réel résiste, et l'<strong>équilibration</strong> règle ces deux mouvements. Le développement va de l'individu vers le social.</p><p>Éduscol utilise ce vocabulaire à propos du jeu symbolique : il aide l'enfant « à se libérer des contraintes de l'accommodation au réel » (jeux symboliques, p. 7).</p>",
+      s: ["jsymb"] }
+  ]},
+
+  { id: "vygotski", t: "Vygotski : le socioconstructivisme", n: "nav", d: "Lev Vygotski (1896-1934)",
+    echo: ["Une place importante est donnée à l'observation et à l'imitation des autres élèves et des adultes. Les professeurs favorisent les interactions et créent les conditions d'une attention partagée et d'une prise en compte du point de vue de l'autre.", 4],
+    e: [
+    { id: "vy-zpd", t: "La zone proximale de développement", n: "edu",
+      q: [["La « zone proximale de développement » est un espace cognitif située entre deux autres zones appelées la « zone d'autonomie » et la « zone de rupture » (zone où même s'il reçoit de l'aide, l'élève aura des difficultés à accomplir la tâche). Conceptualisé par Lev Vygotski.", "vadeGS", 27]],
+      s: ["vadeGS"] },
+    { id: "vy-jeu", t: "Le jeu symbolique : trois dimensions", n: "edu",
+      q: [["Selon Lev VYGOTSKY, ce jeu favorise le développement cognitif, affectif et social, puisqu'il renvoie à trois dimensions : une situation imaginaire créée par les enfants ; l'adoption et l'interprétation de rôles ; l'application des règles correspondant à ces rôles.", "jsymb", 7]],
+      s: ["jsymb"] },
+    { id: "vy-auto", t: "Faire semblant et autorégulation", n: "edu",
+      corps: "<p>Éduscol relie ici Vygotski aux fonctions exécutives. En jouant un rôle, l'enfant doit garder en mémoire son rôle et celui des autres (mémoire de travail, planification), inhiber ce qui n'est pas conforme au rôle (inhibition) et s'adapter aux imprévus du scénario (flexibilité).</p>",
+      q: [["Selon les travaux de L. Vygotsky, l'interaction entre pairs dans les jeux libres de « faire semblant », favorise le développement des capacités d'autorégulation.", "jsymb", 8]],
+      s: ["jsymb"] },
+    { id: "vy-social", t: "Du social vers l'individuel", n: "acad",
+      corps: "<p>Pour Vygotski (<em>Pensée et langage</em>, 1934), une fonction psychique apparaît d'abord entre les personnes (plan interpsychique), puis chez l'enfant (plan intrapsychique). Le langage est l'outil de médiation principal de la pensée. Ce qui compte n'est pas seulement ce que l'enfant sait faire seul, mais ce qu'il réussit avec l'aide d'un adulte ou d'un pair plus avancé : c'est la ZPD.</p><p>C'est le sens inverse de Piaget, pour qui le développement va de l'individuel vers le social.</p>" }
+  ]},
+
+  { id: "bruner", t: "Bruner : l'étayage", n: "nav", d: "Jerome Bruner (1915-2016)",
+    echo: ["Ils les aident à se représenter ce qu'ils vont devoir faire, avec quels outils et selon quels procédés. Ils partagent les critères de réussite […]", 5],
+    e: [
+    { id: "br-conj", t: "Attention conjointe, coaction, rites", n: "edu",
+      q: [["J.S. Bruner (1975) a décrit très clairement ces procédures conventionnelles, ces types particuliers de tâches où s'engage la relation de communication adulte-enfant. Ces procédures restent utiles à l'entrée en petite section.", "lang", 5]],
+      corps: "<ul><li><strong>Attention conjointe</strong> : attirer l'attention de l'autre sur une activité ou un objet pour engager un échange.</li><li><strong>Coaction</strong> : agir ensemble sur ce même objet.</li><li><strong>Rites d'interaction</strong> : les bases du dialogue (prendre contact, échanger, saluer, se séparer).</li></ul>",
+      s: ["lang"] },
+    { id: "br-etayage", t: "Les six fonctions de l'étayage", n: "edu",
+      q: [["Selon le psychologue du développement, J. Bruner, le processus d'étayage auprès du jeune enfant implique six fonctions qui peuvent être transposables aux situations scolaires […]", "lang", 16]],
+      corps: "<ol><li><strong>Enrôlement</strong> : engager l'intérêt de l'enfant pour la tâche.</li><li><strong>Réduction des degrés de liberté</strong> : simplifier, découper en sous-buts.</li><li><strong>Maintien de l'orientation</strong> : éviter que l'enfant s'écarte du but.</li><li><strong>Signalisation des caractéristiques déterminantes</strong> : souligner ce qui est pertinent.</li><li><strong>Contrôle de la frustration</strong> : éviter que l'erreur devienne échec ou résignation.</li><li><strong>Démonstration</strong> : présenter un modèle que l'enfant peut imiter.</li></ol><p>Éduscol précise que Bruner a construit ce modèle face à des objets matériels et qu'il « ne recouvre que partiellement la complexité de l'étayage langagier ».</p>",
+      s: ["lang"] },
+    { id: "br-formats", t: "Les formats d'interaction", n: "form",
+      corps: "<p>Le guide de l'INSPÉ de Lille cite Bruner, <em>Comment les enfants apprennent à parler</em> (Retz, 1987). Dans ce livre, Bruner décrit les <strong>formats</strong> : des routines d'interaction répétées entre l'adulte et l'enfant (jeux de « coucou-caché », lecture d'images) qui servent de cadre à l'acquisition du langage.</p><p>Le modèle des six fonctions de tutelle vient de l'article de Wood, Bruner et Ross (1976).</p>",
+      s: ["lille"] }
+  ]},
+
+  { id: "wallon", t: "Wallon : émotion et corps", n: "nav", d: "Henri Wallon (1879-1962)",
+    echo: ["[…] la place essentielle du langage, l'importance du corps dans le développement cognitif, moteur, sensoriel et affectif de l'enfant […]", 3],
+    e: [
+    { id: "wa-jeu", t: "Cité par Éduscol pour le jeu", n: "edu",
+      q: [["H. Wallon, J. Chateau et S. Smilansky évoquent des « jeux faisant appel à des mouvements simples et répétés, avec ou sans objets », pour le plaisir du jeu lui-même et de sa réussite ; ils exercent les fonctions sensori-motrices de l'enfant […]", "jexplo", 4]],
+      corps: "<p>Wallon figure aussi dans la liste d'auteurs de la définition du jeu retenue par Éduscol (cadrage général, p. 4).</p>",
+      s: ["jexplo", "jeu"] },
+    { id: "wa-dessin", t: "Dessin, espace et schéma corporel", n: "form",
+      corps: "<p>Bibliographie d'arts plastiques de l'INSPÉ de Lille : Wallon et Lurçat, <em>Dessin, espace et schéma corporel chez l'enfant</em> (PUF).</p>",
+      s: ["lille"] },
+    { id: "wa-stades", t: "Émotion, tonus et stades", n: "acad",
+      corps: "<p>Wallon (<em>L'évolution psychologique de l'enfant</em>, 1941) fait de l'<strong>émotion</strong> la première forme de communication du nourrisson et la lie au tonus musculaire. Le développement articule le biologique et le social, avec des crises et des ruptures plutôt qu'une progression continue.</p><p>Stades habituellement cités (âges approximatifs) : impulsif et émotionnel (0-1 an), sensori-moteur et projectif (1-3 ans), personnalisme (3-6 ans, avec la crise d'opposition vers 3 ans), catégoriel (6-11 ans), puberté et adolescence.</p>" }
+  ]},
+
+  { id: "affectif", t: "Affectivité et attachement", n: "nav", d: "Freud, Winnicott, Bowlby",
+    echo: ["L'expérience de la séparation entre l'enfant et sa famille requiert l'attention de toute la communauté éducative, particulièrement lors de la première année de scolarisation.", 3],
+    e: [
+    { id: "bowlby", t: "Bowlby : l'attachement", n: "edu", d: "John Bowlby (1907-1990)",
+      q: [["L'attachement, selon Bowlby (1969), correspond à la façon dont l'enfant recherche et maintient la proximité de sa mère pour se sentir en sécurité. On distingue ainsi les enfants sécurisés des enfants insécurisés.", "m3projet", 8]],
+      corps: "<p>La ressource rappelle aussi que, selon Bowlby, les relations d'attachement « se fixent vers le milieu de la première année de l'enfant » (p. 8).</p>",
+      s: ["m3projet"] },
+    { id: "winnicott", t: "Winnicott : l'objet transitionnel", n: "edu", d: "Donald Winnicott (1896-1971)",
+      q: [["Donald Winnicott, pédiatre et psychanalyste, soulignait déjà combien l'attachement à cet « objet transitionnel » n'est pas universel […]", "m3rentree", 13]],
+      corps: "<p>La ressource traite du doudou à l'école : très présent les premiers mois, il est progressivement écarté. Ailleurs, Éduscol cite <em>Jeu et réalité</em> (1971) pour l'idée d'« espace intermédiaire » (jeux d'exploration, p. 4).</p>",
+      s: ["m3rentree", "jexplo"] },
+    { id: "freud", t: "Freud : principe de plaisir et principe de réalité", n: "edu", d: "Sigmund Freud (1856-1939)",
+      q: [["Selon S. Freud, ces premiers jeux prennent ancrage dans le « principe de plaisir » et doivent s'ajuster au « principe de réalité », c'est à dire aux réponses qu'apporte l'environnement aux actions exercées par l'enfant.", "jexplo", 4]],
+      corps: "<p>Éduscol renvoie à <em>Formulations sur les deux principes du fonctionnement psychique</em> (1911).</p>",
+      s: ["jexplo"] },
+    { id: "dolto", t: "Dolto : une vidéo sur l'entrée à l'école", n: "edu", d: "Françoise Dolto (1908-1988)",
+      corps: "<p>La ressource « Une rentrée réussie » renvoie à une « Intervention de Françoise Dolto commentée par Georges Juttner », au début de la partie sur la séparation. Ce n'est qu'un renvoi : la ressource ne développe pas sa pensée.</p>",
+      s: ["m3rentree"] },
+    { id: "aff-reperes", t: "Repères : base de sécurité, stades psychosexuels", n: "acad",
+      corps: "<ul><li><strong>Bowlby</strong> : la figure d'attachement sert de <em>base de sécurité</em> à partir de laquelle l'enfant explore. Ainsworth a décrit les styles d'attachement (sécure, insécure évitant, insécure ambivalent) avec la « situation étrange ».</li><li><strong>Winnicott</strong> : la « mère suffisamment bonne », le <em>holding</em>, l'objet transitionnel comme premier objet « non-moi ».</li><li><strong>Freud</strong> (<em>Trois essais sur la théorie sexuelle</em>, 1905) : stades oral, anal, phallique, période de latence, stade génital.</li></ul>" }
+  ]},
+
+  { id: "jeu", t: "Le jeu comme objet d'étude", n: "nav", d: "Château, Caillois, Brougère, Smilansky",
+    echo: ["Le jeu revêt diverses formes : symbolique, d'exploration, de construction et de manipulation, d'imitation, collectif et de société, fabriqué et inventé, etc. Les professeurs donnent à chacun un temps suffisant pour déployer son activité de jeu.", 4],
+    e: [
+    { id: "jeu-liste", t: "Les auteurs retenus par Éduscol", n: "edu",
+      q: [["J. Piaget, H. Wallon, D. Winnicott, J. Château, R. Caillois, G. Brougère … de très nombreux chercheurs ont traité du jeu selon des points de vue variés […] Tous ont mis en évidence son caractère fondamental dans le développement de l'enfant.", "jeu", 4]],
+      corps: "<p>À partir de ces travaux, Éduscol définit le jeu par l'action de l'enfant. L'enfant joue s'il choisit de s'engager, s'il décide librement de ses modalités d'action dans un cadre défini, si ses actes restent sans conséquence sérieuse dans le monde réel, s'ils n'ont d'autre but que le plaisir du jeu, et s'il en retire un plaisir immédiat ou différé.</p>",
+      s: ["jeu"] },
+    { id: "chateau", t: "Château : du jeu au travail", n: "edu", d: "Jean Château, L'enfant et le jeu",
+      q: [["C'est pour une bonne part dans le jeu que l'enfant acquiert des attitudes indispensables pour le travail. Ainsi en est-il de l'aptitude à la tâche dont les jeux de la maternelle doivent favoriser la naissance.", "jexplo", 10]],
+      corps: "<p>Dans la ressource sur les jeux de construction, Château parle aussi de « jeu à règle arbitraire » : au début, la règle et le but sont décidés par l'enfant et ne se répètent pas forcément (p. 6).</p>",
+      s: ["jexplo", "jconstr"] },
+    { id: "caillois", t: "Caillois et Brougère", n: "acad",
+      corps: "<p><strong>Roger Caillois</strong> (<em>Les jeux et les hommes</em>, 1958) classe les jeux en quatre catégories : <em>agôn</em> (compétition), <em>alea</em> (hasard), <em>mimicry</em> (simulacre), <em>ilinx</em> (vertige).</p><p><strong>Gilles Brougère</strong> (<em>Jeu et éducation</em>, 1995) analyse le jeu comme une activité culturelle et sociale, qui s'apprend, et interroge son usage scolaire.</p><p>Éduscol cite ces deux noms sans développer leur pensée.</p>",
+      s: ["jeu"] }
+  ]},
+
+  { id: "actives", t: "Pédagogies actives, Éducation nouvelle", n: "nav", d: "fin XIXe – XXe siècle",
+    corps: "<p>Ce ne sont pas des théories du développement mais des courants pédagogiques. Ils s'appuient sur une certaine conception de l'enfant : il est actif, il apprend par l'expérience, et son intérêt est un moteur.</p>",
+    echo: ["Ils développent la capacité des élèves à s'engager à travers des projets, pour réaliser des productions adaptées à leurs possibilités.", 4],
+    e: [
+    { id: "dewey", t: "Dewey : learning by doing", n: "edu", d: "John Dewey (1859-1952)",
+      q: [["Les premiers travaux sur la pédagogie du projet ont été menés aux Etats-Unis par J. Dewey et W.H. Kilpatrick, dans les années 1915 dans l'objectif que l'élève devienne acteur de sa formation (« learning by doing », expression de Dewey) et développe la créativité.", "projet", 1]],
+      corps: "<p>Cette ressource Éduscol concerne la physique-chimie au lycée, mais c'est le passage où le ministère situe Dewey.</p><p><em>Repère académique</em> : Dewey ouvre son école-laboratoire à Chicago en 1896 et publie <em>Démocratie et éducation</em> en 1916.</p>",
+      s: ["projet"] },
+    { id: "educnouv", t: "Freinet, Montessori, Decroly", n: "edu",
+      q: [["A cette même époque, en France, les tenants de l'éducation nouvelle (Freinet, Montessori, Decroly…) développent aussi les méthodes actives pour stimuler la créativité de l'enfant […]", "projet", 1]],
+      corps: "<p>C'est la seule mention de ces trois noms trouvée dans une ressource ministérielle. Leur contenu détaillé relève des manuels (nœuds suivants).</p>",
+      s: ["projet"] },
+    { id: "freinet", t: "Freinet", n: "form", d: "Célestin Freinet (1896-1966)",
+      corps: "<p>L'INSPÉ de Lille met Freinet au programme : bibliographie avec ses <em>Œuvres complètes</em>, Chabrun, <em>Entrer en pédagogie Freinet</em>, Connac, <em>Apprendre avec les pédagogies coopératives</em>, et Houssaye, <em>Quinze pédagogues</em>.</p><p><em>Repère académique</em> : texte libre, imprimerie à l'école, correspondance scolaire, conseil de coopérative, « tâtonnement expérimental ».</p>",
+      s: ["lille"] },
+    { id: "montessori", t: "Montessori", n: "acad", d: "Maria Montessori (1870-1952)",
+      corps: "<p>Médecin italienne. Elle ouvre la première <em>Casa dei bambini</em> à Rome en 1907. Ses principes : une ambiance préparée, adaptée à la taille de l'enfant, un matériel sensoriel autocorrectif, des « périodes sensibles » où l'enfant est particulièrement réceptif à certains apprentissages, et le respect de son rythme et de son activité autonome.</p><p>Éduscol la cite seulement parmi les « tenants de l'éducation nouvelle ».</p>",
+      s: ["projet"] },
+    { id: "decroly", t: "Decroly", n: "acad", d: "Ovide Decroly (1871-1932)",
+      corps: "<p>Médecin belge. Il fonde l'école de l'Ermitage à Bruxelles en 1907. Ses principes : les <strong>centres d'intérêt</strong> organisés autour des besoins de l'enfant, la démarche observation – association – expression, et une approche globale de la lecture (fonction de « globalisation »).</p><p>Éduscol le cite seulement parmi les « tenants de l'éducation nouvelle ».</p>",
+      s: ["projet"] },
+    { id: "rousseau", t: "Rousseau, précurseur", n: "form", d: "Émile ou de l'éducation, 1762",
+      corps: "<p>Cité dans une bibliographie de l'INSPÉ de Lille. Au XVIIIe siècle, Rousseau invite à considérer l'enfant comme un enfant et non comme un adulte en miniature, idée reprise par l'Éducation nouvelle.</p>",
+      s: ["lille"] },
+    { id: "reggio", t: "Reggio Emilia (Malaguzzi)", n: "abs",
+      corps: "<p>Je n'ai trouvé l'approche de Reggio Emilia ni dans les textes officiels, ni dans les ressources Éduscol, ni dans les maquettes INSPÉ consultées. Elle apparaît dans des formations étrangères (Bolzano, par exemple) et dans des travaux de recherche.</p><p>Si ta maquette INSPÉ l'aborde, tu peux l'ajouter avec cette source. Sinon, mieux vaut ne pas la présenter au jury comme une référence institutionnelle.</p>" }
+  ]},
+
+  { id: "actuel", t: "Le vocabulaire actuel du programme", n: "nav",
+    corps: "<p>Le programme de 2026 parle le langage de la psychologie cognitive. Ces notions prolongent les théories du XXe siècle.</p>",
+    e: [
+    { id: "fe", t: "Les fonctions exécutives", n: "off",
+      q: [["[…] en tenant compte du développement cognitif des enfants (attention, mémoire, fonctions exécutives, motivation etc.) […]", "c1", 4, "off"],
+          ["Les neurosciences s'intéressent plus particulièrement aux fonctions exécutives suivantes : la mémoire de travail, la planification, la capacité d'inhibition, la flexibilité et la fluidité.", "jsymb", 8]],
+      s: ["c1", "jsymb"] },
+    { id: "tom", t: "La théorie de l'esprit", n: "edu",
+      q: [["Lorsqu'un enfant est capable de comprendre qu'un « autre » peut avoir un point de vue différent du sien, et avoir une pensée qui lui est propre, la conscience de cette différence de pensée transparaît dans le langage mobilisé pour s'adresser à un pair dans le jeu symbolique.", "jsymb", 7]],
+      corps: "<p>Le programme demande de créer les conditions « d'une prise en compte du point de vue de l'autre » (p. 4).</p>",
+      s: ["jsymb", "c1"] },
+    { id: "cps", t: "Les compétences psychosociales et les émotions", n: "off",
+      q: [["Les professeurs développent la capacité des élèves à verbaliser, partager et réguler leurs émotions. Ils sont attentifs à ce que tous puissent développer leur estime de soi, l'entraide et le partage avec les autres.", "c1", 6, "off"]],
+      s: ["c1"] }
+  ]},
+
+  { id: "absents", t: "Cherchés, non trouvés", n: "abs",
+    corps: "<p>Ces noms n'apparaissent dans aucun des documents officiels, Éduscol ou INSPÉ consultés pour cette carte : <strong>Reggio Emilia / Malaguzzi, Pauline Kergomard, René Spitz, Erik Erikson, Arnold Gesell</strong>.</p><p>Ce n'est pas un jugement sur leur intérêt. Simplement, aucune source de cette carte ne permet de les rattacher au cadre institutionnel. Vérifie dans ta propre maquette avant de les citer comme attendus.</p>" }
+  ]
+};
+
+/* ---------- Index ---------- */
+const PAR_ID = new Map();
+(function indexer(n, parent, prof) {
+  n.parent = parent; n.prof = prof; PAR_ID.set(n.id, n);
+  (n.e || []).forEach(c => indexer(c, n, prof + 1));
+})(ARBRE, null, 0);
+
+const ouverts = new Set([...PAR_ID.values()].filter(n => n.e).map(n => n.id));
+const actifs = new Set(["off", "edu", "form", "acad", "abs"]);
+let selection = "racine";
+let requete = "";
+let vue = "carte";
+
+function cssv(nom) { return getComputedStyle(document.documentElement).getPropertyValue(nom).trim(); }
+function echap(s) { return String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+function texteNoeud(n) {
+  const parts = [n.t, n.d || "", n.corps || ""];
+  (n.q || []).forEach(q => parts.push(q[0]));
+  if (n.echo) parts.push(n.echo[0]);
+  return parts.join(" ").replace(/<[^>]+>/g, " ").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+}
+function norm(s) { return s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().trim(); }
+function correspond(n) { return requete && texteNoeud(n).includes(requete); }
+function visibleNiveau(n) { return n.n === "nav" || actifs.has(n.n); }
+function sousArbreCorrespond(n) { return correspond(n) || (n.e || []).some(sousArbreCorrespond); }
+
+/* ---------- Légende et filtres ---------- */
+const filtres = document.getElementById("filtres");
+const leg = document.getElementById("leg");
+["off", "edu", "form", "acad", "abs"].forEach(k => {
+  const N = NIVEAUX[k];
+  const b = document.createElement("button");
+  b.type = "button"; b.className = "chip"; b.id = "f-" + k;
+  b.setAttribute("aria-pressed", "true");
+  b.innerHTML = `<span class="pt" style="background:var(${N.c})"></span>${N.court}`;
+  b.title = N.nom;
+  b.addEventListener("click", () => {
+    if (actifs.has(k)) actifs.delete(k); else actifs.add(k);
+    b.setAttribute("aria-pressed", actifs.has(k) ? "true" : "false");
+    rendre();
+  });
+  filtres.appendChild(b);
+  leg.insertAdjacentHTML("beforeend", `<dt><span class="pt" style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(${N.c})"></span>${N.nom}</dt><dd>${N.def}</dd>`);
+});
+
+/* ---------- Carte (SVG) ---------- */
+const mesure = document.createElement("canvas").getContext("2d");
+function largeur(n) {
+  mesure.font = n.prof === 0 ? "700 15px 'Familjen Grotesk', sans-serif" : n.prof === 1 ? "600 14px 'Familjen Grotesk', sans-serif" : "13px 'Atkinson Hyperlegible', sans-serif";
+  return Math.ceil(mesure.measureText(n.t).width) + (n.e ? 40 : 24);
+}
+function rendreCarte() {
+  const zone = document.getElementById("carte");
+  const LIGNE = 34, ECART = 46, MARGE = 16;
+  const colL = [];
+  (function m(n) { colL[n.prof] = Math.max(colL[n.prof] || 0, largeur(n)); if (ouverts.has(n.id)) (n.e || []).forEach(m); })(ARBRE);
+  const colX = [MARGE]; for (let i = 1; i < colL.length; i++) colX[i] = colX[i - 1] + colL[i - 1] + ECART;
+  let rang = 0; const pos = new Map();
+  (function placer(n) {
+    const enf = ouverts.has(n.id) ? (n.e || []) : [];
+    if (!enf.length) { pos.set(n.id, MARGE + rang * LIGNE + LIGNE / 2); rang++; return; }
+    enf.forEach(placer);
+    pos.set(n.id, (pos.get(enf[0].id) + pos.get(enf[enf.length - 1].id)) / 2);
+  })(ARBRE);
+  const H = MARGE * 2 + rang * LIGNE;
+  const W = colX[colX.length - 1] + colL[colL.length - 1] + MARGE;
+  let liens = "", noeuds = "";
+  (function dessiner(n) {
+    const x = colX[n.prof], y = pos.get(n.id), w = largeur(n), h = 26;
+    const enf = ouverts.has(n.id) ? (n.e || []) : [];
+    enf.forEach(c => {
+      const x1 = x + w, y1 = y, x2 = colX[c.prof], y2 = pos.get(c.id), mx = (x1 + x2) / 2;
+      liens += `<path class="lien" d="M${x1},${y1} C${mx},${y1} ${mx},${y2} ${x2},${y2}"/>`;
+      dessiner(c);
+    });
+    const N = NIVEAUX[n.n];
+    const cls = ["nd", "d" + Math.min(n.prof, 2)];
+    if (n.id === selection) cls.push("sel");
+    if (!visibleNiveau(n)) cls.push("dim");
+    if (requete && correspond(n)) cls.push("hit");
+    else if (requete && !sousArbreCorrespond(n)) cls.push("dim");
+    const fill = n.n === "nav" ? "var(--surface)" : `var(${N.bg})`;
+    const stroke = n.n === "nav" ? "var(--ink)" : `var(${N.c})`;
+    const pm = n.e ? `<text class="pm" x="${x + w - 16}" y="${y + 4}">${ouverts.has(n.id) ? "−" : "+"}</text>` : "";
+    noeuds += `<g class="${cls.join(" ")}" data-id="${n.id}" tabindex="0" role="button" aria-label="${echap(n.t)}">
+      <rect x="${x}" y="${y - h / 2}" width="${w}" height="${h}" rx="${n.prof === 0 ? 13 : 7}" fill="${fill}" stroke="${stroke}"/>
+      <text x="${x + 11}" y="${y + 4.5}">${echap(n.t)}</text>${pm}</g>`;
+  })(ARBRE);
+  zone.innerHTML = `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="tree" aria-label="Carte mentale du développement de l'enfant">${liens}${noeuds}</svg>`;
+  zone.querySelectorAll(".nd").forEach(g => {
+    const act = () => activer(g.dataset.id, true);
+    g.addEventListener("click", act);
+    g.addEventListener("keydown", ev => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); act(); } });
+  });
+}
+
+/* ---------- Plan (liste) ---------- */
+function rendrePlan() {
+  const zone = document.getElementById("plan");
+  function li(n) {
+    const N = NIVEAUX[n.n];
+    const ouvert = ouverts.has(n.id);
+    const cls = [];
+    if (!visibleNiveau(n)) cls.push("dim");
+    if (requete && correspond(n)) cls.push("hit");
+    else if (requete && !sousArbreCorrespond(n)) cls.push("dim");
+    const pt = n.n === "nav" ? `<span class="pt" style="border:1.5px solid var(--ink)"></span>` : `<span class="pt" style="background:var(${N.c})"></span>`;
+    const tw = n.e ? (ouvert ? "−" : "+") : "";
+    let h = `<li class="${cls.join(" ")}"><button type="button" class="ligne${n.id === selection ? " sel" : ""}" data-id="${n.id}" ${n.e ? `aria-expanded="${ouvert}"` : ""}><span class="tw">${tw}</span>${pt}<span class="lab lvl${Math.min(n.prof, 2)}">${echap(n.t)}</span></button>`;
+    if (n.e && ouvert) h += `<ul class="pl">${n.e.map(li).join("")}</ul>`;
+    return h + "</li>";
+  }
+  zone.innerHTML = `<ul class="pl">${li(ARBRE)}</ul>`;
+  zone.querySelectorAll(".ligne").forEach(b => b.addEventListener("click", () => activer(b.dataset.id, true)));
+}
+
+/* ---------- Fiche ---------- */
+function rendreFiche() {
+  const n = PAR_ID.get(selection);
+  const f = document.getElementById("fiche");
+  if (!n) { f.innerHTML = `<p class="vide">Choisis un nœud de la carte.</p>`; return; }
+  const N = NIVEAUX[n.n];
+  let h = "";
+  if (n.n !== "nav") h += `<span class="badge" style="color:var(${N.c});background:var(${N.bg})">${N.nom}</span>`;
+  const chemin = []; for (let p = n.parent; p; p = p.parent) chemin.unshift(p);
+  if (chemin.length) h += `<p class="dates" style="margin:8px 0 0">${chemin.map(p => `<a href="#" data-id="${p.id}">${echap(p.t)}</a>`).join(" › ")}</p>`;
+  h += `<h2>${echap(n.t)}</h2>`;
+  if (n.d) h += `<p class="dates">${echap(n.d)}</p>`;
+  if (n.corps) h += n.corps;
+  if (n.q && n.q.length) {
+    h += `<h3>Ce que dit la source</h3>`;
+    n.q.forEach(([txt, k, p, nv]) => {
+      const src = S[k];
+      const bord = nv || (k === "lille" || k === "uparis" || k === "cvl" ? "form" : "");
+      h += `<blockquote class="${bord}"><p>« ${echap(txt)} »</p><cite>${echap(src.l)}${p ? `, p. ${p}` : ""}</cite></blockquote>`;
+    });
+  }
+  if (n.echo) {
+    h += `<h3>Écho dans le programme</h3><div class="echo"><p>« ${echap(n.echo[0])} »</p><p class="note">Programme du cycle 1 (2026), préambule, p. ${n.echo[1]}. Ce rapprochement est proposé pour l'oral : le programme ne cite pas d'auteur.</p></div>`;
+  }
+  if (n.e && n.e.length) {
+    h += `<h3>Sous-thèmes</h3><div class="enfants">${n.e.map(c => `<button type="button" data-id="${c.id}"><span class="pt" style="display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;background:var(${NIVEAUX[c.n].c})"></span>${echap(c.t)}</button>`).join("")}</div>`;
+  }
+  const cles = [...new Set([...(n.s || []), ...(n.q || []).map(q => q[1])])];
+  if (cles.length) {
+    h += `<h3>Sources</h3><ul class="srcs">${cles.map(k => `<li><a href="${S[k].u}" target="_blank" rel="noopener">${echap(S[k].l)}</a></li>`).join("")}</ul>`;
+  } else if (n.n === "acad") {
+    h += `<h3>Sources</h3><p class="dates">Repère de manuel : aucune des sources de la carte ne le développe. Vérifie-le dans un manuel de psychologie du développement avant de t'en servir.</p>`;
+  }
+  f.innerHTML = h;
+  f.querySelectorAll("[data-id]").forEach(el => el.addEventListener("click", ev => { ev.preventDefault(); activer(el.dataset.id, false); }));
+}
+
+function activer(id, basculer) {
+  const n = PAR_ID.get(id);
+  if (basculer && n.e && selection === id) { if (ouverts.has(id)) ouverts.delete(id); else ouverts.add(id); }
+  else if (n.e) ouverts.add(id);
+  for (let p = n.parent; p; p = p.parent) ouverts.add(p.id);
+  selection = id;
+  try { history.replaceState(null, "", "#" + id); } catch (e) {}
+  rendre();
+  if (window.matchMedia("(max-width: 880px)").matches && !basculer) document.getElementById("fiche").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function rendre() {
+  if (vue === "carte") rendreCarte(); else rendrePlan();
+  rendreFiche();
+}
+
+/* ---------- Contrôles ---------- */
+function choisirVue(v) {
+  vue = v;
+  document.getElementById("v-carte").setAttribute("aria-pressed", v === "carte");
+  document.getElementById("v-plan").setAttribute("aria-pressed", v === "plan");
+  document.getElementById("carte").hidden = v !== "carte";
+  document.getElementById("plan").hidden = v !== "plan";
+  try { localStorage.setItem("carte-dev-vue", v); } catch (e) {}
+  rendre();
+}
+document.getElementById("v-carte").addEventListener("click", () => choisirVue("carte"));
+document.getElementById("v-plan").addEventListener("click", () => choisirVue("plan"));
+document.getElementById("tout").addEventListener("click", () => { PAR_ID.forEach(n => { if (n.e) ouverts.add(n.id); }); rendre(); });
+document.getElementById("rien").addEventListener("click", () => { ouverts.clear(); ouverts.add("racine"); rendre(); });
+document.getElementById("q").addEventListener("input", ev => {
+  requete = norm(ev.target.value);
+  if (requete) PAR_ID.forEach(n => { if (n.e && sousArbreCorrespond(n)) ouverts.add(n.id); });
+  rendre();
+});
+window.addEventListener("hashchange", () => { const id = location.hash.slice(1); if (PAR_ID.has(id) && id !== selection) activer(id, false); });
+
+/* ---------- Démarrage ---------- */
+let vueInit = window.matchMedia("(max-width: 880px)").matches ? "plan" : "carte";
+try { const v = localStorage.getItem("carte-dev-vue"); if (v === "carte" || v === "plan") vueInit = v; } catch (e) {}
+const h0 = location.hash.slice(1);
+if (PAR_ID.has(h0)) { selection = h0; for (let p = PAR_ID.get(h0).parent; p; p = p.parent) ouverts.add(p.id); }
+choisirVue(vueInit);
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { if (vue === "carte") rendreCarte(); });
+</script>
+</body>
+</html>
